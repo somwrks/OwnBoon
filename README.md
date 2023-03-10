@@ -1,5 +1,8 @@
 # OwnBoon
-Official Repository for OwnBoon Startup Website. 
+Official Repository for OwnBoon Startup Website.
+
+![Ownboon I](https://user-images.githubusercontent.com/85481905/224284688-e3c58e76-6870-446f-839d-eaffbf33aa40.png)
+
 # Notion
 https://zenith-mayflower-708.notion.site/OwnBoon-Website-939d356530d34ca78aa5e0d82fc749b8
 # Figma 
