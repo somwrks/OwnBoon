@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <Head>
         <title>OwnBoon</title>
         <link rel="icon" href="/logo.png" />
-        
+    
       </Head>
       <main className=" justify-center text-center flex flex-col">
         <h1 className="text-9xl text-white font-title">
