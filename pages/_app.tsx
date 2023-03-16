@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         name="keywords"
         content="ownboon, ownboon self improvement, ownboon self development, ownboon productivity, ownboon linkedin, ownboon github"
       />
+      <meta name="google-site-verification" content="0t6s_w9kPQXYMPIHrGcpSUmYI-iaO06XJBpkMDGHdrc" />
       <meta name="author" content="OwnBoon" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
