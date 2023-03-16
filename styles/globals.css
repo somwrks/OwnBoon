@@ -27,7 +27,13 @@
   }
   .social-icons{
     color: white;
-    width: 3%;
+    pointer-events: auto;
+    width: 100%;
+    padding: 2px;
+  }
+  .social-link{
+   pointer-events: none;
+   width: 5%;
   }
 
 body{
@@ -53,5 +59,3 @@ body{
   animation: fade 1.2s, textclip 7s linear infinite;
   display: inline-block;
 } 
-
-  

@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  <div>
+  return <div>
     <Head>
       <meta
         name="description"

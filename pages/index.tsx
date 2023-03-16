@@ -10,7 +10,6 @@ const Home: NextPage = () => {
       <Head>
         <title>OwnBoon</title>
         <link rel="icon" href="/logo.png" />
-    
       </Head>
       <main className=" justify-center text-center flex flex-col">
         <h1 className="text-9xl text-white font-title">
@@ -23,16 +22,21 @@ const Home: NextPage = () => {
           Coming Soon.
         </span>
       </div>
-      <main className="container p-3 flex flex-row justify-center">
-        <FontAwesomeIcon className="social-icons p-2" icon={faLinkedin} />
-        <FontAwesomeIcon className="social-icons" icon={faGithub} />
-      </main>
+     
       <main className="container text-center p-5 flex flex-col justify-center">
         <p className="text-white font-semibold text-lg leading-loose">
-          OwnBoon is a self-improvement and productivity platform <br /> that empowers
-          individuals to reach their full potential. <br />
+          OwnBoon is a self-improvement and productivity platform <br /> that
+          empowers individuals to reach their full potential. <br />
           Stay Tuned.
         </p>
+      </main>
+      <main className="flex-row flex items-center  justify-center">
+        <a className="social-link" href="https://www.linkedin.com/company/ownboon">
+        <FontAwesomeIcon className="social-icons" icon={faLinkedin}  />
+        </a>
+        <a className="social-link" href="https://github.com/OwnBoon">
+        <FontAwesomeIcon className="social-icons"icon={faGithub} />
+        </a>
       </main>
       <footer className="flex fixed bottom-0 h-24 w-full items-center text-white justify-center border-t">
         ©️OwnBoon 2023
