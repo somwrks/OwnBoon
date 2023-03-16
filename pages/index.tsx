@@ -18,23 +18,15 @@ const Home: NextPage = () => {
         </h1>
         <h2 className="text-white text-2xl font-tag">Rise High With Ownboon</h2>
       </main>
-
-
-
       <div className="container  flex flex-wrap flex-col  text-center ">
         <span className="text-[40px] font-semibold  animate-character">
           Coming Soon.
         </span>
       </div>
-
-      
-      
       <main className="container p-3 flex flex-row justify-center">
         <FontAwesomeIcon className="social-icons p-2" icon={faLinkedin} />
         <FontAwesomeIcon className="social-icons" icon={faGithub} />
       </main>
-      
-      
       <main className="container text-center p-5 flex flex-col justify-center">
         <p className="text-white font-semibold text-lg leading-loose">
           OwnBoon is a self-improvement and productivity platform <br /> that empowers
