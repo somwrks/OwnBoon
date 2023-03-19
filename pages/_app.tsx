@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <meta charSet="UTF-8" />
       <meta
         name="keywords"
-        content="ownboon, ownboon self improvement, ownboon self development, ownboon productivity, ownboon linkedin, ownboon github"
+        content="ownboon,ownboon company, ownboon health, ownboon fitness, ownboon books, ownboon tricks, ownboon habits, ownboon help, ownboon vent, ownboon explore, ownboon self improvement, ownboon self development, ownboon productivity, ownboon linkedin, ownboon github"
       />
       <meta name="google-site-verification" content="0t6s_w9kPQXYMPIHrGcpSUmYI-iaO06XJBpkMDGHdrc" />
       <meta name="author" content="OwnBoon" />
