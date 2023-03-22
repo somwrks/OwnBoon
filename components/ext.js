@@ -82,7 +82,7 @@ export const Skateboard = () => {
     setTimeout(() => {
       a.innerText="Benefit";
       b.innerText="Posses";
-    }, 6000);
+    }, 5000);
     setTimeout(() => {
       c.innerText="Too Much Work?"
     }, 500);
@@ -92,12 +92,6 @@ export const Skateboard = () => {
     setTimeout(() => {
       c.innerText="Join OwnBoon"
     }, 3500);
-    setTimeout(() => {
-      const e =document.querySelector(".ball2") 
-      e.style.opacity="1"
-      
-      
-    }, 5000);
     setTimeout(() => {
       
       const f = document.querySelector(".cyan")
@@ -114,24 +108,24 @@ export const Skateboard = () => {
       i.style.opacity="1"
     }, 5500);
     setTimeout(() => {
-      const e =document.querySelector(".ball2") 
-      e.style.opacity="1"
       const f = document.querySelector(".ring2")
       f.style.opacity="1"
-      const g = document.querySelector(".ring1")
-      g.style.opacity="1"
+      
+      const h =document.querySelector(".ball2") 
+      h.style.opacity="1"
       
     }, 5000);
+
 
   }, [])
   
   return (
     <div id="skateboard">
       <div className="skatebar animate-ping"><span className="text-[1.3rem] font-semibold" id="skatebar"></span></div>
-      <div className="ball1"><span id="ball1" className="md:text-[1.3rem]   font-semibold"></span></div>
-      <div className="ring1"></div>
-      <div className="ring2"></div>
-      <div className="ball2"><span id="ball2" className="md:text-[1.3rem] font-semibold"></span></div>
+      <div className="skateball ball1"></div>
+      <div className="ballring ring1"><span id="ball1" className="md:text-[1.3rem] font-semibold"></span></div>
+      <div className="ballring ring2"><span id="ball2" className="md:text-[1.3rem] font-semibold"></span></div>
+      <div className="skateball ball2 "></div>
     </div>
   );
 };

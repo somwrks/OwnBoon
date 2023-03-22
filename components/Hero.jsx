@@ -1,4 +1,3 @@
-import React from "react";
 export default function Hero() {
   return (
     <>
@@ -12,7 +11,7 @@ export default function Hero() {
   <div class="circle purple" id="cyan2"></div>
 </div>
 
-    <div className="flex flex-col xs:p-5 z-100 my-0 mx-0 items-center justify-center">
+    <div className="flex flex-col xs:p-5 z-100 my-0 mx-0 items-center  justify-center">
       <div className="pt-[10vh] md:text-5xl lg:text-7xl text-2xl font-bold justify-center text-center">
         <h1 className="py-3">
           Ignite your{" "}
@@ -27,7 +26,7 @@ export default function Hero() {
           </span>
         </h1>
       </div>
-      <div className="py-[50px] md:text-3xl text-md font-normal justify-center text-center">
+      <div className="py-[10vh] md:text-3xl text-md font-normal justify-center text-center">
         <h2>revolutionizing your productivity and health</h2>
       </div>
     </div>
