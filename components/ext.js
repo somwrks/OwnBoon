@@ -78,8 +78,8 @@ export const Skateboard = () => {
   
   return (
     <div id="skateboard">
-      <div className="skatebar animate-ping"><span className="text-[1.3rem] font-semibold" id="skatebar"></span></div>
-      <img src="" className="z-no p-5" alt="Ownboon Skateboard" />
+      {/* <div className="skatebar animate-ping"><span className="text-[1.3rem] font-semibold" id="skatebar"></span></div> */}
+      <img src="https://media.discordapp.net/attachments/1082849037847367800/1088156733685375106/fuck-youuuuuuuuuuuuuu-unscreen.gif?width=575&height=323" className="z-no absolute text-9xl" alt="Ownboon Skateboard" />
     </div>
   );
 };

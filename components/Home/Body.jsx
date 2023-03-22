@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Body() {
+  
+  useEffect(() => {
+    function reveal() {
+      var reveals = document.querySelectorAll(".showbody");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i]?.getBoundingClientRect().top;
+        var elementVisible = 150;
+          
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }  
+      }
+    }
+  
+    window.addEventListener("scroll", reveal);
+  }, [])
   return (
     <div className="mt-[130px]  flex flex-col font-poppins mx-auto my-auto items-center align-center justify-center">
       <div className="heading">
@@ -52,11 +69,11 @@ export default function Body() {
           </svg>
 
           <img
-            src="https://media.discordapp.net/attachments/1039174970993016922/1088108661064339497/image.png?width=705&height=529"
+            src="https://media.discordapp.net/attachments/1039174970993016922/1088150773298384936/beam-remote-work.gif?width=719&height=539"
             alt="Gif"
           />
         </div>
-        <div className="flex flex-col  align-center justify-center">
+        <div className="flex flex-col showbody align-center justify-center">
           <h className="text-[1.4rem] font-semibold py-3">Lorem ipsum dolor sit amet consectetur</h>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -66,7 +83,7 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div className="my-auto mx-auto p-5 justify-between flex flex-row">
+      <div className="my-auto mx-auto p-5 showbody justify-between flex flex-row">
       <div className="flex flex-col  align-center justify-center">
           <h className="text-[1.4rem] font-semibold py-3">Lorem ipsum dolor sit amet consectetur</h>
           <p>
@@ -78,12 +95,12 @@ export default function Body() {
         </div>
         <div className="bodyimg2">
           <img
-            src="https://media.discordapp.net/attachments/1039174970993016922/1088108750562406450/image.png?width=557&height=557"
+            src="https://media.discordapp.net/attachments/1039174970993016922/1088150772841197568/beam-meditation.gif?width=557&height=557"
             alt="Gif"
           />
         </div>
       </div>
-      <div className="my-auto mx-auto p-5 justify-between flex flex-row">
+      <div className="my-auto mx-auto p-5 showbody justify-between flex flex-row">
         <div className="bodyimg3">
           <svg
             width="22.8vw"
@@ -126,7 +143,7 @@ export default function Body() {
           </svg>
 
           <img
-            src="https://media.discordapp.net/attachments/1039174970993016922/1088108792799047821/image.png?width=602&height=530"
+            src="https://media.discordapp.net/attachments/1039174970993016922/1088150772354666566/beam-online-medical-consultation.gif?width=557&height=557"
             alt="Gif"
           />
         </div>
