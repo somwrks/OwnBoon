@@ -19,7 +19,7 @@ export default function Body() {
     window.addEventListener("scroll", reveal);
   }, [])
   return (
-    <div className="mt-[130px]  flex flex-col font-poppins mx-auto my-auto items-center align-center justify-center">
+    <div className="mt-[30vh]  flex flex-col font-poppins mx-auto my-auto items-center align-center justify-center">
       <div className="heading">
         <h1 className="text-[3rem]">Why OwnBoon?</h1>
         <h3 className="text-[1.5rem] py-3">
@@ -68,8 +68,8 @@ export default function Body() {
             </defs>
           </svg>
 
-          <img
-            src="https://media.discordapp.net/attachments/1039174970993016922/1088150773298384936/beam-remote-work.gif?width=719&height=539"
+          <img loading="lazy"
+            src="/bodyimage1.gif"
             alt="Gif"
           />
         </div>
@@ -94,8 +94,8 @@ export default function Body() {
           </p>
         </div>
         <div className="bodyimg2">
-          <img
-            src="https://media.discordapp.net/attachments/1039174970993016922/1088150772841197568/beam-meditation.gif?width=557&height=557"
+          <img loading="lazy"
+            src="/bodyimage2.gif"
             alt="Gif"
           />
         </div>
@@ -142,8 +142,8 @@ export default function Body() {
             </defs>
           </svg>
 
-          <img
-            src="https://media.discordapp.net/attachments/1039174970993016922/1088150772354666566/beam-online-medical-consultation.gif?width=557&height=557"
+          <img loading="lazy"
+            src="/bodyimage3.gif"
             alt="Gif"
           />
         </div>

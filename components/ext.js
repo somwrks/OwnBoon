@@ -37,9 +37,9 @@ export const Balls = () => {
         const dy = ball.offsetTop - mouseY + ball.clientHeight / 2;
         const dist = Math.sqrt(dx * dx + dy * dy);
 
-        const rotationY = (dx / container.clientWidth) * 20;
-        const rotationX = (dy / container.clientHeight) * -20;
-        const translationZ = (dist / 200) * -10;
+        const rotationY = (dx / container.clientWidth) * 10;
+        const rotationX = (dy / container.clientHeight) * -10;
+        const translationZ = (dist / 200) * -5;
         ball.style.transform = `translateY(${translationZ}px) translateX(${
           translationZ 
         }px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
@@ -79,7 +79,7 @@ export const Skateboard = () => {
   return (
     <div id="skateboard">
       {/* <div className="skatebar animate-ping"><span className="text-[1.3rem] font-semibold" id="skatebar"></span></div> */}
-      <img src="https://media.discordapp.net/attachments/1082849037847367800/1088156733685375106/fuck-youuuuuuuuuuuuuu-unscreen.gif?width=575&height=323" className="z-no absolute text-9xl" alt="Ownboon Skateboard" />
+      {/* <img src="https://media.discordapp.net/attachments/1082849037847367800/1088156733685375106/fuck-youuuuuuuuuuuuuu-unscreen.gif?width=575&height=323" className="z-no absolute text-9xl" alt="Ownboon Skateboard" /> */}
     </div>
   );
 };

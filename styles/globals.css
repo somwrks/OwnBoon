@@ -14,22 +14,22 @@
   font-weight: normal;
   font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-@font-face{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@font-face {
   font-family: "fontspring";
   src: url("../public/Fontspring.otf") format("truetype");
-font-weight: 100;
-font-style: normal;
+  font-weight: 100;
+  font-style: normal;
 }
 
 /* Utility */
-.font-poppins{
-font-family: 'Poppins', sans-serif;
+.font-poppins {
+  font-family: "Poppins", sans-serif;
 }
 .font-blackbones {
   font-family: BlackBones;
 }
-.font-fontspring{
+.font-fontspring {
   font-family: fontspring;
 }
 .font-alatsi {
@@ -47,15 +47,15 @@ font-family: 'Poppins', sans-serif;
 }
 /* Animations */
 @keyframes gradientscale {
-  0%{
+  0% {
     opacity: 0;
     filter: blur(0px);
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
   }
-  100%{
+  100% {
     opacity: 1;
-  filter: blur(150px);
-    transform: translate(-50%,-50%) scale(1);
+    filter: blur(150px);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 @keyframes moveballs {
@@ -95,10 +95,10 @@ body {
 }
 
 /* Home */
-ul{
+ul {
   background: white;
   font-size: 0.9rem;
-font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .Link {
   display: inline-block;
@@ -179,18 +179,18 @@ svg {
 
 .circle {
   position: absolute;
-filter: blur(150px);
+  filter: blur(150px);
   transform: translate(-50%, -50%);
   width: 15vw;
-  height:30vh;
+  height: 30vh;
   border-radius: 50%;
 }
 
 .cyan {
-animation: gradientscale 2s ease-in-out;
+  animation: gradientscale 2s ease-in-out;
 
-top: 135%;
-left: -35%;
+  top: 135%;
+  left: -35%;
 
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
 }
@@ -203,9 +203,9 @@ left: -35%;
 }
 
 #cyan {
-animation: gradientscale 2s ease-in-out;
-top: 134%;
-left: 135%;
+  animation: gradientscale 2s ease-in-out;
+  top: 134%;
+  left: 135%;
 
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
 }
@@ -267,29 +267,32 @@ left: 135%;
 }
 
 /* Body */
-.heading{
+.heading {
   text-align: center;
   font-family: Poppins;
 }
-.heading h1{
+.heading h1 {
   font-weight: 600;
-  background: linear-gradient(90deg, #00F0B5 0%, rgba(0, 240, 181, 0.1) 100%), linear-gradient(270deg, #00AEFF 0%, rgba(0, 174, 255, 0.1) 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-
+  background: linear-gradient(90deg, #00f0b5 0%, rgba(0, 240, 181, 0.1) 100%),
+    linear-gradient(270deg, #00aeff 0%, rgba(0, 174, 255, 0.1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-.bodyimg2{
+.bodyimg2 {
   background: url("https://media.discordapp.net/attachments/1039174970993016922/1088135386666119288/image.png?width=572&height=557");
 }
 /* Benefits */
-.benefit-container{
+.benefit-container {
+  background-image: url("../public/pipe.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   height: 90vh;
   width: 100%;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 /* responsiveness */
 @media (max-width: 1000px) {
