@@ -28,7 +28,7 @@ export default function navbar() {
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            className="inline-flex items-center p-2 rounded-lg md:hidden"
+            className="inline-flex  items-center p-2 rounded-lg md:hidden"
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
@@ -52,7 +52,7 @@ export default function navbar() {
           className="items-center  justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul className="flex flex-col p-4 mt-4  rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
+          <ul className="flex flex-col p-4 mt-4 bg-white rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
             <li>
               <Link
                 href="/"
@@ -87,16 +87,16 @@ export default function navbar() {
               </button>
               <div
                 id="dropdownNavbar"
-                className="z-10 hidden font-light  divide-y divide-gray-100 rounded-lg shadow w-30 "
+                className="z-10 hidden  p-5 font-light  divide-y divide-gray-100 rounded-lg shadow w-55 "
               >
                 <ul
-                  className="py-2  text-gray-700 "
+                  className="px-5 bg-white  text-gray-700 "
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
                     <Link
                       href="/habits"
-                      className={`Link  block p-4 md:p-0 ${
+                      className={`Link  block p-4  ${
                         router.pathname == "/habits" ? "activelink font-bold" : ""
                       }`}
                     >
@@ -106,7 +106,7 @@ export default function navbar() {
                   <li>
                     <Link
                       href="/productivity"
-                      className={`Link block p-4 md:p-0 ${
+                      className={`Link block p-4  ${
                         router.pathname == "/productivity" ? "activelink font-bold" : ""
                       }`}
                     >
@@ -116,7 +116,7 @@ export default function navbar() {
                   <li>
                     <Link
                       href="/recovery"
-                      className={`Link  block p-4 md:p-0 ${
+                      className={`Link  block p-4  ${
                         router.pathname == "/creators" ? "activelink font-bold" : ""
                       }`}
                     >

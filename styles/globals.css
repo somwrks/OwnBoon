@@ -32,9 +32,6 @@
 .z-no {
   z-index: -1;
 }
-.ringrotate{
-  animation: ringrotate 3s ease-in-out infinite;
-}
 /* Animations */
 @keyframes leftcyan {
   0% {
@@ -100,21 +97,6 @@
     top: 0;
   }
 }
-@keyframes firstdrop {
-  0% {
-    transform: translateX(0px);
-  }
-  30% {
-    transform: translateX(100px);
-  }
-  60% {
-    transform: translateX(-100px);
-  }
-  100% {
-    border: 0;
-    transform: translateX(100px);
-  }
-}
 @keyframes firstlanding {
   0% {
     transform: translateX(0) rotate(0deg);
@@ -129,46 +111,6 @@
     transform: translateX(0) rotate(0deg);
   }
 }
-@keyframes secondlanding {
-  0% {
-    transform: translateX(-100px) translateY(-100px) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-100px) translateY(-91px) scale(1);
-
-    opacity: 1;
-  }
-}
-@keyframes ringdrop {
-  0% {
-    transform: translateX(0) translateY(-20px);
-  }
-  30% {
-    transform: translateX(100px) translateY(-20px);
-  }
-  60% {
-    transform: translateX(-100px) translateY(-20px);
-  }
-  100% {
-    border: 0;
-    transform: translateX(100px) translateY(-20px);
-  }
-}
-@keyframes ringlanding {
-  0% {
-    transform: translateX(-100px) translateY(-20px) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-100px) translateY(-20px) scale(1);
-    opacity: 1;
-  }
-}
-@keyframes ringrotate {
-  0% { transform: rotate(0);}  
-  100% { transform: rotate(360deg); }
-}     
 
 /* HTML */
 html {
@@ -200,6 +142,9 @@ body {
 }
 
 /* Home */
+ul{
+  background: white;
+}
 .Link {
   display: inline-block;
   position: relative;
@@ -344,55 +289,6 @@ svg {
   position: relative;
   overflow: visible;
 }
-.skateball {
-  z-index: -1;
-  width: 5vw;
-  height: 9vh;
-  background: linear-gradient(
-      270deg,
-      #00f0b5 -4.35%,
-      rgba(0, 240, 181, 0) 73.91%
-    ),
-    linear-gradient(90deg, #00aeff -13.77%, rgba(0, 174, 255, 0) 100%);
-
-  border-radius: 50%;
-}
-.ball1 {
-  transform: translateX(100px);
-  animation: firstdrop 5s ease-in-out;
-}
-
-.ball2 {
-  transform: translateX(-100px) translateY(-91px);
-  padding-top: 25px;
-  opacity: 0;
-  animation: secondlanding 2s ease-in-out;
-  animation-delay: 3s;
-}
-
-.ballring {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  background: white;
-  z-index: 1;
-
-  width: 4.5vw;
-  height: 7.9vh;
-  border-radius: 50%;
-}
-.ring1 {
-  opacity: 1;
-  transform: translateX(100px) translateY(-20px);
-  animation: ringdrop 5s ease-in-out;
-}
-.ring2 {
-  animation: ringlanding 2s ease-in-out;
-  animation-delay: 3s;
-  opacity: 0;
-  transform: translateX(-100px) translateY(-20px);
-}
 .skatebar {
   z-index: -1;
   width: 27vw;
@@ -419,7 +315,7 @@ svg {
 }
 
 /* responsiveness */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .cyan:nth-of-type(3) {
     left: 0;
   }
@@ -429,19 +325,5 @@ svg {
   .skatebar {
     width: 150px;
     height: 30px;
-  }
-  .ball1 {
-    width: 50px;
-    height: 50px;
-  }
-  .ball2 {
-    width: 50px;
-    height: 50px;
-  }
-  #skateboard {
-    left: 37%;
-    top: 45%;
-    width: 100px;
-    height: 100px;
   }
 }

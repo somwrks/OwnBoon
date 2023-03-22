@@ -76,22 +76,6 @@ export const Balls = () => {
 export const Skateboard = () => {
 
   useEffect(() => {
-    const a = document.getElementById("ball1")
-    const b = document.getElementById("ball2")
-    const c = document.getElementById("skatebar")
-    setTimeout(() => {
-      a.innerText="Benefit";
-      b.innerText="Posses";
-    }, 5000);
-    setTimeout(() => {
-      c.innerText="Too Much Work?"
-    }, 500);
-    setTimeout(() => {
-      c.innerText="Can't Manage?"
-    }, 2000);
-    setTimeout(() => {
-      c.innerText="Join OwnBoon"
-    }, 3500);
     setTimeout(() => {
       
       const f = document.querySelector(".cyan")
@@ -107,14 +91,7 @@ export const Skateboard = () => {
       g.style.opacity="1"
       i.style.opacity="1"
     }, 5500);
-    setTimeout(() => {
-      const f = document.querySelector(".ring2")
-      f.style.opacity="1"
-      
-      const h =document.querySelector(".ball2") 
-      h.style.opacity="1"
-      
-    }, 5000);
+   
 
 
   }, [])
@@ -122,10 +99,7 @@ export const Skateboard = () => {
   return (
     <div id="skateboard">
       <div className="skatebar animate-ping"><span className="text-[1.3rem] font-semibold" id="skatebar"></span></div>
-      <div className="skateball ball1"></div>
-      <div className="ballring ring1"><span id="ball1" className="md:text-[1.3rem] font-semibold"></span></div>
-      <div className="ballring ring2"><span id="ball2" className="md:text-[1.3rem] font-semibold"></span></div>
-      <div className="skateball ball2 "></div>
+      <img src="" className="z-no p-5" alt="Ownboon Skateboard" />
     </div>
   );
 };

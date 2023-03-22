@@ -2,13 +2,13 @@ export default function Hero() {
   return (
     <>
 
-<div class="hero-gradient-bg ">
-  <div class="circle cyan"></div>
-  <div class="circle purple" ></div>
-  <div class="circle cyan"  id="cyan"></div>
-  <div class="circle purple" id="purple"></div>
-  <div class="circle cyan"  id="cyan1"></div>
-  <div class="circle purple" id="cyan2"></div>
+<div className="hero-gradient-bg ">
+  <div className="circle cyan"></div>
+  <div className="circle purple" ></div>
+  <div className="circle cyan"  id="cyan"></div>
+  <div className="circle purple" id="purple"></div>
+  <div className="circle cyan"  id="cyan1"></div>
+  <div className="circle purple" id="cyan2"></div>
 </div>
 
     <div className="flex flex-col xs:p-5 z-100 my-0 mx-0 items-center  justify-center">
