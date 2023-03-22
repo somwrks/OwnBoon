@@ -8,17 +8,30 @@
   font-weight: normal;
   font-style: normal;
 }
-.font-blackbones {
-  font-family: BlackBones;
-}
 @font-face {
   font-family: "alatsi";
   src: url("../public/alatsi.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@font-face{
+  font-family: "fontspring";
+  src: url("../public/Fontspring.otf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
 
 /* Utility */
+.font-poppins{
+font-family: 'Poppins', sans-serif;
+}
+.font-blackbones {
+  font-family: BlackBones;
+}
+.font-fontspring{
+  font-family: fontspring;
+}
 .font-alatsi {
   font-family: alatsi;
 }
@@ -33,82 +46,22 @@
   z-index: -1;
 }
 /* Animations */
-@keyframes leftcyan {
-  0% {
-    filter: blur(0);
+@keyframes gradientscale {
+  0%{
     opacity: 0;
-    transform: translate(-50%, 50%);
+    filter: blur(0px);
+    transform: translate(-50%,-50%) scale(0);
   }
-  100% {
-    filter: blur(200px);
-
+  100%{
     opacity: 1;
-    transform: translate(-50%, -50%);
-    background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
-  }
-}
-@keyframes toppurple {
-  0% {
-    filter: blur(0);
-    opacity: 0;
-    transform: translate(-50%, -100%);
-  }
-  100% {
-    filter: blur(200px);
-
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    background-image: radial-gradient(circle at center, #aa77ff, #00aeff);
-  }
-}
-@keyframes allcyan {
-  0% {
-    transform: translate(50%, -50%);
-
-    filter: blur(0);
-    opacity: 0;
-  }
-  100% {
-    filter: blur(200px);
-
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
-  }
-}
-@keyframes bottompurple {
-  0% {
-    filter: blur(0);
-    opacity: 0;
-    transform: translate(-50%, 50%);
-  }
-  100% {
-    filter: blur(200px);
-
-    opacity: 1;
-    background-image: radial-gradient(circle at center, #aa77ff, #aa77ff);
-
-    transform: translate(-50%, -50%);
+  filter: blur(150px);
+    transform: translate(-50%,-50%) scale(1);
   }
 }
 @keyframes moveballs {
   0% {
     left: 0;
     top: 0;
-  }
-}
-@keyframes firstlanding {
-  0% {
-    transform: translateX(0) rotate(0deg);
-  }
-  30% {
-    transform: translateX(100px) rotate(20deg);
-  }
-  60% {
-    transform: translateX(-100px) rotate(-20deg);
-  }
-  100% {
-    transform: translateX(0) rotate(0deg);
   }
 }
 
@@ -144,6 +97,8 @@ body {
 /* Home */
 ul{
   background: white;
+  font-size: 0.9rem;
+font-family: 'Poppins', sans-serif;
 }
 .Link {
   display: inline-block;
@@ -185,7 +140,6 @@ svg {
   border-radius: 50%;
   z-index: -1;
   animation: moveballs 3s ease-in-out;
-  animation-delay: 4s;
   filter: blur(1px);
 }
 
@@ -216,65 +170,61 @@ svg {
 .hero-gradient-bg {
   z-index: -1;
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
+  width: 31vw;
+  height: 70%;
 }
 
 .circle {
   position: absolute;
+filter: blur(150px);
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
+  width: 15vw;
+  height:30vh;
   border-radius: 50%;
-  opacity: 0;
-  filter: blur(200px);
 }
 
 .cyan {
-  animation: leftcyan 2s ease-in-out;
-  top: 130%;
-  animation-delay: 4s;
-  left: -80%;
+animation: gradientscale 2s ease-in-out;
+
+top: 135%;
+left: -35%;
+
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
 }
 
 .purple {
-  animation: toppurple 2s ease-in-out;
-  animation-delay: 4s;
-  top: 40%;
+  animation: gradientscale 5s ease-in-out;
+  top: 85%;
   left: 50%;
   background-image: radial-gradient(circle at center, #aa77ff, #00aeff);
 }
 
 #cyan {
-  animation: allcyan 2s ease-in-out;
-  top: 130%;
-  animation-delay: 4s;
-  left: 170%;
+animation: gradientscale 2s ease-in-out;
+top: 134%;
+left: 135%;
+
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
 }
 #purple {
-  animation: bottompurple 2s ease-in-out;
-  top: 130%;
-  animation-delay: 4s;
-  left: 50%;
+  top: 134%;
+  left: 52%;
+  animation: gradientscale 5s ease-in-out;
   background-image: radial-gradient(circle at center, #aa77ff, #aa77ff);
 }
 #cyan1 {
-  animation: allcyan 2s ease-in-out;
-  top: 50%;
-  left: 140%;
+  top: 108%;
+  left: 93%;
+  animation: gradientscale 2s ease-in-out;
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
-  animation-delay: 4s;
 }
 #cyan2 {
-  animation: allcyan 2s ease-in-out;
-  animation-delay: 4s;
-  top: 50%;
-  left: -40%;
+  top: 111%;
+  animation: gradientscale 2s ease-in-out;
+  left: 8%;
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
 }
 /* -Skateboard */
@@ -312,6 +262,23 @@ svg {
     linear-gradient(269.62deg, #00f0b5 0.11%, rgba(0, 240, 181, 0) 98.77%),
     #00aeff;
   border-radius: 35px;
+  width: 8.6vw;
+  height: 5.81vh;
+}
+
+/* Body */
+.heading{
+  text-align: center;
+  font-family: Poppins;
+}
+.heading h1{
+  font-weight: 600;
+  background: linear-gradient(90deg, #00F0B5 0%, rgba(0, 240, 181, 0.1) 100%), linear-gradient(270deg, #00AEFF 0%, rgba(0, 174, 255, 0.1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
 }
 
 /* responsiveness */

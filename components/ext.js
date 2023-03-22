@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 export const Balls = () => {
+  // Revoving balls
   useEffect(() => {
     const container = document.getElementById("animation-container");
     const balls = Array.from(document.getElementsByClassName("ball"));
@@ -8,7 +9,6 @@ export const Balls = () => {
     let mouseY = container.clientHeight / 2;
 
     function setInitialPositions() {
-      setTimeout(() => {
 
         if (window.screen.width < 768) {
           balls[0].style.left = "400px";
@@ -29,7 +29,6 @@ export const Balls = () => {
           balls[3].style.left = "300px";
           balls[3].style.top = "100px";
         }
-      }, 4000);
     }
 
     function animateBalls() {
@@ -75,26 +74,7 @@ export const Balls = () => {
 
 export const Skateboard = () => {
 
-  useEffect(() => {
-    setTimeout(() => {
-      
-      const f = document.querySelector(".cyan")
-      const g = document.getElementById("cyan")
-      const i = document.getElementById("purple")
-      const j = document.getElementById("cyan2")
-      const k = document.getElementById("cyan1")
-      const h = document.querySelector(".purple")
-      f.style.opacity="1"
-      j.style.opacity="1"
-      k.style.opacity="1"
-      h.style.opacity="1"
-      g.style.opacity="1"
-      i.style.opacity="1"
-    }, 5500);
-   
-
-
-  }, [])
+  // Timed ANimations
   
   return (
     <div id="skateboard">

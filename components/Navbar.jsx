@@ -6,9 +6,9 @@ export default function navbar() {
   const router = useRouter();
    
   return (
-    <nav className={`px-5 sm:px-4  py-2.5 sticky w-full bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-alatsi `} >
+    <nav className={`px-5 sm:px-4 text-[0.9rem] py-2.5 sticky w-full bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-poppins `} >
       <div className="container bg-white flex flex-wrap items-center justify-between mx-auto">
-        <a href="https://flowbite.com/" className="flex items-center">
+        <a href="https://flowbite.com/docs/images/logo.svg" className="flex items-center">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-6 mr-3 sm:h-9"
@@ -21,7 +21,7 @@ export default function navbar() {
         <div className="flex md:order-2">
           <button
             type="button"
-            className="  text-white focus:ring-4 focus:outline-none  login  px-8 py-2.5 text-center mr-3 md:mr-0 rounded-full"
+            className="  text-white focus:ring-4 focus:outline-none  login  w-[8.6vw] h-[3.7vh] text-center mr-3 md:mr-0 rounded-full"
           >
             Login
           </button>
@@ -49,7 +49,7 @@ export default function navbar() {
           </button>
         </div>
         <div
-          className="items-center  justify-between hidden w-full md:flex md:w-auto md:order-1"
+          className="items-center text-[0.9rem] justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
           <ul className="flex flex-col p-4 mt-4 bg-white rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
