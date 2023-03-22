@@ -27,7 +27,7 @@ export default function Hero() {
               </span>
             </h1>
             <svg
-              class="w-[4vw] h-[7vh]"
+              className="w-[4vw] h-[7vh]"
               viewBox="0 0 43 43"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -209,8 +209,8 @@ export default function Hero() {
                   y2="1.10001"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint1_linear_105_42"
@@ -220,8 +220,8 @@ export default function Hero() {
                   y2="1.00003"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint2_linear_105_42"
@@ -231,8 +231,8 @@ export default function Hero() {
                   y2="1.44431"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint3_linear_105_42"
@@ -242,8 +242,8 @@ export default function Hero() {
                   y2="1.87681"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint4_linear_105_42"
@@ -253,8 +253,8 @@ export default function Hero() {
                   y2="6.79725"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint5_linear_105_42"
@@ -264,8 +264,8 @@ export default function Hero() {
                   y2="7.93789"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint6_linear_105_42"
@@ -275,8 +275,8 @@ export default function Hero() {
                   y2="10.152"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint7_linear_105_42"
@@ -286,8 +286,8 @@ export default function Hero() {
                   y2="14.903"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint8_linear_105_42"
@@ -297,8 +297,8 @@ export default function Hero() {
                   y2="16.4328"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint9_linear_105_42"
@@ -308,8 +308,8 @@ export default function Hero() {
                   y2="18.4882"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint10_linear_105_42"
@@ -319,8 +319,8 @@ export default function Hero() {
                   y2="20.9077"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint11_linear_105_42"
@@ -330,8 +330,8 @@ export default function Hero() {
                   y2="22.539"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint12_linear_105_42"
@@ -341,8 +341,8 @@ export default function Hero() {
                   y2="22.9926"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint13_linear_105_42"
@@ -352,8 +352,8 @@ export default function Hero() {
                   y2="28.8832"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint14_linear_105_42"
@@ -363,8 +363,8 @@ export default function Hero() {
                   y2="31.1048"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint15_linear_105_42"
@@ -374,8 +374,8 @@ export default function Hero() {
                   y2="31.7194"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint16_linear_105_42"
@@ -385,8 +385,8 @@ export default function Hero() {
                   y2="34.8843"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint17_linear_105_42"
@@ -396,8 +396,8 @@ export default function Hero() {
                   y2="35.7403"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint18_linear_105_42"
@@ -407,8 +407,8 @@ export default function Hero() {
                   y2="36.1637"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint19_linear_105_42"
@@ -418,8 +418,8 @@ export default function Hero() {
                   y2="36.4851"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                   id="paint20_linear_105_42"
@@ -429,8 +429,8 @@ export default function Hero() {
                   y2="36.7678"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00F0B5" stop-opacity="0" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00F0B5" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
