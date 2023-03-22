@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import {Balls, Skateboard} from "../components/ext"
-import Navbar from "../components/navbar"
+import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import Body from "../components/Home/Body"
 import Benefits from "../components/Home/Benefits"
