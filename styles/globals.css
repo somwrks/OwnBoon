@@ -18,7 +18,7 @@
 @font-face{
   font-family: "fontspring";
   src: url("../public/Fontspring.otf") format("truetype");
-font-weight: normal;
+font-weight: 100;
 font-style: normal;
 }
 
@@ -280,7 +280,9 @@ background-clip: text;
 text-fill-color: transparent;
 
 }
-
+.bodyimg2{
+  background: url("https://media.discordapp.net/attachments/1039174970993016922/1088135386666119288/image.png?width=572&height=557");
+}
 /* responsiveness */
 @media (max-width: 1000px) {
   .cyan:nth-of-type(3) {
