@@ -4,11 +4,16 @@ import { useRouter } from "next/router";
 
 export default function Navbar() {
   const router = useRouter();
-   
+
   return (
-    <nav className={`px-5 sm:px-4 text-[0.9rem] py-2.5 sticky w-full bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-poppins `} >
+    <nav
+      className={`px-5 sm:px-4 text-[0.9rem] py-2.5 sticky w-full bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-poppins `}
+    >
       <div className="container bg-white flex flex-wrap items-center justify-between mx-auto">
-        <a href="https://flowbite.com/docs/images/logo.svg" className="flex items-center">
+        <a
+          href="https://flowbite.com/docs/images/logo.svg"
+          className="flex items-center"
+        >
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-6 mr-3 sm:h-9"
@@ -87,17 +92,19 @@ export default function Navbar() {
               </button>
               <div
                 id="dropdownNavbar"
-                className="z-10 hidden  p-5 font-light  divide-y divide-gray-100 rounded-lg shadow w-55 "
+                className="z-10 hidden  p-5 font-light  divide-y divide-gray-100 rounded-lg  w-55 "
               >
                 <ul
-                  className="px-5 bg-white  text-gray-700 "
+                  className="px-5 bg-white justify-center text-gray-700 "
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
                     <Link
                       href="/habits"
                       className={`Link  block p-4  ${
-                        router.pathname == "/habits" ? "activelink font-bold" : ""
+                        router.pathname == "/habits"
+                          ? "activelink font-bold"
+                          : ""
                       }`}
                     >
                       Habits
@@ -107,7 +114,9 @@ export default function Navbar() {
                     <Link
                       href="/productivity"
                       className={`Link block p-4  ${
-                        router.pathname == "/productivity" ? "activelink font-bold" : ""
+                        router.pathname == "/productivity"
+                          ? "activelink font-bold"
+                          : ""
                       }`}
                     >
                       Productivity
@@ -115,32 +124,52 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link
-                      href="/recovery"
+                      href="/workspace"
                       className={`Link  block p-4  ${
-                        router.pathname == "/creators" ? "activelink font-bold" : ""
+                        router.pathname == "/creators"
+                          ? "activelink font-bold"
+                          : ""
                       }`}
                     >
-                      Rehabiliation
+                      Workspace
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/community"
+                      className={`Link  block p-4  ${
+                        router.pathname == "/creators"
+                          ? "activelink font-bold"
+                          : ""
+                      }`}
+                    >
+                      Community
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/session"
+                      className={`Link  block p-4  ${
+                        router.pathname == "/creators"
+                          ? "activelink font-bold"
+                          : ""
+                      }`}
+                    >
+                      Deep Session
                     </Link>
                   </li>
                 </ul>
               </div>
             </li>
             <li>
-              <a
-                href="#benefit"
-                className=" block py-2 Link pl-3 pr-4 md:p-0 "
-              > 
+              <Link href="#benefit" className=" block py-2 Link pl-3 pr-4 md:p-0 ">
                 Benefit
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#about"
-                className="Link  block py-2 pl-3 pr-4 md:p-0 "
-              >
+              <Link href="#about" className="Link  block py-2 pl-3 pr-4 md:p-0 ">
                 About Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

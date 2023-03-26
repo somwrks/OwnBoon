@@ -24,7 +24,7 @@
 
 /* Utility */
 .font-poppins {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
 }
 .font-blackbones {
   font-family: BlackBones;
@@ -64,7 +64,58 @@
     top: 0;
   }
 }
+@keyframes pipe1 {
+  0%{
+    transform: translate(-12vw,-21vh) scale(0);    
+  }
+  25%{
+  transform: translate(-12vw,21vh) scale(1.1);    
+  
+}
+50%{
+    transform: translate(0vw,44vh) scale(1.1);
+    
+    
+  }
+  75%{
+    transform: translate(12vw,21vh) scale(1.1);
 
+  }
+
+  100%{
+  transform: translate(24.5vw,44.5vh) scale(1.1);
+  }
+}
+@keyframes pipe2 {
+  0%{
+    transform: translate(1vw,-21vh) scale(0);    
+  }
+  33.3%{
+    transform: translate(1vw,21vh) scale(1.1);    
+    
+  }
+66.6%{
+  transform: translate(13vw,44vh) scale(1.1);  
+  }
+  100%{
+  transform: translate(25.3vw,21vh) scale(1.1);
+  }
+}
+@keyframes pipe3 {
+  0%{
+    transform: translate(14vw,-21vh) scale(0);
+    
+  }
+  50%{
+  transform: translate(14vw,21vh) scale(1.1);   
+  }
+
+
+  100%{
+  transform: translate(26.1vw,44vh) scale(1.1);
+
+  }
+}
 /* HTML */
 html {
   scroll-behavior: smooth;
@@ -72,24 +123,18 @@ html {
 ::-webkit-scrollbar {
   width: 10px;
 }
-::selection {
-  background-color: black;
-  color: cyan;
-}
 
 ::-webkit-scrollbar-thumb {
+  border-radius: 100%;
   background: linear-gradient(
-    0deg,
+    180deg,
     rgba(65, 240, 242, 1) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-
+  
   transition: 1s ease-in;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(40, 155, 175);
-}
 body {
   @apply text-black;
 }
@@ -144,7 +189,7 @@ svg {
 }
 
 .ball-1 {
-  background: linear-gradient(to bottom right, #ff0080, #ff8c00);
+  background: linear-gradient(358.83deg, #00AEFF 0.94%, rgba(0, 174, 255, 0) 98.98%), linear-gradient(179.59deg, #00F0B5 0.36%, rgba(0, 240, 181, 0) 141.19%);
   width: 29px;
   height: 29px;
 }
@@ -152,25 +197,27 @@ svg {
 .ball-2 {
   width: 29px;
   height: 29px;
-  background: linear-gradient(to bottom right, #00c6ff, #0072ff);
+  background: linear-gradient(358.83deg, #E90064 0.94%, rgba(233, 0, 100, 0) 98.98%), linear-gradient(179.59deg, #F9B5D0 0.36%, rgba(249, 181, 208, 0) 141.19%);
+  
 }
 
 .ball-3 {
   width: 42px;
   height: 42px;
   background: linear-gradient(to bottom right, #4b0082, #9400d3);
+  background: linear-gradient(358.83deg, #00AEFF 0.94%, rgba(0, 174, 255, 0) 98.98%), linear-gradient(179.59deg, #00F0B5 0.36%, rgba(0, 240, 181, 0) 141.19%);
 }
 
 .ball-4 {
   width: 42px;
   height: 42px;
-  background: linear-gradient(to bottom right, #f50057, #ff4081);
+  background: linear-gradient(358.83deg, #E90064 0.94%, rgba(233, 0, 100, 0) 98.98%), linear-gradient(179.59deg, #F9B5D0 0.36%, rgba(249, 181, 208, 0) 141.19%);
 }
 /* -gradeint */
 .hero-gradient-bg {
   z-index: -1;
+  display: flex;
   position: absolute;
-  /* top: 50%; */
   left: 50%;
   transform: translate(-50%, -50%);
   width: 31vw;
@@ -190,14 +237,14 @@ svg {
   animation: gradientscale 2s ease-in-out;
 
   top: 135%;
-  left: -35%;
+  left: -50%;
 
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
 }
 
 .purple {
   animation: gradientscale 5s ease-in-out;
-  top: 85%;
+  top: 100%;
   left: 50%;
   background-image: radial-gradient(circle at center, #aa77ff, #00aeff);
 }
@@ -205,7 +252,7 @@ svg {
 #cyan {
   animation: gradientscale 2s ease-in-out;
   top: 134%;
-  left: 135%;
+  left: 150%;
 
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
 }
@@ -227,31 +274,12 @@ svg {
   left: 8%;
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
 }
-/* -Skateboard */
-#skateboard {
+/* -counters */
+#counter {
   z-index: -1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  left: 39%;
-  width: 400px;
-  position: relative;
-  overflow: visible;
-}
-.skatebar {
-  z-index: -1;
-  width: 27vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background: white;
-  height: 50px;
-  margin-bottom: 2px;
-  border-radius: 50px;
-  border: 1px solid cyan;
-  animation: firstlanding 5s ease-in-out;
 }
 .login {
   background: linear-gradient(
@@ -280,8 +308,20 @@ svg {
   background-clip: text;
   text-fill-color: transparent;
 }
+.bodyimg1{
+  background: url("../public/bodyimage1bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .bodyimg2 {
-  background: url("https://media.discordapp.net/attachments/1039174970993016922/1088135386666119288/image.png?width=572&height=557");
+  background: url("../public/bodyimage2bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bodyimg3{
+  background: url("../public/bodyimage3bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 /* Benefits */
 .benefit-container {
@@ -290,9 +330,34 @@ svg {
   background-repeat: no-repeat;
   display: flex;
   height: 90vh;
+  position: absolute;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  
+}
+.square{
+  opacity: 0;
+  transition: 1s all ease;
+}
+.square:nth-child(1).show{
+  opacity: 1;
+  transform: translate(27vw,21vh) scale(1.1);
+}
+.square:nth-child(2).show{
+  opacity: 1;
+  animation: pipe3 2s ease-in-out;
+  transform: translate(26.1vw,44vh) scale(1.1);
+}
+.square:nth-child(3).show{
+  opacity: 1;
+  animation: pipe2 1.5s ease-in-out;
+  transform: translate(25.3vw,21vh) scale(1.1);
+  
+}
+.square:nth-child(4).show{
+  opacity: 1;
+  animation: pipe1 1.5s ease-in-out;
+  transform: translate(24.5vw,44.5vh) scale(1.1);
+
 }
 /* responsiveness */
 @media (max-width: 1000px) {

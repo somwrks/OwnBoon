@@ -20,14 +20,14 @@ export const Balls = () => {
           balls[3].style.left = "200px";
           balls[3].style.top = "150px";
         } else {
-          balls[0].style.left = "1500px";
-          balls[0].style.top = "200px";
-          balls[1].style.left = "1300px";
-          balls[1].style.top = "500px";
-          balls[2].style.left = "500px";
-          balls[2].style.top = "450px";
-          balls[3].style.left = "300px";
-          balls[3].style.top = "100px";
+          balls[0].style.left = "78vw";
+          balls[0].style.top = "19.7vh";
+          balls[1].style.left = "67.7vw";
+          balls[1].style.top = "49.4vh";
+          balls[2].style.left = "26.04vw";
+          balls[2].style.top = "44.5vh";
+          balls[3].style.left = "16vw";
+          balls[3].style.top = "9.9vh";
         }
     }
 
@@ -77,9 +77,7 @@ export const Skateboard = () => {
   // Timed ANimations
   
   return (
-    <div id="skateboard">
-      {/* <div className="skatebar animate-ping"><span className="text-[1.3rem] font-semibold" id="skatebar"></span></div> */}
-      {/* <img src="https://media.discordapp.net/attachments/1082849037847367800/1088156733685375106/fuck-youuuuuuuuuuuuuu-unscreen.gif?width=575&height=323" className="z-no absolute text-9xl" alt="Ownboon Skateboard" /> */}
+    <div id="counter">
     </div>
   );
 };
