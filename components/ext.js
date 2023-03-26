@@ -7,18 +7,16 @@ export const Balls = () => {
     const balls = Array.from(document.getElementsByClassName("ball"));
     let mouseX = container.clientWidth / 2;
     let mouseY = container.clientHeight / 2;
+    const doc = document.getElementsByClassName("square");
 
     function setInitialPositions() {
 
+      console.log(window.innerWidth)
         if (window.screen.width < 768) {
-          balls[0].style.left = "400px";
-          balls[0].style.top = "400px";
-          balls[1].style.left = "150px";
-          balls[1].style.top = "430px";
-          balls[2].style.left = "140px";
-          balls[2].style.top = "250px";
-          balls[3].style.left = "200px";
-          balls[3].style.top = "150px";
+          doc[0].style.transform = `translate(27vw,-4.4vh) scale(1.1)` 
+          doc[1].style.transform = "translate(26.1vw,1.4vh) scale(1.1)" 
+          doc[2].style.transform = "translate(25.2vw,-4.3vh) scale(1.1)" 
+          doc[3].style.transform = "translate(24.6vw,1.4vh) scale(1.1)" 
         } else {
           balls[0].style.left = "78vw";
           balls[0].style.top = "19.7vh";
@@ -56,7 +54,10 @@ export const Balls = () => {
     setInitialPositions();
     animateBalls();
     container.addEventListener("mousemove", handleMouseMove);
-
+    
+    window.onresize = function () {
+      setInitialPositions();
+    }
     return () => {
       container.removeEventListener("mousemove", handleMouseMove);
     };

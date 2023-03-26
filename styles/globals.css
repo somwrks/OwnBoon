@@ -360,15 +360,14 @@ svg {
 
 }
 /* responsiveness */
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .cyan:nth-of-type(3) {
     left: 0;
   }
   .hero-gradient-bg {
     left: 0;
   }
-  .skatebar {
-    width: 150px;
-    height: 30px;
+  .ball{
+    display: none;
   }
 }
