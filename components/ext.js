@@ -13,19 +13,16 @@ export const Balls = () => {
 
       console.log(window.innerWidth)
         if (window.screen.width < 768) {
-          doc[0].style.transform = `translate(27vw,-4.4vh) scale(1.1)` 
-          doc[1].style.transform = "translate(26.1vw,1.4vh) scale(1.1)" 
-          doc[2].style.transform = "translate(25.2vw,-4.3vh) scale(1.1)" 
-          doc[3].style.transform = "translate(24.6vw,1.4vh) scale(1.1)" 
+          
         } else {
-          balls[0].style.left = "78vw";
-          balls[0].style.top = "19.7vh";
-          balls[1].style.left = "67.7vw";
-          balls[1].style.top = "49.4vh";
-          balls[2].style.left = "26.04vw";
-          balls[2].style.top = "44.5vh";
-          balls[3].style.left = "16vw";
-          balls[3].style.top = "9.9vh";
+          balls[0].style.left = "77vw";
+          balls[0].style.top = "15vh";
+          balls[1].style.left = "84vw";
+          balls[1].style.top = "50vh";
+          balls[2].style.left = "20vw";
+          balls[2].style.top = "45vh";
+          balls[3].style.left = "22vw";
+          balls[3].style.top = "15.9vh";
         }
     }
 

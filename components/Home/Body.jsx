@@ -31,7 +31,7 @@ export default function Body() {
       </div>
       <div className="my-auto mx-auto p-5  justify-between flex flex-row">
         <div className="flex flex-col  align-center justify-center">
-          <h className="text-[1.4rem] font-semibold py-3">
+          <h className="text-[2rem] font-poppins font-semibold py-3">
             Lorem ipsum dolor sit amet consectetur
           </h>
           <p>
@@ -52,7 +52,7 @@ export default function Body() {
           <img loading="lazy" src="/bodyimage3.gif" alt="Gif" />
         </div>
         <div className="flex flex-col  align-center justify-center">
-          <h className="text-[1.4rem] font-semibold py-3 ">
+          <h className="text-[2rem] font-poppins font-semibold py-3 ">
             Lorem ipsum dolor sit amet consectetur
           </h>
           <p>

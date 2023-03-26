@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar"
 import Hero from "../components/Home/Hero"
 import Body from "../components/Home/Body"
 import Benefits from "../components/Home/Benefits"
+import Preview from "../components/Preview";
 const Home: NextPage = () => {
 
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar/>
       <div className="mx-auto my-auto">
+        <Preview/>
       <Balls/>
       <Hero/>
       <Skateboard/>
@@ -27,3 +29,5 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
