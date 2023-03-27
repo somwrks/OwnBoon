@@ -39,7 +39,9 @@
 .font-alatsi {
   font-family: alatsi;
 }
-
+.fade{
+  animation: fade 2s ease-in-out;
+}
 .text-cyan {
   color: rgb(0, 162, 255);
 }
