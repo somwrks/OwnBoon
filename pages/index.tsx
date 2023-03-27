@@ -10,6 +10,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
+      <title>OwnBoon</title>
+        <link rel="icon" href="/logo.png" />
         <meta
           name="description"
           content="OwnBoon is a self-improvement and productivity platform that empowers individuals to reach their full potential. Our mission is to make the impossible possible, by providing users with the tools and resources they need to unlock their fears, rise above challenges, and achieve their goals."

@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { useState } from "react";
 
 export default function Preview() {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(null);
   const [success, setSuccess] = useState(false);
   const handlesubmit = async (e) => {
     try {
@@ -17,8 +17,8 @@ export default function Preview() {
         body: JSON.stringify({ email }),
       });
       const data = await res.json();
-      console.log(data.message);
-      setEmail("");
+      console.log("preview" + data.message);
+      setEmail(null);
       setSuccess(true);
     } catch (error) {
       senderror();
@@ -49,12 +49,17 @@ export default function Preview() {
             icon={faCheck}
             className="text-6xl text-green-400 p-2"
           />
-          <h1 className="text-blue-500 text-2xl text-center font-bold py-2">Thankyou for signing up!</h1>
-          <h1 className=" text-2xl text-center font-semibold py-2">We'll Update You Soon</h1>
+          <h1 className="text-blue-500 text-2xl text-center font-bold py-2">
+            Thankyou for signing up!
+          </h1>
+          <h1 className=" text-2xl text-center font-semibold py-2">
+            We'll Update You Soon
+          </h1>
           <FontAwesomeIcon
-              icon={faXmark}
-              className="text-4xl absolute top-[10px] hover:text-[gray] hover:cursor-pointer text-[blue] right-[50px]"
-              onClick={hide}/>
+            icon={faXmark}
+            className="text-4xl absolute top-[10px] hover:text-[gray] hover:cursor-pointer text-[blue] right-[50px]"
+            onClick={hide}
+          />
         </div>
       ) : (
         <div className="container my-24 px-6 mx-auto">
@@ -76,16 +81,16 @@ export default function Preview() {
                         type="email"
                         maxLength="100"
                         name="user_email"
+                        required="true"
                         className="form-control block w-full px-4 py-2 mb-2 md:mb-0 md:mr-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                         placeholder="Enter your email"
                         onChange={(e) => setEmail(e.target.value)}
                       />
                       <button
-                        type="submit"
                         className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         data-mdb-ripple="true"
                         data-mdb-ripple-color="light"
-                        onClick={email ? handlesubmit : senderror}
+                        type="submit"
                       >
                         Signup
                       </button>
@@ -98,7 +103,6 @@ export default function Preview() {
               icon={faXmark}
               className="text-4xl absolute top-[10px] hover:text-[gray] hover:cursor-pointer text-[blue] right-[50px]"
               onClick={hide}
-            
             />
           </section>
         </div>
