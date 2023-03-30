@@ -7,7 +7,6 @@ export const Balls = () => {
     const balls = Array.from(document.getElementsByClassName("ball"));
     let mouseX = container.clientWidth / 2;
     let mouseY = container.clientHeight / 2;
-    const doc = document.getElementsByClassName("square");
 
     function setInitialPositions() {
       console.log(window.innerWidth);

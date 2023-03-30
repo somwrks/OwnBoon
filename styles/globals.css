@@ -71,12 +71,12 @@
 @keyframes gradientscale {
   0% {
     opacity: 0;
-    filter: blur(0px);
+    filter: blur(0rem);
     transform: translate(-50%, -50%) scale(0);
   }
   100% {
     opacity: 1;
-    filter: blur(150px);
+    filter: blur(9rem);
     transform: translate(-50%, -50%) scale(1);
   }
 }
@@ -84,50 +84,6 @@
   0% {
     left: 0;
     top: 0;
-  }
-}
-@keyframes pipe1 {
-  0% {
-    transform: translate(-12vw, -21vh) scale(0);
-  }
-  25% {
-    transform: translate(-12vw, 21vh) scale(1.1);
-  }
-  50% {
-    transform: translate(0vw, 44vh) scale(1.1);
-  }
-  75% {
-    transform: translate(12vw, 21vh) scale(1.1);
-  }
-
-  100% {
-    transform: translate(24.5vw, 44.5vh) scale(1.1);
-  }
-}
-@keyframes pipe2 {
-  0% {
-    transform: translate(1vw, -21vh) scale(0);
-  }
-  33.3% {
-    transform: translate(1vw, 21vh) scale(1.1);
-  }
-  66.6% {
-    transform: translate(13vw, 44vh) scale(1.1);
-  }
-  100% {
-    transform: translate(25.3vw, 21vh) scale(1.1);
-  }
-}
-@keyframes pipe3 {
-  0% {
-    transform: translate(14vw, -21vh) scale(0);
-  }
-  50% {
-    transform: translate(14vw, 21vh) scale(1.1);
-  }
-
-  100% {
-    transform: translate(26.1vw, 44vh) scale(1.1);
   }
 }
 /* HTML */
@@ -268,56 +224,56 @@ svg {
 }
 
 .cyan {
-  animation: gradientscale 2s ease-in-out;
-
+  
   top: 135%;
   left: -50%;
-
+  
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
   background-clip: content-box;
-
+  
+  animation: gradientscale 2s ease-in-out;
 }
 
 .purple {
-  animation: gradientscale 5s ease-in-out;
   top: 100%;
   left: 50%;
   background-image: radial-gradient(circle at center, #aa77ff, #00aeff);
   background-clip: content-box;
+  animation: gradientscale 5s ease-in-out;
 
 }
 
 #cyan {
-  animation: gradientscale 2s ease-in-out;
   top: 134%;
   left: 150%;
-
+  
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
   background-clip: content-box;
+  animation: gradientscale 2s ease-in-out;
 
 }
 #purple {
   top: 134%;
   left: 52%;
-  animation: gradientscale 5s ease-in-out;
   background-image: radial-gradient(circle at center, #aa77ff, #aa77ff);
   background-clip: content-box;
+  animation: gradientscale 5s ease-in-out;
 
 }
 #cyan1 {
   top: 108%;
   left: 93%;
-  animation: gradientscale 2s ease-in-out;
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
   background-clip: content-box;
+  animation: gradientscale 2s ease-in-out;
 
 }
 #cyan2 {
   top: 111%;
-  animation: gradientscale 2s ease-in-out;
   left: 8%;
   background-image: radial-gradient(circle at center, #00f0b5, #00aeff);
   background-clip: content-box;
+  animation: gradientscale 2s ease-in-out;
 
 }
 /* -counters */
