@@ -359,11 +359,20 @@ svg {
 .heading h1 {
   font-weight: 600;
   background: linear-gradient(90deg, #00f0b5 0%, rgba(0, 240, 181, 0.1) 100%),
-    linear-gradient(270deg, #00aeff 0%, rgba(0, 174, 255, 0.1) 100%);
+  linear-gradient(270deg, #00aeff 0%, rgba(0, 174, 255, 0.1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+.heading h2{
+  font-weight: 600;
+background: linear-gradient(90deg, #AA77FF 0%, rgba(170, 119, 255, 0.1) 100%), linear-gradient(270deg, #E90064 0%, rgba(233, 0, 100, 0.1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
 }
 .bodyimg1 {
   background: url("../public/bodyimage1bg.png");
@@ -381,14 +390,51 @@ svg {
   background-size: contain;
 }
 /* Benefits */
-.benefit-container {
-  display: flex;
+#benefit{
+  background: url("../public/benefitbg.png");
+  height: 90vh;
+  width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 90vh;
-  position: absolute;
-  width: 100%;
+}
+.benefit-container {
+  background-size: contain;
+  background-repeat: no-repeat;
   z-index: -1;
+  flex-direction: column;
+}
+.sphere{
+  height: 20vh;
+  width: 10vw;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+}
+.sphere.show{
+  opacity: 1;
+}
+.sphere:nth-child(1).show{
+  animation: fade 1.5s   ease-in-out;
+}
+.sphere:nth-child(2).show{
+  animation: fade 3s ease-in-out;
+}
+.sphere:nth-child(3).show{
+  animation: fade 2s ease-in-out;
+}
+.sphere:nth-child(4).show{
+  animation: fade 4s ease-in-out;
+}
+.spherebg{
+  z-index: -1;
+  height: 14vh;
+  width: 7vw;
+  border-radius: 50%;
+  position: absolute;
 }
 
 /* responsiveness */
