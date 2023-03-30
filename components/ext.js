@@ -72,8 +72,8 @@ export const Skateboard = () => {
   return (
     <div id="counter" className="py-5">
       <div className="skatebar md:w-[27vw] md:h-[5vh] sm:w-[20vw] sm:h-[5vh]">
-        <span className="text-[1.3rem]  font-fontspring py-2 px-5">
-          Join our community now
+        <span className="text-[1.3rem] font-semibold  py-2 px-5">
+          Join our community now!
         </span>
       </div>
       <div className="flex   w-full flex-row mt-[5vh]  items-center space-x-5 justify-center font-semibold">

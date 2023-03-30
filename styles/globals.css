@@ -14,13 +14,13 @@
   font-weight: normal;
   font-style: normal;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @font-face {
   font-family: "fontspring";
   src: url("../public/Fontspring.otf") format("truetype");
-  font-weight: 100;
   font-style: normal;
+  font-weight: 100;
 }
 
 /* Utility */
