@@ -3,14 +3,20 @@ import React, { useEffect } from "react";
 export default function Benefits() {
   useEffect(() => {
     function reveal() {
-      var reveals = document.querySelectorAll(".sphere");
-      for (var i = 0; i < reveals.length; i++) {
+      var sphere = document.querySelectorAll(".sphere");
+      var Ldot = document.querySelectorAll(".benefit-dot-left");
+      var Rdot = document.querySelectorAll(".benefit-dot-right");
+      var txt = document.querySelectorAll(".benefit-txt");
+      for (var i = 0; i < sphere.length; i++) {
         var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
+        var sphereTop = sphere[i].getBoundingClientRect().top;
         var elementVisible = 150;
 
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("show");
+        if (sphereTop < windowHeight - elementVisible) {
+          sphere[i]?.classList.add("show");
+          Ldot[i]?.classList.add("show");
+          Rdot[i]?.classList.add("show");
+          txt[i]?.classList.add("show");
         }
       }
     }
@@ -26,9 +32,36 @@ export default function Benefits() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
       </div>
-      <div className="benefit-container mt-[10vh]  flex items-center space-y-10 space-x-40">
-        <div className="firstrow flex flex-row mr-[10vw] space-x-[10vw]">
-          <div className="sphere ">
+      <div className="benefit-container mt-[10vh] font-poppins flex  md:items-center md:space-y-10 space-y-20 md:space-x-40">
+        <div className="flex md:flex-row flex-col md:mr-[8vw] md:space-x-[7vw]">
+          <div className="flex flex-row  justify-between ">
+            <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
+              <h3 className="text-[green] benefit-txt text-2xl">Lorem, ipsum.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div className="flex flex-col benefit-dot-left">
+              <svg
+                width="42"
+                height="26"
+                viewBox="0 0 42 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  cx="29.1335"
+                  cy="12.5098"
+                  rx="12.5825"
+                  ry="12.5"
+                  fill="#00F0B5"
+                />
+                <path
+                  d="M1.16414 11.8027C0.773615 12.1932 0.773615 12.8263 1.16414 13.2169L7.5281 19.5808C7.91862 19.9714 8.55179 19.9714 8.94231 19.5808C9.33284 19.1903 9.33284 18.5571 8.94231 18.1666L3.28546 12.5098L8.94231 6.85291C9.33284 6.46239 9.33284 5.82922 8.94231 5.4387C8.55179 5.04817 7.91862 5.04817 7.5281 5.4387L1.16414 11.8027ZM26.551 11.5098H1.87125V13.5098H26.551V11.5098Z"
+                  fill="#00F0B5"
+                />
+              </svg>
+            </div>
+          </div>
+          <div className="sphere md:relative absolute right-10">
             <div className="spherebg bg-[#00F0B5] blur-[2rem]"></div>
             <svg
               width="58"
@@ -57,7 +90,8 @@ export default function Benefits() {
               Community
             </h2>
           </div>
-          <div className="sphere">
+
+          <div className="sphere md:mt-0 md:relative left-10 absolute mt-[20vh]">
             <div className="spherebg bg-[#AA77FF] blur-[2rem]"></div>
             <svg
               width="81"
@@ -106,9 +140,65 @@ export default function Benefits() {
               Peer Support
             </h2>
           </div>
+          <div className="flex flex-row md:mt-0 mt-[10vh]  sm:z-100 justify-between ">
+            <div className="flex flex-col benefit-dot-right">
+              <svg
+                width="41"
+                height="26"
+                viewBox="0 0 41 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  cx="12.6316"
+                  cy="12.8291"
+                  rx="12.6315"
+                  ry="12.5"
+                  transform="rotate(-180 12.6316 12.8291)"
+                  fill="#AA77FF"
+                />
+                <path
+                  d="M40.7072 13.5362C41.0977 13.1457 41.0977 12.5125 40.7072 12.122L34.3432 5.75803C33.9527 5.36751 33.3195 5.36751 32.929 5.75803C32.5385 6.14856 32.5385 6.78172 32.929 7.17225L38.5859 12.8291L32.929 18.486C32.5385 18.8765 32.5385 19.5096 32.929 19.9002C33.3195 20.2907 33.9527 20.2907 34.3432 19.9002L40.7072 13.5362ZM15.2241 13.8291L40.0001 13.8291V11.8291L15.2241 11.8291V13.8291Z"
+                  fill="#AA77FF"
+                />
+              </svg>
+            </div>
+            <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
+              <h3 className="text-[#AA77FF] text-2xl benefit-txt">Lorem, ipsum.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
         </div>
-        <div className="secondrow   flex flex-row space-x-[8vw]">
-          <div className="sphere">
+
+        <div className="flex md:flex-row flex-col md:place-items-baseline md:mr-[8vw] md:space-x-[7vw]">
+          <div className="flex flex-row mt-5  sm:z-100 justify-between ">
+            <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
+              <h3 className="text-[#E90064] text-2xl benefit-txt">Lorem, ipsum.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div className="flex flex-col benefit-dot-left">
+              <svg
+                width="42"
+                height="26"
+                viewBox="0 0 42 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  cx="29.2087"
+                  cy="13.1128"
+                  rx="12.6315"
+                  ry="12.5"
+                  fill="#E90064"
+                />
+                <path
+                  d="M1.13316 12.4057C0.742636 12.7962 0.742636 13.4294 1.13316 13.8199L7.49712 20.1839C7.88765 20.5744 8.52081 20.5744 8.91133 20.1839C9.30186 19.7933 9.30186 19.1602 8.91133 18.7696L3.25448 13.1128L8.91133 7.45594C9.30186 7.06541 9.30186 6.43225 8.91133 6.04173C8.52081 5.6512 7.88765 5.6512 7.49712 6.04173L1.13316 12.4057ZM26.6162 12.1128H1.84027V14.1128H26.6162V12.1128Z"
+                  fill="#E90064"
+                />
+              </svg>
+            </div>
+          </div>
+          <div className="sphere z-no md:relative absolute right-10">
             <div className="spherebg bg-[#E90064] blur-[2rem]"></div>
             <svg
               width="57"
@@ -138,7 +228,7 @@ export default function Benefits() {
               Focus Better
             </h2>
           </div>
-          <div className="sphere">
+          <div className="sphere md:mt-0 md:relative left-10 absolute mt-[20vh]">
             <div className="spherebg bg-[#00AEFF] blur-[2rem]"></div>
             <svg
               width="58"
@@ -167,6 +257,34 @@ export default function Benefits() {
             <h2 className="text-white text-xl font-bold font-poppins">
               Explore Yourself
             </h2>
+          </div>
+          <div className="flex flex-row md:mt-0 mt-[10vh] sm:z-100 justify-between ">
+            <div className="flex flex-col benefit-dot-right">
+              <svg
+                width="41"
+                height="26"
+                viewBox="0 0 41 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  cx="12.6316"
+                  cy="12.6182"
+                  rx="12.6315"
+                  ry="12.5"
+                  transform="rotate(-180 12.6316 12.6182)"
+                  fill="#00AEFF"
+                />
+                <path
+                  d="M40.7077 13.3253C41.0982 12.9347 41.0982 12.3016 40.7077 11.9111L34.3437 5.5471C33.9532 5.15657 33.32 5.15657 32.9295 5.5471C32.539 5.93762 32.539 6.57079 32.9295 6.96131L38.5863 12.6182L32.9295 18.275C32.539 18.6655 32.539 19.2987 32.9295 19.6892C33.32 20.0798 33.9532 20.0798 34.3437 19.6892L40.7077 13.3253ZM15.2246 13.6182L40.0006 13.6182V11.6182L15.2246 11.6182V13.6182Z"
+                  fill="#00AEFF"
+                />
+              </svg>
+            </div>
+            <div className="flex flex-col   px-5 h-[5vh]  md:w-[20vw]">
+              <h3 className="text-[#00AEFF] text-2xl benefit-txt">Lorem, ipsum.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
           </div>
         </div>
       </div>

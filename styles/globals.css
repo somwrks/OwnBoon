@@ -71,6 +71,12 @@
 .bd{
   animation: bd 2s ease-in-out ;
 }
+.lr{
+  animation: left-to-right 2s ease-in-out;
+}
+.rl{
+  animation: right-to-left 2s ease-in-out;
+}
 /* Animations */
 @keyframes fade {
   0% {
@@ -78,6 +84,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes scale {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
   }
 }
 @keyframes login-hover {
@@ -121,6 +135,22 @@
   0% {
     left: 0;
     top: 0;
+  }
+}
+@keyframes right-to-left {
+  0%{
+    transform: translateX(50px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+@keyframes left-to-right {
+  0%{
+    transform: translateX(-50px);
+  }
+  100%{
+    transform: translateX(0px);
   }
 }
 /* HTML */
@@ -184,7 +214,6 @@ svg {
 #animation-container {
   position: absolute;
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
@@ -430,13 +459,12 @@ text-fill-color: transparent;
   background: url("../public/benefitbg.png");
   height: 90vh;
   width: 100%;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 .benefit-container {
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: -1;
+  height: 90vh;
+  width: 100%;
   flex-direction: column;
 }
 .sphere{
@@ -472,7 +500,28 @@ text-fill-color: transparent;
   border-radius: 50%;
   position: absolute;
 }
-
+.benefit-txt{
+  opacity: 0;
+}
+.benefit-txt.show{
+  opacity: 1;
+  animation: 1s scale ease-in-out, 2s fade ;
+}
+.benefit-dot-left{
+  opacity: 0;
+  
+}
+.benefit-dot-left.show{
+  opacity: 1;
+  animation: 1s scale ease-in-out, 1s right-to-left ;
+}
+.benefit-dot-right{
+  opacity: 0;
+}
+.benefit-dot-right.show{
+  opacity: 1;
+  animation: 1s scale ease-in-out, 1s left-to-right ;
+}
 /* responsiveness */
 @media (max-width: 768px) {
   .circle {
@@ -495,5 +544,13 @@ text-fill-color: transparent;
   }
   .login{
     width: 20vw;
+  }
+}
+@media (max-width: 1280px) {
+  .benefit-dot-right,.benefit-dot-left{
+    padding: 2rem;
+  }
+  #benefit{
+    background: none;
   }
 }

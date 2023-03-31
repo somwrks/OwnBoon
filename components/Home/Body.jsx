@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
 
 export default function Body() {
   return (
     <div className="mt-[10vh] bg-white text-[#2E2E2E] flex flex-col font-poppins mx-auto my-auto items-center align-center p-5 justify-center">
       <div className="heading">
         <h1 className="text-[3rem]">Why OwnBoon?</h1>
-        <h3 className="text-[1.5rem] py-3">
+        <h3 className="text-[1.5rem] py-3 ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
       </div>

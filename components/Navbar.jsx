@@ -9,7 +9,7 @@ const preview =()=>{
 
   return (
     <nav
-      className={`px-5 sm:px-4 text-[0.9rem] py-2.5 sticky w-full bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-inter `}
+      className={`px-5 sm:px-4 text-[0.9rem] py-2.5 sticky w-full z-100 bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-inter `}
     >
       <div className="container bg-white flex flex-wrap items-center justify-between mx-auto">
         <a

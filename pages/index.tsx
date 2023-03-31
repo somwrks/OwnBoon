@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Home/Hero";
 import Body from "../components/Home/Body";
 import Benefits from "../components/Home/Benefits";
+import Reviews from "../components/Home/Reviews";
 import Preview from "../components/Preview";
 const Home: NextPage = () => {
   return (
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
         <Skateboard />
         <Body />
         <Benefits />
+        <Reviews/>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     </>
