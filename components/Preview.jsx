@@ -39,8 +39,8 @@ export default function Preview() {
   return (
     <div
       id="preview"
-      className="backdrop-blur-sm
-     w-full pt-10 shadow bg-[#FFFAFA] z-100 fixed justify-center font-bold flex flex-col   "
+      className="backdrop-blur-md rounded-full
+     w-full pt-10  bg-transparent z-100 fixed justify-center font-bold flex flex-col   "
     >
       <h1 className="text-5xl text-center">Coming Soon!</h1>
       {success ? (

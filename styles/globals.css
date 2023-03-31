@@ -51,6 +51,26 @@
 .z-no {
   z-index: -1;
 }
+#ripple{
+  overflow: hidden;
+}
+.ripple-hover{
+  position: absolute;
+  background:  linear-gradient(
+    180deg,
+    #ab77ff2d -61.5%,
+    rgba(170, 119, 255, 0) 100%
+  ),
+  linear-gradient(269.62deg, #00f0b42d 0.11%, rgba(0, 240, 181, 0) 98.77%),
+  #00aeff2d;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: login-hover 0.5s linear;
+}
+.bd{
+  animation: bd 2s ease-in-out ;
+}
 /* Animations */
 @keyframes fade {
   0% {
@@ -60,12 +80,29 @@
     opacity: 1;
   }
 }
+@keyframes login-hover {
+  0%{
+    width: 0px;
+    height: 0px;
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    width: 1000px;
+    height: 500px;
+  }
+}
 @keyframes bt {
   0% {
     transform: translateY(100px);
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@keyframes bd {
+  to {
+    transform: translateY(100px);
   }
 }
 @keyframes gradientscale {
@@ -278,7 +315,6 @@ svg {
 }
 /* -counters */
 .skatebar {
-  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,7 +324,6 @@ svg {
   border: 1px solid cyan;
 }
 #counter {
-  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -350,6 +385,7 @@ svg {
   font-size: 1rem;
   height: 5.81vh;
 }
+
 
 /* Body */
 .heading {
@@ -456,5 +492,8 @@ text-fill-color: transparent;
     height: 3vh;
     width: 6vw;
     padding: 0.3rem;
+  }
+  .login{
+    width: 20vw;
   }
 }

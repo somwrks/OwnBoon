@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React, { useState } from "react";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
@@ -7,6 +6,7 @@ export default function Navbar() {
 const preview =()=>{
   document.getElementById("preview").style.display="block"
 }
+
   return (
     <nav
       className={`px-5 sm:px-4 text-[0.9rem] py-2.5 sticky w-full bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-inter `}
@@ -28,7 +28,7 @@ const preview =()=>{
         <div className="flex md:order-2">
           <button
             type="button"
-            className="  text-white focus:ring-4 focus:outline-none  login  w-[8.6vw] h-[3.7vh] text-center mr-3 md:mr-0 rounded-full" onClick={preview}
+            className="  text-white   sm:text-[1rem] xs:text[0.5rem] login  w-[8.6vw] h-[3.7vh] text-center mr-3 md:mr-0 rounded-full" onClick={preview}
           >
             Login
           </button>

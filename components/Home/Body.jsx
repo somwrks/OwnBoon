@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 export default function Body() {
-
   return (
     <div className="mt-[10vh] bg-white text-[#2E2E2E] flex flex-col font-poppins mx-auto my-auto items-center align-center p-5 justify-center">
       <div className="heading">
@@ -10,17 +9,16 @@ export default function Body() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
       </div>
-      
+
       <div className="my-auto mx-auto p-5  justify-between flex flex-row">
         <div className="bodyimg1">
-
           <img loading="lazy" src="/bodyimage1.gif" alt="Gif" />
         </div>
-        <div className="flex flex-col  align-center justify-center">
-          <h className="text-[2rem] font-poppins font-semibold py-3">
+        <div className="flex flex-col ml-2  align-center justify-center">
+          <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             Lorem ipsum dolor sit amet consectetur
-          </h>
-          <p>
+          </h4>
+          <p className="text-[0.8rem] md:text-[1.2rem] ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
             accusamus quo officiis nam. <br /> Accusantium, reprehenderit harum
             et incidunt facilis, corporis provident velit modi numquam magni{" "}
@@ -30,11 +28,11 @@ export default function Body() {
         </div>
       </div>
       <div className="my-auto mx-auto p-5  justify-between flex flex-row">
-        <div className="flex flex-col  align-center justify-center">
-          <h className="text-[2rem] font-poppins font-semibold py-3">
+        <div className="flex flex-col mr-2  align-center justify-center">
+          <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             Lorem ipsum dolor sit amet consectetur
-          </h>
-          <p>
+          </h4>
+          <p className="text-[0.8rem] md:text-[1.2rem] ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
             accusamus quo officiis nam. <br /> Accusantium, reprehenderit harum
             et incidunt facilis, corporis provident velit modi numquam magni{" "}
@@ -48,14 +46,13 @@ export default function Body() {
       </div>
       <div className="my-auto mx-auto p-5  justify-between flex flex-row">
         <div className="bodyimg3">
-
           <img loading="lazy" src="/bodyimage3.gif" alt="Gif" />
         </div>
-        <div className="flex flex-col  align-center justify-center">
-          <h className="text-[2rem] font-poppins font-semibold py-3 ">
+        <div className="flex flex-col ml-2  align-center justify-center">
+          <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             Lorem ipsum dolor sit amet consectetur
-          </h>
-          <p>
+          </h4>
+          <p className="text-[0.8rem] md:text-[1.2rem] ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
             accusamus quo officiis nam. <br /> Accusantium, reprehenderit harum
             et incidunt facilis, corporis provident velit modi numquam magni{" "}

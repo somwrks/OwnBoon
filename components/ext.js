@@ -50,9 +50,11 @@ export const Balls = () => {
     window.onresize = function () {
       setInitialPositions();
     };
+    
     return () => {
       container.removeEventListener("mousemove", handleMouseMove);
     };
+    
   }, []);
 
   return (
@@ -66,14 +68,31 @@ export const Balls = () => {
 };
 
 export const Skateboard = () => {
-  // Timed ANimations
+  useEffect(() => {
+    const buttons = document.getElementById("ripple")
+    buttons.addEventListener("click",function(e){
+      let x = e.clientX - e.target.offsetLeft;
+      let y = e.clientY - e.target.offsetTop;
+
+      let ripples = document.createElement("span");
+      ripples.classList.add("ripple-hover")
+      ripples.style.left = x+"px";
+      ripples.style.top = y+"px";
+      this.appendChild(ripples);
+      document.getElementById("ripple")
+      // setTimeout(() => {
+      //   ripples.remove()
+      // }, 100);
+  })
+  }, [])
+  
 
   return (
     <div id="counter" className="py-5">
-      <div className="skatebar md:w-[27vw] md:h-[5vh] sm:w-[20vw] sm:h-[5vh]">
-        <span className="text-[1.3rem] font-semibold  py-2 px-5">
+      <div  className=" md:w-[27vw] md:h-[5vh] sm:w-[20vw] sm:h-[5vh]">
+        <button id="ripple"  className="text-[1.3rem]  md:w-[27vw] md:h-[5vh] sm:w-[20vw] sm:h-[5vh] hover:cursor-pointer skatebar bg-white font-semibold absolute py-2 px-5">
           Join our community now!
-        </span>
+        </button>
       </div>
       <div className="flex   w-full flex-row mt-[5vh]  items-center space-x-5 justify-center font-semibold">
         <div className="countsquare z-100 z-no h-[10vh] w-[9vw]">
@@ -84,7 +103,7 @@ export const Skateboard = () => {
           <h6 className="text-[1rem] font-200 ">Lives Improved</h6>
           <img
             src="/square1.png"
-            className="absolute p-2 left-0 top-0 h-[4vh] w-[2vw]"
+            className="absolute p-2 left-0 lg:w-[2.5vw] lg:h-[3.5vh] top-0 h-[4vh] xl:h-[4vh] xl:w-[2vw] w-[2vw]"
             alt="I"
           />
         </div>
@@ -96,7 +115,7 @@ export const Skateboard = () => {
           <h6 className="text-[1rem] font-200 ">Active Influencers</h6>
           <img
             src="/square2.png"
-            className="absolute p-2 left-0 top-0 h-[4vh] w-[2vw]"
+            className="absolute p-2 left-0 lg:w-[2.5vw] lg:h-[3.5vh] top-0 h-[4vh] xl:h-[4vh] xl:w-[2vw] w-[2vw]"
             alt="I"
           />
         </div>
@@ -108,7 +127,7 @@ export const Skateboard = () => {
           <h6 className="text-[1rem] font-200 ">Daily Blogs</h6>
           <img
             src="/square3.png"
-            className="absolute p-2 left-0 top-0 h-[4vh] w-[2vw]"
+            className="absolute p-2 left-0 lg:w-[2.5vw] lg:h-[3.5vh] top-0 h-[4vh] xl:h-[4vh] xl:w-[2vw] w-[2vw]"
             alt="I"
           />
         </div>
