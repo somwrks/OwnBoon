@@ -13,10 +13,17 @@ export default function Benefits() {
         var elementVisible = 150;
 
         if (sphereTop < windowHeight - elementVisible) {
+          document.getElementById("benefitlink").classList.add("activelink");
+          document.getElementById("homelink").classList.remove("activelink");
           sphere[i]?.classList.add("show");
           Ldot[i]?.classList.add("show");
           Rdot[i]?.classList.add("show");
           txt[i]?.classList.add("show");
+        }
+        else{
+          document.getElementById("homelink").classList.add("activelink");
+          document.getElementById("benefitlink").classList.remove("activelink");
+
         }
       }
     }

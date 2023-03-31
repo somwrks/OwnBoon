@@ -65,7 +65,7 @@ const preview =()=>{
                 href="/"
                 className={`Link  block py-2 pl-3 pr-4 md:p-0 ${
                   router.pathname == "/" ? "activelink font-bold" : ""
-                }`}
+                }`} id="homelink"
                 aria-current="page"
               >
                 Home
@@ -164,7 +164,7 @@ const preview =()=>{
               </div>
             </li>
             <li>
-              <Link href="#benefit" className=" block py-2 Link pl-3 pr-4 md:p-0 ">
+              <Link href="#benefit" id="benefitlink" className=" block py-2 Link pl-3 pr-4 md:p-0 ">
                 Benefit
               </Link>
             </li>
