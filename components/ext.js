@@ -80,16 +80,13 @@ export const Skateboard = () => {
       ripples.style.top = y+"px";
       this.appendChild(ripples);
       document.getElementById("ripple")
-      // setTimeout(() => {
-      //   ripples.remove()
-      // }, 100);
   })
   }, [])
   
 
   return (
     <div id="counter" className="py-5">
-      <div  className=" md:w-[27vw] md:h-[5vh] sm:w-[20vw] sm:h-[5vh]">
+      <div  className=" h-[8vh] w-[3vw] flex flex-col justify-center items-center">
         <button id="ripple"  className="text-[1.3rem]  md:w-[27vw] md:h-[5vh] sm:w-[20vw] sm:h-[5vh] hover:cursor-pointer skatebar bg-white font-semibold absolute py-2 px-5">
           Join our community now!
         </button>
