@@ -3,6 +3,8 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import VanillaTilt from 'vanilla-tilt';
+
 export default function Reviews() {
   const [pc, setPc] = useState(true);
   function setInitialPositions() {
@@ -14,7 +16,7 @@ export default function Reviews() {
   }
 
   useEffect(() => {
-    VanillaTilt.init(document.querySelector(".review-card"),{
+    VanillaTilt.init(document.querySelectorAll(".review-card"),{
       max:25, speed:400
     })
     setInitialPositions();
