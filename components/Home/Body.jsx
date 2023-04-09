@@ -2,19 +2,21 @@ import { useEffect, useState } from "react";
 
 export default function Body() {
   const [pc, setPc] = useState(false);
-  useEffect(() => {
-    function setInitialPositions() {
-      console.log(window.innerWidth);
-      if (window.innerWidth < 768) {
-        setPc(false);
-      } else {
-        setPc(true);
-      }
+  function setInitialPositions() {
+    if (window.innerWidth < 768) {
+      setPc(false);
+    } else {
+      setPc(true);
     }
-    window.onresize = function () {
-      setInitialPositions();
-    };
+  }
+
+  useEffect(() => {
     setInitialPositions();
+    window.addEventListener("resize", setInitialPositions);
+
+    return () => {
+      window.removeEventListener("resize", setInitialPositions);
+    };
   }, []);
 
   return (

@@ -4,20 +4,22 @@ import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 export default function Reviews() {
-  const [pc, setPc] = useState(false);
-  useEffect(() => {
-    function setInitialPositions() {
-      console.log(window.innerWidth);
-      if (window.innerWidth < 768) {
-        setPc(false);
-      } else {
-        setPc(true);
-      }
+  const [pc, setPc] = useState(true);
+  function setInitialPositions() {
+    if (window.innerWidth < 768) {
+      setPc(false);
+    } else {
+      setPc(true);
     }
-    window.onresize = function () {
-      setInitialPositions();
-    };
+  }
+
+  useEffect(() => {
     setInitialPositions();
+    window.addEventListener("resize", setInitialPositions);
+
+    return () => {
+      window.removeEventListener("resize", setInitialPositions);
+    };
   }, []);
   return (
     <div className="my-[10vh] font-poppins flex flex-col">
@@ -25,7 +27,7 @@ export default function Reviews() {
         <div className="review-heading flex flex-col">
           <h1 className="text-[3rem] mb-5">Check out Recent Reviews</h1>
         </div>
-        {pc ? (
+        {pc===true ? (
           <>
             <div className="flex flex-row justify-center flex-wrap mb-5 md:space-x-12">
               <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
@@ -243,7 +245,7 @@ export default function Reviews() {
             </div>
           </>
         ) : (
-          <Carousel width={450} showThumbs={false} centerMode={true} autoPlay={true} infiniteLoop={true} interval={5000}>
+          <Carousel width={350} useKeyboardArrows={true} swipeable={true} showThumbs={false}  autoPlay={true} infiniteLoop={true} >
               <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">

@@ -9,19 +9,21 @@ import { useEffect, useState } from "react";
 
 export default function Footer() {
   const [pc, setPc] = useState(false);
-  useEffect(() => {
-    function setInitialPositions() {
-      console.log(window.innerWidth);
-      if (window.innerWidth < 768) {
-        setPc(false);
-      } else {
-        setPc(true);
-      }
+  function setInitialPositions() {
+    if (window.innerWidth < 768) {
+      setPc(false);
+    } else {
+      setPc(true);
     }
-    window.onresize = function () {
-      setInitialPositions();
-    };
+  }
+
+  useEffect(() => {
     setInitialPositions();
+    window.addEventListener("resize", setInitialPositions);
+
+    return () => {
+      window.removeEventListener("resize", setInitialPositions);
+    };
   }, []);
   return (
     <div>
@@ -71,7 +73,7 @@ export default function Footer() {
             </div>
           : <div class="mb-6 md:mb-0 justify-between flex flex-row">
               
-              <div className="flex flex-col pt-[1vh]  text-[18px]">
+              <div className="flex flex-col pt-[1vh]  text-[1.1rem]">
               <a href="https://flowbite.com/" class="flex items-center">
                 <img
                   src="https://flowbite.com/docs/images/logo.svg"
@@ -82,7 +84,7 @@ export default function Footer() {
                   Own<span className="text-cyan">Boon</span>
                 </span>
               </a>
-                <h1 className="font-semibold mt-2">
+                <h1 className="font-semibold mt-2 ">
                   Ignite your <span className=" tracking-[3px]">GROWTH</span>
                 </h1>
                   <h1 className="font-semibold">
@@ -91,7 +93,7 @@ export default function Footer() {
                   </h1>
                   
                 </div>
-                <div className="flex flex-row flex-wrap text-3xl space-x-4 mt-5">
+                <div className="flex flex-row flex-wrap box-content	p-4 text-3xl space-x-2 mt-5">
                   <a href="http://">
                     <FontAwesomeIcon icon={faLinkedin} />
                   </a>
