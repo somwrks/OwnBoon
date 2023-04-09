@@ -27,17 +27,17 @@ export default function Footer() {
   }, []);
   return (
     <div>
-      <footer class="bg-white mt-5 border-t-2  dark:bg-gray-900">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div class="md:flex md:justify-between">
+      <footer className="bg-white mt-5 border-t-2  dark:bg-gray-900">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div className="md:flex md:justify-between">
               
           {pc ===true? 
           
-            <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
+            <div className="mb-6 md:mb-0">
+            <a href="https://flowbite.com/" className="flex items-center">
                 <img
                   src="https://flowbite.com/docs/images/logo.svg"
-                  class="h-8 mr-3"
+                  className="h-8 mr-3"
                   alt="FlowBite Logo"
                 />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap ">
@@ -71,13 +71,13 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-          : <div class="mb-6 md:mb-0 justify-between flex flex-row">
+          : <div className="mb-6 md:mb-0 justify-between flex flex-row">
               
               <div className="flex flex-col pt-[1vh]  text-[1.1rem]">
-              <a href="https://flowbite.com/" class="flex items-center">
+              <a href="https://flowbite.com/" className="flex items-center">
                 <img
                   src="https://flowbite.com/docs/images/logo.svg"
-                  class="h-8 mr-3"
+                  className="h-8 mr-3"
                   alt="FlowBite Logo"
                 />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap ">
@@ -110,16 +110,16 @@ export default function Footer() {
               </div>
           }
             
-            <div class="grid grid-cols-2 gap-8 font-poppins sm:gap-6 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8 font-poppins sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 class="mb-6 text-[1rem] font-bold text-gray-900  ">
+                <h2 className="mb-6 text-[1rem] font-bold text-gray-900  ">
                   Company
                 </h2>
-                <ul class="text-gray-600 text-[0.9rem] dark:text-gray-400 font-medium">
-                  <li class="mb-4">
+                <ul className="text-gray-600 text-[0.9rem] dark:text-gray-400 font-medium">
+                  <li className="mb-4">
                     <a
                       href="https://github.com/themesberg/flowbite"
-                      class="hover:underline "
+                      className="hover:underline "
                     >
                       About Us
                     </a>
@@ -127,7 +127,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <a
                       href="https://discord.gg/4eeurUVvTy"
-                      class="hover:underline"
+                      className="hover:underline"
                     >
                       Terms of Use
                     </a>
@@ -135,7 +135,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <a
                       href="https://discord.gg/4eeurUVvTy"
-                      class="hover:underline"
+                      className="hover:underline"
                     >
                       Privacy
                     </a>
@@ -143,7 +143,7 @@ export default function Footer() {
                   <li className="mb-4">
                     <a
                       href="https://discord.gg/4eeurUVvTy"
-                      class="hover:underline"
+                      className="hover:underline"
                     >
                       Give feedback
                     </a>
@@ -151,17 +151,17 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h2 class="mb-6 text-[1rem] font-bold text-gray-900">
+                <h2 className="mb-6 text-[1rem] font-bold text-gray-900">
                   Contact Us
                 </h2>
-                <ul class="text-gray-600 text-[0.9rem] font-medium">
-                  <li class="mb-4">
-                    <a href="#" class="hover:underline">
+                <ul className="text-gray-600 text-[0.9rem] font-medium">
+                  <li className="mb-4">
+                    <a href="#" className="hover:underline">
                       Join our community
                     </a>
                   </li>
-                  <li class="mb-4">
-                    <a href="#" class="hover:underline">
+                  <li className="mb-4">
+                    <a href="#" className="hover:underline">
                       Email Us
                     </a>
                   </li>

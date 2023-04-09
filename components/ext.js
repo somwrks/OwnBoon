@@ -91,7 +91,7 @@ export const Skateboard = () => {
           Join our community now!
         </button>
       </div>
-      <div className="flex   w-full flex-row mt-[5vh]  items-center space-x-5 justify-center font-semibold">
+      <div className="flex flex-wrap  w-full flex-row mt-[5vh]  items-center space-x-5 justify-center font-semibold">
         <div className="countsquare z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
             <CountUpAnimation duration={1500}>150</CountUpAnimation>
