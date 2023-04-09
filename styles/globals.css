@@ -477,6 +477,7 @@ text-fill-color: transparent;
   justify-content: center;
   align-items: center;
   z-index: 1;
+  padding: 10px;
   opacity: 0;
 }
 .sphere.show {
@@ -528,6 +529,15 @@ text-fill-color: transparent;
   border-radius: 19px;
   --webkit-backdrop-filter: blur(25px);
 }
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 /* responsiveness */
 @media (max-width: 768px) {
   .circle {
@@ -553,9 +563,13 @@ text-fill-color: transparent;
   }
 }
 @media (max-width: 1280px) {
-  .benefit-dot-right,
   .benefit-dot-left {
-    padding: 2rem;
+      margin-right: 100px;
+
+  }
+  .benefit-dot-right{
+  margin-left: 100px;
+
   }
   #benefit {
     background: none;

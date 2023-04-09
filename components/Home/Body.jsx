@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
 export default function Body() {
-  const [pc, setPc] = useState(false)
+  const [pc, setPc] = useState(false);
   useEffect(() => {
     function setInitialPositions() {
       console.log(window.innerWidth);
       if (window.innerWidth < 768) {
-        setPc(false)
+        setPc(false);
       } else {
-        setPc(true)
+        setPc(true);
       }
     }
     window.onresize = function () {
@@ -30,7 +30,7 @@ export default function Body() {
         <div className="bodyimg1">
           <img loading="lazy" src="/bodyimage1.gif" alt="Gif" />
         </div>
-        <div className="flex flex-col ml-2 text-center md:text-left align-center justify-center">
+        <div className="flex flex-col ml-2 items-center text-center md:text-left align-center justify-center">
           <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             Lorem ipsum dolor sit amet consectetur
           </h4>
@@ -64,8 +64,6 @@ export default function Body() {
           </>
         ) : (
           <>
-
-            
             <div className="bodyimg2">
               <img loading="lazy" src="/bodyimage2.gif" alt="Gif" />
             </div>
