@@ -528,6 +528,7 @@ text-fill-color: transparent;
   background: rgba(255, 255, 255, 0.01);
   border-radius: 19px;
   --webkit-backdrop-filter: blur(25px);
+  transform-style: preserve-3d;
 }
 
 canvas {

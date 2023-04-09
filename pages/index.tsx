@@ -39,7 +39,7 @@ const Home: NextPage = () => {
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
       <script src="leader-line.min.js"></script>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt..min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossOrigin="anonymous" referrerPolicy="no-referrer"></script>
     </>
   );
 };

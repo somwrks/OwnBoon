@@ -14,6 +14,9 @@ export default function Reviews() {
   }
 
   useEffect(() => {
+    VanillaTilt.init(document.querySelector(".review-card"),{
+      max:25, speed:400
+    })
     setInitialPositions();
     window.addEventListener("resize", setInitialPositions);
 

@@ -26,7 +26,8 @@
     "react-dom": "18.2.0",
     "react-leader-line": "^1.0.5",
     "react-responsive-carousel": "^3.2.23",
-    "react-toastify": "^9.1.2"
+    "react-toastify": "^9.1.2",
+    "vanilla-tilt": "^1.8.0"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
