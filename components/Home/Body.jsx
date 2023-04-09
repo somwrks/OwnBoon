@@ -1,4 +1,3 @@
-
 export default function Body() {
   return (
     <div className="mt-[10vh] bg-white text-[#2E2E2E] flex flex-col font-poppins mx-auto my-auto items-center align-center p-5 justify-center">

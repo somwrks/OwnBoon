@@ -19,11 +19,9 @@ export default function Benefits() {
           Ldot[i]?.classList.add("show");
           Rdot[i]?.classList.add("show");
           txt[i]?.classList.add("show");
-        }
-        else{
+        } else {
           document.getElementById("homelink").classList.add("activelink");
           document.getElementById("benefitlink").classList.remove("activelink");
-
         }
       }
     }
@@ -34,7 +32,7 @@ export default function Benefits() {
   return (
     <section id="benefit">
       <div className="heading justify-center align-center ">
-        <h2 className="text-[3rem]">Benefits</h2>
+        <h2 className="text-[3rem] benefit-heading">Benefits</h2>
         <h3 className="text-[1.5rem] py-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
@@ -43,7 +41,9 @@ export default function Benefits() {
         <div className="flex md:flex-row flex-col md:mr-[8vw] md:space-x-[7vw]">
           <div className="flex flex-row  justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
-              <h3 className="text-[green] benefit-txt text-2xl">Lorem, ipsum.</h3>
+              <h3 className="text-[green] benefit-txt text-2xl">
+                Lorem, ipsum.
+              </h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div className="flex flex-col benefit-dot-left">
@@ -171,7 +171,9 @@ export default function Benefits() {
               </svg>
             </div>
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
-              <h3 className="text-[#AA77FF] text-2xl benefit-txt">Lorem, ipsum.</h3>
+              <h3 className="text-[#AA77FF] text-2xl benefit-txt">
+                Lorem, ipsum.
+              </h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
@@ -180,7 +182,9 @@ export default function Benefits() {
         <div className="flex md:flex-row flex-col md:place-items-baseline md:mr-[8vw] md:space-x-[7vw]">
           <div className="flex flex-row mt-5  sm:z-100 justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
-              <h3 className="text-[#E90064] text-2xl benefit-txt">Lorem, ipsum.</h3>
+              <h3 className="text-[#E90064] text-2xl benefit-txt">
+                Lorem, ipsum.
+              </h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div className="flex flex-col benefit-dot-left">
@@ -289,13 +293,14 @@ export default function Benefits() {
               </svg>
             </div>
             <div className="flex flex-col   px-5 h-[5vh]  md:w-[20vw]">
-              <h3 className="text-[#00AEFF] text-2xl benefit-txt">Lorem, ipsum.</h3>
+              <h3 className="text-[#00AEFF] text-2xl benefit-txt">
+                Lorem, ipsum.
+              </h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
         </div>
       </div>
-      <div></div>
     </section>
   );
 }

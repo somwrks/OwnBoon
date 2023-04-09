@@ -7,11 +7,12 @@ import Body from "../components/Home/Body";
 import Benefits from "../components/Home/Benefits";
 import Reviews from "../components/Home/Reviews";
 import Preview from "../components/Preview";
+import Footer from "../components/Footer";
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-      <title>OwnBoon</title>
+        <title>OwnBoon</title>
         <link rel="icon" href="/logo.png" />
         <meta
           name="description"
@@ -33,7 +34,8 @@ const Home: NextPage = () => {
         <Skateboard />
         <Body />
         <Benefits />
-        <Reviews/>
+        <Reviews />
+        <Footer/>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     </>

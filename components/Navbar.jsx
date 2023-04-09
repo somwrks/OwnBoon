@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 
 export default function Navbar() {
   const router = useRouter();
-const preview =()=>{
-  document.getElementById("preview").style.display="block"
-}
+  const preview = () => {
+    document.getElementById("preview").style.display = "block";
+  };
 
   return (
     <nav
@@ -28,7 +28,8 @@ const preview =()=>{
         <div className="flex md:order-2">
           <button
             type="button"
-            className="  text-white   sm:text-[1rem] xs:text[0.5rem] login  w-[8.6vw] h-[3.7vh] text-center mr-3 md:mr-0 rounded-full" onClick={preview}
+            className="  text-white   sm:text-[1rem] xs:text[0.5rem] login  w-[8.6vw] h-[3.7vh] text-center mr-3 md:mr-0 rounded-full"
+            onClick={preview}
           >
             Login
           </button>
@@ -65,7 +66,8 @@ const preview =()=>{
                 href="/"
                 className={`Link  block py-2 pl-3 pr-4 md:p-0 ${
                   router.pathname == "/" ? "activelink font-bold" : ""
-                }`} id="homelink"
+                }`}
+                id="homelink"
                 aria-current="page"
               >
                 Home
@@ -164,12 +166,19 @@ const preview =()=>{
               </div>
             </li>
             <li>
-              <Link href="#benefit" id="benefitlink" className=" block py-2 Link pl-3 pr-4 md:p-0 ">
+              <Link
+                href="#benefit"
+                id="benefitlink"
+                className=" block py-2 Link pl-3 pr-4 md:p-0 "
+              >
                 Benefit
               </Link>
             </li>
             <li>
-              <Link href="#about" className="Link  block py-2 pl-3 pr-4 md:p-0 ">
+              <Link
+                href="#about"
+                className="Link  block py-2 pl-3 pr-4 md:p-0 "
+              >
                 About Us
               </Link>
             </li>

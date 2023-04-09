@@ -87,12 +87,12 @@ export const Skateboard = () => {
   return (
     <div id="counter" className="py-5">
       <div  className=" h-[8vh] w-[3vw] flex flex-col justify-center items-center">
-        <button id="ripple"  className="text-[1.3rem]  md:w-[27vw] md:h-[5vh] sm:w-[20vw] sm:h-[5vh] hover:cursor-pointer skatebar bg-white font-semibold absolute py-2 px-5">
+        <button id="ripple"  className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[27vw] md:h-[5vh] sm:w-[20vw] sm:h-[5vh] hover:cursor-pointer skatebar bg-white font-semibold absolute py-2 px-5">
           Join our community now!
         </button>
       </div>
       <div className="flex   w-full flex-row mt-[5vh]  items-center space-x-5 justify-center font-semibold">
-        <div className="countsquare z-100 z-no h-[10vh] w-[9vw]">
+        <div className="countsquare z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
             <CountUpAnimation duration={1500}>150</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
@@ -100,11 +100,11 @@ export const Skateboard = () => {
           <h6 className="text-[1rem] font-200 ">Lives Improved</h6>
           <img
             src="/square1.png"
-            className="absolute p-2 left-0 lg:w-[2.5vw] lg:h-[3.5vh] top-0 h-[4vh] xl:h-[4vh] xl:w-[2vw] w-[2vw]"
+            className="absolute p-2 left-0 top-0 h-[40px]  w-[40px]"
             alt="I"
           />
         </div>
-        <div className="countsquare z-100 z-no h-[10vh] w-[9vw]">
+        <div className="countsquare z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
             <CountUpAnimation duration={1500}>100</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
@@ -112,11 +112,11 @@ export const Skateboard = () => {
           <h6 className="text-[1rem] font-200 ">Active Influencers</h6>
           <img
             src="/square2.png"
-            className="absolute p-2 left-0 lg:w-[2.5vw] lg:h-[3.5vh] top-0 h-[4vh] xl:h-[4vh] xl:w-[2vw] w-[2vw]"
+            className="absolute p-2 left-0 top-0 h-[40px]  w-[40px]"
             alt="I"
           />
         </div>
-        <div className="countsquare z-100 z-no h-[10vh] w-[9vw]">
+        <div className="countsquare z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
             <CountUpAnimation duration={1500}>50</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
@@ -124,7 +124,7 @@ export const Skateboard = () => {
           <h6 className="text-[1rem] font-200 ">Daily Blogs</h6>
           <img
             src="/square3.png"
-            className="absolute p-2 left-0 lg:w-[2.5vw] lg:h-[3.5vh] top-0 h-[4vh] xl:h-[4vh] xl:w-[2vw] w-[2vw]"
+            className="absolute p-2 left-0 top-0 h-[40px]  w-[40px]"
             alt="I"
           />
         </div>
