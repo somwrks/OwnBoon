@@ -37,7 +37,7 @@ export default function Benefits() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
       </div>
-      <div className="benefit-container mt-[10vh] font-poppins flex  md:items-center md:space-y-10 space-y-20 md:space-x-40">
+      <div className="benefit-container py-[10vh] font-poppins flex  md:items-center md:space-y-10 space-y-20 md:space-x-40">
         <div className="flex md:flex-row flex-col md:mr-[8vw] md:space-x-[7vw]">
           <div className="flex flex-row  justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">

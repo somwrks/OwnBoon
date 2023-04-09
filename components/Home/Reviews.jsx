@@ -3,7 +3,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function Reviews() {
   return (
-    <div className="mt-[10vh] font-poppins flex flex-col">
+    <div className="my-[10vh] font-poppins flex flex-col">
       <div className="flex my-auto mx-auto  flex-col text-center ">
         <div className="review-heading flex flex-col">
           <h1 className="text-[3rem] mb-5">Check out Recent Reviews</h1>

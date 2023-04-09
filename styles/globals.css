@@ -54,6 +54,7 @@
   overflow: hidden;
 }
 .ripple-hover {
+  opacity: 0.5;
   position: absolute;
   background: linear-gradient(
       180deg,
