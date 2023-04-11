@@ -97,7 +97,7 @@ export default function Navbar() {
               </button>
               <div
                 id="dropdownNavbar"
-                className="z-10 items-start hidden font-light text-left  divide-y divide-gray-100 rounded-lg  w-100 "
+                className="z-10 items-start hidden font-light text-left  divide-y divide-gray-100 rounded-lg  md:w-auto w-full "
               >
                 <ul
                   className="px-5 bg-white justify-center text-gray-700 "
