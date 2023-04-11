@@ -460,17 +460,17 @@ text-fill-color: transparent;
 
 }
 .bodyimg1 {
-  background: url("../public/bodyimage1bg.png");
+  background: url("../public/bodyimage1bg.webp");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .bodyimg2 {
-  background: url("../public/bodyimage2bg.png");
+  background: url("../public/bodyimage2bg.webp");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .bodyimg3 {
-  background: url("../public/bodyimage3bg.png");
+  background: url("../public/bodyimage3bg.webp");
   background-repeat: no-repeat;
   background-size: contain;
 }

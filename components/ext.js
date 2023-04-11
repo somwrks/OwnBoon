@@ -99,7 +99,7 @@ export const Skateboard = () => {
           </h5>
           <h6 className="text-[1rem] font-200 ">Lives Improved</h6>
           <img
-            src="/square1.png"
+            src="/square1.webp"
             className="absolute p-2 left-0 top-0 h-[40px]  w-[40px]"
             alt="I"
           />
@@ -111,7 +111,7 @@ export const Skateboard = () => {
           </h5>
           <h6 className="text-[1rem] font-200 ">Active Influencers</h6>
           <img
-            src="/square2.png"
+            src="/square2.webp"
             className="absolute p-2 left-0 top-0 h-[40px]  w-[40px]"
             alt="I"
           />
@@ -123,7 +123,7 @@ export const Skateboard = () => {
           </h5>
           <h6 className="text-[1rem] font-200 ">Daily Blogs</h6>
           <img
-            src="/square3.png"
+            src="/square3.webp"
             className="absolute p-2 left-0 top-0 h-[40px]  w-[40px]"
             alt="I"
           />
