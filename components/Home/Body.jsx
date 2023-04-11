@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Body() {
@@ -30,7 +31,7 @@ export default function Body() {
 
       <div className="my-auto mx-auto p-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
         <div className="bodyimg1">
-          <img loading="lazy" src="/bodyimage1.gif" alt="Gif" />
+          <Image width={700} height={700} loading="lazy" src="/bodyimage1.webp" alt="Gif" />
         </div>
         <div className="flex flex-col ml-2 items-center text-center md:text-left align-center justify-center">
           <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
@@ -61,13 +62,13 @@ export default function Body() {
               </p>
             </div>
             <div className="bodyimg2">
-              <img loading="lazy" src="/bodyimage2.gif" alt="Gif" />
+            <Image width={700} height={700} loading="lazy" src="/bodyimage2.webp" alt="Gif" />
             </div>
           </>
         ) : (
           <>
             <div className="bodyimg2">
-              <img loading="lazy" src="/bodyimage2.gif" alt="Gif" />
+            <Image width={700} height={700} loading="lazy" src="/bodyimage2.webp" alt="Gif" />
             </div>
             <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
               <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
@@ -86,8 +87,9 @@ export default function Body() {
       </div>
       <div className="my-auto mx-auto p-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
         <div className="bodyimg3">
-          <img loading="lazy" src="/bodyimage3.gif" alt="Gif" />
+        <Image width={700} height={700} loading="lazy" src="/bodyimage3.webp" alt="Gif" />
         </div>
+
         <div className="flex flex-col ml-2 text-center md:text-left align-center justify-center">
           <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             Lorem ipsum dolor sit amet consectetur
