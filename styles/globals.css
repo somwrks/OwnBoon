@@ -337,6 +337,21 @@ svg {
   background-clip: content-box;
   animation: gradientscale 2s ease-in-out;
 }
+
+#green1{
+  top: 134%;
+  left: 8%;
+  background: #00F0B5;
+  animation: gradientscale 2s ease-in-out;
+  background-clip: content-box;
+}
+#green2 {
+  top: 134%;
+  left: 93%;
+  background: #00F0B5;
+  animation: gradientscale 2s ease-in-out;
+  background-clip: content-box;
+}
 /* -counters */
 .skatebar {
   display: flex;

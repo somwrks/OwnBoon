@@ -9,10 +9,12 @@ export default function Hero() {
         <div className="circle purple" id="purple"></div>
         <div className="circle cyan" id="cyan1"></div>
         <div className="circle purple" id="cyan2"></div>
+        <div className="circle green" id="green1"></div>
+        <div className="circle green" id="green2"></div>
       </div>
       <div className="flex text-[#2E2E2E] flex-col  h-[75%] xs:p-5 z-100 my-0 mx-0 items-center  ">
-        <div className="pt-[10vh] font-fontspring md:text-5xl lg:text-[5.3rem] text-3xl  text-center">
-          <h1 className="py-[2vh]">
+        <div className="pt-[10vh] font-fontspring md:text-[3.75rem] lg:text-[5.3rem] text-3xl  text-center">
+          <h1 className="py-[3vh]">
             Ignite your{" "}
             <span className="md:tracking-[12px] tracking-[3px]">GROWTH</span>
             <svg
@@ -23,7 +25,7 @@ export default function Hero() {
             </svg>
           </h1>
           <div className="flex flex-row ">
-            <h1 className="py-[2vh]">
+            <h1 className="py-[3vh]">
               Unleash your{" "}
               <span className="md:tracking-[12px] tracking-[3px]">
                 POTENTIAL

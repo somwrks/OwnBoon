@@ -250,7 +250,7 @@ export default function Reviews() {
             </div>
           </>
         ) : (
-          <Carousel width={350} useKeyboardArrows={true} swipeable={true} showThumbs={false}  autoPlay={true} infiniteLoop={true} >
+          <Carousel width={350} showIndicators={false} showStatus={false} useKeyboardArrows={true} swipeable={true} showThumbs={false}  autoPlay={true} infiniteLoop={true} >
               <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
