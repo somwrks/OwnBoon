@@ -38,10 +38,10 @@ export default function Benefits() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
       </div>
-      <div className="benefit-container py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-[20vh] md:space-x-40">
+      <div className="benefit-container py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-[20vh]  md:space-x-40">
         {/* first row */}
 
-        <div className="flex md:flex-row flex-col md:mr-[8vw] md:space-x-[7vw] ">
+        <div className="flex md:flex-row flex-col md:mr-[8vw] xl:space-x-[7vw] md:space-x-[1vw] lg:space-x-[1vw]  ">
           {/* first left square */}
           <div className="flex flex-row  justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
@@ -190,7 +190,7 @@ export default function Benefits() {
 
         {/* Second Row */}
 
-        <div className="flex md:flex-row flex-col md:place-items-baseline md:mr-[8vw] md:space-x-[7vw]">
+        <div className="flex md:flex-row flex-col md:place-items-baseline xl:mr-[8vw] md:space-x-[1vw] xl:space-x-[4vw] lg:space-x-[1vw]">
           {/* first left square */}
 
           <div className="flex flex-row  justify-between ">

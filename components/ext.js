@@ -9,7 +9,6 @@ export const Balls = () => {
     let mouseY = container.clientHeight / 2;
 
     function setInitialPositions() {
-      console.log(window.innerWidth);
       if (window.screen.width < 768) {
       } else {
         balls[0].style.left = "77vw";

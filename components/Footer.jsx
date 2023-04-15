@@ -71,7 +71,8 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-          : <div className="mb-6 md:mb-0 justify-between flex flex-row">
+          : <>
+          <div className="mb-6 md:mb-0 justify-between flex flex-row">
               
               <div className="flex flex-col pt-[1vh]  text-[1.1rem]">
               <a href="https://flowbite.com/" className="flex items-center">
@@ -87,27 +88,35 @@ export default function Footer() {
                 <h1 className="font-semibold mt-2 ">
                   Ignite your <span className=" tracking-[3px]">GROWTH</span>
                 </h1>
-                  <h1 className="font-semibold">
+                <h1 className="font-semibold">
                     Unleash your{" "}
                     <span className=" tracking-[3px]">POTENTIAL</span>
                   </h1>
                   
                 </div>
-                <div className="flex flex-row flex-wrap box-content	p-4 text-3xl space-x-2 mt-5">
+                <div className="flex flex-row box-content	text-3xl space-x-2 mt-5">
+                <div className="flex flex-col">
                   <a href="http://">
                     <FontAwesomeIcon icon={faLinkedin} />
                   </a>
                   <a href="http://">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
+                  
+                </div>
+                <div className="flex flex-col">
                   <a href="http://">
                     <FontAwesomeIcon icon={faYoutube} />
                   </a>
                   <a href="http://">
                     <FontAwesomeIcon icon={faDiscord} />
                   </a>
+                  
+                </div>
                 </div>
               </div>
+         
+              </>
           }
             
             <div className="grid grid-cols-2 gap-8 font-poppins sm:gap-6 sm:grid-cols-3">

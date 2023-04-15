@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="flex flex-row ">
             <h1 className="py-[3vh]">
               Unleash your{" "}
-              <span className="md:tracking-[12px] tracking-[3px]">
+              <span className="md:tracking-[12px] tracking-[1px]">
                 POTENTIAL
               </span>
             </h1>

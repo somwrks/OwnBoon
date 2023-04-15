@@ -34,8 +34,8 @@ export default function Reviews() {
         </div>
         {pc===true ? (
           <>
-            <div className="flex flex-row justify-center flex-wrap mb-5 md:space-x-12">
-              <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+            <div className="flex  flex-row justify-center flex-wrap mb-5 md:space-x-12">
+              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -70,7 +70,7 @@ export default function Reviews() {
                   </p>
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -105,7 +105,7 @@ export default function Reviews() {
                   </p>
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -142,7 +142,7 @@ export default function Reviews() {
               </div>
             </div>
             <div className=" flex flex-row flex-wrap  justify-center md:space-x-12">
-              <div className="w-[330px] h-[212px] md:mb-0 mb-5 review-card rounded  flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] mb-0 md:mb-5 review-card rounded  flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -177,7 +177,7 @@ export default function Reviews() {
                   </p>
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] md:mb-0 mb-5 review-card rounded  flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] mb-0 md:mb-5 review-card rounded  flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -212,7 +212,7 @@ export default function Reviews() {
                   </p>
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] md:mb-0 mb-5 review-card rounded  flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] mb-0 md:mb-5 review-card rounded  flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -250,8 +250,8 @@ export default function Reviews() {
             </div>
           </>
         ) : (
-          <Carousel width={350} showIndicators={false} showStatus={false} useKeyboardArrows={true} swipeable={true} showThumbs={false}  autoPlay={true} infiniteLoop={true} >
-              <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+          <Carousel width={350}  showIndicators={false} showStatus={false} useKeyboardArrows={true} swipeable={true} showThumbs={false}  autoPlay={true} infiniteLoop={true} >
+              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -286,7 +286,7 @@ export default function Reviews() {
                   </p>
                 </div>
             </div>
-              <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -321,7 +321,7 @@ export default function Reviews() {
                   </p>
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -356,7 +356,7 @@ export default function Reviews() {
                   </p>
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -391,7 +391,7 @@ export default function Reviews() {
                   </p>
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
@@ -426,7 +426,7 @@ export default function Reviews() {
                   </p>
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded md:mb-0 mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
