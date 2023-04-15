@@ -19,21 +19,19 @@ export default function Hero() {
             <span className="md:tracking-[12px] tracking-[3px]">GROWTH</span>
             <svg
               className="text-[#2E2E2E]  md:w-20 w-10"
-              viewBox="0 50 576 512"
+              viewBox="0 0 576 420"
             >
               <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
             </svg>
           </h1>
-          <div className="flex flex-row ">
             <h1 className="py-[3vh]">
               Unleash your{" "}
               <span className="md:tracking-[12px] tracking-[1px]">
                 POTENTIAL
               </span>
-            </h1>
             <svg
               className="w-10 md:w-16 lg:w-12"
-              viewBox="0 5 43 43"
+              viewBox="0 0 43 43"
               fill="#2E2E2E"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -439,7 +437,7 @@ export default function Hero() {
                 </linearGradient>
               </defs>
             </svg>
-          </div>
+            </h1>
         </div>
         <div className="py-[1vh] md:text-[1.5rem]  text-md  justify-center text-center">
           <h2>revolutionizing your productivity and health</h2>
