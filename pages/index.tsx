@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         <FontAwesomeIcon className="social-icons"icon={faGithub} />
         </a>
         <a className="social-link" href="https://instagram.com/OwnBoon">
-        <FontAwesomeIcon className="social-icons"icon={faInstagam} />
+        <FontAwesomeIcon className="social-icons"icon={faInstagram} />
         </a>
       </main>
       <footer className="flex fixed bottom-0 h-24 w-full items-center text-white justify-center border-t">
