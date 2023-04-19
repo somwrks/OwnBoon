@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub,faInstagam } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -36,6 +36,9 @@ const Home: NextPage = () => {
         </a>
         <a className="social-link" href="https://github.com/OwnBoon">
         <FontAwesomeIcon className="social-icons"icon={faGithub} />
+        </a>
+        <a className="social-link" href="https://instagram.com/OwnBoon">
+        <FontAwesomeIcon className="social-icons"icon={faInstagam} />
         </a>
       </main>
       <footer className="flex fixed bottom-0 h-24 w-full items-center text-white justify-center border-t">
