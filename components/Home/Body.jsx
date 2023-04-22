@@ -25,7 +25,9 @@ export default function Body() {
       <div className="heading">
         <h1 className="md:text-[5rem] text-[3rem]">Why OwnBoon?</h1>
         <h3 className="md:text-[2rem] text-[1.5rem] py-3 ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        It all starts somewhere <br />
+        Ignite your growth, Unleash your Potential
+
         </h3>
       </div>
 
@@ -35,14 +37,12 @@ export default function Body() {
         </div>
         <div className="flex flex-col ml-2  text-center md:text-left align-center justify-center">
           <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-            Lorem ipsum dolor sit amet consectetur
+          A Better Community of Like-Minded People
+
           </h4>
           <p className="text-[0.8rem] md:text-[1.2rem] ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            accusamus quo officiis nam. <br /> Accusantium, reprehenderit harum
-            et incidunt facilis, corporis provident velit modi numquam magni{" "}
-            <br />
-            assumenda odit cumque culpa similique.
+          Self-improvement is a journey that begins with gaining insight into and understanding individuals who share your goals. Meeting your role model can be a tremendous inspiration to emulate their success. Engaging in various activities such as work, socializing, and leisure is essential, as putting in the necessary effort to improve yourself. Pursue your passions, and don't shy away from exploring new avenues. Remember that the key to personal growth is to be relentless in your pursuit of improvement, every day.
+
           </p>
         </div>
       </div>
@@ -51,14 +51,11 @@ export default function Body() {
           <>
             <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
               <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-                Lorem ipsum dolor sit amet consectetur
+              Mental Peace & Stability
+
               </h4>
               <p className="text-[0.8rem] md:text-[1.2rem] ">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                accusamus quo officiis nam.
-                <br /> Accusantium, reprehenderit harum et incidunt facilis,
-                corporis provident velit modi numquam magni <br />
-                assumenda odit cumque culpa similique.
+              Achieving stability in life requires cultivating a peaceful state of mind. We understand the importance of being organized and planning, and our tools can help make these tasks a breeze. Our playlists can enhance your meditation and exercise sessions, making them both enjoyable and fulfilling. With our resources, even work can become a source of enjoyment, allowing you to maintain a positive mindset throughout the day. Trust in our expertise to help you attain the peace of mind necessary to succeed in all aspects of life
               </p>
             </div>
             <div className="bodyimg2">
@@ -72,14 +69,10 @@ export default function Body() {
             </div>
             <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
               <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-                Lorem ipsum dolor sit amet consectetur
+              Mental Peace & Stability
               </h4>
               <p className="text-[0.8rem] md:text-[1.2rem] ">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                accusamus quo officiis nam.
-                <br /> Accusantium, reprehenderit harum et incidunt facilis,
-                corporis provident velit modi numquam magni <br />
-                assumenda odit cumque culpa similique.
+              Achieving stability in life requires cultivating a peaceful state of mind. We understand the importance of being organized and planning, and our tools can help make these tasks a breeze. Our playlists can enhance your meditation and exercise sessions, making them both enjoyable and fulfilling. With our resources, even work can become a source of enjoyment, allowing you to maintain a positive mindset throughout the day. Trust in our expertise to help you attain the peace of mind necessary to succeed in all aspects of life
               </p>
             </div>
           </>
@@ -92,14 +85,9 @@ export default function Body() {
 
         <div className="flex flex-col ml-2 text-center md:text-left align-center justify-center">
           <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-            Lorem ipsum dolor sit amet consectetur
-          </h4>
+          Personal Growth with Statistics          </h4>
           <p className="text-[0.8rem] md:text-[1.2rem] ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            accusamus quo officiis nam. <br /> Accusantium, reprehenderit harum
-            et incidunt facilis, corporis provident velit modi numquam magni{" "}
-            <br />
-            assumenda odit cumque culpa similique.
+          Our range of products and tools has been carefully designed to assist you in achieving your personal growth goals. With our support, you can focus solely on your self-improvement journey without worrying about anything else. This website has been created exclusively for individuals like you who are committed to their self-development. Take advantage of all the available resources and unleash your full potential, transforming into the best possible version of yourself.
           </p>
         </div>
       </div>

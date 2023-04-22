@@ -87,7 +87,7 @@ export const Skateboard = () => {
       <div className=" h-[8vh] w-[3vw] flex flex-col justify-center items-center">
         <button
           id="ripple"
-          className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[5vh] w-[60vw] h-[5vh] hover:cursor-pointer skatebar bg-white font-semibold absolute "
+          className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[5vh] w-[350px] h-[5vh] hover:cursor-pointer skatebar bg-white font-semibold absolute "
         >
           Join our community now!
         </button>

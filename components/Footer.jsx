@@ -96,19 +96,19 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-row box-content	text-3xl space-x-2 mt-5">
                 <div className="flex flex-col">
-                  <a href="http://">
+                  <a href="https://www.linkedin.com/company/ownboon">
                     <FontAwesomeIcon icon={faLinkedin} />
                   </a>
-                  <a href="http://">
+                  <a href="https://instagram.com/OwnBoon">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
                   
                 </div>
                 <div className="flex flex-col">
-                  <a href="http://">
+                  <a href="/">
                     <FontAwesomeIcon icon={faYoutube} />
                   </a>
-                  <a href="http://">
+                  <a href="/">
                     <FontAwesomeIcon icon={faDiscord} />
                   </a>
                   

@@ -35,7 +35,8 @@ export default function Benefits() {
       <div className="heading  justify-center align-center ">
         <h2 className="md:text-[5rem] text-[3rem] benefit-heading">Benefits</h2>
         <h3 className="md:text-[2rem] text-[1.5rem] py-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Unlock the full benefits of what we offer and experience positive changes in your life.
+
         </h3>
       </div>
       <div className="benefit-container py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-[20vh]  md:space-x-40">
@@ -46,9 +47,10 @@ export default function Benefits() {
           <div className="flex flex-row  justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
               <h3 className="text-[green] benefit-txt text-2xl">
-                Lorem, ipsum.
+              Community
               </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>A community can offer emotional support, diverse perspectives, learning opportunities, and collaboration, all of which can promote personal growth.
+</p>
             </div>
             <div className="flex flex-col benefit-dot-left">
               <svg
@@ -99,8 +101,9 @@ export default function Benefits() {
               />
             </svg>
             <h2 className="text-white text-xl font-bold font-poppins">
-              Community
+            Community
             </h2>
+            
           </div>
 
           {/* first right square */}
@@ -181,9 +184,9 @@ export default function Benefits() {
             </div>
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
               <h3 className="text-[#AA77FF] text-2xl benefit-txt">
-                Lorem, ipsum.
+              Peer Support
               </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Connect with the right peers to guide and support your growth through our platform.</p>
             </div>
           </div>
         </div>
@@ -196,9 +199,10 @@ export default function Benefits() {
           <div className="flex flex-row  justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
               <h3 className="text-[#E90064] text-2xl benefit-txt">
-                Lorem, ipsum.
+              Focus
               </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Our online tools are designed to enhance your focus and help you achieve a state of Flow, enabling you to maximize your results.
+</p>
             </div>
             <div className="flex flex-col benefit-dot-left">
               <svg
@@ -249,7 +253,7 @@ export default function Benefits() {
             </svg>
 
             <h2 className="text-white text-xl font-bold font-poppins">
-              Focus Better
+              Focus
             </h2>
           </div>
           {/* second right square */}
@@ -309,9 +313,9 @@ export default function Benefits() {
             </div>
             <div className="flex flex-col   px-5 h-[5vh]  md:w-[20vw]">
               <h3 className="text-[#00AEFF] text-2xl benefit-txt">
-                Lorem, ipsum.
+              Explore Yourself
               </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>By looking within and exploring oneself, one can discover new opportunities and inspire personal growth</p>
             </div>
           </div>
         </div>
