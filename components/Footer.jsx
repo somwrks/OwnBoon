@@ -6,6 +6,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Footer() {
   const [pc, setPc] = useState(false);
@@ -56,18 +57,18 @@ export default function Footer() {
                   
                 </div>
                 <div className="flex flex-row text-3xl space-x-4 mt-5">
-                  <a href="http://">
+                  <Link href="https://www.linkedin.com/company/ownboon">
                     <FontAwesomeIcon icon={faLinkedin} />
-                  </a>
-                  <a href="http://">
+                  </Link>
+                  <Link href="https://instagram.com/OwnBoon">
                     <FontAwesomeIcon icon={faInstagram} />
-                  </a>
-                  <a href="http://">
+                  </Link>
+                  <Link href="http://">
                     <FontAwesomeIcon icon={faYoutube} />
-                  </a>
-                  <a href="http://">
+                  </Link>
+                  <Link href="http://">
                     <FontAwesomeIcon icon={faDiscord} />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

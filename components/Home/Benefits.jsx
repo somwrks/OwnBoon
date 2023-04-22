@@ -215,7 +215,7 @@ export default function Benefits() {
               <h3 className={`text-[#E90064] ${pc?"":"text-right"} text-2xl benefit-txt`}>
               Focus
               </h3>
-              <p className={`break-normal max-w-sm ${pc?"":"text-right"}`}>Our online tools are designed to enhance your focus and help you achieve a state of Flow, enabling you to maximize your results.
+              <p className={`break-normal max-w-xl ${pc?"":"text-right"}`}>Our online tools are designed to enhance your focus and help you achieve a state of Flow, enabling you to maximize your results.
 </p>
             </div>
             <div className="flex flex-col benefit-dot-left">
