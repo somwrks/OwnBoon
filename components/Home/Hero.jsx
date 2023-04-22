@@ -12,13 +12,13 @@ export default function Hero() {
         <div className="circle green" id="green1"></div>
         <div className="circle green" id="green2"></div>
       </div>
-      <div className="flex text-[#2E2E2E] flex-col  h-[75%] xs:p-5 z-100 my-0 mx-0 items-center  ">
+      <div className="flex text-[#2E2E2E] flex-col   xs:p-5  my-0 mx-0 items-center  ">
         <div className="pt-[10vh] font-fontspring md:text-[3.75rem] lg:text-[5.3rem] text-3xl  text-center">
           <h1 className="py-[3vh]">
             Ignite your{" "}
             <span className="md:tracking-[12px] tracking-[3px]">GROWTH</span>
-            <svg
-              className="text-[#2E2E2E]  md:w-20 w-10"
+            <svg id="hero-arrow"
+              className="  md:w-20 w-10"
               viewBox="0 0 576 420"
             >
               <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
@@ -29,7 +29,7 @@ export default function Hero() {
               <span className="md:tracking-[12px] tracking-[1px]">
                 POTENTIAL
               </span>
-            <svg
+            <svg id="hero-arrow"
               className="w-10 md:w-16 lg:w-12"
               viewBox="0 0 43 43"
               fill="#2E2E2E"

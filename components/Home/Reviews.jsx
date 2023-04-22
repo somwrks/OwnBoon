@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import VanillaTilt from 'vanilla-tilt';
+import Image from "next/image";
 
 export default function Reviews() {
   const [pc, setPc] = useState(true);
@@ -17,7 +18,7 @@ export default function Reviews() {
 
   useEffect(() => {
     VanillaTilt.init(document.querySelectorAll(".review-card"),{
-      max:25, speed:400
+      max:15, speed: 300,transition:true
     })
     setInitialPositions();
     window.addEventListener("resize", setInitialPositions);
@@ -28,9 +29,9 @@ export default function Reviews() {
   }, []);
   return (
     <div className="my-[10vh] font-poppins flex flex-col">
-      <div className="flex my-auto mx-auto items-center flex-col text-center ">
+      <div className="flex mt-10 my-auto mx-auto items-center flex-col text-center ">
         <div className="review-heading flex flex-col">
-          <h1 className="text-[3rem] mb-5">Check out Recent Reviews</h1>
+          <h1 className="md:text-[5rem] text-[3rem] mb-10">Check out Recent Reviews</h1>
         </div>
         {pc===true ? (
           <>
@@ -39,10 +40,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -74,10 +77,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -109,10 +114,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -146,10 +153,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -181,10 +190,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -216,10 +227,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -255,10 +268,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -290,10 +305,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -325,10 +342,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -360,10 +379,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -395,10 +416,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">
@@ -430,10 +453,12 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <img
-                        src="https://netstorage-legit.akamaized.net/images/77b1453c2dc08671.jpg"
+                      <Image loading="lazy"
+                        src="/user.png"
                         alt="userImage"
-                        className="h-[40px] w-[40px] rounded-3xl "
+                        width={40}
+                        height={40}
+                        className=" rounded-3xl "
                       />
                     </div>
                     <div className="flex flex-col items-start">

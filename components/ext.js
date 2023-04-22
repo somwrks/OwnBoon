@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect } from "react";
 import CountUpAnimation from "./CountUpAnimation";
 export const Balls = () => {
@@ -30,7 +31,7 @@ export const Balls = () => {
 
         const rotationY = (dx / container.clientWidth) * 10;
         const rotationX = (dy / container.clientHeight) * -10;
-        const translationZ = (dist / 200) * -5;
+        const translationZ = (dist / 100) * -5;
         ball.style.transform = `translateY(${translationZ}px) translateX(${translationZ}px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
       });
 
@@ -49,11 +50,10 @@ export const Balls = () => {
     window.onresize = function () {
       setInitialPositions();
     };
-    
+
     return () => {
       container.removeEventListener("mousemove", handleMouseMove);
     };
-    
   }, []);
 
   return (
@@ -68,25 +68,27 @@ export const Balls = () => {
 
 export const Skateboard = () => {
   useEffect(() => {
-    const buttons = document.getElementById("ripple")
-    buttons.addEventListener("click",function(e){
+    const buttons = document.getElementById("ripple");
+    buttons.addEventListener("click", function (e) {
       let x = e.clientX - e.target.offsetLeft;
       let y = e.clientY - e.target.offsetTop;
 
       let ripples = document.createElement("span");
-      ripples.classList.add("ripple-hover")
-      ripples.style.left = x+"px";
-      ripples.style.top = y+"px";
+      ripples.classList.add("ripple-hover");
+      ripples.style.left = x + "px";
+      ripples.style.top = y + "px";
       this.appendChild(ripples);
-      document.getElementById("ripple")
-  })
-  }, [])
-  
+      document.getElementById("ripple");
+    });
+  }, []);
 
   return (
     <div id="counter" className="py-5">
-      <div  className=" h-[8vh] w-[3vw] flex flex-col justify-center items-center">
-        <button id="ripple"  className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[27vw] md:h-[5vh] sm:w-[20vw] sm:h-[5vh] hover:cursor-pointer skatebar bg-white font-semibold absolute py-2 px-5">
+      <div className=" h-[8vh] w-[3vw] flex flex-col justify-center items-center">
+        <button
+          id="ripple"
+          className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[5vh] w-[60vw] h-[5vh] hover:cursor-pointer skatebar bg-white font-semibold absolute "
+        >
           Join our community now!
         </button>
       </div>
@@ -97,9 +99,11 @@ export const Skateboard = () => {
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
           <h6 className="text-[1rem] font-200 ">Lives Improved</h6>
-          <img
+          <Image loading="lazy"
             src="/square1.webp"
-            className="absolute p-2 left-0 top-0 h-[40px]  w-[40px]"
+            width={40}
+            height={40}
+            className="absolute p-2 left-0 top-0"
             alt="I"
           />
         </div>
@@ -109,9 +113,11 @@ export const Skateboard = () => {
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
           <h6 className="text-[1rem] font-200 ">Active Influencers</h6>
-          <img
+          <Image loading="lazy"
+            width={40}
+            height={40}
             src="/square2.webp"
-            className="absolute p-2 left-0 top-0 h-[40px]  w-[40px]"
+            className="absolute p-2 left-0 top-0 "
             alt="I"
           />
         </div>
@@ -121,9 +127,11 @@ export const Skateboard = () => {
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
           <h6 className="text-[1rem] font-200 ">Daily Blogs</h6>
-          <img
+          <Image loading="lazy"
+            width={40}
+            height={40}
             src="/square3.webp"
-            className="absolute p-2 left-0 top-0 h-[40px]  w-[40px]"
+            className="absolute p-2 left-0 top-0 "
             alt="I"
           />
         </div>

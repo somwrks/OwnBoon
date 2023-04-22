@@ -33,8 +33,8 @@ export default function Benefits() {
   return (
     <section id="benefit">
       <div className="heading  justify-center align-center ">
-        <h2 className="text-[3rem] benefit-heading">Benefits</h2>
-        <h3 className="text-[1.5rem] py-3">
+        <h2 className="md:text-[5rem] text-[3rem] benefit-heading">Benefits</h2>
+        <h3 className="md:text-[2rem] text-[1.5rem] py-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
       </div>

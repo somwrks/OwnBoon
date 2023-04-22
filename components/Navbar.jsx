@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="flex md:order-2">
           <button
             type="button"
-            className="  text-white   sm:text-[1rem] xs:text[0.5rem] login  w-[8.6vw] h-[3.7vh] text-center  rounded-full"
+            className="  text-white   sm:text-[1rem] xs:text[0.5rem] login  w-[111px] h-[38px] text-center  rounded-full"
             onClick={preview}
           >
             Login

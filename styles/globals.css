@@ -127,7 +127,7 @@
   }
   100% {
     opacity: 1;
-    filter: blur(9rem);
+    filter: blur(12rem);
     transform: translate(-50%, -50%) scale(1);
   }
 }
@@ -174,6 +174,10 @@ body {
 }
 
 /* Home */
+#hero-arrow {
+  fill: linear-gradient(0deg, #2e2e2e, #2e2e2e),
+    linear-gradient(123.01deg, #00f0b5 0.69%, rgba(0, 240, 181, 0) 102.8%);
+}
 #preview {
   display: none;
   animation: 3s ease-in-out fade, 3s bt;
@@ -283,7 +287,7 @@ svg {
 
 .circle {
   position: absolute;
-  filter: blur(9rem);
+  filter: blur(12rem);
   transform: translate(-50%, -50%);
   width: 15vw;
   height: 30vh;
@@ -319,6 +323,8 @@ svg {
 #purple {
   top: 134%;
   left: 52%;
+  width: 21vw;
+  height: 40vh;
   background-image: radial-gradient(circle at center, #aa77ff, #aa77ff);
   background-clip: content-box;
   animation: gradientscale 5s ease-in-out;
@@ -338,17 +344,17 @@ svg {
   animation: gradientscale 2s ease-in-out;
 }
 
-#green1{
+#green1 {
   top: 134%;
   left: 8%;
-  background: #00F0B5;
+  background: #00f0b5;
   animation: gradientscale 2s ease-in-out;
   background-clip: content-box;
 }
 #green2 {
   top: 134%;
   left: 93%;
-  background: #00F0B5;
+  background: #00f0b5;
   animation: gradientscale 2s ease-in-out;
   background-clip: content-box;
 }
@@ -416,9 +422,6 @@ svg {
     linear-gradient(269.62deg, #00f0b5 0.11%, rgba(0, 240, 181, 0) 98.77%),
     #00aeff;
   border-radius: 35px;
-  width: 8.6vw;
-  font-size: 1rem;
-  height: 5.81vh;
 }
 
 /* Body */
@@ -435,7 +438,7 @@ svg {
   background-clip: text;
   text-fill-color: transparent;
 }
-.benefit-heading{
+.benefit-heading {
   font-weight: 600;
   background: linear-gradient(90deg, #aa77ff 0%, rgba(170, 119, 255, 0.1) 100%),
     linear-gradient(270deg, #e90064 0%, rgba(233, 0, 100, 0.1) 100%);
@@ -444,20 +447,22 @@ svg {
   background-clip: text;
   text-fill-color: transparent;
 }
-.review-heading{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 48px;
-text-align: center;
-background: linear-gradient(90deg, rgba(233, 0, 100, 0.4) 0%, rgba(0, 174, 255, 0.6) 41.15%, rgba(0, 180, 248, 0.6) 46.93%, rgba(0, 240, 181, 0.6) 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-
-
+.review-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(233, 0, 100, 0.4) 0%,
+    rgba(0, 174, 255, 0.6) 41.15%,
+    rgba(0, 180, 248, 0.6) 46.93%,
+    rgba(0, 240, 181, 0.6) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .bodyimg1 {
   background: url("../public/bodyimage1bg.webp");
@@ -539,7 +544,7 @@ text-fill-color: transparent;
   animation: 1s scale ease-in-out, 1s left-to-right;
 }
 /* reviews */
-.review-card{
+.review-card {
   background: rgba(255, 255, 255, 0.01);
   border-radius: 19px;
   --webkit-backdrop-filter: blur(25px);
@@ -575,33 +580,43 @@ canvas {
     width: 20vw;
   }
   .countsquare:nth-child(1) {
-    background: linear-gradient(267.43deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100.47%);
-    border: 1px solid #FFFFFF;
+    background: linear-gradient(
+      267.43deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0) 100.47%
+    );
+    border: 1px solid #ffffff;
     filter: drop-shadow(1px 2px 5px rgba(233, 0, 100, 0.25));
     border-radius: 0px 10px 10px 10px;
   }
   .countsquare:nth-child(2) {
-    background: linear-gradient(267.43deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100.47%);
-    border: 1px solid #FFFFFF;
+    background: linear-gradient(
+      267.43deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0) 100.47%
+    );
+    border: 1px solid #ffffff;
     filter: drop-shadow(1px 2px 5px rgba(233, 0, 100, 0.25));
-    
+
     border-radius: 0px 10px 10px 10px;
   }
   .countsquare:nth-child(3) {
-    background: linear-gradient(267.43deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 100.47%);
-    border: 1px solid #FFFFFF;
+    background: linear-gradient(
+      267.43deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0) 100.47%
+    );
+    border: 1px solid #ffffff;
     filter: drop-shadow(1px 2px 5px rgba(233, 0, 100, 0.25));
     border-radius: 0px 10px 10px 10px;
   }
 }
 @media (max-width: 1280px) {
   .benefit-dot-left {
-      margin-right: 100px;
-
+    margin-right: 100px;
   }
-  .benefit-dot-right{
-  margin-left: 100px;
-
+  .benefit-dot-right {
+    margin-left: 100px;
   }
   #benefit {
     background: none;
