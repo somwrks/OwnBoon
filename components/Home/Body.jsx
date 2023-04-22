@@ -40,7 +40,7 @@ export default function Body() {
           A Better Community of Like-Minded People
 
           </h4>
-          <p className="text-[0.8rem] md:text-[1.2rem] ">
+          <p className="text-[0.8rem] md:text-[1.2rem] break-normal max-w-3xl">
           Self-improvement is a journey that begins with gaining insight into and understanding individuals who share your goals. Meeting your role model can be a tremendous inspiration to emulate their success. Engaging in various activities such as work, socializing, and leisure is essential, as putting in the necessary effort to improve yourself. Pursue your passions, and don't shy away from exploring new avenues. Remember that the key to personal growth is to be relentless in your pursuit of improvement, every day.
 
           </p>
@@ -54,7 +54,7 @@ export default function Body() {
               Mental Peace & Stability
 
               </h4>
-              <p className="text-[0.8rem] md:text-[1.2rem] ">
+              <p className=" break-normal max-w-3xl text-[0.8rem] md:text-[1.2rem] ">
               Achieving stability in life requires cultivating a peaceful state of mind. We understand the importance of being organized and planning, and our tools can help make these tasks a breeze. Our playlists can enhance your meditation and exercise sessions, making them both enjoyable and fulfilling. With our resources, even work can become a source of enjoyment, allowing you to maintain a positive mindset throughout the day. Trust in our expertise to help you attain the peace of mind necessary to succeed in all aspects of life
               </p>
             </div>
@@ -71,7 +71,7 @@ export default function Body() {
               <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
               Mental Peace & Stability
               </h4>
-              <p className="text-[0.8rem] md:text-[1.2rem] ">
+              <p className=" break-normal max-w-3xl text-[0.8rem] md:text-[1.2rem] ">
               Achieving stability in life requires cultivating a peaceful state of mind. We understand the importance of being organized and planning, and our tools can help make these tasks a breeze. Our playlists can enhance your meditation and exercise sessions, making them both enjoyable and fulfilling. With our resources, even work can become a source of enjoyment, allowing you to maintain a positive mindset throughout the day. Trust in our expertise to help you attain the peace of mind necessary to succeed in all aspects of life
               </p>
             </div>
@@ -86,7 +86,7 @@ export default function Body() {
         <div className="flex flex-col ml-2 text-center md:text-left align-center justify-center">
           <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
           Personal Growth with Statistics          </h4>
-          <p className="text-[0.8rem] md:text-[1.2rem] ">
+          <p className=" break-normal max-w-3xl text-[0.8rem] md:text-[1.2rem] ">
           Our range of products and tools has been carefully designed to assist you in achieving your personal growth goals. With our support, you can focus solely on your self-improvement journey without worrying about anything else. This website has been created exclusively for individuals like you who are committed to their self-development. Take advantage of all the available resources and unleash your full potential, transforming into the best possible version of yourself.
           </p>
         </div>

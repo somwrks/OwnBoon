@@ -1,6 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 export default function Benefits() {
+  const [pc, setPc] = useState(false);
+  function setInitialPositions() {
+    if (window.innerWidth < 768) {
+      setPc(false);
+    } else {
+      setPc(true);
+    }
+  }
   useEffect(() => {
+    setInitialPositions();
+    window.addEventListener("resize", setInitialPositions);
+
     
     function reveal() {
       var sphere = document.querySelectorAll(".sphere");
@@ -26,6 +37,9 @@ export default function Benefits() {
       }
     }
     window.addEventListener("scroll", reveal);
+    return () => {
+      window.removeEventListener("resize", setInitialPositions);
+    };
 
     
   }, []);
@@ -46,10 +60,10 @@ export default function Benefits() {
           {/* first left square */}
           <div className="flex flex-row  justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
-              <h3 className="text-[green] benefit-txt text-2xl">
+              <h3 className={`text-[green] ${pc? "" :"text-right"} benefit-txt text-2xl`}>
               Community
               </h3>
-              <p>A community can offer emotional support, diverse perspectives, learning opportunities, and collaboration, all of which can promote personal growth.
+              <p className={`break-normal ${pc?"":"text-right"}`}>A community can offer emotional support, diverse perspectives, learning opportunities, and collaboration, all of which can promote personal growth.
 </p>
             </div>
             <div className="flex flex-col benefit-dot-left">
@@ -186,7 +200,7 @@ export default function Benefits() {
               <h3 className="text-[#AA77FF] text-2xl benefit-txt">
               Peer Support
               </h3>
-              <p>Connect with the right peers to guide and support your growth through our platform.</p>
+              <p className="break-normal max-w-xl">Connect with the right peers to guide and support your growth through our platform.</p>
             </div>
           </div>
         </div>
@@ -197,11 +211,11 @@ export default function Benefits() {
           {/* first left square */}
 
           <div className="flex flex-row  justify-between ">
-            <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
-              <h3 className="text-[#E90064] text-2xl benefit-txt">
+            <div className="flex flex-col  px-5 h-[5vh] ">
+              <h3 className={`text-[#E90064] ${pc?"":"text-right"} text-2xl benefit-txt`}>
               Focus
               </h3>
-              <p>Our online tools are designed to enhance your focus and help you achieve a state of Flow, enabling you to maximize your results.
+              <p className={`break-normal max-w-sm ${pc?"":"text-right"}`}>Our online tools are designed to enhance your focus and help you achieve a state of Flow, enabling you to maximize your results.
 </p>
             </div>
             <div className="flex flex-col benefit-dot-left">
@@ -315,7 +329,7 @@ export default function Benefits() {
               <h3 className="text-[#00AEFF] text-2xl benefit-txt">
               Explore Yourself
               </h3>
-              <p>By looking within and exploring oneself, one can discover new opportunities and inspire personal growth</p>
+              <p className="break-normal">By looking within and exploring oneself, one can discover new opportunities and inspire personal growth</p>
             </div>
           </div>
         </div>
