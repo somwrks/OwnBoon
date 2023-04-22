@@ -210,8 +210,8 @@ export default function Benefits() {
         <div className="flex md:flex-row flex-col md:place-items-baseline xl:mr-[8vw] md:space-x-[1vw] xl:space-x-[4vw] lg:space-x-[1vw]">
           {/* first left square */}
 
-          <div className="flex flex-row md:w-[20vw] justify-between ">
-            <div className="flex flex-col  px-5 h-[5vh] ">
+          <div className="flex flex-row justify-between ">
+            <div className="flex flex-col md:w-[20vw]  px-5 h-[5vh] ">
               <h3 className={`text-[#E90064] ${pc?"":"text-right"} text-2xl benefit-txt`}>
               Focus
               </h3>
