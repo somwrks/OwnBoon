@@ -200,7 +200,7 @@ export default function Benefits() {
               <h3 className="text-[#AA77FF] text-2xl benefit-txt">
               Peer Support
               </h3>
-              <p className="break-normal max-w-xl">Connect with the right peers to guide and support your growth through our platform.</p>
+              <p className="break-normal ">Connect with the right peers to guide and support your growth through our platform.</p>
             </div>
           </div>
         </div>
@@ -210,12 +210,12 @@ export default function Benefits() {
         <div className="flex md:flex-row flex-col md:place-items-baseline xl:mr-[8vw] md:space-x-[1vw] xl:space-x-[4vw] lg:space-x-[1vw]">
           {/* first left square */}
 
-          <div className="flex flex-row  justify-between ">
+          <div className="flex flex-row md:w-[20vw] justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] ">
               <h3 className={`text-[#E90064] ${pc?"":"text-right"} text-2xl benefit-txt`}>
               Focus
               </h3>
-              <p className={`break-normal max-w-xl ${pc?"":"text-right"}`}>Our online tools are designed to enhance your focus and help you achieve a state of Flow, enabling you to maximize your results.
+              <p className={`break-normal  ${pc?"":"text-right"}`}>Our online tools are designed to enhance your focus and help you achieve a state of Flow, enabling you to maximize your results.
 </p>
             </div>
             <div className="flex flex-col benefit-dot-left">
