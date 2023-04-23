@@ -45,7 +45,7 @@ export default function Benefits() {
   }, []);
 
   return (
-    <section id="benefit">
+    <section id="benefit" className="mb-10">
       <div className="heading  justify-center align-center ">
         <h2 className="md:text-[5rem] text-[3rem] benefit-heading">Benefits</h2>
         <h3 className="md:text-[2rem] text-[1.5rem] py-3">
@@ -63,7 +63,7 @@ export default function Benefits() {
               <h3 className={`text-[green] ${pc? "" :"text-right"} benefit-txt text-2xl`}>
               Community
               </h3>
-              <p className={`break-normal ${pc?"":"text-right"}`}>A community can offer emotional support, diverse perspectives, learning opportunities, and collaboration, all of which can promote personal growth.
+              <p className={`break-normal  ${pc?"":"text-right"}`}>A community can offer emotional support, diverse perspectives, learning opportunities, and collaboration, all of which can promote personal growth.
 </p>
             </div>
             <div className="flex flex-col benefit-dot-left">

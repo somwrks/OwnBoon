@@ -154,10 +154,20 @@
   }
 }
 /* HTML */
+.loader{
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
 html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar { 
   width: 10px;
 }
 
@@ -282,7 +292,7 @@ svg {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 31vw;
-  height: 70%;
+  height: 75vh;
 }
 
 .circle {
@@ -481,7 +491,7 @@ svg {
 }
 /* Benefits */
 #benefit {
-  background: url("../public/benefitbg.png");
+  background: url("../public/benefitbg.webp");
   background-size: 100%;
   background-repeat: no-repeat;
 }
