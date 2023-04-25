@@ -7,7 +7,6 @@ import NextNProgress from 'nextjs-progressbar';
 import { ToastContainer } from "react-toastify";
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Script from "next/script";
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -15,12 +14,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
+
     const handleStart = () => {
       setIsLoading(true);
     };
 
     const handleComplete = () => {
-      setIsLoading(false);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
     };
 
     router.events.on('routeChangeStart', handleStart);
@@ -40,16 +42,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         startPosition={0.3}
         stopDelayMs={200}
         height={2}
-      />
-       <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
-        strategy="beforeInteractive"
-        crossOrigin="anonymous"
-        referrerPolicy="no-referrer"
       />
        {isLoading && <Loader />}
       <Component {...pageProps} />

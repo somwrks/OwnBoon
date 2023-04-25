@@ -45,7 +45,7 @@ export default function Benefits() {
   }, []);
 
   return (
-    <section id="benefit" className="mb-10">
+    <section id="benefit" className="mb-10 pt-[100px]">
       <div className="heading  justify-center align-center ">
         <h2 className="md:text-[5rem] text-[3rem] benefit-heading">Benefits</h2>
         <h3 className="md:text-[2rem] text-[1.5rem] py-3">
@@ -53,7 +53,7 @@ export default function Benefits() {
 
         </h3>
       </div>
-      <div className="benefit-container py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-[20vh]  md:space-x-40">
+      <div className="benefit-container  py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-[20vh]  md:space-x-40">
         {/* first row */}
 
         <div className="flex md:flex-row flex-col md:mr-[8vw] xl:space-x-[7vw] md:space-x-[1vw] lg:space-x-[1vw]  ">
@@ -63,7 +63,7 @@ export default function Benefits() {
               <h3 className={`text-[green] ${pc? "" :"text-right"} benefit-txt text-2xl`}>
               Community
               </h3>
-              <p className={`break-normal  ${pc?"":"text-right"}`}>A community can offer emotional support, diverse perspectives, learning opportunities, and collaboration, all of which can promote personal growth.
+              <p className={`break-normal  ${pc?"":"text-right"}`}>Community offers support, and learning opportunities to foster growth
 </p>
             </div>
             <div className="flex flex-col benefit-dot-left">
@@ -200,7 +200,9 @@ export default function Benefits() {
               <h3 className="text-[#AA77FF] text-2xl benefit-txt">
               Peer Support
               </h3>
-              <p className="break-normal ">Connect with the right peers to guide and support your growth through our platform.</p>
+              <p className="break-normal ">Find supportive peers on our website. 
+
+</p>
             </div>
           </div>
         </div>
@@ -215,7 +217,7 @@ export default function Benefits() {
               <h3 className={`text-[#E90064] ${pc?"":"text-right"} text-2xl benefit-txt`}>
               Focus
               </h3>
-              <p className={`break-normal  ${pc?"":"text-right"}`}>Our online tools are designed to enhance your focus and help you achieve a state of Flow, enabling you to maximize your results.
+              <p className={`break-normal  ${pc?"":"text-right"}`}>Maximize results with high focus through our tools
 </p>
             </div>
             <div className="flex flex-col benefit-dot-left">
@@ -329,7 +331,8 @@ export default function Benefits() {
               <h3 className="text-[#00AEFF] text-2xl benefit-txt">
               Explore Yourself
               </h3>
-              <p className="break-normal">By looking within and exploring oneself, one can discover new opportunities and inspire personal growth</p>
+              <p className="break-normal">Explore yourself and overcome difficulties, analyze your progress.
+</p>
             </div>
           </div>
         </div>

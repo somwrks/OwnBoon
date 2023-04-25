@@ -77,6 +77,10 @@
 .rl {
   animation: right-to-left 2s ease-in-out;
 }
+.animate-float{
+  animation: float 3s ease-in-out infinite; /* Apply the floating animation */
+
+}
 /* Animations */
 @keyframes fade {
   0% {
@@ -104,6 +108,17 @@
     opacity: 0;
     width: 1000px;
     height: 500px;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(10px); /* Initial position */
+  }
+  100% {
+    transform: translateY(0); /* Initial position */
   }
 }
 @keyframes bt {
@@ -155,7 +170,6 @@
 }
 /* HTML */
 .loader{
-  height: 90vh;
   z-index: 1;
   width: 100%;
   position: fixed;
@@ -493,6 +507,7 @@ svg {
 #benefit {
   background: url("../public/benefitbg.webp");
   background-size: 100%;
+  background-position-y: bottom;
   background-repeat: no-repeat;
 }
 .benefit-container {

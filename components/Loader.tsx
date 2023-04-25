@@ -2,7 +2,7 @@ import { ColorRing } from  'react-loader-spinner'
 
 const Loader = () => {
   return (
-    <div className="loader">
+    <div className="loader h-[100vh]">
      <ColorRing
   visible={true}
   height="80"
@@ -10,7 +10,7 @@ const Loader = () => {
   ariaLabel="blocks-loading"
   wrapperStyle={{}}
   wrapperClass="blocks-wrapper"
-  colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+  colors={['lightblue', 'cyan', 'blue', 'white', "darkblue"]}
 />
     </div>
   );

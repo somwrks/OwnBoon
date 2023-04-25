@@ -1,3 +1,5 @@
+
+
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -155,7 +157,8 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/index#benefit"
+                scroll={false}
+                  href="/#benefit"
                   id="benefitlink"
                   className=" block py-2 Link pl-3 pr-4 md:p-0 "
                 >

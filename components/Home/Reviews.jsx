@@ -3,7 +3,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import VanillaTilt from 'vanilla-tilt';
+import VanillaTilt from "vanilla-tilt";
 import Image from "next/image";
 
 export default function Reviews() {
@@ -17,9 +17,11 @@ export default function Reviews() {
   }
 
   useEffect(() => {
-    VanillaTilt.init(document.querySelectorAll(".review-card"),{
-      max:15, speed: 300,transition:true
-    })
+    VanillaTilt.init(document.querySelectorAll(".review-card"), {
+      max: 15,
+      speed: 300,
+      transition: true,
+    });
     setInitialPositions();
     window.addEventListener("resize", setInitialPositions);
 
@@ -31,16 +33,19 @@ export default function Reviews() {
     <div className="my-[10vh] font-poppins flex flex-col">
       <div className="flex mt-10 my-auto mx-auto items-center flex-col text-center ">
         <div className="review-heading flex flex-col">
-          <h1 className="md:text-[5rem] text-[3rem] mb-10">Check out Recent Reviews</h1>
+          <h1 className="md:text-[5rem] text-[3rem] mb-10">
+            Check out Recent Reviews
+          </h1>
         </div>
-        {pc===true ? (
+        {pc === true ? (
           <>
             <div className="flex  flex-row justify-center flex-wrap mb-5 md:space-x-12">
               <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <Image loading="lazy"
+                      <Image
+                        loading="lazy"
                         src="/user.png"
                         alt="userImage"
                         width={40}
@@ -49,7 +54,7 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
+                      <h3 className="font-bold text-[1rem] ">
                         Elliot Choy
                       </h3>
                       <h4 className="text-[0.8rem] text-[gray]">
@@ -67,9 +72,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
+                    "OwnBoon is a game-changer! The Workspace keeps me on track and the Community is so supportive. I'm addicted to the Lofi music sessions!"
                   </p>
                 </div>
               </div>
@@ -77,7 +80,8 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <Image loading="lazy"
+                      <Image
+                        loading="lazy"
                         src="/user.png"
                         alt="userImage"
                         width={40}
@@ -86,11 +90,11 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
+                      <h3 className="font-bold text-[1rem] ">
+                        Mark Lee
                       </h3>
-                      <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
+                      <h4 className="text-[0.8rem] text-left text-[gray]">
+                        Tulane University
                       </h4>
                     </div>
                   </div>
@@ -104,9 +108,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
+                    "I'm blown away by OwnBoon's resources! The Informational section has helped me improve my habits, and the Blog section is a great source of inspiration."
                   </p>
                 </div>
               </div>
@@ -114,7 +116,8 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <Image loading="lazy"
+                      <Image
+                        loading="lazy"
                         src="/user.png"
                         alt="userImage"
                         width={40}
@@ -123,11 +126,11 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
+                      <h3 className="font-bold text-[1rem] ">
+                        Rachel Davis
                       </h3>
                       <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
+                        Wildlife Photographer
                       </h4>
                     </div>
                   </div>
@@ -141,9 +144,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
+                  "OwnBoon has transformed my productivity! The AI scheduler in the Workspace has helped me manage my time like a pro, and the Community is so uplifting."
                   </p>
                 </div>
               </div>
@@ -153,7 +154,8 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <Image loading="lazy"
+                      <Image
+                        loading="lazy"
                         src="/user.png"
                         alt="userImage"
                         width={40}
@@ -162,11 +164,11 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
+                      <h3 className="font-bold text-[1rem] ">
+                        Chris Thompson
                       </h3>
                       <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
+                        Graphic Designer
                       </h4>
                     </div>
                   </div>
@@ -175,14 +177,11 @@ export default function Reviews() {
                     <FontAwesomeIcon icon={faStar} color={"orange"} />
                     <FontAwesomeIcon icon={faStar} color={"orange"} />
                     <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
                   </div>
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
+                    "I was struggling with motivation before I found OwnBoon. The virtual study buddies and Lofi music sessions in the Workspace keep me focused and energized."
                   </p>
                 </div>
               </div>
@@ -190,7 +189,8 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <Image loading="lazy"
+                      <Image
+                        loading="lazy"
                         src="/user.png"
                         alt="userImage"
                         width={40}
@@ -199,8 +199,8 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
+                      <h3 className="font-bold text-[1rem] ">
+                        Samantha Miller
                       </h3>
                       <h4 className="text-[0.8rem] text-[gray]">
                         Content Creator
@@ -217,9 +217,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
+                    "OwnBoon is the perfect platform for personal growth. The articles in the Informational section are so insightful, and the Community is full of like-minded individuals."
                   </p>
                 </div>
               </div>
@@ -227,7 +225,8 @@ export default function Reviews() {
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-row justify-between space-x-1 items-center">
                     <div className="flex flex-col">
-                      <Image loading="lazy"
+                      <Image
+                        loading="lazy"
                         src="/user.png"
                         alt="userImage"
                         width={40}
@@ -236,11 +235,11 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
+                      <h3 className="font-bold text-[1rem] ">
+                        Alex Smith
                       </h3>
                       <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
+                        Princeton University
                       </h4>
                     </div>
                   </div>
@@ -249,242 +248,241 @@ export default function Reviews() {
                     <FontAwesomeIcon icon={faStar} color={"orange"} />
                     <FontAwesomeIcon icon={faStar} color={"orange"} />
                     <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
                   </div>
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
+                   "I can't recommend OwnBoon enough! The Blog section is full of amazing content, and the Workspace has made me more organized and efficient than ever."
                   </p>
                 </div>
               </div>
             </div>
           </>
         ) : (
-          <Carousel width={350}  showIndicators={false} showStatus={false} useKeyboardArrows={true} swipeable={true} showThumbs={false}  autoPlay={true} infiniteLoop={true} >
-              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
-                <div className="flex flex-row justify-between">
-                  <div className="flex flex-row justify-between space-x-1 items-center">
-                    <div className="flex flex-col">
-                      <Image loading="lazy"
-                        src="/user.png"
-                        alt="userImage"
-                        width={40}
-                        height={40}
-                        className=" rounded-3xl "
-                      />
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
-                      </h3>
-                      <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
-                      </h4>
-                    </div>
+          <Carousel
+            width={400}
+            showIndicators={false}
+            showStatus={false}
+            useKeyboardArrows={true}
+            swipeable={true}
+            showThumbs={false}
+            autoPlay={true}
+            infiniteLoop={true}
+          >
+            <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between space-x-1 items-center">
+                  <div className="flex flex-col">
+                    <Image
+                      loading="lazy"
+                      src="/user.png"
+                      alt="userImage"
+                      width={40}
+                      height={40}
+                      className=" rounded-3xl "
+                    />
                   </div>
-                  <div className="flex flex-row place-items-center space-x-1">
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <div className="flex flex-col items-start">
+                    <h3 className="font-bold text-[1rem] ">
+                      Elliot Choy
+                    </h3>
+                    <h4 className="text-[0.8rem] text-[gray]">
+                      Content Creator
+                    </h4>
                   </div>
                 </div>
-                <div className="mt-5">
-                  <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
-                  </p>
+                <div className="flex flex-row place-items-center space-x-1">
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
+              </div>
+              <div className="mt-5">
+                <p className="text-left font-normal font-poppins text-[1rem]">
+                  "OwnBoon is a game-changer! The Workspace keeps me on track and the Community is so supportive. I'm addicted to the Lofi music sessions!"
+                </p>
+              </div>
             </div>
-              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
-                <div className="flex flex-row justify-between">
-                  <div className="flex flex-row justify-between space-x-1 items-center">
-                    <div className="flex flex-col">
-                      <Image loading="lazy"
-                        src="/user.png"
-                        alt="userImage"
-                        width={40}
-                        height={40}
-                        className=" rounded-3xl "
-                      />
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
-                      </h3>
-                      <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
-                      </h4>
-                    </div>
+            <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between space-x-1 items-center">
+                  <div className="flex flex-col">
+                    <Image
+                      loading="lazy"
+                      src="/user.png"
+                      alt="userImage"
+                      width={40}
+                      height={40}
+                      className=" rounded-3xl "
+                    />
                   </div>
-                  <div className="flex flex-row place-items-center space-x-1">
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <div className="flex flex-col items-start">
+                    <h3 className="font-bold text-[1rem] ">
+                      Mark Lee
+                    </h3>
+                    <h4 className="text-[0.8rem] text-[gray]">
+                      University of Pennsylvania
+                    </h4>
                   </div>
                 </div>
-                <div className="mt-5">
-                  <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
-                  </p>
+                <div className="flex flex-row place-items-center space-x-1">
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
-                <div className="flex flex-row justify-between">
-                  <div className="flex flex-row justify-between space-x-1 items-center">
-                    <div className="flex flex-col">
-                      <Image loading="lazy"
-                        src="/user.png"
-                        alt="userImage"
-                        width={40}
-                        height={40}
-                        className=" rounded-3xl "
-                      />
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
-                      </h3>
-                      <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
-                      </h4>
-                    </div>
+              <div className="mt-5">
+                <p className="text-left font-normal font-poppins text-[1rem]">
+                  "I'm blown away by OwnBoon's resources! The Informational section has helped me improve my habits, and the Blog section is a great source of inspiration."
+                </p>
+              </div>
+            </div>
+            <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between space-x-1 items-center">
+                  <div className="flex flex-col">
+                    <Image
+                      loading="lazy"
+                      src="/user.png"
+                      alt="userImage"
+                      width={40}
+                      height={40}
+                      className=" rounded-3xl "
+                    />
                   </div>
-                  <div className="flex flex-row place-items-center space-x-1">
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <div className="flex flex-col items-start">
+                    <h3 className="font-bold text-[1rem] ">
+                      Rachel Davis
+                    </h3>
+                    <h4 className="text-[0.8rem] text-[gray]">
+                      Wildlife Photographer
+                    </h4>
                   </div>
                 </div>
-                <div className="mt-5">
-                  <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
-                  </p>
+                <div className="flex flex-row place-items-center space-x-1">
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
-                <div className="flex flex-row justify-between">
-                  <div className="flex flex-row justify-between space-x-1 items-center">
-                    <div className="flex flex-col">
-                      <Image loading="lazy"
-                        src="/user.png"
-                        alt="userImage"
-                        width={40}
-                        height={40}
-                        className=" rounded-3xl "
-                      />
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
-                      </h3>
-                      <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
-                      </h4>
-                    </div>
+              <div className="mt-5">
+                <p className="text-left font-normal font-poppins text-[1rem]">
+                  "The workspace feature has been a game changer for my
+                  productivity!"
+                </p>
+              </div>
+            </div>
+            <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between space-x-1 items-center">
+                  <div className="flex flex-col">
+                    <Image
+                      loading="lazy"
+                      src="/user.png"
+                      alt="userImage"
+                      width={40}
+                      height={40}
+                      className=" rounded-3xl "
+                    />
                   </div>
-                  <div className="flex flex-row place-items-center space-x-1">
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <div className="flex flex-col items-start">
+                    <h3 className="font-bold text-[1rem] ">
+                      Chris Thompson
+                    </h3>
+                    <h4 className="text-[0.8rem] text-[gray]">
+                      Graphic Designer
+                    </h4>
                   </div>
                 </div>
-                <div className="mt-5">
-                  <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
-                  </p>
+                <div className="flex flex-row place-items-center space-x-1">
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
-                <div className="flex flex-row justify-between">
-                  <div className="flex flex-row justify-between space-x-1 items-center">
-                    <div className="flex flex-col">
-                      <Image loading="lazy"
-                        src="/user.png"
-                        alt="userImage"
-                        width={40}
-                        height={40}
-                        className=" rounded-3xl "
-                      />
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
-                      </h3>
-                      <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
-                      </h4>
-                    </div>
+              <div className="mt-5">
+                <p className="text-left font-normal font-poppins text-[1rem]">
+                  "I was struggling with motivation before I found OwnBoon. The virtual study buddies and Lofi music sessions in the Workspace keep me focused and energized."
+                </p>
+              </div>
+            </div>
+            <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between space-x-1 items-center">
+                  <div className="flex flex-col">
+                    <Image
+                      loading="lazy"
+                      src="/user.png"
+                      alt="userImage"
+                      width={40}
+                      height={40}
+                      className=" rounded-3xl "
+                    />
                   </div>
-                  <div className="flex flex-row place-items-center space-x-1">
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <div className="flex flex-col items-start">
+                    <h3 className="font-bold text-[1rem] ">
+                      Samantha Miller
+                    </h3>
+                    <h4 className="text-[0.8rem] text-[gray]">
+                      Content Creator
+                    </h4>
                   </div>
                 </div>
-                <div className="mt-5">
-                  <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
-                  </p>
+                <div className="flex flex-row place-items-center space-x-1">
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
-                <div className="flex flex-row justify-between">
-                  <div className="flex flex-row justify-between space-x-1 items-center">
-                    <div className="flex flex-col">
-                      <Image loading="lazy"
-                        src="/user.png"
-                        alt="userImage"
-                        width={40}
-                        height={40}
-                        className=" rounded-3xl "
-                      />
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] pl-[0.1rem]">
-                        Elliot Choy
-                      </h3>
-                      <h4 className="text-[0.8rem] text-[gray]">
-                        Content Creator
-                      </h4>
-                    </div>
+              <div className="mt-5">
+                <p className="text-left font-normal font-poppins text-[1rem]">
+                  "OwnBoon is the perfect platform for personal growth. The articles in the Informational section are so insightful, and the Community is full of like-minded individuals."
+                </p>
+              </div>
+            </div>
+            <div className="w-[330px] h-[212px] review-card rounded mb-0 md:mb-5 flex flex-col p-7 border-[#00AEFF73] border ">
+              <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between space-x-1 items-center">
+                  <div className="flex flex-col">
+                    <Image
+                      loading="lazy"
+                      src="/user.png"
+                      alt="userImage"
+                      width={40}
+                      height={40}
+                      className=" rounded-3xl "
+                    />
                   </div>
-                  <div className="flex flex-row place-items-center space-x-1">
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
-                    <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <div className="flex flex-col items-start">
+                    <h3 className="font-bold text-[1rem] ">
+                      Alex Smith
+                    </h3>
+                    <h4 className="text-[0.8rem] text-[gray]">
+                      Princeton University
+                    </h4>
                   </div>
                 </div>
-                <div className="mt-5">
-                  <p className="text-left font-normal font-poppins text-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Non ab explicabo vitae nemo! Doloribus eligendi non
-                    repellendus numquam, earum ab!
-                  </p>
+                <div className="flex flex-row place-items-center space-x-1">
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
+                  <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
+              </div>
+              <div className="mt-5">
+                <p className="text-left font-normal font-poppins text-[1rem]">
+                 "I can't recommend OwnBoon enough! The Blog section is full of amazing content, and the Workspace has made me more organized and efficient than ever."
+                </p>
+              </div>
             </div>
           </Carousel>
         )}

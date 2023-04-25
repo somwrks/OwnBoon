@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Balls, Skateboard } from "../components/ext";
-import Navbar from "../components/Navbar";
+import Navbars from "../components/Navbar";
 import Hero from "../components/Home/Hero";
 import Body from "../components/Home/Body";
 import Benefits from "../components/Home/Benefits";
@@ -14,7 +14,9 @@ const Home: NextPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
   }, []);
 
   return (
@@ -34,7 +36,7 @@ const Home: NextPage = () => {
               content="ownboon,Ownboon, Ownboon Company, Ownboon company, Ownboon Self Improvement, OwnBoon productivity, OwnBoon Self Improvement, OwnBoon, ownboon self improvement,ownboon company, ownboon self development, ownboon productivity, ownboon linkedin, ownboon github, OwnBoon linkedin, Ownboon github, Ownboon Github, Ownboon LinkedIn, Ownboon Productivity, OwnBoon Som, Ownboon som" />
             <meta name="author" content="OwnBoon" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          </Head><Navbar /><div className="mx-auto my-auto">
+          </Head><Navbars /><div className="mx-auto my-auto">
               <Preview />
               <Balls />
               <div className="flex h-[90vh] flex-col">
