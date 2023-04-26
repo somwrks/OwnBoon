@@ -6,7 +6,6 @@ import Hero from "../components/Home/Hero";
 import Body from "../components/Home/Body";
 import Benefits from "../components/Home/Benefits";
 import Reviews from "../components/Home/Reviews";
-import Preview from "../components/Preview";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
@@ -37,7 +36,6 @@ const Home: NextPage = () => {
             <meta name="author" content="OwnBoon" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           </Head><Navbars /><div className="mx-auto my-auto">
-              <Preview />
               <Balls />
               <div className="flex h-[90vh] flex-col">
                 <Hero />

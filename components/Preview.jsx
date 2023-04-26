@@ -35,6 +35,8 @@ export default function Preview() {
   }
   const hide = () => {
     document.getElementById("preview").style.display = "none";
+    document.querySelectorAll("nav")[0].style.zIndex="1";
+
   };
   return (
     <div

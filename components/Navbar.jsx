@@ -9,6 +9,7 @@ export default function Navbar() {
   const router = useRouter();
   const preview = () => {
     document.getElementById("preview").style.display = "block";
+    document.querySelectorAll("nav")[0].style.zIndex="-1";
   };
   const [display, setDisplay] = useState(false)
 const dropdown= ()=> {
