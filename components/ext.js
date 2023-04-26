@@ -95,7 +95,7 @@ export const Skateboard = () => {
       <div className="flex flex-wrap  w-full flex-row mt-[5vh]  items-center space-x-5 justify-center font-semibold">
         <div className="countsquare z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
-            <CountUpAnimation duration={1500}>150</CountUpAnimation>
+            <CountUpAnimation duration={2000} >150</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
           <h6 className="text-[1rem] font-200 ">Lives Improved</h6>
@@ -109,7 +109,7 @@ export const Skateboard = () => {
         </div>
         <div className="countsquare z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
-            <CountUpAnimation duration={1500}>100</CountUpAnimation>
+            <CountUpAnimation duration={2000}>100</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
           <h6 className="text-[1rem] font-200 ">Active Influencers</h6>
@@ -123,7 +123,7 @@ export const Skateboard = () => {
         </div>
         <div className="countsquare z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
-            <CountUpAnimation duration={1500}>50</CountUpAnimation>
+            <CountUpAnimation duration={2000}>50</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
           <h6 className="text-[1rem] font-200 ">Daily Blogs</h6>

@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDiscord,
+  faGithub,
   faInstagram,
   faLinkedin,
-  faYoutube,
+  
 } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -63,12 +64,12 @@ export default function Footer() {
                   <Link href="https://instagram.com/OwnBoon">
                     <FontAwesomeIcon icon={faInstagram} />
                   </Link>
-                  <Link href="http://">
-                    <FontAwesomeIcon icon={faYoutube} />
-                  </Link>
-                  <Link href="http://">
+                  <a href="https://github.com/OwnBoon">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                  <a href="https://discord.gg/HZmwkA2X">
                     <FontAwesomeIcon icon={faDiscord} />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -106,10 +107,10 @@ export default function Footer() {
                   
                 </div>
                 <div className="flex flex-col">
-                  <a href="/">
-                    <FontAwesomeIcon icon={faYoutube} />
+                  <a href="https://github.com/OwnBoon">
+                    <FontAwesomeIcon icon={faGithub} />
                   </a>
-                  <a href="/">
+                  <a href="https://discord.gg/HZmwkA2X">
                     <FontAwesomeIcon icon={faDiscord} />
                   </a>
                   

@@ -1,14 +1,25 @@
 
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 export default function Navbar() {
   const router = useRouter();
   const preview = () => {
     document.getElementById("preview").style.display = "block";
   };
-
+  const [display, setDisplay] = useState(false)
+const dropdown= ()=> {
+  if(display ===false ){
+    setDisplay(true)
+  }
+  else{
+    setDisplay(false)
+  }
+  }
+  
   return (
     <>
       <nav
@@ -37,16 +48,18 @@ export default function Navbar() {
             </svg>
           </button>
           <a
-            href="https://flowbite.com/docs/images/logo.svg"
+            href="https://ownboon.com"
             className="flex items-center"
           >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-6 mr-3 sm:h-9"
+            <Image
+            width={50}
+            height={100}
+              src="/logo.png"
+              className=" mr-1 rounded-full "
               alt="Ownboon Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap ">
-              Own<span className="text-cyan">Boon</span>
+              Own<span className="text-[#00F0B5]">Boon</span>
             </span>
           </a>
           <div className="flex md:order-2">
@@ -78,8 +91,8 @@ export default function Navbar() {
               <li>
                 <button
                   id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
-                  className="flex items-center justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium     md:w-auto "
+                  onClick={dropdown}
+                  className="flex items-center justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium   md:w-auto "
                 >
                   Explore
                   <svg
@@ -98,16 +111,16 @@ export default function Navbar() {
                 </button>
                 <div
                   id="dropdownNavbar"
-                  className="z-10 items-start hidden font-light   divide-y divide-gray-100 rounded-lg  md:w-auto w-full "
+                  className={`${display === true? "":"hidden"} bg-white z-10 items-start  font-light   divide-y divide-gray-100 rounded-lg  w-full `}
                 >
                   <ul
-                    className="px-5 bg-white justify-center text-gray-700 "
+                    className="ml-[-30px]  justify-center py-3 px-5 items-center absolute text-gray-700 "
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <Link
                         href="/habits"
-                        className={`Link  block p-4  ${
+                        className={`Link block p-4  ${
                           router.pathname == "/habits"
                             ? "activelink font-bold"
                             : ""

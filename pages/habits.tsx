@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../components/Habits/Hero";
 import Navbar from "../components/Navbar";
 
 export default function habits() {
@@ -13,7 +14,7 @@ export default function habits() {
     </Head>
     <Navbar/>
     <div className="my-auto mx-auto">
-      
+      <Hero/>
     </div>
     </>
   )
