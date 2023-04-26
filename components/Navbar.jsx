@@ -19,6 +19,15 @@ const dropdown= ()=> {
     setDisplay(false)
   }
   }
+  const [displayphone, setPhone] = useState(false)
+const dropdownphone= ()=> {
+  if(displayphone ===false ){
+    setPhone(true)
+  }
+  else{
+    setPhone(false)
+  }
+  }
   
   return (
     <>
@@ -29,6 +38,7 @@ const dropdown= ()=> {
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
+            onClick={dropdownphone}
             className="inline-flex  items-center p-2 rounded-lg md:hidden"
             aria-controls="navbar-sticky"
             aria-expanded="false"
@@ -72,7 +82,7 @@ const dropdown= ()=> {
             </button>
           </div>
           <div
-            className="items-center text-[0.9rem] justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className={`items-center text-[0.9rem] justify-between ${displayphone === true? "":"hidden"} w-full md:flex md:w-auto md:order-1`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 mt-4 bg-white rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
@@ -111,10 +121,10 @@ const dropdown= ()=> {
                 </button>
                 <div
                   id="dropdownNavbar"
-                  className={`${display === true? "":"hidden"} bg-white z-10 items-start  font-light   divide-y divide-gray-100 rounded-lg  w-full `}
+                  className={`${display === true? "z-100 ml-2 ":"hidden"} bg-white items-start  font-light   divide-y divide-gray-100 rounded-lg  w-full `}
                 >
                   <ul
-                    className="ml-[-30px]  justify-center py-3 px-5 items-center absolute text-gray-700 "
+                    className="ml-[-30px] z-100 bg-white justify-center py-3 px-5 items-center absolute text-gray-700 "
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
