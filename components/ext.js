@@ -50,6 +50,7 @@ export const Balls = () => {
     window.onresize = function () {
       setInitialPositions();
     };
+    
 
     return () => {
       container.removeEventListener("mousemove", handleMouseMove);
@@ -83,7 +84,7 @@ export const Skateboard = () => {
   }, []);
 
   return (
-    <div id="counter" className="py-5">
+    <div id="counter" className=" py-5 mb-10">
       <div className=" h-[8vh] w-[3vw] flex flex-col justify-center items-center">
         <button
           id="ripple"
@@ -95,11 +96,12 @@ export const Skateboard = () => {
       <div className="flex flex-wrap  w-full flex-row mt-[5vh] mb-[5vh]  items-center space-x-5  justify-center font-semibold">
         <div className="countsquare z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
-            <CountUpAnimation duration={2000} >150</CountUpAnimation>
+            <CountUpAnimation duration={2000}>150</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
           <h6 className="text-[1rem] font-200 ">Lives Improved</h6>
-          <Image loading="lazy"
+          <Image
+            loading="lazy"
             src="/square1.webp"
             width={40}
             height={40}
@@ -107,13 +109,14 @@ export const Skateboard = () => {
             alt="I"
           />
         </div>
-        <div className="countsquare z-100 z-no h-[101px] w-[172px]">
+        <div className="countsquare  z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
             <CountUpAnimation duration={2000}>100</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
           <h6 className="text-[1rem] font-200 ">Active Influencers</h6>
-          <Image loading="lazy"
+          <Image
+            loading="lazy"
             width={40}
             height={40}
             src="/square2.webp"
@@ -127,7 +130,8 @@ export const Skateboard = () => {
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
           <h6 className="text-[1rem] font-200 ">Daily Blogs</h6>
-          <Image loading="lazy"
+          <Image
+            loading="lazy"
             width={40}
             height={40}
             src="/square3.webp"

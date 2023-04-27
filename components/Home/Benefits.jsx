@@ -47,8 +47,8 @@ export default function Benefits() {
   return (
     <section id="benefit" className="mb-10 pt-[100px] px-5">
       <div className="heading  justify-center align-center ">
-        <h2 className="md:text-[5rem] text-[3rem] benefit-heading">Benefits</h2>
-        <h3 className="md:text-[2rem] text-[1.5rem] py-3">
+      <h1 className="md:text-[4rem] benefit-heading text-[3rem]">Benefits</h1>
+        <h3 className="md:text-[1.5rem] text-[1.5rem] py-1 ">
         Unlock the full benefits of what we offer and experience positive changes in your life.
 
         </h3>
