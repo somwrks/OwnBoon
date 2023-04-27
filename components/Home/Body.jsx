@@ -21,10 +21,10 @@ export default function Body() {
   }, []);
 
   return (
-    <div className="mt-[10vh] bg-white text-[#2E2E2E] flex flex-col font-poppins mx-auto my-auto items-center align-center p-5 justify-center">
+    <div className="mt-[42vh] bg-white text-[#2E2E2E] flex flex-col font-poppins  items-center align-center p-5 justify-center">
       <div className="heading">
-        <h1 className="md:text-[5rem] text-[3rem]">Why OwnBoon?</h1>
-        <h3 className="md:text-[2rem] text-[1.5rem] py-3 ">
+        <h1 className="md:text-[4rem] text-[3rem]">Why OwnBoon?</h1>
+        <h3 className="md:text-[1.5rem] text-[1.5rem] py-1 ">
           It all starts somewhere <br />
           Ignite your growth, Unleash your Potential
         </h3>
@@ -41,10 +41,10 @@ export default function Body() {
           />
         </div>
         <div className="flex flex-col ml-2  text-center md:text-left align-center justify-center">
-          <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
+          <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             A Better Community of Like-Minded People
           </h4>
-          <p className="text-[0.8rem] md:text-[1.2rem] break-normal max-w-3xl">
+          <p className="text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
             Self-improvement is a journey that begins with gaining insight into
             and understanding individuals who share your goals. Meeting your
             role model can be a tremendous inspiration to emulate their success.
@@ -60,10 +60,10 @@ export default function Body() {
         {pc ? (
           <>
             <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
-              <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
+              <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Mental Peace & Stability
               </h4>
-              <p className=" break-normal max-w-3xl text-[0.8rem] md:text-[1.2rem] ">
+              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
                 Self-Improvement is a journey that starts with self-awareness
                 and finding like-minded individuals. OwnBoon’s tools help you
                 build communities in Discord Servers and our very own group
@@ -93,10 +93,10 @@ export default function Body() {
               />
             </div>
             <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
-              <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
+              <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Mental Peace & Stability
               </h4>
-              <p className=" break-normal max-w-3xl text-[0.8rem] md:text-[1.2rem] ">
+              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
                 Achieving stability in life requires cultivating a peaceful
                 state of mind. We understand the importance of being organized
                 and planning, and our tools can help make these tasks a breeze.
@@ -121,10 +121,10 @@ export default function Body() {
         </div>
 
         <div className="flex flex-col ml-2 text-center md:text-left align-center justify-center">
-          <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
+          <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             Personal Growth with Statistics{" "}
           </h4>
-          <p className=" break-normal max-w-3xl text-[0.8rem] md:text-[1.2rem] ">
+          <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
             Our range of tools has been carefully designed to assist you in
             achieving your personal growth goals. With our support, you can
             focus solely on your self-improvement journey without worrying about
@@ -139,10 +139,10 @@ export default function Body() {
         {pc ? (
           <>
             <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
-              <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
+              <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Ultimate Workspace
               </h4>
-              <p className=" break-normal max-w-3xl text-[0.8rem] md:text-[1.2rem] ">
+              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
                 At OwnBoon, we offer tools like the AI Scheduler and To-Do Lists
                 to help maximize productivity. Our productivity tips work
                 smarter, not harder. In the Farm section, cultivate a virtual
@@ -174,10 +174,10 @@ export default function Body() {
               />
             </div>
             <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
-              <h4 className="md:text-[2rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
+              <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Ultimate Workspace
               </h4>
-              <p className=" break-normal max-w-3xl text-[0.8rem] md:text-[1.2rem] ">
+              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
                 At OwnBoon, we offer tools like the AI Scheduler and To-Do Lists
                 to help maximize productivity. Our productivity tips work
                 smarter, not harder. In the Farm section, cultivate a virtual

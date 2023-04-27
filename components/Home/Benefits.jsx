@@ -45,7 +45,7 @@ export default function Benefits() {
   }, []);
 
   return (
-    <section id="benefit" className="mb-10 pt-[100px]">
+    <section id="benefit" className="mb-10 pt-[100px] px-5">
       <div className="heading  justify-center align-center ">
         <h2 className="md:text-[5rem] text-[3rem] benefit-heading">Benefits</h2>
         <h3 className="md:text-[2rem] text-[1.5rem] py-3">
@@ -300,7 +300,7 @@ export default function Benefits() {
               />
             </svg>
 
-            <h2 className="text-white text-xl font-bold font-poppins">
+            <h2 className="text-white text-center text-xl font-bold font-poppins">
               Explore Yourself
             </h2>
           </div>
@@ -328,7 +328,7 @@ export default function Benefits() {
               </svg>
             </div>
             <div className="flex flex-col   px-5 h-[5vh]  md:w-[20vw]">
-              <h3 className="text-[#00AEFF] text-2xl benefit-txt">
+              <h3 className="text-[#00AEFF] text-center text-2xl benefit-txt">
               Explore Yourself
               </h3>
               <p className="break-normal">Explore yourself and overcome difficulties, analyze your progress.

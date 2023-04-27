@@ -323,7 +323,7 @@ export default function Reviews() {
                       Mark Lee
                     </h3>
                     <h4 className="text-[0.8rem] text-[gray]">
-                      University of Pennsylvania
+                      Tulane University
                     </h4>
                   </div>
                 </div>

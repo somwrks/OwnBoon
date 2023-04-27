@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 /* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @font-face {
   font-family: "BlackBones";
   src: url("../public/blackbones.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/Poppins.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,8 +21,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @font-face {
   font-family: "fontspring";
   src: url("../public/Fontspring.otf") format("truetype");
@@ -24,10 +29,10 @@
 
 /* Utility */
 .font-inter {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 }
 .font-poppins {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
 }
 .font-blackbones {
   font-family: BlackBones;
@@ -590,17 +595,8 @@ canvas {
   .ball {
     display: none;
   }
-  .countsquare {
-    height: 10vh;
-    width: 25vw;
-  }
   .countsquare h6 {
     font-size: 0.6rem;
-  }
-  .countsquare img {
-    height: 3vh;
-    width: 6vw;
-    padding: 0.3rem;
   }
   .login {
     width: 20vw;
