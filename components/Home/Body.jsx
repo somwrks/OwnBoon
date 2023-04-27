@@ -44,7 +44,7 @@ export default function Body() {
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             A Better Community of Like-Minded People
           </h4>
-          <p className="text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
+          <p className="text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
             Self-improvement is a journey that begins with gaining insight into
             and understanding individuals who share your goals. Meeting your
             role model can be a tremendous inspiration to emulate their success.
@@ -63,7 +63,7 @@ export default function Body() {
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Mental Peace & Stability
               </h4>
-              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
+              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
                 Self-Improvement is a journey that starts with self-awareness
                 and finding like-minded individuals. OwnBoon’s tools help you
                 build communities in Discord Servers and our very own group
@@ -96,7 +96,7 @@ export default function Body() {
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Mental Peace & Stability
               </h4>
-              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
+              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
                 Achieving stability in life requires cultivating a peaceful
                 state of mind. We understand the importance of being organized
                 and planning, and our tools can help make these tasks a breeze.
@@ -124,7 +124,7 @@ export default function Body() {
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             Personal Growth with Statistics{" "}
           </h4>
-          <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
+          <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
             Our range of tools has been carefully designed to assist you in
             achieving your personal growth goals. With our support, you can
             focus solely on your self-improvement journey without worrying about
@@ -142,7 +142,7 @@ export default function Body() {
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Ultimate Workspace
               </h4>
-              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
+              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
                 At OwnBoon, we offer tools like the AI Scheduler and To-Do Lists
                 to help maximize productivity. Our productivity tips work
                 smarter, not harder. In the Farm section, cultivate a virtual
@@ -177,7 +177,7 @@ export default function Body() {
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Ultimate Workspace
               </h4>
-              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-3xl">
+              <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
                 At OwnBoon, we offer tools like the AI Scheduler and To-Do Lists
                 to help maximize productivity. Our productivity tips work
                 smarter, not harder. In the Farm section, cultivate a virtual

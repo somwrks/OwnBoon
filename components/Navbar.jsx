@@ -1,35 +1,45 @@
-
-
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useState } from "react";
+import{ useRouter } from "next/router";
+import { Link as FLink } from "react-scroll";
+
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const router = useRouter();
   const preview = () => {
     document.getElementById("preview").style.display = "block";
-    document.querySelectorAll("nav")[0].style.zIndex="-1";
+    document.querySelectorAll("nav")[0].style.zIndex = "-1";
   };
-  const [display, setDisplay] = useState(false)
-const dropdown= ()=> {
-  if(display ===false ){
-    setDisplay(true)
-  }
-  else{
-    setDisplay(false)
-  }
-  }
-  const [displayphone, setPhone] = useState(false)
-const dropdownphone= ()=> {
-  if(displayphone ===false ){
-    setPhone(true)
-  }
-  else{
-    setPhone(false)
-  }
-  }
-  
+  const [display, setDisplay] = useState(false);
+  const dropdown = () => {
+    if (display === false) {
+      setDisplay(true);
+    } else {
+      setDisplay(false);
+    }
+  };
+  const [displayphone, setPhone] = useState(false);
+  const dropdownphone = () => {
+    if (displayphone === false) {
+      setPhone(true);
+    } else {
+      setPhone(false);
+    }
+  };
+
+const [underline, setUnderline] = useState(false)
+useEffect(() => {
+  if(router.pathname==="/"){
+setUnderline(true)
+}
+else{
+  setUnderline(false)
+}
+
+}, [])
+
+
   return (
     <>
       <nav
@@ -58,13 +68,10 @@ const dropdownphone= ()=> {
               ></path>
             </svg>
           </button>
-          <a
-            href="https://ownboon.com"
-            className="flex items-center"
-          >
+          <a href="https://ownboon.com" className="flex items-center">
             <Image
-            width={50}
-            height={100}
+              width={50}
+              height={100}
               src="/logo.png"
               className=" mr-1 rounded-full "
               alt="Ownboon Logo"
@@ -83,21 +90,41 @@ const dropdownphone= ()=> {
             </button>
           </div>
           <div
-            className={`items-center text-[0.9rem] justify-between ${displayphone === true? "":"hidden"} w-full md:flex md:w-auto md:order-1`}
+            className={`items-center text-[0.9rem] justify-between ${
+              displayphone === true ? "" : "hidden"
+            } w-full md:flex md:w-auto md:order-1`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 mt-4 bg-white rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
               <li>
-                <Link
-                  href="/"
-                  className={`Link  block py-2 pl-3 pr-4 md:p-0 ${
-                    router.pathname == "/" ? "activelink font-bold" : ""
-                  }`}
+              {underline===true? 
+                <FLink
+                activeClass={"activelink"}
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className={`Link cursor-pointer block py-2 pl-3 pr-4 md:p-0 `}
                   id="homelink"
                   aria-current="page"
+                  
+                >
+                  Home
+                </FLink>
+              :
+                <Link
+                  href="/"
+                  scroll={false}
+                  passHref
+                  className={`Link  block py-2 pl-3 pr-4 md:p-0 `}
+                  id="homelink"
+                  aria-current="page"
+                  
                 >
                   Home
                 </Link>
+
+              }
               </li>
               <li>
                 <button
@@ -122,7 +149,9 @@ const dropdownphone= ()=> {
                 </button>
                 <div
                   id="dropdownNavbar"
-                  className={`${display === true? "z-100 ml-2 ":"hidden"} bg-white items-start  font-light   divide-y divide-gray-100 rounded-lg  w-full `}
+                  className={`${
+                    display === true ? "z-100 ml-2 " : "hidden"
+                  } bg-white items-start  font-light   divide-y divide-gray-100 rounded-lg  w-full `}
                 >
                   <ul
                     className="ml-[-30px] z-100 bg-white justify-center py-3 px-5 items-center absolute text-gray-700 "
@@ -180,28 +209,55 @@ const dropdownphone= ()=> {
                 </div>
               </li>
               <li>
-                <Link
-                scroll={false}
+              {underline === true? 
+                <FLink
+                  activeClass="activelink"
+                  to="benefit"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
                   href="/#benefit"
                   id="benefitlink"
                   className=" block py-2 Link pl-3 pr-4 md:p-0 "
                 >
                   Benefit
+                </FLink>
+              :
+                <Link  
+                  href="/#benefit"
+                  scroll={true}
+                  id="benefitlink"
+                  className=" block py-2 Link pl-3 pr-4 md:p-0 "
+                >
+                  Benefit
                 </Link>
+              }
               </li>
               <li>
-                <Link
-                  href="/about"
+              {underline === true? 
+                <FLink
+                  activeClass="activelink"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  href="/#about"
                   className="Link  block py-2 pl-3 pr-4 md:p-0 "
                 >
                   About Us
+                </FLink> :
+                <Link
+                  href="/#about"
+                  className="Link block py-2 pl-3 pr-4 md:p-0 "
+                >
+                  About Us
                 </Link>
+              }
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      
     </>
   );
 }

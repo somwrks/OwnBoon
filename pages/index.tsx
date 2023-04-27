@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
   return (
@@ -44,18 +44,18 @@ const Home: NextPage = () => {
             />
           </Head>
           <Navbars />
-          <div className="mx-auto my-auto">
+            <section id="home">
             <Balls />
             <div className="flex min-h-screen flex-col">
               <Hero />
               <Skateboard />
             </div>
             <Body />
+            </section>
             <Benefits />
             <Reviews />
             <About />
             <Footer />
-          </div>
         </>
       )}
     </>

@@ -239,6 +239,7 @@ ul {
 }
 .activelink {
   border-bottom: solid 2.5px #0087ca;
+  font-weight: 500;
 }
 svg {
   display: inline-block;
@@ -411,33 +412,24 @@ svg {
   align-items: center;
 }
 .countsquare:nth-child(1) {
-  background-image: linear-gradient(
-    267.43deg,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(138, 214, 176, 0) 100.47%
-  );
+  background: linear-gradient(90deg, rgba(178,251,255,1) 0%, rgba(215,255,223,1) 50%, rgba(255,255,255,1) 100%);
+
   border: 1px solid #ffffff;
   filter: drop-shadow(1px 2px 5px rgba(233, 0, 100, 0.25));
   border-radius: 0px 10px 10px 10px;
   background-clip: content-box;
 }
 .countsquare:nth-child(2) {
-  background-image: linear-gradient(
-    267.43deg,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(255, 255, 255, 0) 100.47%
-  );
+  background: linear-gradient(90deg, rgba(255,176,254,1) 0%, rgba(255,255,255,1) 100%);
+
   border: 1px solid #ffffff;
   filter: drop-shadow(1px 2px 5px rgba(233, 0, 100, 0.25));
   border-radius: 0px 10px 10px 10px;
   background-clip: content-box;
 }
 .countsquare:nth-child(3) {
-  background-image: linear-gradient(
-    267.43deg,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(255, 255, 255, 0) 100.47%
-  );
+  background: linear-gradient(90deg, rgba(255,176,254,1) 0%, rgba(175,255,203,1) 50%, rgba(255,255,255,1) 100%);
+
   border: 1px solid #ffffff;
   filter: drop-shadow(1px 2px 5px rgba(233, 0, 100, 0.25));
   border-radius: 0px 10px 10px 10px;
@@ -576,10 +568,25 @@ svg {
 }
 /* reviews */
 .review-card {
-  background: rgba(255, 255, 255, 0.01);
+  
   border-radius: 19px;
   --webkit-backdrop-filter: blur(25px);
   transform-style: preserve-3d;
+}
+.review-card:nth-of-type(1){
+  background: linear-gradient(90deg, rgba(211,253,255,1) 0%, rgba(233,255,234,1) 50%, rgba(255,255,255,1) 100%);
+
+
+}
+.review-card:nth-of-type(2){
+
+  background: radial-gradient(circle, rgba(211,253,255,1) 0%, rgba(233,255,234,1) 50%, rgba(255,255,255,1) 100%);
+  
+
+}
+.review-card:nth-of-type(3){
+  background: linear-gradient(270deg, rgba(211,253,255,1) 0%, rgba(233,255,234,1) 50%, rgba(255,255,255,1) 100%);
+
 }
 
 canvas {
