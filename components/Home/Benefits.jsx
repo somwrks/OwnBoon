@@ -240,14 +240,14 @@ export default function Benefits() {
           <div className="sphere  md:relative absolute right-16">
             <div className="spherebg bg-[#E90064] blur-[4rem]"></div>
             <svg
-              width="57"
+              width="58"
               height="58"
               viewBox="0 0 57 58"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
-                x="1.01709"
+                x="0.01709"
                 y="1.72754"
                 width="54.6238"
                 height="54.6238"

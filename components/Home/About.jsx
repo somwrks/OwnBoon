@@ -37,8 +37,8 @@ export default function About() {
           Our Team. Your Support.
         </h3>
         <div class="container mx-auto my-10 justify-center align-center">
-          <div class="crew grid items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 align-center">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class=" flex flex-wrap flex-row space-x-5 items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 align-center">
+            <div class="px-[40px] bg-white crew  rounded-lg shadow-md overflow-hidden">
               <Image
                 width={300}
                 height={300}
@@ -61,7 +61,7 @@ export default function About() {
                 </Link>
               </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="px-[40px] bg-white crew  rounded-lg shadow-md overflow-hidden">
               <Image
                 width={300}
                 height={300}
@@ -84,7 +84,7 @@ export default function About() {
                 </Link>
               </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="px-[40px] bg-white crew  rounded-lg shadow-md overflow-hidden">
               <Image
                 width={300}
                 height={300}
@@ -107,7 +107,7 @@ export default function About() {
                 </Link>
               </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="px-[40px] bg-white crew  rounded-lg shadow-md overflow-hidden">
               <Image
                 width={300}
                 height={300}
@@ -130,7 +130,7 @@ export default function About() {
                 </Link>
               </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="px-[40px] bg-white crew  rounded-lg shadow-md overflow-hidden">
               <Image
                 width={300}
                 height={300}
