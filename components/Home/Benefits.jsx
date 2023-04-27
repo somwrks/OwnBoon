@@ -60,7 +60,7 @@ export default function Benefits() {
           {/* first left square */}
           <div className="flex flex-row  justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
-              <h3 className={`text-[green] ${pc? "" :"text-right"} benefit-txt text-2xl`}>
+              <h3 className={`text-[#00F0B5] ${pc? "" :"text-right"} benefit-txt text-2xl`}>
               Community
               </h3>
               <p className={`break-normal  ${pc?"":"text-right"}`}>Community offers support, and learning opportunities to foster growth
@@ -328,7 +328,7 @@ export default function Benefits() {
               </svg>
             </div>
             <div className="flex flex-col   px-5 h-[5vh]  md:w-[20vw]">
-              <h3 className="text-[#00AEFF] text-center text-2xl benefit-txt">
+              <h3 className="text-[#00AEFF] text-left text-2xl benefit-txt">
               Explore Yourself
               </h3>
               <p className="break-normal">Explore yourself and overcome difficulties, analyze your progress.

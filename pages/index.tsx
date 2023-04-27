@@ -37,7 +37,7 @@ const Home: NextPage = () => {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           </Head><Navbars /><div className="mx-auto my-auto">
               <Balls />
-              <div className="flex h-[90vh] flex-col">
+              <div className="flex min-h-screen flex-col">
                 <Hero />
                 <Skateboard />
               </div>

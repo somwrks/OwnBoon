@@ -33,7 +33,7 @@ export default function Reviews() {
     <div className="my-[10vh] font-poppins flex flex-col">
       <div className="flex mt-10 my-auto mx-auto items-center flex-col text-center ">
         <div className="review-heading flex flex-col">
-          <h1 className="md:text-[5rem] text-[3rem] mb-10">
+         <h1 className="md:text-[4rem] mb-10 text-[3rem]">
             Check out Recent Reviews
           </h1>
         </div>

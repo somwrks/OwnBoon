@@ -25,22 +25,22 @@ export default function Body() {
       <div className="heading">
         <h1 className="md:text-[4rem] text-[3rem]">Why OwnBoon?</h1>
         <h3 className="md:text-[1.5rem] text-[1.5rem] py-1 ">
-          It all starts somewhere <br />
+          It all starts somewhere.
           Ignite your growth, Unleash your Potential
         </h3>
       </div>
 
-      <div className="my-auto mx-auto p-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
+      <div className="my-auto mx-auto px-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
         <div className="bodyimg1">
           <Image
-            width={700}
-            height={700}
+            width={600}
+            height={600}
             loading="lazy"
             src="/bodyimage1.webp"
             alt="Gif"
           />
         </div>
-        <div className="flex flex-col ml-2  text-center md:text-left align-center justify-center">
+        <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             A Better Community of Like-Minded People
           </h4>
@@ -59,7 +59,7 @@ export default function Body() {
       <div className="my-auto mx-auto p-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
         {pc ? (
           <>
-            <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
+            <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Mental Peace & Stability
               </h4>
@@ -73,8 +73,8 @@ export default function Body() {
             </div>
             <div className="bodyimg2">
               <Image
-                width={700}
-                height={700}
+                width={600}
+                height={600}
                 loading="lazy"
                 src="/bodyimage2.webp"
                 alt="Gif"
@@ -85,14 +85,14 @@ export default function Body() {
           <>
             <div className="bodyimg2">
               <Image
-                width={700}
-                height={700}
+                width={600}
+                height={600}
                 loading="lazy"
                 src="/bodyimage2.webp"
                 alt="Gif"
               />
             </div>
-            <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
+            <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Mental Peace & Stability
               </h4>
@@ -112,8 +112,8 @@ export default function Body() {
       <div className="my-auto mx-auto p-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
         <div className="bodyimg3">
           <Image
-            width={700}
-            height={700}
+            width={600}
+            height={600}
             loading="lazy"
             src="/bodyimage3.webp"
             alt="Gif"
@@ -138,7 +138,7 @@ export default function Body() {
       <div className="my-auto mx-auto p-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
         {pc ? (
           <>
-            <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
+            <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Ultimate Workspace
               </h4>
@@ -154,8 +154,8 @@ export default function Body() {
             </div>
             <div >
               <Image
-                width={700}
-                height={700}
+                width={600}
+                height={600}
                 loading="lazy"
                 src="/bodyimage4.webp"
                 alt="Gif" className="animate-float"
@@ -166,14 +166,14 @@ export default function Body() {
           <>
             <div >
               <Image
-                width={700}
-                height={700}
+                width={600}
+                height={600}
                 loading="lazy"
                 src="/bodyimage4.webp"
                 alt="Gif"
               />
             </div>
-            <div className="flex flex-col mr-2 text-center md:text-left align-center justify-center">
+            <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
                 Ultimate Workspace
               </h4>
