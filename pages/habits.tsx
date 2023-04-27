@@ -7,6 +7,7 @@ export default function habits() {
     <>
     <Head>
     <title>OwnBoon - Explore Habits</title>
+    <link rel="icon" href="/logo.png" />
     <meta
           name="description"
           content="Explore all about self improvement at one place"
