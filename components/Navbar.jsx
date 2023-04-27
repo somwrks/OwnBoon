@@ -4,12 +4,12 @@ import{ useRouter } from "next/router";
 import { Link as FLink } from "react-scroll";
 
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 export default function Navbar() {
   const router = useRouter();
   const preview = () => {
-    document.getElementById("preview").style.display = "block";
-    document.querySelectorAll("nav")[0].style.zIndex = "-1";
+    toast.info('Coming soon');
   };
   const [display, setDisplay] = useState(false);
   const dropdown = () => {

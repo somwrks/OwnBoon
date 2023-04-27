@@ -7,7 +7,6 @@ import NextNProgress from 'nextjs-progressbar';
 import { ToastContainer } from "react-toastify";
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Preview from "../components/Preview";
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -43,9 +42,16 @@ function MyApp({ Component, pageProps }: AppProps) {
         height={2}
       />
        {isLoading && <Loader />}
-       <Preview />
       <Component {...pageProps} />
-      <ToastContainer />
+      <ToastContainer  style={{ marginTop: "60px" }} position="top-center"
+      autoClose={3000}
+      hideProgressBar={true}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover />
       
     </>
   );

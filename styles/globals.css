@@ -208,10 +208,6 @@ body {
   fill: linear-gradient(0deg, #2e2e2e, #2e2e2e),
     linear-gradient(123.01deg, #00f0b5 0.69%, rgba(0, 240, 181, 0) 102.8%);
 }
-#preview {
-  display: none;
-  animation: 3s ease-in-out fade, 3s bt;
-}
 ul {
   background: white;
   font-size: 0.9rem;
