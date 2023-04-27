@@ -25,7 +25,7 @@ export default function Body() {
       <div className="heading">
         <h1 className="md:text-[4rem] text-[3rem]">Why OwnBoon?</h1>
         <h3 className="md:text-[1.5rem] text-[1.5rem] py-1 ">
-          It all starts somewhere.
+          It all starts somewhere. <br />
           Ignite your growth, Unleash your Potential
         </h3>
       </div>
