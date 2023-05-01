@@ -66,7 +66,8 @@ export default function About() {
               <Image
                 width={300}
                 height={300}
-                src="/user.png"
+                src="/alok.webp"
+                 className=" object-fit-cover"
                 alt="Team Member Photo"
               />
               <div class="px-6 py-4">
