@@ -25,8 +25,7 @@ export default function Body() {
       <div className="heading mb-5">
         <h1 className="md:text-[4rem] text-[3rem]">Why OwnBoon?</h1>
         <h3 className="md:text-[1.5rem] text-[1.5rem] py-1 ">
-          It all starts somewhere. <br />
-          Ignite your growth, Unleash your Potential
+        Elevate Your Self-Improvement Journey
         </h3>
       </div>
 
@@ -42,7 +41,9 @@ export default function Body() {
         </div>
         <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-            A Better Community of Like-Minded People
+           OwnBoon provides a welcoming community of like-minded individuals who are dedicated to personal growth and self-improvement. Connect with others who share your goals, join specific group chats based on your interests, and access a wealth of resources to help you on your journey.
+
+
           </h4>
           <p className="text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
             Self-improvement is a journey that begins with gaining insight into
@@ -61,14 +62,12 @@ export default function Body() {
           <>
             <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-                Mental Peace & Stability
+                Find Support and Encouragement
+
               </h4>
               <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
-                Self-Improvement is a journey that starts with self-awareness
-                and finding like-minded individuals. OwnBoon’s tools help you
-                build communities in Discord Servers and our very own group
-                chats to excel. Remember, the relentless pursuit of improvement
-                every day is the key to personal growth.
+                Whether you need advice or simply a listening ear, the OwnBoon community is here to support you. Use the vent zone to share your feelings and receive life advice, or connect with a gym buddy or study partner to stay on track and motivated. Focus Planet and lofi sessions can help you stay focused and energized.
+
               </p>
             </div>
             <div className="bodyimg2">
@@ -94,7 +93,8 @@ export default function Body() {
             </div>
             <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-                Mental Peace & Stability
+                Find Support and Encouragement
+
               </h4>
               <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
                 Achieving stability in life requires cultivating a peaceful
@@ -122,16 +122,11 @@ export default function Body() {
 
         <div className="flex flex-col ml-2 text-center md:text-left align-center justify-center">
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-            Personal Growth with Statistics{" "}
+            Grow Your Self-Improvement Journey
+
           </h4>
           <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
-            Our range of tools has been carefully designed to assist you in
-            achieving your personal growth goals. With our support, you can
-            focus solely on your self-improvement journey without worrying about
-            anything else. This website has been created exclusively for
-            individuals like you who are committed to their self-development.
-            Take advantage of all the available resources and unleash your full
-            potential.
+          With OwnBoon, you'll have access to personalized roadmaps and exclusive blog content on self-improvement and productivity. Stay informed with the latest tips and techniques from top influencers across different platforms and share your own progress and experiences with a supportive community
           </p>
         </div>
       </div>
@@ -140,16 +135,11 @@ export default function Body() {
           <>
             <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-                Ultimate Workspace
+                Boost Your Productivity
               </h4>
               <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
-                At OwnBoon, we offer tools like the AI Scheduler and To-Do Lists
-                to help maximize productivity. Our productivity tips work
-                smarter, not harder. In the Farm section, cultivate a virtual
-                farm with points earned through self-improvement. Compete with
-                others to make your farm the best. Our Group Chats and DMs
-                prioritize important conversations and minimize distractions.
-                Join OwnBoon today to improve your productivity and well-being!
+                OwnBoon offers a variety of productivity tools, including an AI scheduler to help you stay organized and focused. You can also access the right study techniques and tips based on your mood to help you stay on track and improve your workflow.
+
               </p>
             </div>
             <div >
@@ -175,16 +165,11 @@ export default function Body() {
             </div>
             <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
               <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-                Ultimate Workspace
+                Boost Your Productivity
               </h4>
               <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
-                At OwnBoon, we offer tools like the AI Scheduler and To-Do Lists
-                to help maximize productivity. Our productivity tips work
-                smarter, not harder. In the Farm section, cultivate a virtual
-                farm with points earned through self-improvement. Compete with
-                others to make your farm the best. Our Group Chats and DMs
-                prioritize important conversations and minimize distractions.
-                Join OwnBoon today to improve your productivity and well-being!
+                OwnBoon offers a variety of productivity tools, including an AI scheduler to help you stay organized and focused. You can also access the right study techniques and tips based on your mood to help you stay on track and improve your workflow.
+
               </p>
             </div>
           </>

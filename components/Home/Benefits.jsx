@@ -12,7 +12,6 @@ export default function Benefits() {
     setInitialPositions();
     window.addEventListener("resize", setInitialPositions);
 
-    
     function reveal() {
       var sphere = document.querySelectorAll(".sphere");
       var Ldot = document.querySelectorAll(".benefit-dot-left");
@@ -28,24 +27,22 @@ export default function Benefits() {
           Ldot[i]?.classList.add("show");
           Rdot[i]?.classList.add("show");
           txt[i]?.classList.add("show");
-        } 
+        }
       }
     }
     window.addEventListener("scroll", reveal);
     return () => {
       window.removeEventListener("resize", setInitialPositions);
     };
-
-    
   }, []);
 
   return (
     <section id="benefit" className="mb-10 pt-[100px] px-5">
       <div className="heading  justify-center align-center ">
-      <h1 className="md:text-[4rem] benefit-heading text-[3rem]">Benefits</h1>
+        <h1 className="md:text-[4rem] benefit-heading text-[3rem]">Benefits</h1>
         <h3 className="md:text-[1.5rem] text-[1.5rem] py-1 ">
-        Unlock the full benefits of what we offer and experience positive changes in your life.
-
+          Unlock the full benefits of what we offer and experience positive
+          changes in your life.
         </h3>
       </div>
       <div className="benefit-container  py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-[20vh]  md:space-x-40">
@@ -55,11 +52,18 @@ export default function Benefits() {
           {/* first left square */}
           <div className="flex flex-row  justify-between ">
             <div className="flex flex-col  px-5 h-[5vh] xl:w-[20vw] md:w-auto">
-              <h3 className={`text-[#00F0B5] ${pc? "" :"text-right"} benefit-txt text-2xl`}>
-              Community
+              <h3
+                className={`text-[#00F0B5] ${
+                  pc ? "" : "text-right"
+                } benefit-txt text-2xl`}
+              >
+                Boosted Productivity
               </h3>
-              <p className={`break-normal  ${pc?"":"text-right"}`}>Community offers support, and learning opportunities to foster growth
-</p>
+              <p className={`break-normal  ${pc ? "" : "text-right"}`}>
+                With OwnBoon's tools and features such as AI scheduler and study
+                techniques, you can optimize your productivity and stay on track
+                with your tasks and goals
+              </p>
             </div>
             <div className="flex flex-col benefit-dot-left">
               <svg
@@ -110,9 +114,8 @@ export default function Benefits() {
               />
             </svg>
             <h2 className="text-white text-xl font-bold font-poppins">
-            Community
+              Boosted Productivity
             </h2>
-            
           </div>
 
           {/* first right square */}
@@ -165,7 +168,7 @@ export default function Benefits() {
             </svg>
 
             <h2 className="text-white text-xl text-center font-bold font-poppins">
-              Peer Support
+              Focus
             </h2>
           </div>
           <div className="flex flex-row md:mt-0 mt-[20vh] justify-between ">
@@ -192,12 +195,14 @@ export default function Benefits() {
               </svg>
             </div>
             <div className="flex flex-col  px-5 h-[5vh] xl:w-[20vw] md:w-auto">
-              <h3 className="text-[#AA77FF] text-2xl benefit-txt">
-              Peer Support
-              </h3>
-              <p className="break-normal ">Find supportive peers on our website. 
-
-</p>
+              <h3 className="text-[#AA77FF] text-2xl benefit-txt">Focus</h3>
+              <p className="break-normal ">
+                {" "}
+                OwnBoon's focus planet and lofi sessions help you stay motivated
+                and focused on your work, while the vent zone allows you to
+                express your emotions and receive life advice from other
+                like-minded individuals.
+              </p>
             </div>
           </div>
         </div>
@@ -209,11 +214,18 @@ export default function Benefits() {
 
           <div className="flex flex-row justify-between ">
             <div className="flex flex-col xl:w-[20vw] md:w-auto  px-5 h-[5vh] ">
-              <h3 className={`text-[#E90064] ${pc?"":"text-right"} text-2xl benefit-txt`}>
-              Focus
+              <h3
+                className={`text-[#E90064] ${
+                  pc ? "" : "text-right"
+                } text-2xl benefit-txt`}
+              >
+                Diverse Connections
               </h3>
-              <p className={`break-normal  ${pc?"":"text-right"}`}>Maximize results with high focus through our tools
-</p>
+              <p className={`break-normal  ${pc ? "" : "text-right"}`}>
+                OwnBoon provides a vibrant community of like-minded people, with
+                group chats tailored to your interests and goals, and
+                opportunities to connect with study buddies, gym buddies, and
+                more. Explore and expand your horizons with OwnBoon.</p>
             </div>
             <div className="flex flex-col benefit-dot-left">
               <svg
@@ -263,9 +275,7 @@ export default function Benefits() {
               />
             </svg>
 
-            <h2 className="text-white text-xl font-bold font-poppins">
-              Focus
-            </h2>
+            <h2 className="text-white text-xl font-bold font-poppins">Diverse Connections</h2>
           </div>
           {/* second right square */}
 
@@ -296,7 +306,7 @@ export default function Benefits() {
             </svg>
 
             <h2 className="text-white text-center text-xl font-bold font-poppins">
-              Explore Yourself
+            Personalized Roadmaps
             </h2>
           </div>
           <div className="flex flex-row md:mt-0  mt-[20vh] justify-between ">
@@ -324,10 +334,11 @@ export default function Benefits() {
             </div>
             <div className="flex flex-col   px-5 h-[5vh]  xl:w-[20vw] md:w-auto">
               <h3 className="text-[#00AEFF] text-left text-2xl benefit-txt">
-              Explore Yourself
+              Personalized Roadmaps
               </h3>
-              <p className="break-normal">Explore yourself and overcome difficulties, analyze your progress.
-</p>
+              <p className="break-normal">
+              Take charge of your self-improvement with OwnBoon's personalized roadmaps, which are based on your personality and preferences. You'll also have access to exclusive blog content featuring expert tips on productivity and self-improvement.
+              </p>
             </div>
           </div>
         </div>
