@@ -41,19 +41,10 @@ export default function Body() {
         </div>
         <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-           OwnBoon provides a welcoming community of like-minded individuals who are dedicated to personal growth and self-improvement. Connect with others who share your goals, join specific group chats based on your interests, and access a wealth of resources to help you on your journey.
-
-
+          A Better Community of Like-Minded People
           </h4>
           <p className="text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
-            Self-improvement is a journey that begins with gaining insight into
-            and understanding individuals who share your goals. Meeting your
-            role model can be a tremendous inspiration to emulate their success.
-            Engaging in various activities such as work, socializing, and
-            leisure is essential, as putting in the necessary effort to improve
-            yourself. Pursue your passions, and don't shy away from exploring
-            new avenues. Remember that the key to personal growth is to be
-            relentless in your pursuit of improvement, every day.
+          OwnBoon provides a welcoming community of like-minded individuals who are dedicated to personal growth and self-improvement. Connect with others who share your goals, join specific group chats based on your interests, and access a wealth of resources to help you on your journey.
           </p>
         </div>
       </div>
@@ -66,7 +57,7 @@ export default function Body() {
 
               </h4>
               <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
-                Whether you need advice or simply a listening ear, the OwnBoon community is here to support you. Use the vent zone to share your feelings and receive life advice, or connect with a gym buddy or study partner to stay on track and motivated. Focus Planet and lofi sessions can help you stay focused and energized.
+                Whether you need advice or simply a listening ear, the OwnBoon community is here to support you. Use the vent zone to share your feelings and receive life advice, or connect with a gym buddy or study partner to stay on track and motivated. 
 
               </p>
             </div>
@@ -97,12 +88,7 @@ export default function Body() {
 
               </h4>
               <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
-                Achieving stability in life requires cultivating a peaceful
-                state of mind. We understand the importance of being organized
-                and planning, and our tools can help make these tasks a breeze.
-                Our Lofi Sessions can enhance your meditation and studies. With
-                our resources, even work can become a source of enjoyment,
-                allowing you to maintain a positive mindset throughout the day.
+              Whether you need advice or simply a listening ear, the OwnBoon community is here to support you. Use the vent zone to share your feelings and receive life advice, or connect with a gym buddy or study partner to stay on track and motivated. 
               </p>
             </div>
           </>
@@ -138,7 +124,7 @@ export default function Body() {
                 Boost Your Productivity
               </h4>
               <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
-                OwnBoon offers a variety of productivity tools, including an AI scheduler to help you stay organized and focused. You can also access the right study techniques and tips based on your mood to help you stay on track and improve your workflow.
+              OwnBoon offers a variety of productivity tools, Focus Planet and Lofi sessions and an AI scheduler to help you stay organized and focused. You can also access the right study techniques and tips based on your mood to help you stay on track and improve your workflow. 
 
               </p>
             </div>
@@ -168,7 +154,7 @@ export default function Body() {
                 Boost Your Productivity
               </h4>
               <p className=" text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
-                OwnBoon offers a variety of productivity tools, including an AI scheduler to help you stay organized and focused. You can also access the right study techniques and tips based on your mood to help you stay on track and improve your workflow.
+                OwnBoon offers a variety of productivity tools, Focus Planet and Lofi sessions and an AI scheduler to help you stay organized and focused. You can also access the right study techniques and tips based on your mood to help you stay on track and improve your workflow. 
 
               </p>
             </div>

@@ -51,21 +51,19 @@ export default function Benefits() {
         <div className="flex md:flex-row flex-col md:mr-[8vw] xl:space-x-[4vw] md:space-x-[1vw] lg:space-x-[1vw]  ">
           {/* first left square */}
           <div className="flex flex-row  justify-between ">
-            <div className="flex flex-col  px-5 h-[5vh] xl:w-[20vw] md:w-auto">
+            <div className="flex flex-col px-5 h-[10vh] xl:w-[20vw] md:w-auto">
               <h3
-                className={`text-[#00F0B5] ${
-                  pc ? "" : "text-right"
-                } benefit-txt text-2xl`}
+                className={`text-[#00F0B5] md:text-right text-center benefit-txt text-2xl`}
               >
                 Boosted Productivity
               </h3>
-              <p className={`break-normal  ${pc ? "" : "text-right"}`}>
+              <p className={`break-normal  md:text-right text-center`}>
                 With OwnBoon's tools and features such as AI scheduler and study
                 techniques, you can optimize your productivity and stay on track
                 with your tasks and goals
               </p>
             </div>
-            <div className="flex flex-col benefit-dot-left">
+            <div className="flex flex-col  benefit-dot-left">
               <svg
                 width="42"
                 height="26"
@@ -88,7 +86,7 @@ export default function Benefits() {
             </div>
           </div>
 
-          <div id="1" className="sphere md:relative absolute right-16">
+          <div id="1" className="sphere  md:relative absolute right-16">
             <div className="spherebg bg-[#00F0B5] blur-[4rem]"></div>
             <svg
               width="58"
@@ -113,7 +111,7 @@ export default function Benefits() {
                 fill="white"
               />
             </svg>
-            <h2 className="text-white text-xl font-bold font-poppins">
+            <h2 className="text-white text-center text-xl font-bold font-poppins">
               Boosted Productivity
             </h2>
           </div>
@@ -171,7 +169,7 @@ export default function Benefits() {
               Focus
             </h2>
           </div>
-          <div className="flex flex-row md:mt-0 mt-[20vh] justify-between ">
+          <div className=" flex flex-row md:mt-0 mt-[20vh] justify-between ">
             <div className="flex flex-col benefit-dot-right">
               <svg
                 width="41"
@@ -194,9 +192,9 @@ export default function Benefits() {
                 />
               </svg>
             </div>
-            <div className="flex flex-col  px-5 h-[5vh] xl:w-[20vw] md:w-auto">
-              <h3 className="text-[#AA77FF] text-2xl benefit-txt">Focus</h3>
-              <p className="break-normal ">
+            <div className="flex flex-col  px-5 h-[10vh] xl:w-[20vw] md:w-auto">
+              <h3 className="text-[#AA77FF] md:text-left text-center text-2xl benefit-txt">Focus</h3>
+              <p className="break-normal md:text-left text-center">
                 {" "}
                 OwnBoon's focus planet and lofi sessions help you stay motivated
                 and focused on your work, while the vent zone allows you to
@@ -209,19 +207,17 @@ export default function Benefits() {
 
         {/* Second Row */}
 
-        <div className="flex md:flex-row flex-col md:place-items-baseline xl:mr-[8vw] md:space-x-[1vw] xl:space-x-[4vw] lg:space-x-[1vw]">
+        <div className=" flex md:flex-row flex-col md:place-items-baseline xl:mr-[8vw] md:space-x-[1vw] xl:space-x-[4vw] lg:space-x-[1vw]">
           {/* first left square */}
 
           <div className="flex flex-row justify-between ">
-            <div className="flex flex-col xl:w-[20vw] md:w-auto  px-5 h-[5vh] ">
+            <div className="flex flex-col xl:w-[20vw] md:w-auto  px-5 h-[10vh] ">
               <h3
-                className={`text-[#E90064] ${
-                  pc ? "" : "text-right"
-                } text-2xl benefit-txt`}
+                className={`text-[#E90064]  md:text-right  text-center text-2xl benefit-txt`}
               >
                 Diverse Connections
               </h3>
-              <p className={`break-normal  ${pc ? "" : "text-right"}`}>
+              <p className={`break-normal  md:text-right text-center`}>
                 OwnBoon provides a vibrant community of like-minded people, with
                 group chats tailored to your interests and goals, and
                 opportunities to connect with study buddies, gym buddies, and
@@ -275,7 +271,7 @@ export default function Benefits() {
               />
             </svg>
 
-            <h2 className="text-white text-xl font-bold font-poppins">Diverse Connections</h2>
+            <h2 className="text-white text-center text-xl font-bold font-poppins">Diverse Connections</h2>
           </div>
           {/* second right square */}
 
@@ -332,11 +328,11 @@ export default function Benefits() {
                 />
               </svg>
             </div>
-            <div className="flex flex-col   px-5 h-[5vh]  xl:w-[20vw] md:w-auto">
-              <h3 className="text-[#00AEFF] text-left text-2xl benefit-txt">
+            <div className="flex flex-col   px-5 h-[10vh]  xl:w-[20vw] md:w-auto">
+              <h3 className="text-[#00AEFF] md:text-left text-center text-2xl benefit-txt">
               Personalized Roadmaps
               </h3>
-              <p className="break-normal">
+              <p className="break-normal md:text-left text-center">
               Take charge of your self-improvement with OwnBoon's personalized roadmaps, which are based on your personality and preferences. You'll also have access to exclusive blog content featuring expert tips on productivity and self-improvement.
               </p>
             </div>
