@@ -93,8 +93,8 @@ export const Skateboard = () => {
           Join our community now!
         </button>
       </div>
-      <div className="flex flex-wrap  w-full flex-row mt-[5vh] mb-[5vh]  items-center space-x-5  justify-center font-semibold">
-        <div className="countsquare z-100 z-no h-[101px] w-[172px]">
+      <div className="flex flex-wrap  w-full flex-row mt-[5vh] mb-[5vh]  items-center  justify-center font-semibold">
+        <div className="countsquare mx-5 z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
             <CountUpAnimation duration={2000}>150</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
@@ -109,7 +109,7 @@ export const Skateboard = () => {
             alt="I"
           />
         </div>
-        <div className="countsquare  z-100 z-no h-[101px] w-[172px]">
+        <div className="countsquare mx-5  z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
             <CountUpAnimation duration={2000}>100</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
@@ -124,7 +124,7 @@ export const Skateboard = () => {
             alt="I"
           />
         </div>
-        <div className="countsquare mt-5 md:mt-0 z-100 z-no h-[101px] w-[172px]">
+        <div className="countsquare mx-5  z-100 z-no h-[101px] w-[172px]">
           <h5 className="mb-[-1vh] z-100 text-[2rem] text-[#484848]">
             <CountUpAnimation duration={2000}>50</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>

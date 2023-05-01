@@ -51,10 +51,10 @@ export default function Benefits() {
       <div className="benefit-container  py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-[20vh]  md:space-x-40">
         {/* first row */}
 
-        <div className="flex md:flex-row flex-col md:mr-[8vw] xl:space-x-[7vw] md:space-x-[1vw] lg:space-x-[1vw]  ">
+        <div className="flex md:flex-row flex-col md:mr-[8vw] xl:space-x-[4vw] md:space-x-[1vw] lg:space-x-[1vw]  ">
           {/* first left square */}
           <div className="flex flex-row  justify-between ">
-            <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
+            <div className="flex flex-col  px-5 h-[5vh] xl:w-[20vw] md:w-auto">
               <h3 className={`text-[#00F0B5] ${pc? "" :"text-right"} benefit-txt text-2xl`}>
               Community
               </h3>
@@ -191,7 +191,7 @@ export default function Benefits() {
                 />
               </svg>
             </div>
-            <div className="flex flex-col  px-5 h-[5vh] md:w-[20vw]">
+            <div className="flex flex-col  px-5 h-[5vh] xl:w-[20vw] md:w-auto">
               <h3 className="text-[#AA77FF] text-2xl benefit-txt">
               Peer Support
               </h3>
@@ -208,7 +208,7 @@ export default function Benefits() {
           {/* first left square */}
 
           <div className="flex flex-row justify-between ">
-            <div className="flex flex-col md:w-[20vw]  px-5 h-[5vh] ">
+            <div className="flex flex-col xl:w-[20vw] md:w-auto  px-5 h-[5vh] ">
               <h3 className={`text-[#E90064] ${pc?"":"text-right"} text-2xl benefit-txt`}>
               Focus
               </h3>
@@ -322,7 +322,7 @@ export default function Benefits() {
                 />
               </svg>
             </div>
-            <div className="flex flex-col   px-5 h-[5vh]  md:w-[20vw]">
+            <div className="flex flex-col   px-5 h-[5vh]  xl:w-[20vw] md:w-auto">
               <h3 className="text-[#00AEFF] text-left text-2xl benefit-txt">
               Explore Yourself
               </h3>

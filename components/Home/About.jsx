@@ -28,7 +28,7 @@ export default function About() {
   }, [])
   
   return (
-    <section id="about" className="pt-[100px]">
+    <section id="about" className="pt-[50px]">
 
     <div className="mt-[5vh] bg-white text-[#2E2E2E] flex flex-col font-poppins  items-center align-center p-5 justify-center">
       <div className="heading">
@@ -42,6 +42,7 @@ export default function About() {
               <Image
                 width={300}
                 height={300}
+                className="w-full h-full object-fit-cover"
                 src="/som.webp"
                 alt="Team Member Photo"
               />
@@ -79,7 +80,7 @@ export default function About() {
                 <Link href="https://instagram.com/OwnBoon">
                   <FontAwesomeIcon icon={faInstagram} />
                 </Link>
-                <Link href="https://github.com/OwnBoon">
+                <Link href="https://github.com/Alok-010">
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
               </div>
@@ -88,21 +89,22 @@ export default function About() {
               <Image
                 width={300}
                 height={300}
-                src="/user.png"
+                src="/sarthak.webp"
+                className=" object-fit-cover"
                 alt="Team Member Photo"
               />
               <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Saarthak</div>
+                <div class="font-bold text-xl mb-2">Sarthak</div>
                 <p class="text-gray-700 text-base">CTO/Co-Founder</p>
               </div>
               <div class="px-6 py-4 space-x-3 text-xl">
                 <Link href="https://www.linkedin.com/in/sarthak-dutta-a79b99120/">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </Link>
-                <Link href="https://instagram.com/OwnBoon">
+                <Link href="https://www.instagram.com/saardoo.dev/">
                   <FontAwesomeIcon icon={faInstagram} />
                 </Link>
-                <Link href="https://github.com/OwnBoon">
+                <Link href="https://github.com/SaarD00">
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
               </div>
@@ -111,7 +113,8 @@ export default function About() {
               <Image
                 width={300}
                 height={300}
-                src="/user.png"
+                src="/avi.webp"
+                className="w-full h-full object-fit-cover"
                 alt="Team Member Photo"
               />
               <div class="px-6 py-4">
@@ -122,10 +125,10 @@ export default function About() {
                 <Link href="https://www.linkedin.com/in/devansh-rajwar-092568272/">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </Link>
-                <Link href="https://instagram.com/OwnBoon">
+                <Link href="https://www.instagram.com/devanshzzzzz/">
                   <FontAwesomeIcon icon={faInstagram} />
                 </Link>
-                <Link href="https://github.com/OwnBoon">
+                <Link href="https://github.com/Thulium6">
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
               </div>
@@ -148,7 +151,7 @@ export default function About() {
                 <Link href="https://instagram.com/OwnBoon">
                   <FontAwesomeIcon icon={faInstagram} />
                 </Link>
-                <Link href="https://github.com/OwnBoon">
+                <Link href="https://github.com/superhyper12">
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
               </div>

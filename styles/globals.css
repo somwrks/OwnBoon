@@ -574,12 +574,6 @@ svg {
 
 
 }
-.review-card:nth-of-type(2){
-
-  background: radial-gradient(circle, rgba(220,253,255,1) 0%, rgba(255,255,255,1) 100%);
-
-
-}
 .review-card:nth-of-type(3){
   background: linear-gradient(270deg, rgba(220,253,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
 
@@ -601,6 +595,7 @@ canvas {
   opacity: 1;
   animation: scale 1s ease-in-out;
 }
+
 /* responsiveness */
 @media (max-width: 768px) {
   .ball {
@@ -612,36 +607,16 @@ canvas {
   .login {
     width: 20vw;
   }
-  .countsquare:nth-child(1) {
-    background: linear-gradient(
-      267.43deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0) 100.47%
-    );
-    border: 1px solid #ffffff;
-    filter: drop-shadow(1px 2px 5px rgba(233, 0, 100, 0.25));
-    border-radius: 0px 10px 10px 10px;
-  }
-  .countsquare:nth-child(2) {
-    background: linear-gradient(
-      267.43deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0) 100.47%
-    );
-    border: 1px solid #ffffff;
-    filter: drop-shadow(1px 2px 5px rgba(233, 0, 100, 0.25));
-
-    border-radius: 0px 10px 10px 10px;
-  }
   .countsquare:nth-child(3) {
-    background: linear-gradient(
-      267.43deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0) 100.47%
-    );
-    border: 1px solid #ffffff;
-    filter: drop-shadow(1px 2px 5px rgba(233, 0, 100, 0.25));
-    border-radius: 0px 10px 10px 10px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 370px) {
+  .countsquare:nth-child(2) {
+    margin-top: 20px;
+  }
+  .countsquare:nth-child(1) {
+    margin-top: 20px;
   }
 }
 @media (max-width: 1280px) {

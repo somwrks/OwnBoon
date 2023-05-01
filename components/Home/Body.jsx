@@ -21,7 +21,7 @@ export default function Body() {
   }, []);
 
   return (
-    <div className="mt-[5vh] bg-white text-[#2E2E2E] flex flex-col font-poppins  items-center align-center p-5 justify-center">
+    <div className="pt-[100px] bg-white text-[#2E2E2E] flex flex-col font-poppins  items-center align-center p-5 justify-center">
       <div className="heading mb-5">
         <h1 className="md:text-[4rem] text-[3rem]">Why OwnBoon?</h1>
         <h3 className="md:text-[1.5rem] text-[1.5rem] py-1 ">
@@ -30,7 +30,7 @@ export default function Body() {
         </h3>
       </div>
 
-      <div className="my-auto mx-auto px-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
+      <div className="my-auto mx-auto px-5  justify-center flex flex-row md:flex-nowrap flex-wrap">
         <div className="bodyimg1">
           <Image
             width={600}
@@ -56,7 +56,7 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div className="my-auto mx-auto p-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
+      <div className="my-auto mx-auto p-5  justify-center flex flex-row md:flex-nowrap flex-wrap">
         {pc ? (
           <>
             <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
@@ -109,7 +109,7 @@ export default function Body() {
         )}
       </div>
 
-      <div className="my-auto mx-auto p-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
+      <div className="my-auto mx-auto p-5  justify-center flex flex-row md:flex-nowrap flex-wrap">
         <div className="bodyimg3">
           <Image
             width={600}
@@ -135,7 +135,7 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div className="my-auto mx-auto p-5  justify-between flex flex-row md:flex-nowrap flex-wrap">
+      <div className="my-auto mx-auto p-5  justify-center flex flex-row md:flex-nowrap flex-wrap">
         {pc ? (
           <>
             <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
