@@ -58,9 +58,7 @@ export default function Benefits() {
                 Boosted Productivity
               </h3>
               <p className={`break-normal  md:text-right text-center`}>
-                With OwnBoon's tools and features such as AI scheduler and study
-                techniques, you can optimize your productivity and stay on track
-                with your tasks and goals
+              Enhanced productivity with AI-powered scheduler and optimized study techniques
               </p>
             </div>
             <div className="flex flex-col  benefit-dot-left">
@@ -196,10 +194,7 @@ export default function Benefits() {
               <h3 className="text-[#AA77FF] md:text-left text-center text-2xl benefit-txt">Focus</h3>
               <p className="break-normal md:text-left text-center">
                 {" "}
-                OwnBoon's focus planet and lofi sessions help you stay motivated
-                and focused on your work, while the vent zone allows you to
-                express your emotions and receive life advice from other
-                like-minded individuals.
+                Find your perfect study partner and stay motivated with our Focus Planet and Lofi Sessions.
               </p>
             </div>
           </div>
@@ -218,10 +213,7 @@ export default function Benefits() {
                 Diverse Connections
               </h3>
               <p className={`break-normal  md:text-right text-center`}>
-                OwnBoon provides a vibrant community of like-minded people, with
-                group chats tailored to your interests and goals, and
-                opportunities to connect with study buddies, gym buddies, and
-                more. Explore and expand your horizons with OwnBoon.</p>
+              Connect and expand with a community of like-minded individuals through tailored group chats, study and gym buddies, and Vent Zone.</p>
             </div>
             <div className="flex flex-col benefit-dot-left">
               <svg
@@ -333,7 +325,7 @@ export default function Benefits() {
               Personalized Roadmaps
               </h3>
               <p className="break-normal md:text-left text-center">
-              Take charge of your self-improvement with OwnBoon's personalized roadmaps, which are based on your personality and preferences. You'll also have access to exclusive blog content featuring expert tips on productivity and self-improvement.
+              Explore a roadmap tailored to your personality. Get expert tips on productivity and self-improvement through our exclusive blog content.
               </p>
             </div>
           </div>

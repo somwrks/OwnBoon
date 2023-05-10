@@ -10,7 +10,7 @@ import Reviews from "../components/Home/Reviews";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
-const Home: NextPage = () => {
+const Home= () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

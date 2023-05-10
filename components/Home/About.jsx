@@ -37,12 +37,12 @@ export default function About() {
           Our Team. Your Support.
         </h3>
         <div class="container mx-auto my-10 justify-center align-center">
-          <div class=" flex flex-wrap flex-row space-x-5 items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 align-center">
-            <div class="px-[40px] bg-white crew  rounded-lg shadow-md overflow-hidden">
+          <div class=" flex flex-wrap flex-row space-x-5 items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[12rem] align-center">
+            <div class="px-[40px] bg-white crew rounded-lg shadow-md overflow-hidden">
               <Image
                 width={300}
                 height={300}
-                className="w-full h-full object-fit-cover"
+                className="object-fit-cover "
                 src="/som.webp"
                 alt="Team Member Photo"
               />
@@ -67,7 +67,7 @@ export default function About() {
                 width={300}
                 height={300}
                 src="/alok.webp"
-                 className=" object-fit-cover"
+                 className="object-fit-cover"
                 alt="Team Member Photo"
               />
               <div class="px-6 py-4">
@@ -115,7 +115,7 @@ export default function About() {
                 width={300}
                 height={300}
                 src="/avi.webp"
-                className="w-full h-full object-fit-cover"
+                className=" object-fit-cover"
                 alt="Team Member Photo"
               />
               <div class="px-6 py-4">
@@ -134,29 +134,7 @@ export default function About() {
                 </Link>
               </div>
             </div>
-            <div class="px-[40px] bg-white crew  rounded-lg shadow-md overflow-hidden">
-              <Image
-                width={300}
-                height={300}
-                src="/user.png"
-                alt="Team Member Photo"
-              />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Steven</div>
-                <p class="text-gray-700 text-base">Community Manager</p>
-              </div>
-              <div class="px-6 py-4 space-x-3 text-xl">
-                <Link href="https://www.linkedin.com/in/steven-v-58a487267/">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Link>
-                <Link href="https://instagram.com/OwnBoon">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </Link>
-                <Link href="https://github.com/superhyper12">
-                  <FontAwesomeIcon icon={faGithub} />
-                </Link>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@ export default function Body() {
         </div>
         <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-          A Better Community of Like-Minded People
+          A Community That Matters
           </h4>
           <p className="text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
           OwnBoon provides a welcoming community of like-minded individuals who are dedicated to personal growth and self-improvement. Connect with others who share your goals, join specific group chats based on your interests, and access a wealth of resources to help you on your journey.

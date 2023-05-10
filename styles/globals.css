@@ -55,6 +55,13 @@
 .z-no {
   z-index: -1;
 }
+.habit-heading{
+  background: linear-gradient(90deg, #AA77FF 0%, rgba(170, 119, 255, 0.1) 100%), linear-gradient(270deg, #E90064 0%, rgba(233, 0, 100, 0.1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
 #ripple {
   overflow: hidden;
 }
@@ -84,7 +91,16 @@
 }
 .animate-float{
   animation: float 3s ease-in-out infinite; /* Apply the floating animation */
-
+}
+.font-btn-gradient{
+  background: linear-gradient(90deg, #00AEFF 0%, #00F0B5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+}
+.bg-habits{
+  background: linear-gradient(90deg, rgba(0,174,255,1) 0%, rgba(0,240,181,1) 50%, rgba(255,255,0,1) 100%);
 }
 /* Animations */
 @keyframes fade {
@@ -595,6 +611,9 @@ canvas {
   opacity: 1;
   animation: scale 1s ease-in-out;
 }
+
+/* HABITS PAGE */
+
 
 /* responsiveness */
 @media (max-width: 768px) {

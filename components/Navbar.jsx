@@ -104,7 +104,7 @@ else{
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className={`Link cursor-pointer block py-2 pl-3 pr-4 md:p-0 `}
+                  className={` Link cursor-pointer block py-2 pl-3 pr-4 md:p-0 `}
                   id="homelink"
                   aria-current="page"
                   
@@ -115,10 +115,8 @@ else{
                 <Link
                   href="/"
                   scroll={false}
-                  passHref
                   className={`Link  block py-2 pl-3 pr-4 md:p-0 `}
                   id="homelink"
-                  aria-current="page"
                   
                 >
                   Home
