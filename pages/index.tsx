@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import { Balls, Skateboard } from "../components/ext";
 import Navbars from "../components/Navbar";
@@ -8,23 +7,10 @@ import About from "../components/Home/About";
 import Benefits from "../components/Home/Benefits";
 import Reviews from "../components/Home/Reviews";
 import Footer from "../components/Footer";
-import { useEffect, useState } from "react";
-import Loader from "../components/Loader";
 const Home= () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-  }, []);
 
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
           <Head>
             <title>OwnBoon</title>
             <link rel="icon" href="/logo.png" />
@@ -57,8 +43,6 @@ const Home= () => {
             <About />
             <Footer />
         </>
-      )}
-    </>
   );
 };
 

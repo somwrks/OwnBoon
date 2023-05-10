@@ -3,10 +3,9 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section id="Habits">
-      <div>
-        <div className="rounded-br-full z-no  blur-3xl font-poppins	bg-habits absolute  w-[70%] h-[70%]"></div>
-        <div className="flex  flex-row items-center mx-auto my-auto px-10 flex-wrap justify-between ">
-          <div className="flex flex-col mx-auto my-auto w-[40%] text-white justify-center">
+        <div className="rounded-br-full z-no blur-3xl font-poppins	bg-habits absolute  w-[70%] h-[70%]"></div>
+        <div className="flex my-[7vh]  mx-auto px-[10vw] flex-wrap flex-row items-center  justify-between ">
+          <div className="flex flex-col  w-[50%] text-white justify-center">
             <h1 className="text-[6rem] font-bold font-fontspring ">Heading</h1>
             <p className="font-light text-[20px] font-fontspring ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
@@ -21,7 +20,7 @@ export default function Hero() {
               </h1>
             </button>
           </div>
-          <div className="flex pt-10 mx-auto my-auto ">
+          <div className="flex  ">
             <Image
               width={400}
               height={400}
@@ -39,7 +38,6 @@ export default function Hero() {
           </div>
         </div>
         
-      </div>
     </section>
   );
 }

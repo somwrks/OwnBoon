@@ -1,11 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import{ useRouter } from "next/router";
-import { Link as FLink } from "react-scroll";
-
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { toast } from "react-toastify";
-
 export default function Navbar() {
   const router = useRouter();
   const preview = () => {
@@ -28,16 +25,6 @@ export default function Navbar() {
     }
   };
 
-const [underline, setUnderline] = useState(false)
-useEffect(() => {
-  if(router.pathname==="/"){
-setUnderline(true)
-}
-else{
-  setUnderline(false)
-}
-
-}, [])
 
 
   return (
@@ -97,32 +84,16 @@ else{
           >
             <ul className="flex flex-col p-4 mt-4 bg-white rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
               <li>
-              {underline===true? 
-                <FLink
-                activeClass={"activelink"}
-                  to="home"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className={` Link cursor-pointer block py-2 pl-3 pr-4 md:p-0 `}
-                  id="homelink"
-                  aria-current="page"
-                  
-                >
-                  Home
-                </FLink>
-              :
+              
                 <Link
                   href="/"
-                  scroll={false}
                   className={`Link  block py-2 pl-3 pr-4 md:p-0 `}
                   id="homelink"
-                  
+                  scroll={false}
                 >
                   Home
                 </Link>
 
-              }
               </li>
               <li>
                 <button
@@ -207,50 +178,25 @@ else{
                 </div>
               </li>
               <li>
-              {underline === true? 
-                <FLink
-                  activeClass="activelink"
-                  to="benefit"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  href="/#benefit"
-                  id="benefitlink"
-                  className=" block py-2 Link pl-3 pr-4 md:p-0 "
-                >
-                  Benefit
-                </FLink>
-              :
+              
                 <Link  
                   href="/#benefit"
-                  scroll={true}
+                  scroll={false}
                   id="benefitlink"
                   className=" block py-2 Link pl-3 pr-4 md:p-0 "
                 >
                   Benefit
                 </Link>
-              }
               </li>
               <li>
-              {underline === true? 
-                <FLink
-                  activeClass="activelink"
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  href="/#about"
-                  className="Link  block py-2 pl-3 pr-4 md:p-0 "
-                >
-                  About Us
-                </FLink> :
+            
                 <Link
+                scroll={false}
                   href="/#about"
                   className="Link block py-2 pl-3 pr-4 md:p-0 "
                 >
                   About Us
                 </Link>
-              }
               </li>
             </ul>
           </div>
