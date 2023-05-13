@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Hero from "../components/Habits/Hero";
-import Body from "../components/Habits/Body";
-import Features from "../components/Habits/Features";
 import Navbar from "../components/Navbar";
+import ParentHabit from "../components/Habits/ParentHabit";
+
 
 export default function habits() {
   return (
@@ -17,9 +16,7 @@ export default function habits() {
     </Head>
     <Navbar/>
     <div className="my-auto mx-auto">
-      <Hero/>
-      <Body/>
-      <Features/>
+      <ParentHabit section={"habit"}/>
     </div>
     </>
   )

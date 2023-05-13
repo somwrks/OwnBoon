@@ -102,6 +102,11 @@ text-fill-color: transparent;
 .bg-habits{
   background: linear-gradient(90deg, rgba(0,174,255,1) 0%, rgba(0,240,181,1) 50%, rgba(255,255,0,1) 100%);
 }
+.habit-bg-img{
+  background-image: url("../public/habit-bg-img.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /* Animations */
 @keyframes fade {
   0% {

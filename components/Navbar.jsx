@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import{ useRouter } from "next/router";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 export default function Navbar() {
   const router = useRouter();
   const preview = () => {
-    toast.info('Coming soon');
+    toast.info("Coming soon");
   };
   const [display, setDisplay] = useState(false);
   const dropdown = () => {
@@ -25,7 +25,27 @@ export default function Navbar() {
     }
   };
 
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const navLi = document.querySelectorAll("nav ul li");
+    window.onscroll = () => {
+      var current = "";
 
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLi.forEach((li) => {
+        li.classList.remove("activelink");
+        if (li.classList.contains(current)) {
+          li.classList.add("activelink");
+        }
+      });
+    };
+  }, []);
 
   return (
     <>
@@ -55,7 +75,7 @@ export default function Navbar() {
               ></path>
             </svg>
           </button>
-          <a href="https://ownboon.com" className="flex items-center">
+          <Link href="https://ownboon.com" className="flex items-center">
             <Image
               width={50}
               height={100}
@@ -66,7 +86,7 @@ export default function Navbar() {
             <span className="self-center text-2xl font-semibold whitespace-nowrap ">
               Own<span className="text-[#00F0B5]">Boon</span>
             </span>
-          </a>
+          </Link>
           <div className="flex md:order-2">
             <button
               type="button"
@@ -84,22 +104,24 @@ export default function Navbar() {
           >
             <ul className="flex flex-col p-4 mt-4 bg-white rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
               <li>
-              
                 <Link
                   href="/"
-                  className={`Link  block py-2 pl-3 pr-4 md:p-0 `}
+                  className={`Link block py-2 pl-3 pr-4 md:p-0 ${
+                    router.pathname == "/" ? "activelink font-bold" : ""
+                  }`}
                   id="homelink"
                   scroll={false}
                 >
                   Home
                 </Link>
-
               </li>
               <li>
                 <button
                   id="dropdownNavbarLink"
                   onClick={dropdown}
-                  className="flex items-center justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium   md:w-auto "
+                  className={`flex items-center justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium ${router.pathname == "/productivity" || router.pathname == "/habits" || router.pathname == "/workspace" || router.pathname == "/community"
+                            ? "activelink font-bold"
+                            : ""}  md:w-auto `}
                 >
                   Explore
                   <svg
@@ -154,7 +176,7 @@ export default function Navbar() {
                       <Link
                         href="/workspace"
                         className={`Link  block p-4  ${
-                          router.pathname == "/creators"
+                          router.pathname == "/workspace"
                             ? "activelink font-bold"
                             : ""
                         }`}
@@ -166,7 +188,7 @@ export default function Navbar() {
                       <Link
                         href="/community"
                         className={`Link  block p-4  ${
-                          router.pathname == "/creators"
+                          router.pathname == "/community"
                             ? "activelink font-bold"
                             : ""
                         }`}
@@ -178,22 +200,20 @@ export default function Navbar() {
                 </div>
               </li>
               <li>
-              
-                <Link  
+                <Link
                   href="/#benefit"
                   scroll={false}
                   id="benefitlink"
-                  className=" block py-2 Link pl-3 pr-4 md:p-0 "
+                  className=" block  py-2 Link pl-3 pr-4 md:p-0 "
                 >
                   Benefit
                 </Link>
               </li>
               <li>
-            
                 <Link
-                scroll={false}
+                  scroll={false}
                   href="/#about"
-                  className="Link block py-2 pl-3 pr-4 md:p-0 "
+                  className="Link  block py-2 pl-3 pr-4 md:p-0 "
                 >
                   About Us
                 </Link>

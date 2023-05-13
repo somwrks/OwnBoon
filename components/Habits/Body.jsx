@@ -1,14 +1,13 @@
-import React from 'react'
 
 export default function Body() {
   return (
-    <div className="flex flex-col pt-[110px] my-[20vh]  items-center">
+    <div className="flex flex-col mt-[30vh] py-5  items-center">
     <div className="habit-heading font-poppins">
       <h1 className="text-[32px] font-[600]">Coming Soon</h1>
     </div>
-    <div className="flex pt-[40px]">
+    <div className="flex py-[4vh]">
       <svg
-        className="w-[60vw] h-[60vh]"
+        className=" w-[60vw]"
         viewBox="0 0 885 525"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
