@@ -1,8 +1,13 @@
 import Image from "next/image";
+import { toast } from "react-toastify";
+
 import { useEffect } from "react";
 import CountUpAnimation from "./CountUpAnimation";
 export const Balls = () => {
   // Revoving balls
+   const preview = () => {
+    toast.info("Coming soon");
+  };
   useEffect(() => {
     const container = document.getElementById("animation-container");
     const balls = Array.from(document.getElementsByClassName("ball"));
@@ -68,6 +73,9 @@ export const Balls = () => {
 };
 
 export const Skateboard = () => {
+  const preview = () => {
+    toast.info("Coming soon");
+  };
   useEffect(() => {
     const buttons = document.getElementById("ripple");
     buttons.addEventListener("click", function (e) {
@@ -88,6 +96,7 @@ export const Skateboard = () => {
       <div className=" h-[8vh] w-[3vw] flex flex-col justify-center items-center">
         <button
           id="ripple"
+          onClick={preview}
           className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[50px] w-[350px] h-[50px] hover:cursor-pointer skatebar bg-white font-semibold absolute "
         >
           Join our community now!

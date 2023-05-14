@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 export default function Navbar() {
   const router = useRouter();
+  const {asPath} = router;
+  console.log(asPath)
   const preview = () => {
     toast.info("Coming soon");
   };
@@ -16,6 +18,7 @@ export default function Navbar() {
       setDisplay(false);
     }
   };
+
   const [displayphone, setPhone] = useState(false);
   const dropdownphone = () => {
     if (displayphone === false) {
@@ -78,13 +81,13 @@ export default function Navbar() {
           <Link href="https://ownboon.com" className="flex items-center">
             <Image
               width={50}
-              height={100}
+              height={50}
               src="/logo.png"
               className=" mr-1 rounded-full "
               alt="Ownboon Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap ">
-              Own<span className="text-[#00F0B5]">Boon</span>
+              Own<span className="text-cyan">Boon</span>
             </span>
           </Link>
           <div className="flex md:order-2">
@@ -107,7 +110,7 @@ export default function Navbar() {
                 <Link
                   href="/"
                   className={`Link block py-2 pl-3 pr-4 md:p-0 ${
-                    router.pathname == "/" ? "activelink font-bold" : ""
+                    asPath == "/" ? "activelink font-bold" : ""
                   }`}
                   id="homelink"
                   scroll={false}
@@ -119,9 +122,14 @@ export default function Navbar() {
                 <button
                   id="dropdownNavbarLink"
                   onClick={dropdown}
-                  className={`flex items-center justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium ${router.pathname == "/productivity" || router.pathname == "/habits" || router.pathname == "/workspace" || router.pathname == "/community"
-                            ? "activelink font-bold"
-                            : ""}  md:w-auto `}
+                  className={`flex items-center justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium ${
+                    asPath == "/productivity" ||
+                    asPath == "/habits" ||
+                    asPath == "/workspace" ||
+                    asPath == "/community"
+                      ? "activelink font-bold"
+                      : ""
+                  }  md:w-auto `}
                 >
                   Explore
                   <svg
@@ -152,7 +160,7 @@ export default function Navbar() {
                       <Link
                         href="/habits"
                         className={`Link block p-4  ${
-                          router.pathname == "/habits"
+                          asPath === "/habits"
                             ? "activelink font-bold"
                             : ""
                         }`}
@@ -164,7 +172,7 @@ export default function Navbar() {
                       <Link
                         href="/productivity"
                         className={`Link block p-4  ${
-                          router.pathname == "/productivity"
+                          asPath == "/productivity"
                             ? "activelink font-bold"
                             : ""
                         }`}
@@ -176,7 +184,7 @@ export default function Navbar() {
                       <Link
                         href="/workspace"
                         className={`Link  block p-4  ${
-                          router.pathname == "/workspace"
+                          asPath == "/workspace"
                             ? "activelink font-bold"
                             : ""
                         }`}
@@ -188,7 +196,7 @@ export default function Navbar() {
                       <Link
                         href="/community"
                         className={`Link  block p-4  ${
-                          router.pathname == "/community"
+                          asPath == "/community"
                             ? "activelink font-bold"
                             : ""
                         }`}
@@ -225,3 +233,4 @@ export default function Navbar() {
     </>
   );
 }
+

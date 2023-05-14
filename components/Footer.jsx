@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const [pc, setPc] = useState(false);
@@ -28,20 +29,22 @@ export default function Footer() {
   }, []);
   return (
     <div>
-      <footer className="bg-white mt-5 border-t-2  dark:bg-gray-900">
+      <footer className="mt-5">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
               
           {pc ===true? 
           
             <div className="mb-6 md:mb-0">
-            <Link href="https://flowbite.com/" className="flex items-center">
-                <img
-                  src="https://flowbite.com/docs/images/logo.svg"
-                  className="h-8 mr-3"
-                  alt="FlowBite Logo"
-                />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap ">
+            <Link href="https://ownboon.com/" className="flex items-center">
+            <Image
+              width={30}
+              height={30}
+              src="/logo.png"
+              className=" mr-1 rounded-full "
+              alt="Ownboon Logo"
+            />
+                <span className="self-center  text-2xl font-semibold whitespace-nowrap ">
                   Own<span className="text-cyan">Boon</span>
                 </span>
               </Link>
