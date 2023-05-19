@@ -45,13 +45,13 @@ export default function Benefits() {
           changes in your life.
         </h3>
       </div>
-      <div className="benefit-container  py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-[20vh]  md:space-x-40">
+      <div className="benefit-container  py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-40">
         {/* first row */}
 
         <div className="flex md:flex-row flex-col md:mr-[8vw] xl:space-x-[4vw] md:space-x-[1vw] lg:space-x-[1vw]  ">
           {/* first left square */}
           <div className="flex flex-row  justify-between ">
-            <div className="flex flex-col px-5 h-[10vh] xl:w-[20vw] md:w-auto">
+            <div className="flex flex-col mx-1 ">
               <h3
                 className={`text-[#00F0B5] md:text-right text-center benefit-txt text-2xl`}
               >
@@ -117,7 +117,7 @@ export default function Benefits() {
           {/* first right square */}
           <div
             id="2"
-            className="sphere md:relative md:mt-0 mt-[25vh] absolute left-16 "
+            className="sphere md:relative md:mt-0 mt-[200px] absolute left-16 "
           >
             <div className="spherebg bg-[#AA77FF]  blur-[4rem]"></div>
             <svg
@@ -167,7 +167,7 @@ export default function Benefits() {
               Focus
             </h2>
           </div>
-          <div className=" flex flex-row md:mt-0 mt-[20vh] justify-between ">
+          <div className=" flex flex-row md:mt-0 mt-[15vh] justify-between ">
             <div className="flex flex-col benefit-dot-right">
               <svg
                 width="41"
@@ -190,7 +190,7 @@ export default function Benefits() {
                 />
               </svg>
             </div>
-            <div className="flex flex-col  px-5 h-[10vh] xl:w-[20vw] md:w-auto">
+            <div className="flex flex-col  mx-1 ">
               <h3 className="text-[#AA77FF] md:text-left text-center text-2xl benefit-txt">Focus</h3>
               <p className="break-normal md:text-left text-center">
                 {" "}
@@ -202,17 +202,17 @@ export default function Benefits() {
 
         {/* Second Row */}
 
-        <div className=" flex md:flex-row flex-col md:place-items-baseline xl:mr-[8vw] md:space-x-[1vw] xl:space-x-[4vw] lg:space-x-[1vw]">
+        <div className=" flex md:flex-row flex-col md:place-items-baseline xl:mr-max-[8vw] md:space-x-[1vw] xl:space-x-[4vw] lg:space-x-[1vw]">
           {/* first left square */}
 
-          <div className="flex flex-row justify-between ">
-            <div className="flex flex-col xl:w-[20vw] md:w-auto  px-5 h-[10vh] ">
+          <div className="flex flex-row md:mt-0 mt-[10vh] justify-between ">
+            <div className="flex flex-col mx-1 ">
               <h3
                 className={`text-[#E90064]  md:text-right  text-center text-2xl benefit-txt`}
               >
                 Diverse Connections
               </h3>
-              <p className={`break-normal  md:text-right text-center`}>
+              <p className={`md:text-right text-center`}>
               Connect and expand with a community of like-minded individuals through tailored group chats, study and gym buddies, and Vent Zone.</p>
             </div>
             <div className="flex flex-col benefit-dot-left">
@@ -237,7 +237,7 @@ export default function Benefits() {
               </svg>
             </div>
           </div>
-          <div className="sphere  md:relative absolute right-16">
+          <div className="sphere md:mt-0 mt-[50px] md:relative absolute right-16">
             <div className="spherebg bg-[#E90064] blur-[4rem]"></div>
             <svg
               width="58"
@@ -266,9 +266,10 @@ export default function Benefits() {
             <h2 className="text-white text-center text-xl font-bold font-poppins">Diverse Connections</h2>
           </div>
           {/* second right square */}
+          {/* second right square */}
 
-          <div className="sphere md:mt-0 md:relative left-16  mt-[25vh] absolute ">
-            <div className="spherebg bg-[#00AEFF] blur-[4rem]"></div>
+          <div className="sphere md:relative absolute mt-[320px] md:mt-0 left-16  ">
+            <div className="spherebg  bg-[#00AEFF] blur-[4rem]"></div>
             <svg
               width="58"
               height="58"
@@ -297,7 +298,7 @@ export default function Benefits() {
             Personalized Roadmaps
             </h2>
           </div>
-          <div className="flex flex-row md:mt-0  mt-[20vh] justify-between ">
+          <div className="flex flex-row md:mt-0 mt-[15vh] justify-between ">
             <div className="flex flex-col benefit-dot-right">
               <svg
                 width="41"
@@ -320,7 +321,7 @@ export default function Benefits() {
                 />
               </svg>
             </div>
-            <div className="flex flex-col   px-5 h-[10vh]  xl:w-[20vw] md:w-auto">
+            <div className="flex flex-col   mx-1 ">
               <h3 className="text-[#00AEFF] md:text-left text-center text-2xl benefit-txt">
               Personalized Roadmaps
               </h3>
