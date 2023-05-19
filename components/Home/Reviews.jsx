@@ -8,13 +8,7 @@ import Image from "next/image";
 
 export default function Reviews() {
   const [pc, setPc] = useState(true);
-  function setInitialPositions() {
-    if (window.innerWidth < 768) {
-      setPc(false);
-    } else {
-      setPc(true);
-    }
-  }
+  
 
   useEffect(() => {
     VanillaTilt.init(document.querySelectorAll(".review-card"), {
@@ -22,6 +16,13 @@ export default function Reviews() {
       speed: 300,
       transition: true,
     });
+    function setInitialPositions() {
+      if (window.innerWidth < 768) {
+        setPc(false);
+      } else {
+        setPc(true);
+      }
+    }
     setInitialPositions();
     window.addEventListener("resize", setInitialPositions);
 

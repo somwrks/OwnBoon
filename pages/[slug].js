@@ -11,9 +11,7 @@ export default function Page({ section }) {
     content = <ParentHabit section={"community"} />;
   } else if (section === "productivity") {
     content = <ParentHabit section={"productivity"} />;
-  } else if (section === "workspace") {
-    content = <ParentHabit section={"workspace"} />;
-  } else {
+  }    else {
     content = "";
   }
 
@@ -41,7 +39,6 @@ export async function getStaticPaths() {
       { params: { slug: "habits" } },
       { params: { slug: "community" } },
       { params: { slug: "productivity" } },
-      { params: { slug: "workspace" } },
     ],
     fallback: false,
   };

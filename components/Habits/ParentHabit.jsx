@@ -1,67 +1,81 @@
 import Head from "next/head";
 import Image from "next/image";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+import VanillaTilt from "vanilla-tilt";
+import { useEffect, useState } from "react";
 export default function ParentHabit({ section }) {
   const list = {
     habit: {
       title: "Habits",
       about:
-        "Discover everything you need for self-improvement in one place, from top-tier content creators to our essential tools, and the cherry on top: the perfect playlist to fuel your grind sessions.",
-      featureheading: ["Content Provided", "Anaylze Progress", "Community"],
+        "Discover curated self-improvement content and essential tools in one place, accompanied by a motivating playlist.",
+      featureheading: [
+        "Extensive Research & Analysis",
+        "Personalized Roadmaps",
+        "Tailored Community",
+      ],
       featureparagraph: [
-        "Our extensive research has led us to the best self-improvement creators, so you don't have to search.",
-        "Track and analyze your progress with our powerful tools to ensure steady growth.",
-        "Join our community and group chats to share your progress to stay motivated with like-minded individuals.",
+        "Explore comprehensive content tailored to each habit, providing valuable insights and guidance.",
+        "Receive AI-generated personalized roadmaps for self-improvement, guiding you towards your best self.",
+        "Connect with like-minded individuals, find study and gym buddies, and engage in focused group chats.",
       ],
     },
     productivity: {
       title: "Productivity",
       about:
-        "Looking to achieve your goals and find your purpose? Our specially-designed improvement techniques can help you increase your focus and reach your full potential. Only with a focused mind, can you learn. Start your journey towards a more meaningful life today.",
+        "Boost your productivity with AI-powered tools, task scheduling, and study techniques tailored to your goals.",
       featureheading: [
-        "Self-Improvement Techniques",
-        "Flow to Productivity",
-        "Boost Productivity",
+        "The AI Powered Platform",
+        "Immersive Lofi Study Sessions",
+        "Ultimate Ecosystem",
       ],
       featureparagraph: [
-        "Use the techniques we provide here to rise and improve yourself",
-        "Enter Flow State; achieve higher productivity",
-        "Learn the secrets of Higher Productivity to implement them in your own life",
-      ],
-    },
-    workspace: {
-      title: "Workspace",
-      about:
-        "Planning your day has always been challenging with our exclusive AI Schedule Generator. Transform your workday with all the essential productivity tools at your fingertips. Get organized, stay on track with our customizable to-do lists, and connect with a community of peers for support and inspiration. Enhance your focus and create a calming atmosphere with our curated Lofi sessions.",
-      featureheading: [
-        "Productivity Toolkit",
-        "Community Support",
-        "Lofi Help",
-      ],
-      featureparagraph: [
-        "Boost your productivity with our all-in-one toolkit, featuring an AI schedule generator, to-do lists, and more",
-        "Connect with a supportive community for inspiration and guidance to help you with anything and everything.",
-        "Stay focused and in the zone with our curated selection of Lofi sessions.",
+        "Leverage AI to automate task scheduling and discover optimal study techniques for efficient progress.",
+        "Immerse yourself in animated Lofi video sessions and curated playlists designed to enhance focus.",
+        "Access a comprehensive range of features including todos, journaling, notion templates, and more, all synchronized across the platform.",
       ],
     },
     community: {
       title: "Community",
       about:
-        "Join our community to connect with like-minded individuals and achieve more significant progress through shared motivation and discipline. Daily Blogs and posts will keep you informed and motivated also.",
+        "Join a supportive community of like-minded individuals, fostering motivation, and discipline for greater progress.",
       featureheading: [
-        "Everyday Motivation",
-        "Peer Support",
+        "Productive Media",
+        "AI Minimalism",
         "Group Inspiration",
       ],
       featureparagraph: [
-        "Stay motivated and informed with our daily blogs.",
-        "Join our community and connect with like-minded individuals to progress further with increased motivation and discipline",
-        "Engage in group chats to share your journey and stay inspired",
+        "Engage in content solely focused on self-improvement and productivity, eliminating distractions.",
+        "Experience distraction-free sessions with AI-imposed time limits on chatting and scrolling.",
+        "Create and join group chats focused on specific topics, fostering inspiration and growth together.",
       ],
     },
     icons: ["green", "blue", "purple"],
   };
 
+  const [pc, setPc] = useState(true);
+
+  useEffect(() => {
+    VanillaTilt.init(document.querySelectorAll(".review-card"), {
+      max: 15,
+      speed: 300,
+      transition: true,
+    });
+    function setInitialPositions() {
+      if (window.innerWidth < 768) {
+        setPc(false);
+      } else {
+        setPc(true);
+      }
+    }
+    setInitialPositions();
+    window.addEventListener("resize", setInitialPositions);
+
+    return () => {
+      window.removeEventListener("resize", setInitialPositions);
+    };
+  }, []);
   return (
     <>
       <Head>
@@ -72,21 +86,21 @@ export default function ParentHabit({ section }) {
           content="Explore all about Self improvement at single place, From Creative Blogs to Personality Development Roadmaps!"
         />
       </Head>
-      <section id="Habits" >
+      <section id="Habits">
         <div className=" rounded-br-full z-no blur-3xl font-poppins	bg-habits absolute  w-[75%] h-[90%]"></div>
-        <div className="flex  mx-auto px-[10vw] gap-3 pt-16 flex-wrap flex-row  justify-center ">
-          <div className="flex px-[3vw] flex-col items-center  md:items-start text-center md:text-left  w-[50%] text-white justify-center">
-            <h1 className="text-[6rem]  font-bold  font-fontspring ">
+        <div className="flex mx-auto px-[10vw] gap-3 pt-16 flex-wrap-reverse flex-row justify-center">
+          <div className="flex px-[3vw] flex-col items-center md:items-start text-center md:text-left w-full md:w-[50%] text-white justify-center">
+            <h1 className="text-[6rem] font-bold font-fontspring">
               {list[section].title}
             </h1>
-            <p className=" text-[20px] font-poppins  ">{list[section].about}</p>
-            <button className="bg-white  w-[191px] h-[45px] mt-5 ">
-              <h1 className="font-poppins  text-[16px] font-btn-gradient">
+            <p className="text-[20px] font-poppins">{list[section].about}</p>
+            <button className="bg-white w-[191px] h-[45px] mt-5">
+              <h1 className="font-poppins text-[16px] font-btn-gradient">
                 Try It Now
               </h1>
             </button>
           </div>
-          <div className="flex  flex-row flex-wrap">
+          <div className="flex flex-col md:flex-row  justify-center items-center">
             <Image
               width={400}
               height={400}

@@ -180,18 +180,7 @@ export default function Navbar() {
                         Productivity
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        href="/workspace"
-                        className={`Link  block p-4  ${
-                          asPath == "/workspace"
-                            ? "activelink font-bold"
-                            : ""
-                        }`}
-                      >
-                        Workspace
-                      </Link>
-                    </li>
+                    
                     <li>
                       <Link
                         href="/community"
