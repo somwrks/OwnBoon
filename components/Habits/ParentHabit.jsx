@@ -54,7 +54,6 @@ export default function ParentHabit({ section }) {
     icons: ["green", "blue", "purple"],
   };
 
-  const [pc, setPc] = useState(true);
 
   useEffect(() => {
     VanillaTilt.init(document.querySelectorAll(".review-card"), {
@@ -62,19 +61,7 @@ export default function ParentHabit({ section }) {
       speed: 300,
       transition: true,
     });
-    function setInitialPositions() {
-      if (window.innerWidth < 768) {
-        setPc(false);
-      } else {
-        setPc(true);
-      }
-    }
-    setInitialPositions();
-    window.addEventListener("resize", setInitialPositions);
-
-    return () => {
-      window.removeEventListener("resize", setInitialPositions);
-    };
+   
   }, []);
   return (
     <>
