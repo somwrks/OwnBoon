@@ -13,8 +13,8 @@ export default function Hero() {
         <div className="circle green" id="green1"></div>
         <div className="circle green" id="green2"></div>
       </div>
-      <div className="flex text-[#2E2E2E] flex-col  xs:p-5  my-0 mx-0 items-center  ">
-        <div className="pt-[10vh] font-fontspring md:text-[3.75rem] lg:text-[5.3rem] text-3xl  text-center">
+      <div className="flex  justify-center text-[#2E2E2E] flex-col   my-0 mx-0 items-center align-center ">
+        <div className=" font-fontspring md:text-[3.75rem] lg:text-[4vw] text-3xl  text-center">
           <h1 className="py-[30px]">
             Ignite your{" "}
             <span className="md:tracking-[12px] tracking-[3px]">GROWTH</span>

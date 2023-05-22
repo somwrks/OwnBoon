@@ -32,7 +32,7 @@ const Home= () => {
           <Navbars />
             <section id="home">
             <Balls />
-            <div className="flex min-h-screen flex-col">
+            <div className="flex min-h-screen justify-center flex-col">
               <Hero />
               <Skateboard />
             </div>

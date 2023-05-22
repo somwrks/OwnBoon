@@ -21,10 +21,10 @@ export default function About() {
     <section id="about">
       <div className="p-5 py-[10vh] about-bg  bg-white text-[#2E2E2E]   flex-wrap flex flex-row  font-poppins align-center items-center justify-center  ">
         <div className="flex flex-col px-10 heading py-10 text-center md:text-left align-center justify-center ">
-          <h1 className=" text-center md:text-left text-[32px]  font-bold">
+          <h1 className=" text-center md:text-left text-[32px] my-2 font-bold">
             About Us
           </h1>
-          <p className="text-[18px]  md:text-[1.2rem] break-normal max-w-2xl">
+          <p className="text-[3.3vw]  md:text-[1.2rem] break-normal max-w-2xl">
             Our founder, Som’s journey in Self-Improvement showed him the need
             for an all-in-one social platform that helps individuals in their
             journey and provides all the necessary tools for growth. We have
@@ -42,111 +42,70 @@ export default function About() {
           </h1>
           <div className="flex  flex-row">
             <div className="flex px-3 flex-col">
-              <div className="flex p-3 justify-center items-center align-center flex-col">
-                <svg
-                  className="absolute mb-16"
-                  width="117"
-                  height="117"
-                  viewBox="0 0 117 117"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    opacity="0.3"
-                    d="M0 58.5C0 26.1913 26.1913 0 58.5 0V0C90.8087 0 117 26.1913 117 58.5V58.5C117 90.8087 90.8087 117 58.5 117H0V58.5Z"
-                    fill="#00F0B5"
+              <div className="flex   justify-center items-center align-center flex-col">
+                <div className="som-bg p-3">
+                  <Image
+                    className="z-100 "
+                    src={"/som.webp"}
+                    width={100}
+                    height={100}
                   />
-                </svg>
-                <Image
-                  className="z-100 "
-                  src={"/som.webp"}
-                  width={100}
-                  height={100}
-                />
-                <h2 className="mt-3 text-[16px] font-semibold">
-                Som Srivastava
+                </div>
+                <h2 className="mt-3 text-[16px] text-center font-semibold">
+                  Som Srivastava
                 </h2>
-                <h3 className="pt-1 text-[14px]">CEO, FOUNDER</h3>
+                <h3 className="pt-1 text-center text-[14px]">CEO, FOUNDER</h3>
               </div>
-              <div className="flex p-3 justify-center items-center align-center flex-col">
-                <svg
-                  className="absolute mb-16"
-                  width="117"
-                  height="117"
-                  viewBox="0 0 117 117"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    opacity="0.2"
-                    d="M0 58.5C0 26.1913 26.1913 0 58.5 0C90.8087 0 117 26.1913 117 58.5C117 90.8087 90.8087 117 58.5 117H0V58.5Z"
-                    fill="#E90064"
+              <div className="flex p-3  justify-center items-center align-center flex-col">
+                <div className="sarthak-bg p-3">
+                  <Image
+                    className="z-100 "
+                    src={"/sarthak.webp"}
+                    width={100}
+                    height={100}
                   />
-                </svg>
-                <Image
-                  className="z-100 "
-                  src={"/sarthak.webp"}
-                  width={100}
-                  height={100}
-                />
-                <h2 className="mt-3 text-[16px] font-semibold">
-                Saarthak Dutta
+                </div>
+
+                <h2 className="mt-3 text-[16px] text-center font-semibold">
+                  Saarthak Dutta
                 </h2>
-                <h3 className="pt-1 text-[14px]">CTO, CO-FOUNDER</h3>
+                <h3 className="pt-1 text-center text-[14px]">
+                  CTO, CO-FOUNDER
+                </h3>
               </div>
             </div>
             <div className="flex px-3  flex-col">
-              <div className="flex p-3 justify-center items-center align-center flex-col">
-                <svg
-                  className="absolute mb-16"
-                  width="117"
-                  height="117"
-                  viewBox="0 0 117 117"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    opacity="0.3"
-                    d="M0 58.5C0 26.1913 26.1913 0 58.5 0C90.8087 0 117 26.1913 117 58.5C117 90.8087 90.8087 117 58.5 117H0V58.5Z"
-                    fill="#AA77FF"
-                  />
-                </svg>
-                <Image
+              <div className="flex p-3  justify-center items-center align-center flex-col">
+              <div className="alok-bg p-3">
+              <Image
                   className="z-100 "
                   src={"/alok.webp"}
                   width={100}
                   height={100}
                 />
-                <h2 className="mt-3 text-[16px] font-semibold">
-                Alok Singh
+                </div>
+               
+                <h2 className="mt-3 text-[16px] text-center font-semibold">
+                  Alok Singh
                 </h2>
-                <h3 className="pt-1 text-[14px]">COO, CO-FOUNDER</h3>
+                <h3 className="pt-1 text-center text-[14px]">
+                  COO, CO-FOUNDER
+                </h3>
               </div>
-              <div className="flex p-3 justify-center items-center align-center flex-col">
-                <svg
-                  className="absolute mb-16"
-                  width="117"
-                  height="117"
-                  viewBox="0 0 117 117"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    opacity="0.4"
-                    d="M0 58.5C0 26.1913 26.1913 0 58.5 0V0C90.8087 0 117 26.1913 117 58.5V58.5C117 90.8087 90.8087 117 58.5 117H0V58.5Z"
-                    fill="#00AEFF"
-                  />
-                </svg>
-                <Image
+              <div className="flex p-3  justify-center items-center align-center flex-col">
+              <div className="ivavi-bg p-3">
+              <Image
                   className="z-100 "
                   src={"/avi.webp"}
                   width={100}
                   height={100}
                 />
-                <h2 className="mt-3 text-[16px] font-semibold">
-                Devansh Rajwar
+                </div>
+               
+                <h2 className="mt-3 text-[16px] text-center font-semibold">
+                  Devansh Rajwar
                 </h2>
-                <h3 className="pt-1 text-[14px]">CONTENT HEAD</h3>
+                <h3 className="pt-1 text-center text-[14px]">CONTENT HEAD</h3>
               </div>
             </div>
           </div>

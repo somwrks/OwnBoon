@@ -48,7 +48,7 @@ export default function Benefits() {
       <div className="benefit-container  py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-40">
         {/* first row */}
 
-        <div className="flex md:flex-row flex-col md:mr-[8vw] xl:space-x-[4vw] md:space-x-[1vw] lg:space-x-[1vw]  ">
+        <div className="flex md:flex-row flex-col md:mr-[8vw] gap-6 xl:space-x-[4vw] md:space-x-[1vw] lg:space-x-[1vw]  ">
           {/* first left square */}
           <div className="flex flex-row  justify-between ">
             <div className="flex flex-col mx-1 ">
@@ -118,7 +118,7 @@ export default function Benefits() {
           {/* first right square */}
           <div
             id="2"
-            className="sphere md:relative md:mt-0 mt-[200px] absolute left-16 "
+            className="sphere md:relative md:mt-0 mt-[25vh] absolute left-16 "
           >
             <div className="spherebg bg-[#AA77FF]  blur-[4rem]"></div>
             <svg
@@ -277,7 +277,7 @@ export default function Benefits() {
           {/* second right square */}
           {/* second right square */}
 
-          <div className="sphere md:relative absolute mt-[320px] md:mt-0 left-16  ">
+          <div className="sphere md:relative absolute mt-[25vh] md:mt-0 left-16  ">
             <div className="spherebg  bg-[#00AEFF] blur-[4rem]"></div>
             <svg
               width="58"

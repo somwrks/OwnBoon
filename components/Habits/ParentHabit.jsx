@@ -55,8 +55,6 @@ export default function ParentHabit({ section }) {
 
 
   useEffect(() => {
-    const a = document.getElementById("chakra");
-      a.style.display = "block";
     VanillaTilt.init(document.querySelectorAll(".review-card"), {
       max: 15,
       speed: 300,
@@ -75,10 +73,10 @@ export default function ParentHabit({ section }) {
         />
       </Head>
       <section id="Habits">
-        <div className={`${list[section].title ==="Habits"? "bg-habits":list[section].title ==="Productivity"? "bg-productivity": "bg-community"} rounded-br-full z-no blur-3xl font-poppins	 absolute  md:w-[75%] h-[120%] w-[120%] md:h-[90%]`}></div>
-        <div className="flex mx-auto px-[10vw] gap-3 pt-16 flex-wrap-reverse flex-row justify-center">
-          <div className="flex px-[3vw] pb-10 flex-col items-center md:items-start text-center md:text-left w-full md:w-[50%] text-white justify-center">
-            <h1 className="text-[6rem] font-bold font-fontspring">
+        <div className={`${list[section].title ==="Habits"? "bg-habits":list[section].title ==="Productivity"? "bg-productivity": "bg-community"} rounded-br-full  z-no blur-3xl font-poppins	 absolute  md:w-[75%] h-[120%] w-[100%] md:h-[100%]`}></div>
+        <div className="flex flex-row mt-[-9vh] flex-wrap-reverse min-h-screen items-center align-center   justify-center">
+          <div className="flex px-[3vw]  flex-col items-center md:items-start text-center md:text-left w-auto md:w-[50%] text-white ">
+            <h1 className="md:text-[96px] text-6xl font-bold font-fontspring">
               {list[section].title}
             </h1>
             <p className="text-[20px] font-poppins">{list[section].about}</p>
@@ -88,11 +86,12 @@ export default function ParentHabit({ section }) {
               </h1>
             </button>
           </div>
-          <div className="flex flex-col md:flex-row pt-10 px-10 justify-center items-center">
+          <div className="flex flex-col justify-center items-center md:flex-row  p-2 ">
+          
       <StackedImageAnimation/>
           </div>
         </div>
-        <div className="flex bg-white flex-col mt-5 md:mt-[40vh] py-5  items-center">
+        <div className="flex bg-white flex-col my-[100px]  py-5  items-center">
           <div className="habit-heading font-poppins">
             <h1 className="text-[32px] font-[600]">Coming Soon</h1>
           </div>

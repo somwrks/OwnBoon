@@ -61,16 +61,16 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-row text-3xl space-x-4 mt-5">
                   <Link href="https://www.linkedin.com/company/ownboon">
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon color = {"#343434"} icon={faLinkedin} />
                   </Link>
                   <Link href="https://instagram.com/OwnBoon">
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon color = {"#343434"} icon={faInstagram} />
                   </Link>
                   <Link href="https://github.com/OwnBoon">
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon color = {"#343434"} icon={faGithub} />
                   </Link>
                   <Link href="https://discord.gg/HZmwkA2X">
-                    <FontAwesomeIcon icon={faDiscord} />
+                    <FontAwesomeIcon color = {"#343434"} icon={faDiscord} />
                   </Link>
                 </div>
               </div>
@@ -101,19 +101,19 @@ export default function Footer() {
                 <div className="flex flex-row box-content	text-3xl space-x-2 mt-5">
                 <div className="flex flex-col">
                   <Link href="https://www.linkedin.com/company/ownboon">
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon color = {"#343434"} icon={faLinkedin} />
                   </Link>
                   <Link href="https://instagram.com/OwnBoon">
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon color = {"#343434"} icon={faInstagram} />
                   </Link>
                   
                 </div>
                 <div className="flex flex-col">
                   <Link href="https://github.com/OwnBoon">
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon color = {"#343434"} icon={faGithub} />
                   </Link>
                   <Link href="https://discord.gg/HZmwkA2X">
-                    <FontAwesomeIcon icon={faDiscord} />
+                    <FontAwesomeIcon color = {"#343434"} icon={faDiscord} />
                   </Link>
                   
                 </div>

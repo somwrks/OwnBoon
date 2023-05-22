@@ -5,26 +5,39 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 export default function Navbar() {
   const router = useRouter();
-  const {asPath} = router;
-  console.log(asPath)
+  const { asPath } = router;
   const preview = () => {
     toast.info("Coming soon");
   };
   const [display, setDisplay] = useState(false);
-  const dropdown = () => {
-    if (display === false) {
+  const [displaylock, lockDisplay] = useState(false);
+  const [displaypromise, promiseDisplay] = useState(false);
+  const dropdownlock = () => {
+    if (displaypromise === false) {
+      lockDisplay(true);
+      promiseDisplay(true);
+    } else {
+      promiseDisplay(false);
+      lockDisplay(false);
+    }
+  };
+  const hoverInside = () => {
+    setDisplay(true);
+  };
+  const hoverOutside = () => {
+    if (displaylock === true) {
       setDisplay(true);
     } else {
       setDisplay(false);
     }
   };
 
-  const [displayphone, setPhone] = useState(false);
-  const dropdownphone = () => {
-    if (displayphone === false) {
-      setPhone(true);
+  const [bugermenu, setBurgerMenu] = useState(false);
+  const dorpdownburgermenu = () => {
+    if (bugermenu === false) {
+      setBurgerMenu(true);
     } else {
-      setPhone(false);
+      setBurgerMenu(false);
     }
   };
 
@@ -59,7 +72,7 @@ export default function Navbar() {
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            onClick={dropdownphone}
+            onClick={dorpdownburgermenu}
             className="inline-flex  items-center p-2 rounded-lg md:hidden"
             aria-controls="navbar-sticky"
             aria-expanded="false"
@@ -101,7 +114,7 @@ export default function Navbar() {
           </div>
           <div
             className={`items-center text-[0.9rem] justify-between ${
-              displayphone === true ? "" : "hidden"
+              bugermenu === true ? "" : "hidden"
             } w-full md:flex md:w-auto md:order-1`}
             id="navbar-sticky"
           >
@@ -109,8 +122,8 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/"
-                  className={`Link block py-2 pl-3 pr-4 md:p-0 ${
-                    asPath == "/" ? "activelink font-bold" : ""
+                  className={` block py-2 pl-3 pr-4 md:p-0 ${
+                    asPath == "/" ? "activelink font-bold" : "Link"
                   }`}
                   id="homelink"
                   scroll={false}
@@ -118,17 +131,17 @@ export default function Navbar() {
                   Home
                 </Link>
               </li>
-              <li>
+              <li onMouseEnter={hoverInside} onMouseLeave={hoverOutside}>
                 <button
                   id="dropdownNavbarLink"
-                  onClick={dropdown}
-                  className={`flex items-center justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium ${
+                  onClick={dropdownlock}
+                  className={` flex text-left justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium ${
                     asPath == "/productivity" ||
                     asPath == "/habits" ||
                     asPath == "/workspace" ||
                     asPath == "/community"
                       ? "activelink font-bold"
-                      : ""
+                      : "Link"
                   }  md:w-auto `}
                 >
                   Explore
@@ -159,10 +172,8 @@ export default function Navbar() {
                     <li>
                       <Link
                         href="/habits"
-                        className={`Link block p-4  ${
-                          asPath === "/habits"
-                            ? "activelink font-bold"
-                            : ""
+                        className={` block p-4  ${
+                          asPath === "/habits" ? "activelink font-bold" : "Link"
                         }`}
                       >
                         Habits
@@ -171,23 +182,23 @@ export default function Navbar() {
                     <li>
                       <Link
                         href="/productivity"
-                        className={`Link block p-4  ${
+                        className={` block p-4  ${
                           asPath == "/productivity"
                             ? "activelink font-bold"
-                            : ""
+                            : "Link"
                         }`}
                       >
                         Productivity
                       </Link>
                     </li>
-                    
+
                     <li>
                       <Link
                         href="/community"
-                        className={`Link  block p-4  ${
+                        className={`  block p-4  ${
                           asPath == "/community"
                             ? "activelink font-bold"
-                            : ""
+                            : "Link"
                         }`}
                       >
                         Community
@@ -201,7 +212,9 @@ export default function Navbar() {
                   href="/#benefit"
                   scroll={false}
                   id="benefitlink"
-                  className=" block  py-2 Link pl-3 pr-4 md:p-0 "
+                  className={` block  ${
+                    asPath == "/#benefit" ? "activelink font-bold" : "Link"
+                  } py-2  pl-3 pr-4 md:p-0 `}
                 >
                   Benefit
                 </Link>
@@ -210,7 +223,9 @@ export default function Navbar() {
                 <Link
                   scroll={false}
                   href="/#about"
-                  className="Link  block py-2 pl-3 pr-4 md:p-0 "
+                  className={` block  ${
+                    asPath == "/#about" ? "activelink font-bold" : "Link"
+                  } py-2  pl-3 pr-4 md:p-0 `}
                 >
                   About Us
                 </Link>
@@ -222,4 +237,3 @@ export default function Navbar() {
     </>
   );
 }
-

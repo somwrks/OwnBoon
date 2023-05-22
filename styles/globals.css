@@ -231,7 +231,7 @@ html {
 body {
   @apply text-black;
 }
-
+ 
 /* Home */
 #hero-arrow {
   fill: linear-gradient(0deg, #2e2e2e, #2e2e2e),
@@ -623,16 +623,37 @@ canvas {
 .about-bg{
   background-image: url("../public/aboutbg.webp");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .crew.show {
   opacity: 1;
   animation: scale 1s ease-in-out;
 }
 
-/* HABITS PAGE */
+.som-bg{
+  background-image: url("../public/sombg.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+.sarthak-bg{
+  background-image: url("../public/sarthakbg.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+.alok-bg{
+  background-image: url("../public/alokbg.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+.ivavi-bg{
+  background-image: url("../public/avibg.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-
+}
 /* responsiveness */
 @media (max-width: 768px) {
   .ball {
