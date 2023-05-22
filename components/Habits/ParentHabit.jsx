@@ -1,9 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 import VanillaTilt from "vanilla-tilt";
-import { useEffect, useState } from "react";
+import { StackedImageAnimation } from './StackedImageAnimation';
+import { useEffect } from "react";
 export default function ParentHabit({ section }) {
   const list = {
     habit: {
@@ -56,6 +55,8 @@ export default function ParentHabit({ section }) {
 
 
   useEffect(() => {
+    const a = document.getElementById("chakra");
+      a.style.display = "block";
     VanillaTilt.init(document.querySelectorAll(".review-card"), {
       max: 15,
       speed: 300,
@@ -74,9 +75,9 @@ export default function ParentHabit({ section }) {
         />
       </Head>
       <section id="Habits">
-        <div className=" rounded-br-full z-no blur-3xl font-poppins	bg-habits absolute  w-[75%] h-[90%]"></div>
+        <div className={`${list[section].title ==="Habits"? "bg-habits":list[section].title ==="Productivity"? "bg-productivity": "bg-community"} rounded-br-full z-no blur-3xl font-poppins	 absolute  md:w-[75%] h-[120%] w-[120%] md:h-[90%]`}></div>
         <div className="flex mx-auto px-[10vw] gap-3 pt-16 flex-wrap-reverse flex-row justify-center">
-          <div className="flex px-[3vw] flex-col items-center md:items-start text-center md:text-left w-full md:w-[50%] text-white justify-center">
+          <div className="flex px-[3vw] pb-10 flex-col items-center md:items-start text-center md:text-left w-full md:w-[50%] text-white justify-center">
             <h1 className="text-[6rem] font-bold font-fontspring">
               {list[section].title}
             </h1>
@@ -87,21 +88,8 @@ export default function ParentHabit({ section }) {
               </h1>
             </button>
           </div>
-          <div className="flex flex-col md:flex-row  justify-center items-center">
-            <Image
-              width={400}
-              height={400}
-              className="mt-10"
-              src="/habit-img.webp"
-              loading="lazy"
-            />
-            <Image
-              width={300}
-              height={300}
-              src="/habit-img2.webp"
-              className=""
-              loading="lazy"
-            />
+          <div className="flex flex-col md:flex-row pt-10 px-10 justify-center items-center">
+      <StackedImageAnimation/>
           </div>
         </div>
         <div className="flex bg-white flex-col mt-5 md:mt-[40vh] py-5  items-center">
@@ -342,7 +330,7 @@ export default function ParentHabit({ section }) {
             </svg>
           </div>
         </div>
-        <div className="flex flex-col min-h-[90vh]  habit-bg-img justify-center ">
+        <div className="flex flex-col min-h-[90vh] pb-10  habit-bg-img justify-center ">
           <div className="heading font-poppins">
             <h1 className="font-[600] text-[32px]">Features</h1>
           </div>

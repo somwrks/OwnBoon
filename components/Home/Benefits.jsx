@@ -58,7 +58,8 @@ export default function Benefits() {
                 Boosted Productivity
               </h3>
               <p className={`break-normal  md:text-right text-center`}>
-              Enhanced productivity with AI-powered scheduler and optimized study techniques
+                Enhanced productivity with AI-powered scheduler and optimized
+                study techniques
               </p>
             </div>
             <div className="flex flex-col  benefit-dot-left">
@@ -191,10 +192,13 @@ export default function Benefits() {
               </svg>
             </div>
             <div className="flex flex-col  mx-1 ">
-              <h3 className="text-[#AA77FF] md:text-left text-center text-2xl benefit-txt">Focus</h3>
+              <h3 className="text-[#AA77FF] md:text-left text-center text-2xl benefit-txt">
+                Focus
+              </h3>
               <p className="break-normal md:text-left text-center">
                 {" "}
-                Find your perfect study partner and stay motivated with our Focus Planet and Lofi Sessions.
+                Find your perfect study partner and stay motivated with our
+                Focus Planet and Lofi Sessions.
               </p>
             </div>
           </div>
@@ -213,7 +217,10 @@ export default function Benefits() {
                 Diverse Connections
               </h3>
               <p className={`md:text-right text-center`}>
-              Connect and expand with a community of like-minded individuals through tailored group chats, study and gym buddies, and Vent Zone.</p>
+                Connect and expand with a community of like-minded individuals
+                through tailored group chats, study and gym buddies, and Vent
+                Zone.
+              </p>
             </div>
             <div className="flex flex-col benefit-dot-left">
               <svg
@@ -263,7 +270,9 @@ export default function Benefits() {
               />
             </svg>
 
-            <h2 className="text-white text-center text-xl font-bold font-poppins">Diverse Connections</h2>
+            <h2 className="text-white text-center text-xl font-bold font-poppins">
+              Diverse Connections
+            </h2>
           </div>
           {/* second right square */}
           {/* second right square */}
@@ -295,7 +304,7 @@ export default function Benefits() {
             </svg>
 
             <h2 className="text-white text-center text-xl font-bold font-poppins">
-            Personalized Roadmaps
+              Personalized Roadmaps
             </h2>
           </div>
           <div className="flex flex-row md:mt-0 mt-[15vh] justify-between ">
@@ -323,10 +332,12 @@ export default function Benefits() {
             </div>
             <div className="flex flex-col   mx-1 ">
               <h3 className="text-[#00AEFF] md:text-left text-center text-2xl benefit-txt">
-              Personalized Roadmaps
+                Personalized Roadmaps
               </h3>
               <p className="break-normal md:text-left text-center">
-              Explore a roadmap tailored to your personality. Get expert tips on productivity and self-improvement through our exclusive blog content.
+                Explore a roadmap tailored to your personality. Get expert tips
+                on productivity and self-improvement through our exclusive blog
+                content.
               </p>
             </div>
           </div>

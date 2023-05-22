@@ -102,6 +102,14 @@ text-fill-color: transparent;
 .bg-habits{
   background: linear-gradient(90deg, rgba(0,174,255,1) 0%, rgba(0,240,181,1) 50%, rgba(255,255,0,1) 100%);
 }
+.bg-productivity{
+  background: linear-gradient(90deg, rgba(236,59,135,1) 0%, rgba(206,176,255,1) 70%, rgba(255,255,0,1) 100%);
+
+}
+.bg-community{
+  background: linear-gradient(90deg, rgba(95,236,59,1) 0%, rgba(224,255,223,1) 70%, rgba(255,255,0,1) 100%);
+
+}
 .habit-bg-img{
   background-image: url("../public/habit-bg-img.webp");
   background-size: cover;
@@ -611,6 +619,11 @@ canvas {
 /* about */
 .crew{
   opacity: 0;
+}
+.about-bg{
+  background-image: url("../public/aboutbg.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .crew.show {
   opacity: 1;

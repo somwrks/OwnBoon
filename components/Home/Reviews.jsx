@@ -8,7 +8,6 @@ import Image from "next/image";
 
 export default function Reviews() {
   const [pc, setPc] = useState(true);
-  
 
   useEffect(() => {
     VanillaTilt.init(document.querySelectorAll(".review-card"), {
@@ -34,7 +33,7 @@ export default function Reviews() {
     <div className="my-[10vh] font-poppins flex flex-col">
       <div className="flex mt-10 my-auto mx-auto items-center flex-col text-center ">
         <div className="review-heading flex flex-col">
-         <h1 className="md:text-[4rem] mb-10 text-[3rem]">
+          <h1 className="md:text-[4rem] mb-10 text-[3rem]">
             Check out Recent Reviews
           </h1>
         </div>
@@ -55,9 +54,7 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] ">
-                        Elliot Choy
-                      </h3>
+                      <h3 className="font-bold text-[1rem] ">Elliot Choy</h3>
                       <h4 className="text-[0.8rem] text-[gray]">
                         Content Creator
                       </h4>
@@ -73,7 +70,9 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "OwnBoon is a game-changer! The Workspace keeps me on track and the Community is so supportive. I'm addicted to the Lofi music sessions!"
+                    "OwnBoon is a game-changer! The Workspace keeps me on track
+                    and the Community is so supportive. I'm addicted to the Lofi
+                    music sessions!"
                   </p>
                 </div>
               </div>
@@ -91,9 +90,7 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] ">
-                        Mark Lee
-                      </h3>
+                      <h3 className="font-bold text-[1rem] ">Mark Lee</h3>
                       <h4 className="text-[0.8rem] text-left text-[gray]">
                         Tulane University
                       </h4>
@@ -109,7 +106,9 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "I'm blown away by OwnBoon's resources! The Informational section has helped me improve my habits, and the Blog section is a great source of inspiration."
+                    "I'm blown away by OwnBoon's resources! The Informational
+                    section has helped me improve my habits, and the Blog
+                    section is a great source of inspiration."
                   </p>
                 </div>
               </div>
@@ -127,9 +126,7 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] ">
-                        Rachel Davis
-                      </h3>
+                      <h3 className="font-bold text-[1rem] ">Rachel Davis</h3>
                       <h4 className="text-[0.8rem] text-[gray]">
                         Wildlife Photographer
                       </h4>
@@ -145,7 +142,9 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                  "OwnBoon has transformed my productivity! The AI scheduler in the Workspace has helped me manage my time like a pro, and the Community is so uplifting."
+                    "OwnBoon has transformed my productivity! The AI scheduler
+                    in the Workspace has helped me manage my time like a pro,
+                    and the Community is so uplifting."
                   </p>
                 </div>
               </div>
@@ -165,9 +164,7 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] ">
-                        Chris Thompson
-                      </h3>
+                      <h3 className="font-bold text-[1rem] ">Chris Thompson</h3>
                       <h4 className="text-[0.8rem] text-[gray]">
                         Graphic Designer
                       </h4>
@@ -182,7 +179,9 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "I was struggling with motivation before I found OwnBoon. The virtual study buddies and Lofi music sessions in the Workspace keep me focused and energized."
+                    "I was struggling with motivation before I found OwnBoon.
+                    The virtual study buddies and Lofi music sessions in the
+                    Workspace keep me focused and energized."
                   </p>
                 </div>
               </div>
@@ -218,7 +217,9 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "OwnBoon is the perfect platform for personal growth. The articles in the Informational section are so insightful, and the Community is full of like-minded individuals."
+                    "OwnBoon is the perfect platform for personal growth. The
+                    articles in the Informational section are so insightful, and
+                    the Community is full of like-minded individuals."
                   </p>
                 </div>
               </div>
@@ -236,9 +237,7 @@ export default function Reviews() {
                       />
                     </div>
                     <div className="flex flex-col items-start">
-                      <h3 className="font-bold text-[1rem] ">
-                        Alex Smith
-                      </h3>
+                      <h3 className="font-bold text-[1rem] ">Alex Smith</h3>
                       <h4 className="text-[0.8rem] text-[gray]">
                         Princeton University
                       </h4>
@@ -253,7 +252,9 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                   "I can't recommend OwnBoon enough! The Blog section is full of amazing content, and the Workspace has made me more organized and efficient than ever."
+                    "I can't recommend OwnBoon enough! The Blog section is full
+                    of amazing content, and the Workspace has made me more
+                    organized and efficient than ever."
                   </p>
                 </div>
               </div>
@@ -284,9 +285,7 @@ export default function Reviews() {
                     />
                   </div>
                   <div className="flex flex-col items-start">
-                    <h3 className="font-bold text-[1rem] ">
-                      Elliot Choy
-                    </h3>
+                    <h3 className="font-bold text-[1rem] ">Elliot Choy</h3>
                     <h4 className="text-[0.8rem] text-[gray]">
                       Content Creator
                     </h4>
@@ -302,7 +301,9 @@ export default function Reviews() {
               </div>
               <div className="mt-5">
                 <p className="text-left font-normal font-poppins text-[1rem]">
-                  "OwnBoon is a game-changer! The Workspace keeps me on track and the Community is so supportive. I'm addicted to the Lofi music sessions!"
+                  "OwnBoon is a game-changer! The Workspace keeps me on track
+                  and the Community is so supportive. I'm addicted to the Lofi
+                  music sessions!"
                 </p>
               </div>
             </div>
@@ -320,9 +321,7 @@ export default function Reviews() {
                     />
                   </div>
                   <div className="flex flex-col items-start">
-                    <h3 className="font-bold text-[1rem] ">
-                      Mark Lee
-                    </h3>
+                    <h3 className="font-bold text-[1rem] ">Mark Lee</h3>
                     <h4 className="text-[0.8rem] text-[gray]">
                       Tulane University
                     </h4>
@@ -338,7 +337,9 @@ export default function Reviews() {
               </div>
               <div className="mt-5">
                 <p className="text-left font-normal font-poppins text-[1rem]">
-                  "I'm blown away by OwnBoon's resources! The Informational section has helped me improve my habits, and the Blog section is a great source of inspiration."
+                  "I'm blown away by OwnBoon's resources! The Informational
+                  section has helped me improve my habits, and the Blog section
+                  is a great source of inspiration."
                 </p>
               </div>
             </div>
@@ -356,9 +357,7 @@ export default function Reviews() {
                     />
                   </div>
                   <div className="flex flex-col items-start">
-                    <h3 className="font-bold text-[1rem] ">
-                      Rachel Davis
-                    </h3>
+                    <h3 className="font-bold text-[1rem] ">Rachel Davis</h3>
                     <h4 className="text-[0.8rem] text-[gray]">
                       Wildlife Photographer
                     </h4>
@@ -393,9 +392,7 @@ export default function Reviews() {
                     />
                   </div>
                   <div className="flex flex-col items-start">
-                    <h3 className="font-bold text-[1rem] ">
-                      Chris Thompson
-                    </h3>
+                    <h3 className="font-bold text-[1rem] ">Chris Thompson</h3>
                     <h4 className="text-[0.8rem] text-[gray]">
                       Graphic Designer
                     </h4>
@@ -410,7 +407,9 @@ export default function Reviews() {
               </div>
               <div className="mt-5">
                 <p className="text-left font-normal font-poppins text-[1rem]">
-                  "I was struggling with motivation before I found OwnBoon. The virtual study buddies and Lofi music sessions in the Workspace keep me focused and energized."
+                  "I was struggling with motivation before I found OwnBoon. The
+                  virtual study buddies and Lofi music sessions in the Workspace
+                  keep me focused and energized."
                 </p>
               </div>
             </div>
@@ -428,9 +427,7 @@ export default function Reviews() {
                     />
                   </div>
                   <div className="flex flex-col items-start">
-                    <h3 className="font-bold text-[1rem] ">
-                      Samantha Miller
-                    </h3>
+                    <h3 className="font-bold text-[1rem] ">Samantha Miller</h3>
                     <h4 className="text-[0.8rem] text-[gray]">
                       Content Creator
                     </h4>
@@ -446,7 +443,9 @@ export default function Reviews() {
               </div>
               <div className="mt-5">
                 <p className="text-left font-normal font-poppins text-[1rem]">
-                  "OwnBoon is the perfect platform for personal growth. The articles in the Informational section are so insightful, and the Community is full of like-minded individuals."
+                  "OwnBoon is the perfect platform for personal growth. The
+                  articles in the Informational section are so insightful, and
+                  the Community is full of like-minded individuals."
                 </p>
               </div>
             </div>
@@ -464,9 +463,7 @@ export default function Reviews() {
                     />
                   </div>
                   <div className="flex flex-col items-start">
-                    <h3 className="font-bold text-[1rem] ">
-                      Alex Smith
-                    </h3>
+                    <h3 className="font-bold text-[1rem] ">Alex Smith</h3>
                     <h4 className="text-[0.8rem] text-[gray]">
                       Princeton University
                     </h4>
@@ -481,7 +478,9 @@ export default function Reviews() {
               </div>
               <div className="mt-5">
                 <p className="text-left font-normal font-poppins text-[1rem]">
-                 "I can't recommend OwnBoon enough! The Blog section is full of amazing content, and the Workspace has made me more organized and efficient than ever."
+                  "I can't recommend OwnBoon enough! The Blog section is full of
+                  amazing content, and the Workspace has made me more organized
+                  and efficient than ever."
                 </p>
               </div>
             </div>
