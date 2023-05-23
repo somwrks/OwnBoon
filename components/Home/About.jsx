@@ -19,9 +19,9 @@ export default function About() {
 
   return (
     <section id="about">
-      <div className="p-5 py-[10vh] about-bg  bg-white text-[#2E2E2E]   flex-wrap flex flex-row  font-poppins align-center items-center justify-center  ">
-        <div className="flex flex-col px-10 heading py-10 text-center md:text-left align-center justify-center ">
-          <h1 className=" text-center md:text-left text-[32px] my-2 font-bold">
+      <div className="p-5 py-[10vh] about-bg  bg-white text-[#2E2E2E]   flex-wrap flex flex-row  font-poppins align-center items-center  justify-center  ">
+        <div className="flex flex-col  px-10 heading py-10 text-center md:text-left align-center justify-center ">
+          <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[5vw] md:text-[32px]  font-bold">
             About Us
           </h1>
           <p className="text-[3.3vw]  md:text-[1.2rem] break-normal max-w-2xl">
@@ -36,7 +36,7 @@ export default function About() {
             creating a positive and transformative experience.
           </p>
         </div>
-        <div className=" px-10  justify-center flex flex-col py-10 md:flex-nowrap flex-wrap ">
+        <div className=" px-10   justify-center flex flex-col py-10 md:flex-nowrap flex-wrap ">
           <h1 className="text-center md:text-left text-[32px] benefit-heading font-bold">
             Our Team
           </h1>
@@ -44,7 +44,7 @@ export default function About() {
             <div className="flex px-3 flex-col">
               <div className="flex   justify-center items-center align-center flex-col">
                 <div className="som-bg p-3">
-                  <Image
+                  <Image alt="Som Srivastava"
                     className="z-100 "
                     src={"/som.webp"}
                     width={100}
@@ -56,9 +56,9 @@ export default function About() {
                 </h2>
                 <h3 className="pt-1 text-center text-[14px]">CEO, FOUNDER</h3>
               </div>
-              <div className="flex p-3  justify-center items-center align-center flex-col">
+              <div className="flex  justify-center items-center align-center flex-col">
                 <div className="sarthak-bg p-3">
-                  <Image
+                  <Image alt="Saarthak Dutta"
                     className="z-100 "
                     src={"/sarthak.webp"}
                     width={100}
@@ -75,9 +75,9 @@ export default function About() {
               </div>
             </div>
             <div className="flex px-3  flex-col">
-              <div className="flex p-3  justify-center items-center align-center flex-col">
+              <div className="flex justify-center items-center align-center flex-col">
               <div className="alok-bg p-3">
-              <Image
+              <Image alt="Alok Singh"
                   className="z-100 "
                   src={"/alok.webp"}
                   width={100}
@@ -92,9 +92,9 @@ export default function About() {
                   COO, CO-FOUNDER
                 </h3>
               </div>
-              <div className="flex p-3  justify-center items-center align-center flex-col">
+              <div className="flex justify-center items-center align-center flex-col">
               <div className="ivavi-bg p-3">
-              <Image
+              <Image alt="Devansh Rajwar"
                   className="z-100 "
                   src={"/avi.webp"}
                   width={100}

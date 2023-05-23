@@ -515,6 +515,7 @@ svg {
   background: url("../public/bodyimage1bg.webp");
   background-repeat: no-repeat;
   background-size: contain;
+  
 }
 .bodyimg2 {
   background: url("../public/bodyimage2bg.webp");

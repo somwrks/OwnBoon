@@ -76,7 +76,7 @@ export default function ParentHabit({ section }) {
         <div className={`${list[section].title ==="Habits"? "bg-habits":list[section].title ==="Productivity"? "bg-productivity": "bg-community"} rounded-br-full  z-no blur-3xl font-poppins	 absolute  md:w-[75%] h-[120%] w-[100%] md:h-[100%]`}></div>
         <div className="flex flex-row mt-[-9vh] flex-wrap-reverse min-h-screen items-center align-center   justify-center">
           <div className="flex px-[3vw]  flex-col items-center md:items-start text-center md:text-left w-auto md:w-[50%] text-white ">
-            <h1 className="md:text-[96px] text-6xl font-bold font-fontspring">
+            <h1 className="md:text-[96px] mt-3 text-6xl font-bold font-fontspring">
               {list[section].title}
             </h1>
             <p className="text-[20px] font-poppins">{list[section].about}</p>
@@ -243,10 +243,10 @@ export default function ParentHabit({ section }) {
                   y2="524"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#E90064" />
-                  <stop offset="0.407466" stop-color="#00F0B5" />
-                  <stop offset="0.734375" stop-color="#00AEFF" />
-                  <stop offset="1" stop-color="#AA77FF" />
+                  <stop stopColor="#E90064" />
+                  <stop offset="0.407466" stopColor="#00F0B5" />
+                  <stop offset="0.734375" stopColor="#00AEFF" />
+                  <stop offset="1" stopColor="#AA77FF" />
                 </linearGradient>
                 <linearGradient
                   id="paint1_linear_409_4898"
@@ -256,8 +256,8 @@ export default function ParentHabit({ section }) {
                   y2="360"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#E90064" />
-                  <stop offset="1" stop-color="#AA77FF" />
+                  <stop stopColor="#E90064" />
+                  <stop offset="1" stopColor="#AA77FF" />
                 </linearGradient>
                 <linearGradient
                   id="paint2_linear_409_4898"
@@ -267,8 +267,8 @@ export default function ParentHabit({ section }) {
                   y2="307"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#E90064" />
-                  <stop offset="1" stop-color="#AA77FF" />
+                  <stop stopColor="#E90064" />
+                  <stop offset="1" stopColor="#AA77FF" />
                 </linearGradient>
                 <linearGradient
                   id="paint3_linear_409_4898"
@@ -278,8 +278,8 @@ export default function ParentHabit({ section }) {
                   y2="442"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00F0B5" />
-                  <stop offset="1" stop-color="#00AEFF" />
+                  <stop stopColor="#00F0B5" />
+                  <stop offset="1" stopColor="#00AEFF" />
                 </linearGradient>
                 <linearGradient
                   id="paint4_linear_409_4898"
@@ -289,8 +289,8 @@ export default function ParentHabit({ section }) {
                   y2="480"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#E90064" />
-                  <stop offset="1" stop-color="#AA77FF" />
+                  <stop stopColor="#E90064" />
+                  <stop offset="1" stopColor="#AA77FF" />
                 </linearGradient>
                 <linearGradient
                   id="paint5_linear_409_4898"
@@ -300,8 +300,8 @@ export default function ParentHabit({ section }) {
                   y2="451"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00AEFF" />
-                  <stop offset="1" stop-color="#00F0B5" />
+                  <stop stopColor="#00AEFF" />
+                  <stop offset="1" stopColor="#00F0B5" />
                 </linearGradient>
                 <linearGradient
                   id="paint6_linear_409_4898"
@@ -311,8 +311,8 @@ export default function ParentHabit({ section }) {
                   y2="488.248"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00AEFF" />
-                  <stop offset="1" stop-color="#00F0B5" />
+                  <stop stopColor="#00AEFF" />
+                  <stop offset="1" stopColor="#00F0B5" />
                 </linearGradient>
                 <linearGradient
                   id="paint7_linear_409_4898"
@@ -322,8 +322,8 @@ export default function ParentHabit({ section }) {
                   y2="472.033"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#00AEFF" />
-                  <stop offset="1" stop-color="#00F0B5" />
+                  <stop stopColor="#00AEFF" />
+                  <stop offset="1" stopColor="#00F0B5" />
                 </linearGradient>
               </defs>
             </svg>

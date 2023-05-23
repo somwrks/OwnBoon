@@ -93,8 +93,8 @@ export default function Navbar() {
           </button>
           <Link href="https://ownboon.com" className="flex items-center">
             <Image
-              width={50}
-              height={50}
+              width={40}
+              height={40}
               src="/logo.png"
               className=" mr-1 rounded-full "
               alt="Ownboon Logo"

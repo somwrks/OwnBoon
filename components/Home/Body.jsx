@@ -17,7 +17,7 @@ export default function Body() {
             height={600}
             loading="lazy"
             src="/bodyimage1.webp"
-            alt="Gif"
+            alt="Gif1"
           />
         </div>
         <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
@@ -51,7 +51,7 @@ export default function Body() {
             height={600}
             loading="lazy"
             src="/bodyimage2.webp"
-            alt="Gif"
+            alt="Gif2"
           />
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function Body() {
             height={600}
             loading="lazy"
             src="/bodyimage3.webp"
-            alt="Gif"
+            alt="Gif3"
           />
         </div>
 
