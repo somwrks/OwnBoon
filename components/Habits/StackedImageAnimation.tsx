@@ -7,19 +7,14 @@ export const StackedImageAnimation = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const timer = useRef<NodeJS.Timeout | number>(-1);
   const size = useMemo(() => images.length, []);
-  const [shapeheight, setShapeheight] = useState(0);
-  const [shapewidth, setShapewidth] = useState(0)
-const [mobile, setMobile] = useState(false)
+const [iphone, setIphone] = useState(false)
   useEffect(() => {
     const check =()=>{
-      setShapewidth(window.innerWidth)
-      setShapeheight(window.innerHeight)
       if(window.innerWidth<768){
-        setMobile(true);
+        setIphone(true);
       }
-      else{
-        
-        setMobile(false);
+      else {
+        setIphone(false);
       }
 
     }
@@ -49,7 +44,7 @@ const [mobile, setMobile] = useState(false)
 
   return (
     <Box
-      className=" justify-center align-center flex items-center r-auto sm:r-0 md:w-[342px] md:h-[404px] w-[347px] h-[409px]"
+      className=" justify-center align-center flex items-center r-auto sm:r-0 md:w-[342px] md:h-[404px] w-[245px] h-[285px]"
       id="chakra" 
       position="relative"
     >
@@ -66,9 +61,9 @@ const [mobile, setMobile] = useState(false)
             width="inherit"
             height="inherit"
             position="absolute"
-            top={mobile===false? (40):(60)}
+            top={iphone===false? (40):(60)}
             style={activeIndex-i===0?{filter: 'blur(0px)'  }:{ filter: 'blur(5px)' }}
-            right={mobile===false? (0):(0)}
+            right={iphone? (0 - 0.075 * factor * 280):(0 - 0.075 * factor * 580) }
             transform={`scale(${1 - 0.075 * factor})`}
             zIndex={map.get(i)}
             opacity={map.get(i)}

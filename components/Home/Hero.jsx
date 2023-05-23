@@ -463,7 +463,7 @@ export default function Hero() {
             </svg>
           </h1>
         </div>
-        <div className="py-[1vh] md:text-[1.5rem]  text-md  justify-center text-center">
+        <div className="py-[1vh] md:text-[1.5rem] text-[#262626] text-md  justify-center text-center">
           <h2>revolutionizing your productivity and health</h2>
         </div>
       </div>

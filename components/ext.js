@@ -92,7 +92,7 @@ export const Skateboard = () => {
   }, []);
 
   return (
-    <div id="counter" className=" py-5 mb-10">
+    <div id="counter" className=" text-[#262626] py-5 mb-10">
       <div className=" h-[8vh] w-[3vw] flex flex-col justify-center items-center">
         <button
           id="ripple"

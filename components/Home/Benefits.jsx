@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 export default function Benefits() {
-  const [pc, setPc] = useState(false);
-  function setInitialPositions() {
-    if (window.innerWidth < 768) {
-      setPc(false);
-    } else {
-      setPc(true);
-    }
-  }
   useEffect(() => {
+    function setInitialPositions() {
+      const w = window.innerWidth;
+      
+      const e = document.getElementById("benefit")
+      e.style.backgroundPosition= `${40}% 0%`;
+    }
     setInitialPositions();
     window.addEventListener("resize", setInitialPositions);
 
@@ -39,21 +37,21 @@ export default function Benefits() {
   return (
     <section id="benefit" className="mb-10 pt-[100px] px-5">
       <div className="heading  justify-center align-center ">
-        <h1 className="md:text-[4rem] benefit-heading text-[3rem]">Benefits</h1>
-        <h3 className="md:text-[1.5rem] text-[1.5rem] py-1 ">
+        <h1 className="md:text-[4rem] benefit-heading text-[20px]">Benefits</h1>
+        <h3 className="md:text-[1.5rem] text-[15px] py-1 ">
           Unlock the full benefits of what we offer and experience positive
           changes in your life.
         </h3>
       </div>
-      <div className="benefit-container  py-[10vh] px-[5vw] font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-40">
+      <div className="benefit-container  py-[10vh]  font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-48">
         {/* first row */}
 
-        <div className="flex md:flex-row flex-col md:mr-[8vw] gap-6 xl:space-x-[10vw] md:space-x-[1vw] lg:space-x-[1vw]  ">
+        <div className="flex md:flex-row flex-col mr-0 md:mr-[3vw]  gap-0 md:gap-[5vw]">
           {/* first left square */}
-          <div className="flex flex-row md:mt-0 mt-[10vh] justify-between ">
+          <div className="flex flex-row md:mt-0 mt-[10vh]  justify-between ">
             <div className="flex flex-col mx-1 ">
               <h3
-                className={`text-[#00F0B5] md:text-right text-center benefit-txt text-2xl`}
+                className={`text-[#00F0B5] md:text-right text-center benefit-txt out text-[20px]`}
               >
                 Boosted Productivity
               </h3>
@@ -62,7 +60,7 @@ export default function Benefits() {
                 study techniques
               </p>
             </div>
-            <div className="flex flex-col  benefit-dot-left">
+            <div className="flex flex-col md:mr-0 mr-[30vw] benefit-dot-left">
               <svg
                 width="42"
                 height="26"
@@ -85,7 +83,7 @@ export default function Benefits() {
             </div>
           </div>
 
-          <div className="sphere md:mt-0 mt-[50px] md:relative absolute right-16  " id="1" >
+          <div className="sphere md:mt-0  mt-[50px] md:relative absolute right-16  " id="1" >
             <div className="spherebg bg-[#00F0B5] blur-[4rem]"></div>
             <svg
               width="58"
@@ -110,13 +108,13 @@ export default function Benefits() {
                 fill="white"
               />
             </svg>
-            <h2 className="text-white text-center text-xl font-bold font-poppins">
+            <h2 className="text-white  text-center text-xl font-bold font-poppins">
               Boosted Productivity
             </h2>
           </div>
 
           {/* first right square */}
-          <div  className="sphere  md:mt-0 mt-[10vh]  "
+          <div  className="sphere  md:mt-0 mt-[10vh]  md:ml-0 ml-3"
             id="2"
            
           >
@@ -168,20 +166,9 @@ export default function Benefits() {
               Focus
             </h2>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-          
-          <div className=" flex flex-row md:mt-0 mt-[-20vh] justify-between ">
-            <div className="flex flex-col benefit-dot-right">
+    
+          <div className=" flex flex-row md:mt-0 ml-[-4vw] mt-[-20vh] justify-between ">
+            <div className="flex flex-col md:ml-0 ml-[30vw] benefit-dot-right">
               <svg
                 width="41"
                 height="26"
@@ -204,7 +191,7 @@ export default function Benefits() {
               </svg>
             </div>
             <div className="flex flex-col  mx-1 ">
-              <h3 className="text-[#AA77FF] md:text-left text-center text-2xl benefit-txt">
+              <h3 className="text-[#AA77FF] md:text-left text-center text-[20px] benefit-txt">
                 Focus
               </h3>
               <p className="break-normal md:text-left text-center">
@@ -216,15 +203,20 @@ export default function Benefits() {
           </div>
         </div>
 
+
+
+
+
+
         {/* Second Row */}
 
-        <div className=" flex md:flex-row flex-col md:place-items-baseline xl:mr-max-[8vw] md:space-x-[1vw] xl:space-x-[10vw] lg:space-x-[1vw]">
+        <div className=" flex md:flex-row  flex-col md:place-items-baseline gap-0 md:gap-[8vw]">
           {/* first left square */}
 
-          <div className="flex flex-row md:mt-0 mt-[10vh] justify-between ">
+          <div className="flex flex-row md:mt-0 mt-[10vh] ml-[-4vw] justify-between ">
             <div className="flex flex-col mx-1 ">
               <h3
-                className={`text-[#E90064]  md:text-right  text-center text-2xl benefit-txt`}
+                className={`text-[#E90064]  md:text-right  text-center text-[20px] benefit-txt`}
               >
                 Diverse Connections
               </h3>
@@ -234,7 +226,7 @@ export default function Benefits() {
                 Zone.
               </p>
             </div>
-            <div className="flex flex-col benefit-dot-left">
+            <div className="flex flex-col md:mr-0 mr-[30vw] benefit-dot-left">
               <svg
                 width="42"
                 height="26"
@@ -288,7 +280,7 @@ export default function Benefits() {
           </div>
           {/* second right square */}
 
-          <div className="sphere  md:mt-0 mt-[10vh]  left-16  ">
+          <div className="sphere  md:mt-0 mt-[10vh]  md:ml-0 ml-[7vw] ">
             <div className="spherebg  bg-[#00AEFF] blur-[4rem]"></div>
             <svg
               width="58"
@@ -318,8 +310,8 @@ export default function Benefits() {
               Personalized Roadmaps
             </h2>
           </div>
-          <div className="flex flex-row md:mt-0 mt-[-20vh] justify-between ">
-            <div className="flex flex-col benefit-dot-right">
+          <div className="flex flex-row md:mt-0 ml-[-4vw] mt-[-20vh] justify-between  ">
+            <div className="flex flex-col md:ml-0 ml-[30vw] benefit-dot-right">
               <svg
                 width="41"
                 height="26"
@@ -342,7 +334,7 @@ export default function Benefits() {
               </svg>
             </div>
             <div className="flex flex-col   mx-1 ">
-              <h3 className="text-[#00AEFF] md:text-left text-center text-2xl benefit-txt">
+              <h3 className="text-[#00AEFF] md:text-left text-center text-[20px] benefit-txt">
                 Personalized Roadmaps
               </h3>
               <p className="break-normal md:text-left text-center">

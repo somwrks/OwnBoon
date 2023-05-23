@@ -21,10 +21,10 @@ export default function About() {
     <section id="about">
       <div className="p-5 py-[10vh] about-bg  bg-white text-[#2E2E2E]   flex-wrap flex flex-row  font-poppins align-center items-center  justify-center  ">
         <div className="flex flex-col  px-10 heading py-10 text-center md:text-left align-center justify-center ">
-          <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[5vw] md:text-[32px]  font-bold">
+          <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[20px] md:text-[32px]  font-bold">
             About Us
           </h1>
-          <p className="text-[3.3vw]  md:text-[1.2rem] break-normal max-w-2xl">
+          <p className="text-[1rem] mt-3 md:text-[1.2rem] break-normal max-w-2xl">
             Our founder, Som’s journey in Self-Improvement showed him the need
             for an all-in-one social platform that helps individuals in their
             journey and provides all the necessary tools for growth. We have
@@ -40,7 +40,7 @@ export default function About() {
           <h1 className="text-center md:text-left text-[32px] benefit-heading font-bold">
             Our Team
           </h1>
-          <div className="flex  flex-row">
+          <div className="flex mt-2 flex-row">
             <div className="flex px-3 flex-col">
               <div className="flex   justify-center items-center align-center flex-col">
                 <div className="som-bg p-3">

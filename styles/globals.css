@@ -530,7 +530,7 @@ svg {
 /* Benefits */
 #benefit {
   background: url("../public/benefitbg.webp");
-  background-size: 100%;
+  background-size: cover;
   background-position-y: bottom;
   background-repeat: no-repeat;
 }
@@ -546,7 +546,6 @@ svg {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  padding: 10px;
   opacity: 0;
 }
 .sphere.show {
@@ -679,13 +678,6 @@ canvas {
   }
 }
 @media (max-width: 1280px) {
-  .benefit-dot-left {
-    margin-right: 100px;
-  }
-  .benefit-dot-right {
-    margin-left: 100px;
-  }
   #benefit {
     background: none;
-  }
-}
+  }}

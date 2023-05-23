@@ -4,8 +4,8 @@ export default function Body() {
   return (
     <div className="pt-[100px] bg-white text-[#2E2E2E] flex flex-col font-poppins  items-center align-center p-5 justify-center">
       <div className="heading mb-5">
-        <h1 className="md:text-[4rem] text-[3rem]">Why OwnBoon?</h1>
-        <h3 className="md:text-[1.5rem] text-[1.5rem] py-1 ">
+        <h1 className="md:text-[4rem] text-[20px]">Why OwnBoon?</h1>
+        <h3 className="md:text-[1.5rem] text-[15px] py-1 ">
           Elevate Your Self-Improvement Journey
         </h3>
       </div>
@@ -22,7 +22,7 @@ export default function Body() {
         </div>
         <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center">
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
-            A Community That Matters
+            Supportive Community
           </h4>
           <p className="text-[1rem] md:text-[1.2rem] break-normal max-w-2xl">
             OwnBoon provides a welcoming community of like-minded individuals

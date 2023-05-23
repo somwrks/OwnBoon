@@ -131,7 +131,7 @@ export default function Footer() {
                 <ul className="text-gray-600 text-[0.9rem] dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <Link
-                      href="https://github.com/themesberg/flowbite"
+                      href="/#about"
                       className="hover:underline "
                     >
                       About Us
