@@ -101,7 +101,7 @@ export default function Navbar() {
               alt="Ownboon Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap ">
-              Own<span className="text-cyan">Boon</span>
+              Own<span className="text-[#00F0B5]">Boon</span>
             </span>
           </Link>
           <div className="flex md:order-2">
@@ -123,8 +123,8 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/"
-                  className={` block py-2 pl-3 pr-4 md:p-0 ${
-                    asPath == "/" ? "activelink font-bold" : "Link"
+                  className={`transform-letter  block py-2 pl-3 pr-4 md:p-0 ${
+                    asPath == "/" ? " activelink font-bold" : "Link"
                   }`}
                   id="homelink"
                   scroll={false}
@@ -136,7 +136,7 @@ export default function Navbar() {
                 <button
                   id="dropdownNavbarLink"
                   onClick={dropdownlock}
-                  className={` flex text-left justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium ${
+                  className={`transform-letter flex text-left justify-between w-full  py-2 pl-3 pr-4 md:p-0 font-medium ${
                     asPath == "/productivity" ||
                     asPath == "/habits" ||
                     asPath == "/workspace" ||
@@ -167,13 +167,13 @@ export default function Navbar() {
                   } bg-white items-start  font-light   divide-y divide-gray-100 rounded-lg  w-full `}
                 >
                   <ul
-                    className="ml-[-30px] z-100 bg-white justify-center py-3 px-5 items-center absolute text-gray-700 "
+                    className="ml-[-30px] z-100 bg-white justify-center py-3 px-5 items-center absolute text-gray-700 transform-letter"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <Link
                         href="/habits"
-                        className={` block p-4  ${
+                        className={`transform-letter block p-4  ${
                           asPath === "/habits" ? "activelink font-bold" : "Link"
                         }`}
                       >
@@ -183,7 +183,7 @@ export default function Navbar() {
                     <li>
                       <Link
                         href="/productivity"
-                        className={` block p-4  ${
+                        className={`transform-letter block p-4  ${
                           asPath == "/productivity"
                             ? "activelink font-bold"
                             : "Link"
@@ -196,7 +196,7 @@ export default function Navbar() {
                     <li>
                       <Link
                         href="/community"
-                        className={`  block p-4  ${
+                        className={`transform-letter  block p-4  ${
                           asPath == "/community"
                             ? "activelink font-bold"
                             : "Link"
@@ -213,7 +213,7 @@ export default function Navbar() {
                   href="/#benefit"
                   scroll={false}
                   id="benefitlink"
-                  className={` block  ${
+                  className={`transform-letter block  ${
                     asPath == "/#benefit" ? "activelink font-bold" : "Link"
                   } py-2  pl-3 pr-4 md:p-0 `}
                 >
@@ -224,7 +224,7 @@ export default function Navbar() {
                 <Link
                   scroll={false}
                   href="/#about"
-                  className={` block  ${
+                  className={`transform-letter block  ${
                     asPath == "/#about" ? "activelink font-bold" : "Link"
                   } py-2  pl-3 pr-4 md:p-0 `}
                 >

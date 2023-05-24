@@ -3,21 +3,10 @@
 @tailwind utilities;
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@font-face {
-  font-family: "BlackBones";
-  src: url("../public/blackbones.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+
 @font-face {
   font-family: "Poppins";
   src: url("../public/Poppins.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "alatsi";
-  src: url("../public/alatsi.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -29,19 +18,16 @@
 
 /* Utility */
 .font-inter {
+  text-rendering: optimizeSpeed;
   font-family: Inter, sans-serif;
 }
 .font-poppins {
+  text-rendering: optimizeSpeed;
   font-family: Poppins;
 }
-.font-blackbones {
-  font-family: BlackBones;
-}
 .font-fontspring {
+  text-rendering: optimizeSpeed;
   font-family: fontspring;
-}
-.font-alatsi {
-  font-family: alatsi;
 }
 .fade {
   animation: fade 2s ease-in-out;
@@ -98,6 +84,19 @@ text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   
+}
+.transform-letter{
+  transition: 0.2s all ease-in-out ;
+  transform: scale(1);
+  letter-spacing: 0px;
+}
+.transform-letter:hover{
+  transition: 0.2s all ease-in-out ;
+  letter-spacing: 5px;
+}
+.transform-letter:active{
+  transform: scale(1.1);
+  transition: 0.2s all ease-in-out ;
 }
 .bg-habits{
   background: linear-gradient(90deg, rgba(0,174,255,1) 0%, rgba(0,240,181,1) 50%, rgba(255,255,0,1) 100%);
@@ -254,7 +253,7 @@ ul {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background: linear-gradient(90deg, #0059ff 0%, #dcff5f 77%);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -263,7 +262,8 @@ ul {
   transform-origin: bottom left;
 }
 .activelink {
-  border-bottom: solid 2.5px #0087ca;
+  border-bottom: solid 2px transparent;
+  border-image: linear-gradient(to right, #0059ff, #dcff5f) 1; 
   font-weight: 500;
 }
 svg {
@@ -423,6 +423,7 @@ svg {
   background: white;
   border-radius: 50px;
   border: 1px solid cyan;
+  
 }
 #counter {
   display: flex;
@@ -461,14 +462,19 @@ svg {
   background-clip: content-box;
 }
 .login {
-  background: linear-gradient(
-      180deg,
-      #aa77ff -61.5%,
-      rgba(170, 119, 255, 0) 100%
-    ),
-    linear-gradient(269.62deg, #00f0b5 0.11%, rgba(0, 240, 181, 0) 98.77%),
-    #00aeff;
+  background-image: linear-gradient(90deg, #00a2ff 0%, #f6ffd5 100%);
   border-radius: 35px;
+  transition: 0.2s all ease-in-out ;
+  letter-spacing: 0px;
+}
+.login:hover{
+  transition: 0.2s all ease-in-out ;
+  letter-spacing: 3px;
+  transform: 0;
+}
+.login:active{
+  transition: 0.2s all ease-in-out ;
+  transform: scale(1.1);
 }
 
 /* Body */
@@ -593,6 +599,7 @@ svg {
 }
 /* reviews */
 .review-card {
+  text-align: left;
   
   border-radius: 19px;
   --webkit-backdrop-filter: blur(25px);

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Body() {
   return (
-    <div className="pt-[100px] bg-white text-[#2E2E2E] flex flex-col font-poppins  items-center align-center p-5 justify-center">
-      <div className="heading mb-5">
+    <div className="pt-[50px] bg-white text-[#2E2E2E] flex flex-col font-poppins  items-center align-center p-5 justify-center">
+      <div className="heading mb-8">
         <h1 className="md:text-[4rem] text-[20px]">Why OwnBoon?</h1>
         <h3 className="md:text-[1.5rem] text-[15px] py-1 ">
           Elevate Your Self-Improvement Journey

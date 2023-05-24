@@ -4,10 +4,6 @@ import { toast } from "react-toastify";
 import { useEffect } from "react";
 import CountUpAnimation from "./CountUpAnimation";
 export const Balls = () => {
-  // Revoving balls
-   const preview = () => {
-    toast.info("Coming soon");
-  };
   useEffect(() => {
     const container = document.getElementById("animation-container");
     const balls = Array.from(document.getElementsByClassName("ball"));
@@ -97,7 +93,7 @@ export const Skateboard = () => {
         <button
           id="ripple"
           onClick={preview}
-          className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[50px] w-[350px] h-[50px] hover:cursor-pointer skatebar bg-white font-semibold absolute "
+          className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[50px] w-[350px] h-[50px] hover:cursor-pointer transform-letter skatebar bg-white font-semibold absolute "
         >
           Join our community now!
         </button>
@@ -108,7 +104,7 @@ export const Skateboard = () => {
             <CountUpAnimation duration={2000}>150</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
-          <h6 className="text-[1rem] font-200 ">Lives Improved</h6>
+          <h6 className="text-[1rem] font-200 ">Anticipating Users</h6>
           <Image
             loading="lazy"
             src="/square1.webp"
@@ -123,7 +119,7 @@ export const Skateboard = () => {
             <CountUpAnimation duration={2000}>100</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
-          <h6 className="text-[1rem] font-200 ">Active Influencers</h6>
+          <h6 className="text-[1rem] font-200 ">Growth Guides</h6>
           <Image
             loading="lazy"
             width={40}
@@ -138,7 +134,7 @@ export const Skateboard = () => {
             <CountUpAnimation duration={2000}>50</CountUpAnimation>
             <span className="absolute font-bold text-[1.3rem]">+</span>
           </h5>
-          <h6 className="text-[1rem] font-200 ">Daily Blogs</h6>
+          <h6 className="text-[1rem] font-200 ">Creators Engaged</h6>
           <Image
             loading="lazy"
             width={40}

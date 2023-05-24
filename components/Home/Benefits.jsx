@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 export default function Benefits() {
   useEffect(() => {
     function setInitialPositions() {
-      const w = window.innerWidth;
-      
       const e = document.getElementById("benefit")
       e.style.backgroundPosition= `${40}% 0%`;
     }
@@ -43,7 +41,7 @@ export default function Benefits() {
           changes in your life.
         </h3>
       </div>
-      <div className="benefit-container  py-[10vh]  font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-48">
+      <div className="benefit-container  py-[101px]  font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-48">
         {/* first row */}
 
         <div className="flex md:flex-row flex-col mr-0 md:mr-[3vw]  gap-0 md:gap-[5vw]">

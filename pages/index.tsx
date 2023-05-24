@@ -7,8 +7,15 @@ import About from "../components/Home/About";
 import Benefits from "../components/Home/Benefits";
 import Reviews from "../components/Home/Reviews";
 import Footer from "../components/Footer";
-const Home= () => {
+import { AppContext } from "../components/AppProvider";
+import React, { useContext } from "react";
 
+
+const Home= () => {
+  const { isOpen, setIsOpen } = useContext(AppContext);
+  const handleClick = () => {
+    setIsOpen(true); 
+  };
   return (
     <>
           <Head>
@@ -29,6 +36,7 @@ const Home= () => {
               content="width=device-width, initial-scale=1.0"
             />
           </Head>
+          <button onClick={handleClick}>Open Popup</button>
           <Navbars />
             <section id="home">
             <Balls />
@@ -42,6 +50,7 @@ const Home= () => {
             <Reviews />
             <About />
             <Footer />
+            
         </>
   );
 };

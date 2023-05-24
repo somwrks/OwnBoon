@@ -34,7 +34,7 @@ export default function Reviews() {
       <div className="flex mt-10 my-auto mx-auto items-center flex-col text-center ">
         <div className="review-heading flex flex-col">
           <h1 className="md:text-[4rem] mb-10 text-[20px]">
-            Check out Recent Reviews
+            Check out the Hype
           </h1>
         </div>
         {pc === true ? (
@@ -70,9 +70,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "OwnBoon is a game-changer! The Workspace keeps me on track
-                    and the Community is so supportive. I'm addicted to the Lofi
-                    music sessions!"
+                    "Excited to try Ownboon! The concept sounds fantastic, and I can't wait to see how it helps with self-improvement and productivity. Looking forward to the launch!"
                   </p>
                 </div>
               </div>
@@ -106,9 +104,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "I'm blown away by OwnBoon's resources! The Informational
-                    section has helped me improve my habits, and the Blog
-                    section is a great source of inspiration."
+                    "As someone interested in personal growth, I'm eagerly anticipating Ownboon. The features and roadmap mentioned sound promising. Count me in!"
                   </p>
                 </div>
               </div>
@@ -142,9 +138,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "OwnBoon has transformed my productivity! The AI scheduler
-                    in the Workspace has helped me manage my time like a pro,
-                    and the Community is so uplifting."
+                    "I've been following Ownboon's journey from the beginning, and I'm thrilled to see the progress. It's refreshing to have a platform dedicated to self-improvement. Can't wait to get my hands on it!"
                   </p>
                 </div>
               </div>
@@ -179,9 +173,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "I was struggling with motivation before I found OwnBoon.
-                    The virtual study buddies and Lofi music sessions in the
-                    Workspace keep me focused and energized."
+                    "I've been looking for a comprehensive self-improvement tool, and Ownboon seems to fit the bill. The previews and updates have caught my attention. Excited to give it a try!"
                   </p>
                 </div>
               </div>
@@ -217,9 +209,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "OwnBoon is the perfect platform for personal growth. The
-                    articles in the Informational section are so insightful, and
-                    the Community is full of like-minded individuals."
+                    "Ownboon's concept resonates with me. The idea of combining self-improvement and productivity is brilliant. Can't wait to see how it unfolds and helps users like me."
                   </p>
                 </div>
               </div>
@@ -252,9 +242,7 @@ export default function Reviews() {
                 </div>
                 <div className="mt-5">
                   <p className="text-left font-normal font-poppins text-[1rem]">
-                    "I can't recommend OwnBoon enough! The Blog section is full
-                    of amazing content, and the Workspace has made me more
-                    organized and efficient than ever."
+                    "The anticipation for Ownboon is building, and I'm glad to be a part of it. The team's dedication and vision are inspiring. Looking forward to exploring the platform soon!"
                   </p>
                 </div>
               </div>
@@ -299,7 +287,7 @@ export default function Reviews() {
                   <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="mt-5">
+              <div className="mt-[2vh]">
                 <p className="text-left font-normal font-poppins text-[15px]">
                   "OwnBoon is a game-changer! The Workspace keeps me on track
                   and the Community is so supportive. I'm addicted to the Lofi
@@ -335,7 +323,7 @@ export default function Reviews() {
                   <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="mt-5">
+              <div className="mt-[2vh]">
                 <p className="text-left font-normal font-poppins text-[15px]">
                   "I'm blown away by OwnBoon's resources! The Informational
                   section has helped me improve my habits, and the Blog section
@@ -371,7 +359,7 @@ export default function Reviews() {
                   <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="mt-5">
+              <div className="mt-[2vh]">
                 <p className="text-left font-normal font-poppins text-[15px]">
                   "The workspace feature has been a game changer for my
                   productivity!"
@@ -405,7 +393,7 @@ export default function Reviews() {
                   <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="mt-5">
+              <div className="mt-[2vh]">
                 <p className="text-left font-normal font-poppins text-[15px]">
                   "I was struggling with motivation before I found OwnBoon. The
                   virtual study buddies and Lofi music sessions in the Workspace
@@ -441,7 +429,7 @@ export default function Reviews() {
                   <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="mt-5">
+              <div className="mt-[2vh]">
                 <p className="text-left font-normal font-poppins text-[15px]">
                   "OwnBoon is the perfect platform for personal growth. The
                   articles in the Informational section are so insightful, and
@@ -476,7 +464,7 @@ export default function Reviews() {
                   <FontAwesomeIcon icon={faStar} color={"orange"} />
                 </div>
               </div>
-              <div className="mt-5">
+              <div className="mt-[2vh]">
                 <p className="text-left font-normal font-poppins ">
                   "I can't recommend OwnBoon enough! The Blog section is full of
                   amazing content, and the Workspace has made me more organized
