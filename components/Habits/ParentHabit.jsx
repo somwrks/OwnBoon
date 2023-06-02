@@ -3,6 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import VanillaTilt from "vanilla-tilt";
 import { StackedImageAnimation } from './StackedImageAnimation';
 import { useEffect } from "react";
+import { toast } from "react-toastify";
+
 export default function ParentHabit({ section }) {
   const list = {
     habit: {
@@ -62,6 +64,9 @@ export default function ParentHabit({ section }) {
     });
    
   }, []);
+  const preview = () => {
+    toast.info("Coming soon");
+  };
   return (
     <>
       <Head>
@@ -80,7 +85,7 @@ export default function ParentHabit({ section }) {
               {list[section].title}
             </h1>
             <p className="text-[20px] py-2 font-poppins">{list[section].about}</p>
-            <button className="bg-white w-[191px] h-[45px] mt-5">
+            <button className="bg-white w-[191px] h-[45px] mt-5" onclick={preview}>
               <h1 className="py-2 font-poppins text-[16px] font-btn-gradient">
                 Try It Now
               </h1>

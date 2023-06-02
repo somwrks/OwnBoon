@@ -1,0 +1,40 @@
+import nodemailer from "nodemailer";
+
+export default async function handler(req, res) {
+    const password = process.env.HOST_PASS;
+
+  if (req.method === "POST") {
+    const { email } = req.body;
+
+    // Configure Nodemailer transporter
+    const transporter = nodemailer.createTransport({
+      host: "smtp.zoho.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: "mail@ownboon.com",
+        pass: password, 
+      },
+    });
+
+    try {
+      const mailOptions = {
+        from: "mail@ownboon.com", // Replace with your Zoho email address
+        to: email,
+        subject: "Beta Access Sign Up @Ownboon",
+        text: "Thank you for signing up for beta access!",
+      };
+
+      // Send the email
+      const info = await transporter.sendMail(mailOptions);
+      console.log("Email sent:", info.response);
+
+      res.status(200).json({ message: "Email sent successfully!" });
+    } catch (error) {
+      console.log("Error sending email:", error);
+      res.status(500).json({ error: "Failed to send email. Please try again." });
+    }
+  } else {
+    res.status(405).json({ error: "Method Not Allowed" });
+  }
+}

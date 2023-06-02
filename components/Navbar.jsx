@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { toast } from "react-toastify";
+import { AppContext } from "../components/AppProvider";
+
+import { useContext, useEffect, useState } from "react";
 export default function Navbar() {
   const router = useRouter();
   const { asPath } = router;
-  const preview = () => {
-    toast.info("Coming soon");
+  const { openPopup } = useContext(AppContext);
+  const handleClick = () => {
+    openPopup(true); 
   };
   const [display, setDisplay] = useState(false);
   const [displaylock, lockDisplay] = useState(false);
@@ -108,7 +110,7 @@ export default function Navbar() {
             <button
               type="button"
               className="  text-white   sm:text-[1rem] xs:text[0.5rem] login  w-[111px] h-[38px] text-center  rounded-full"
-              onClick={preview}
+              onClick={handleClick}
             >
               Login
             </button>
@@ -122,7 +124,8 @@ export default function Navbar() {
             <ul className="flex flex-col p-4 mt-4 bg-white rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
               <li>
                 <Link
-                  href="/"
+                  href={`${asPath==="/"? "/#home" : "/"}`}
+                  
                   className={`transform-letter  block py-2 pl-3 pr-4 md:p-0 ${
                     asPath == "/" ? " activelink font-bold" : "Link"
                   }`}

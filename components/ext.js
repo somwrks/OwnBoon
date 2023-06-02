@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { toast } from "react-toastify";
+import { AppContext } from "../components/AppProvider";
 
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import CountUpAnimation from "./CountUpAnimation";
-export const Balls = () => {
+export const Balls = () => { 
   useEffect(() => {
     const container = document.getElementById("animation-container");
     const balls = Array.from(document.getElementsByClassName("ball"));
@@ -35,7 +35,6 @@ export const Balls = () => {
         const translationZ = (dist / 100) * -5;
         ball.style.transform = `translateY(${translationZ}px) translateX(${translationZ}px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
       });
-
       requestAnimationFrame(animateBalls);
     }
 
@@ -51,7 +50,6 @@ export const Balls = () => {
     window.onresize = function () {
       setInitialPositions();
     };
-    
 
     return () => {
       container.removeEventListener("mousemove", handleMouseMove);
@@ -69,8 +67,9 @@ export const Balls = () => {
 };
 
 export const Skateboard = () => {
+  const { openPopup } = useContext(AppContext);
   const preview = () => {
-    toast.info("Coming soon");
+    openPopup(true); 
   };
   useEffect(() => {
     const buttons = document.getElementById("ripple");
@@ -93,7 +92,7 @@ export const Skateboard = () => {
         <button
           id="ripple"
           onClick={preview}
-          className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[50px] w-[350px] h-[50px] hover:cursor-pointer transform-letter skatebar bg-white font-semibold absolute "
+          className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[50px] w-[350px] h-[50px] hover:cursor-pointer  skatebar bg-white font-semibold absolute "
         >
           Join our community now!
         </button>

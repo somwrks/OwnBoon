@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "react-toastify/dist/ReactToastify.css";
 import Loader from "../components/Loader";
+import WaitingLinePopup from "../components/WaitingLinePopup";
 import NextNProgress from "nextjs-progressbar";
 import { ToastContainer } from "react-toastify";
 import { useState, useEffect } from "react";
@@ -41,6 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           stopDelayMs={200}
           height={2}
         />
+        <WaitingLinePopup/>
         {isLoading && <Loader />}
         <Component {...pageProps} />
         <ToastContainer
