@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const nodemailer = require("nodemailer");
 
-    // const password = process.env.NEXT_PUBLIC_HOST_PASS;
+  const password = process.env.NEXT_PUBLIC_HOST_PASS;
 
   if (req.method === "POST") {
     const { email } = req.body;
@@ -13,11 +13,9 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: "mail@ownboon.com",
-        pass: "gxJKj2r0utue ", 
+        pass: "gxJKj2r0utue ",
       },
     });
- 
-
 
     try {
       const mailOptions = {
@@ -34,7 +32,9 @@ export default async function handler(req, res) {
       res.status(200).json({ message: "Email sent successfully!" });
     } catch (error) {
       console.log("Error sending email:", error);
-      res.status(500).json({ error: "Failed to send email. Please try again." });
+      res
+        .status(500)
+        .json({ error: "Failed to send email. Please try again." });
     }
   } else {
     res.status(405).json({ error: "Method Not Allowed" });
