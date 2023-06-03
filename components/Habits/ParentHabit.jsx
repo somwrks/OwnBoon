@@ -85,7 +85,7 @@ export default function ParentHabit({ section }) {
               {list[section].title}
             </h1>
             <p className="text-[20px] py-2 font-poppins">{list[section].about}</p>
-            <button className="bg-white w-[191px] h-[45px] mt-5" onclick={preview}>
+            <button className="bg-white w-[191px] h-[45px] mt-5" onClick={preview}>
               <h1 className="py-2 font-poppins text-[16px] font-btn-gradient">
                 Try It Now
               </h1>
@@ -114,7 +114,7 @@ export default function ParentHabit({ section }) {
               <path
                 d="M442.5 524.271C686.886 524.271 885 502.048 885 474.636C885 447.223 686.886 425 442.5 425C198.114 425 0 447.223 0 474.636C0 502.048 198.114 524.271 442.5 524.271Z"
                 fill="white"
-                fill-opacity="0.8"
+                fillOpacity="0.8"
               />
               <path
                 d="M698.567 0H169V360.1H698.567V0Z"
@@ -123,7 +123,7 @@ export default function ParentHabit({ section }) {
               <path
                 d="M698.567 0H169V360.1H698.567V0Z"
                 fill="white"
-                fill-opacity="0.2"
+                fillOpacity="0.2"
               />
               <path
                 d="M698.567 306.98H169V360.1H698.567V306.98Z"
@@ -132,7 +132,7 @@ export default function ParentHabit({ section }) {
               <path
                 d="M698.567 306.98H169V360.1H698.567V306.98Z"
                 fill="white"
-                fill-opacity="0.5"
+                fillOpacity="0.5"
               />
               <path
                 d="M536.975 425.013H330.591V442.264H536.975V425.013Z"
@@ -161,7 +161,7 @@ export default function ParentHabit({ section }) {
               <path
                 d="M825.155 441.55H691.77C690.344 441.538 688.934 441.245 687.62 440.688C686.307 440.131 685.116 439.32 684.116 438.303C683.116 437.285 682.326 436.081 681.792 434.758C681.257 433.436 680.988 432.021 681 430.594V220.943C680.979 218.064 682.102 215.294 684.121 213.243C686.14 211.191 688.892 210.025 691.77 210H825.155C828.03 210.028 830.777 211.196 832.791 213.248C834.805 215.3 835.923 218.067 835.898 220.943V430.594C835.912 432.019 835.646 433.433 835.113 434.754C834.581 436.076 833.793 437.28 832.796 438.297C831.798 439.315 830.61 440.126 829.299 440.684C827.988 441.242 826.58 441.536 825.155 441.55Z"
                 fill="white"
-                fill-opacity="0.2"
+                fillOpacity="0.2"
               />
               <path
                 d="M829.404 226.348H687.72V425.654H829.404V226.348Z"
@@ -182,7 +182,7 @@ export default function ParentHabit({ section }) {
               <path
                 d="M705.282 296H624.207C623.12 296.009 622.045 296.232 621.043 296.656C620.042 297.081 619.134 297.699 618.372 298.475C617.61 299.251 617.008 300.169 616.601 301.178C616.194 302.186 615.99 303.265 616 304.353V471.269C615.983 473.465 616.837 475.578 618.376 477.144C619.915 478.71 622.012 479.602 624.207 479.623H705.282C707.477 479.602 709.575 478.71 711.113 477.144C712.652 475.578 713.507 473.465 713.489 471.269V304.353C713.499 303.265 713.295 302.186 712.888 301.178C712.481 300.169 711.88 299.251 711.117 298.475C710.355 297.699 709.447 297.081 708.446 296.656C707.445 296.232 706.369 296.009 705.282 296ZM708.363 466.104C708.446 468.134 707.718 470.114 706.341 471.608C704.964 473.103 703.049 473.989 701.019 474.072H628.484C627.476 474.034 626.487 473.798 625.571 473.376C624.656 472.955 623.833 472.357 623.149 471.617C622.465 470.876 621.935 470.008 621.588 469.062C621.24 468.116 621.084 467.11 621.126 466.104V310.728C621.126 301.777 624.407 301.339 628.484 301.339H643.012C643.849 301.339 644.539 302.295 644.539 303.49V303.995C644.539 306.783 646.066 306.797 647.939 306.797H681.537C683.436 306.797 684.95 306.797 684.95 303.995V303.41C684.95 302.215 685.627 301.259 686.477 301.259H701.085C705.069 301.259 708.429 302.441 708.429 310.648L708.363 466.104Z"
                 fill="white"
-                fill-opacity="0.2"
+                fillOpacity="0.2"
               />
               <path
                 d="M669.32 303.277H660.157C660.082 303.277 660.009 303.263 659.94 303.234C659.871 303.205 659.809 303.163 659.757 303.109C659.705 303.056 659.665 302.993 659.637 302.924C659.61 302.855 659.597 302.781 659.599 302.706C659.599 302.557 659.657 302.414 659.761 302.307C659.866 302.201 660.007 302.139 660.157 302.135H669.32C669.471 302.135 669.616 302.196 669.724 302.303C669.831 302.41 669.891 302.555 669.891 302.706C669.891 302.858 669.831 303.003 669.724 303.11C669.616 303.217 669.471 303.277 669.32 303.277Z"
@@ -203,17 +203,17 @@ export default function ParentHabit({ section }) {
               <path
                 d="M413.727 220.882H65.5781V451.436H413.727V220.882Z"
                 fill="white"
-                fill-opacity="0.2"
+                fillOpacity="0.2"
               />
               <path
                 d="M462.305 472.033H17V488.248H462.305V472.033Z"
                 fill="url(#paint6_linear_409_4898)"
-                fill-opacity="0.5"
+                fillOpacity="0.5"
               />
               <path
                 d="M17 472.033L63.0152 454.318H416.29L462.305 472.033H17Z"
                 fill="url(#paint7_linear_409_4898)"
-                fill-opacity="0.5"
+                fillOpacity="0.5"
               />
               <path
                 d="M67.1191 465.752L96.8132 454.318H382.493L412.187 465.752H67.1191Z"
@@ -373,10 +373,10 @@ export default function ParentHabit({ section }) {
                               width="95"
                               height="95"
                               filterUnits="userSpaceOnUse"
-                              color-interpolation-filters="sRGB"
+                              colorInterpolationFilters="sRGB"
                             >
                               <feFlood
-                                flood-opacity="0"
+                                floodOpacity="0"
                                 result="BackgroundImageFix"
                               />
                               <feColorMatrix
@@ -430,10 +430,10 @@ export default function ParentHabit({ section }) {
                               width="95"
                               height="95"
                               filterUnits="userSpaceOnUse"
-                              color-interpolation-filters="sRGB"
+                              colorInterpolationFilters="sRGB"
                             >
                               <feFlood
-                                flood-opacity="0"
+                                floodOpacity="0"
                                 result="BackgroundImageFix"
                               />
                               <feColorMatrix
@@ -488,10 +488,10 @@ export default function ParentHabit({ section }) {
                               width="95"
                               height="95"
                               filterUnits="userSpaceOnUse"
-                              color-interpolation-filters="sRGB"
+                              colorInterpolationFilters="sRGB"
                             >
                               <feFlood
-                                flood-opacity="0"
+                                floodOpacity="0"
                                 result="BackgroundImageFix"
                               />
                               <feColorMatrix
@@ -537,8 +537,8 @@ export default function ParentHabit({ section }) {
                         <path
                           d="M7 6H67"
                           stroke="#00AEFF"
-                          stroke-width="2"
-                          stroke-linecap="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                         />
                       </g>
                       <defs>
@@ -549,10 +549,10 @@ export default function ParentHabit({ section }) {
                           width="76"
                           height="16"
                           filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
+                          colorInterpolationFilters="sRGB"
                         >
                           <feFlood
-                            flood-opacity="0"
+                            floodOpacity="0"
                             result="BackgroundImageFix"
                           />
                           <feColorMatrix

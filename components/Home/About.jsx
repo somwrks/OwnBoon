@@ -21,30 +21,31 @@ export default function About() {
     <section id="about">
       <div className="p-5 py-[10vh] about-bg  bg-white text-[#2E2E2E]   flex-wrap flex flex-row  font-poppins align-center items-center  justify-center  ">
         <div className="flex flex-col  px-10 heading py-10 text-center md:text-left align-center justify-center ">
-          <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[20px] md:text-[32px]  font-bold">
+          <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[2.5rem] md:text-[32px]  font-bold">
             About Us
           </h1>
           <p className="text-[1rem] mt-3 md:text-[1.2rem] break-normal max-w-2xl">
-            Our founder, Som’s journey in Self-Improvement showed him the need
-            for an all-in-one social platform that helps individuals in their
-            journey and provides all the necessary tools for growth. We have
-            seen the ever-growing trap of social media and how it uses dopamine
-            hits to engage users. Our staff have personally seen the negative
-            effects of the problems and is ever so motivated to fix those.
-            Together we find the solutions to the problems that people face in
-            the Self-Improvement Journey <br /> With you, we are dedicated to
-            creating a positive and transformative experience.
+            OwnBoon was born from our team's journey in the self-improvement
+            niche. Witnessing the lack of an all-in-one social platform that
+            truly supports personal growth and productivity at the same time, we set out to create a
+            transformative space. Powered by AI tools and personalized roadmaps,
+            OwnBoon provides a distraction-free environment for work,
+            connection, and learning. Together, We've decided to shape a future where
+            personal development and social connection thrive. Join us on this
+            remarkable journey towards fulfillment and success. Together, we
+            empower individuals to unlock their full potential.
           </p>
         </div>
         <div className=" px-10   justify-center flex flex-col py-10 md:flex-nowrap flex-wrap ">
-          <h1 className="text-center md:text-left text-[32px] benefit-heading font-bold">
+          <h1 className="text-center md:text-left text-[2.5rem] md:text-[32px] benefit-heading font-bold">
             Our Team
           </h1>
           <div className="flex mt-2 flex-row">
             <div className="flex px-3 flex-col">
               <div className="flex   justify-center items-center align-center flex-col">
                 <div className="som-bg p-3">
-                  <Image alt="Som Srivastava"
+                  <Image
+                    alt="Som Srivastava"
                     className="z-100 "
                     src={"/som.webp"}
                     width={100}
@@ -58,7 +59,8 @@ export default function About() {
               </div>
               <div className="flex  justify-center items-center align-center flex-col">
                 <div className="sarthak-bg p-3">
-                  <Image alt="Saarthak Dutta"
+                  <Image
+                    alt="Saarthak Dutta"
                     className="z-100 "
                     src={"/sarthak.webp"}
                     width={100}
@@ -76,15 +78,16 @@ export default function About() {
             </div>
             <div className="flex px-3  flex-col">
               <div className="flex justify-center items-center align-center flex-col">
-              <div className="alok-bg p-3">
-              <Image alt="Alok Singh"
-                  className="z-100 "
-                  src={"/alok.webp"}
-                  width={100}
-                  height={100}
-                />
+                <div className="alok-bg p-3">
+                  <Image
+                    alt="Alok Singh"
+                    className="z-100 "
+                    src={"/alok.webp"}
+                    width={100}
+                    height={100}
+                  />
                 </div>
-               
+
                 <h2 className="mt-3 text-[16px] text-center font-semibold">
                   Alok Singh
                 </h2>
@@ -93,15 +96,16 @@ export default function About() {
                 </h3>
               </div>
               <div className="flex justify-center items-center align-center flex-col">
-              <div className="ivavi-bg p-3">
-              <Image alt="Devansh Rajwar"
-                  className="z-100 "
-                  src={"/avi.webp"}
-                  width={100}
-                  height={100}
-                />
+                <div className="ivavi-bg p-3">
+                  <Image
+                    alt="Devansh Rajwar"
+                    className="z-100 "
+                    src={"/avi.webp"}
+                    width={100}
+                    height={100}
+                  />
                 </div>
-               
+
                 <h2 className="mt-3 text-[16px] text-center font-semibold">
                   Devansh Rajwar
                 </h2>

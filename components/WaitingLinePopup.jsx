@@ -9,13 +9,13 @@ import { toast } from "react-toastify";
 
 export default function WaitingLinePopup() {
   const { isOpen, closePopup } = useContext(AppContext);
-const [email, setEmail] = useState("")
+  const [email, setEmail] = useState("")
   const handleClosePopup = () => {
     closePopup(false);
   };
   const handlesubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -24,7 +24,6 @@ const [email, setEmail] = useState("")
         },
         body: JSON.stringify({ email }),
       });
-  
       if (response.ok) {
         // Email sent successfully
         handleClosePopup();
@@ -45,7 +44,7 @@ const [email, setEmail] = useState("")
   return (
     <Popup open={isOpen} onClose={handleClosePopup}  modal nested>
       <div
-        className="font-poppins backdrop-blur-sm rounded-3xl mt-[5vh] 
+        className="font-poppins backdrop-blur-sm rounded-3xl mt-[6vh] flex-wrap about-bg
      w-full p-10 shadow preview z-100  justify-center font-bold flex flex-col bt "
       >
         <h1 className="text-5xl text-[#2E2E2E] text-center">We're Almost There!</h1>
@@ -89,15 +88,15 @@ const [email, setEmail] = useState("")
                     </div>
                   </div>
                   <div className="grid lg:grid-cols-2 py-5 gap-x-6 items-center">
-                    <div className="mb-10 lg:mb-0 justify-center">
+                    <div className="mb-10 lg:mb-0  justify-center">
                       <h2 className="text-blue-500 text-3xl font-bold">
                       Join Our Discord
                       </h2>
                     </div>
 
-                    <div className="mb-6 md:mb-0 justify-center align-center ">
-                    <Link href={"https://discord.gg/AkrVEzmhrG"}>
-                <Image  src={"/dcsv.png"} width={300}  height={100}/>
+                    <div className="mb-6 md:mb-0 items-center justify-center align-center ">
+                    <Link  href={"https://discord.gg/AkrVEzmhrG"}>
+                <Image className="ml-5" src={"/dcsv.png"} width={300}  height={100}/>
 
                     </Link>
                     </div>

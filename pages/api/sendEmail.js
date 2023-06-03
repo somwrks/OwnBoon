@@ -1,7 +1,7 @@
-import nodemailer from "nodemailer";
-
 export default async function handler(req, res) {
-    const password = process.env.HOST_PASS;
+  const nodemailer = require("nodemailer");
+
+    // const password = process.env.NEXT_PUBLIC_HOST_PASS;
 
   if (req.method === "POST") {
     const { email } = req.body;
@@ -13,9 +13,11 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: "mail@ownboon.com",
-        pass: password, 
+        pass: "gxJKj2r0utue ", 
       },
     });
+ 
+
 
     try {
       const mailOptions = {
