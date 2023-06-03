@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
-    const password = process.env.HOST_PASS;
+    const password = process.env.NEXT_PUBLIC_HOST_PASS;
 
   if (req.method === "POST") {
     const { email } = req.body;
