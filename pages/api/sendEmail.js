@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
     // Configure Nodemailer transporter
     const transporter = nodemailer.createTransport({
-      host: "smtp.zoho.com",
+      host: "smtp.zoho.in",
       port: 465,
       secure: true,
       auth: {
