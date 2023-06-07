@@ -13,7 +13,7 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: "mail@ownboon.com",
-        pass: "gxJKj2r0utue",
+        pass: "SusmaOwnboon123.",
       },
     });
 
@@ -22,8 +22,8 @@ export default async function handler(req, res) {
         from: "mail@ownboon.com", // Replace with your Zoho email address
         to: email,
         subject: "Beta Access Sign Up @Ownboon",
-        text: "Thank you for signing up for beta access!",
-      };
+        html: "<h1 style='font-weight: bold; font-size: 24px;'>Thank you for signing up for beta access!</h1>",
+            };
 
       // Send the email
       const info = await transporter.sendMail(mailOptions);

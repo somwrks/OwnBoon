@@ -48,21 +48,21 @@ export default function WaitingLinePopup() {
      w-full p-10 shadow preview z-100  justify-center font-bold flex flex-col bt "
       >
         <h1 className="text-5xl text-[#2E2E2E] text-center">We're Almost There!</h1>
-        <p className="text-lg break-words  mt-3 text-[#2E2E2E] text-center font-[300]">Discover Ownboon, the ultimate ai platform for personal growth and productivity. <br /> Join the waitlist today!</p>
+        <p className="text-lg break-words  mt-[1.8vh] text-[#2E2E2E] text-center font-[300]">Discover Ownboon, the ultimate ai platform for personal growth and productivity. <br /> Join the waitlist today!</p>
         
-          <div className=" my-16 px-6 mx-auto">
+          <div className=" my-[6vh] px-[3vw] mx-auto">
             <section className=" text-gray-800 text-center lg:text-left">
               <div className="flex flex-wrap justify-center">
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-10/12 px-3">
                   <div className="grid lg:grid-cols-2 gap-x-6 items-center">
-                    <div className="mb-10 lg:mb-0">
+                    <div className="mb-[4vh] lg:mb-0">
                       <h2 className="text-3xl font-bold">
                         Sign Up for Beta
                         <br />
                       </h2>
                     </div>
 
-                    <div className="mb-6 md:mb-0">
+                    <div className="mb-[2vh] md:mb-0">
                       <form
                         onSubmit={handlesubmit}
                         className="md:flex flex-row"
@@ -88,14 +88,14 @@ export default function WaitingLinePopup() {
                     </div>
                   </div>
                   <div className="grid lg:grid-cols-2 py-5 gap-x-6 items-center">
-                    <div className="mb-10 lg:mb-0  justify-center">
+                    <div className="mb-[4vh] lg:mb-0  justify-center">
                       <h2 className="text-blue-500 text-3xl font-bold">
                       Join Our Discord
                       </h2>
                     </div>
 
-                    <div className="mb-6 md:mb-0 items-center justify-center align-center ">
-                    <Link  href={"https://discord.gg/AkrVEzmhrG"}>
+                    <div className="mb-[2vh] md:mb-0 items-center justify-center align-center ">
+                    <Link  href={"https://discord.gg/nxeUX3Uufn"}>
                 <Image className="ml-5" src={"/dcsv.png"} width={300}  height={100}/>
 
                     </Link>

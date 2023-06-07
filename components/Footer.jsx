@@ -69,7 +69,7 @@ export default function Footer() {
                   <Link href="https://github.com/OwnBoon">
                     <FontAwesomeIcon color = {"#343434"} icon={faGithub} />
                   </Link>
-                  <Link href="https://discord.gg/HZmwkA2X">
+                  <Link href="https://discord.gg/nxeUX3Uufn">
                     <FontAwesomeIcon color = {"#343434"} icon={faDiscord} />
                   </Link>
                 </div>
@@ -112,7 +112,7 @@ export default function Footer() {
                   <Link href="https://github.com/OwnBoon">
                     <FontAwesomeIcon color = {"#343434"} icon={faGithub} />
                   </Link>
-                  <Link href="https://discord.gg/HZmwkA2X">
+                  <Link href="https://discord.gg/nxeUX3Uufn">
                     <FontAwesomeIcon color = {"#343434"} icon={faDiscord} />
                   </Link>
                   
@@ -139,23 +139,23 @@ export default function Footer() {
                   </li>
                   <li className="mb-4">
                     <Link
-                      href="https://discord.gg/4eeurUVvTy"
-                      className="hover:underline"
+                      href="#"
+                      className=" cursor-not-allowed"
                     >
                       Terms of Use
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link
-                      href="https://discord.gg/4eeurUVvTy"
-                      className="hover:underline"
+                                          href="#"
+                      className=" cursor-not-allowed"
                     >
                       Privacy
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link
-                      href="https://discord.gg/4eeurUVvTy"
+                      href="https://discord.gg/KBNaHgn287"
                       className="hover:underline"
                     >
                       Give feedback
@@ -169,12 +169,12 @@ export default function Footer() {
                 </h2>
                 <ul className="text-gray-600 text-[0.9rem] font-medium">
                   <li className="mb-4">
-                    <Link href="#" className="hover:underline">
+                    <Link href="https://discord.gg/nxeUX3Uufn" className="hover:underline">
                       Join our community
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="#" className="hover:underline">
+                    <Link href="mailto:team@ownboon.com" className="hover:underline">
                       Email Us
                     </Link>
                   </li>
