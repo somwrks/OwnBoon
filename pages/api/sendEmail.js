@@ -22,7 +22,7 @@ export default async function handler(req, res) {
         from: "mail@ownboon.com", // Replace with your Zoho email address
         to: email,
         subject: "Beta Access Sign Up @Ownboon",
-        html: "<h1 style='font-weight: bold; font-size: 24px;'>Thank you for signing up for beta access!</h1>",
+       text: "Thank you for signing up for beta access!",
             };
 
       // Send the email
