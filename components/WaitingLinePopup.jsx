@@ -14,6 +14,8 @@ export default function WaitingLinePopup() {
     closePopup(false);
   };
   const handlesubmit = async (e) => {
+    const password = process.env.NEXT_PUBLIC_HOST_PASS;
+    console.log(password)
     e.preventDefault();
 
     try {
