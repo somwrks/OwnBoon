@@ -35,7 +35,12 @@ export default async function handler(req, res) {
         .status(500)
         .json({ error: "Failed to send email. Please try again." });
     }
-  } else {
+  } else if (req.method ==="GET"){
+    res.status(405).json({ error: "reached get" });
+  }
+  else if (req.method ==="PUT"){
+    res.status(405).json({ error: "reached put" });
+  }else {
     res.status(405).json({ error: "Method Not Allowed" });
   }
 }
