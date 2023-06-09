@@ -28,9 +28,11 @@ export default function WaitingLinePopup() {
         handleClosePopup();
         toast.success("Thank you!");
       } else {
+        console.log("response.ok not successful")
         toast.error("Please try again");
       }
     } catch (error) {
+      console.log("error")
       console.log("Error sending email:", error);
       toast.error("Please try again");
     }
