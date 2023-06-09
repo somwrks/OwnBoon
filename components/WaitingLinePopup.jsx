@@ -25,11 +25,9 @@ export default function WaitingLinePopup() {
         body: JSON.stringify({ email }),
       });
       if (response.ok) {
-        // Email sent successfully
         handleClosePopup();
         toast.success("Thank you!");
       } else {
-        // Error sending email
         toast.error("Please try again");
       }
     } catch (error) {
