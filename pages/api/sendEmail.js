@@ -5,13 +5,20 @@ export default async function handler(req, res) {
 
     const { email } = req.body;
 
+    // const transporter = await nodemailer.createTransport({
+    //   host: "smtp.zoho.in",
+    //   port: 465,
+    //   secure: true,
+    //   auth: {
+    //     user: "mail@ownboon.com",
+    //     pass: password,
+    //   },
+    // });
     const transporter = await nodemailer.createTransport({
-      host: "smtp.zoho.in",
-      port: 465,
-      secure: true,
+      service: "gmail",
       auth: {
-        user: "mail@ownboon.com",
-        pass: password,
+        user: "somdeveloper.queries@gmail.com",
+        pass: "lmcasognjjbxesjw",
       },
     });
 
