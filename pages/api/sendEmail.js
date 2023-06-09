@@ -12,7 +12,7 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: "mail@ownboon.com",
-        pass: "SusmaOwnboon123.",
+        pass: password,
       },
     });
 
