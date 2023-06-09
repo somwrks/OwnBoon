@@ -3,9 +3,10 @@ export default async function handler(req, res) {
 
   const password = process.env.NEXT_PUBLIC_HOST_PASS;
 
+  if (req.method === "POST") {
     const { email } = req.body;
 
-    const transporter = await nodemailer.createTransport({
+    const transporter = nodemailer.createTransport({
       host: "smtp.zoho.in",
       port: 465,
       secure: true,
@@ -13,7 +14,6 @@ export default async function handler(req, res) {
         user: "mail@ownboon.com",
         pass: password,
       },
-      debug: true,
     });
 
     try {
@@ -31,6 +31,11 @@ export default async function handler(req, res) {
       res.status(200).json({ message: "Email sent successfully!" });
     } catch (error) {
       console.log("Error sending email:", error);
-      res.status(500).json({ error: "Failed to send email. Please try again." });
+      res
+        .status(500)
+        .json({ error: "Failed to send email. Please try again." });
     }
+  } else {
+    res.status(405).json({ error: "Method Not Allowed" });
   }
+}
