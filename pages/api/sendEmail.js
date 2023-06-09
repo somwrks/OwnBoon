@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const nodemailer = require("nodemailer");
 
-  const password = process.env.NEXT_PUBLIC_HOST_PASS;
+  const password = process.env.HOST_PASS;
 
   if (req.method === "POST") {
     console.log(password)
