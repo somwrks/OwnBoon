@@ -17,7 +17,7 @@ export default function WaitingLinePopup() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://ownboon-practice.vercel.app/api/sendEmail", {
+      const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
