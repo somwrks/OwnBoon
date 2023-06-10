@@ -33,7 +33,7 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div className="my-auto mx-auto p-5 justify-center flex flex-wrap md:flex-nowrap">
+      <div className="my-auto  w-[60%] mx-auto p-5 justify-center flex flex-wrap md:flex-nowrap">
         <div className="flex flex-col ml-4 text-center md:text-left align-center justify-center order-2 md:order-1">
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             Find Support and Encouragement
@@ -56,7 +56,7 @@ export default function Body() {
         </div>
       </div>
 
-      <div className="my-auto mx-auto p-5  justify-center flex flex-row md:flex-nowrap flex-wrap">
+      <div className="my-auto mx-auto p-5  w-[60%] justify-center flex flex-row md:flex-nowrap flex-wrap">
         <div className="bodyimg3">
           <Image
             width={600}
@@ -80,7 +80,7 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div className="my-auto mx-auto items-center p-5 justify-center flex flex-wrap md:flex-nowrap text-center md:text-left">
+      <div className="my-auto  w-[60%] mx-auto items-center p-5 justify-center flex flex-wrap md:flex-nowrap text-center md:text-left">
         <div className="order-2 md:order-1">
           <h4 className="md:text-[1.5rem] sm:text-[1.5rem] text-[1.2rem] font-poppins font-semibold py-3">
             Boost Your Productivity

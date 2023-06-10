@@ -55,7 +55,7 @@ export default function About() {
                 <h2 className="mt-3 text-[16px] text-center font-semibold">
                   Som Srivastava
                 </h2>
-                <h3 className="pt-1 text-center text-[14px]">CEO, FOUNDER</h3>
+                <h3 className="pt-1 text-center text-[14px]">CEO <br /> FOUNDER</h3>
               </div>
               <div className="flex  justify-center items-center align-center flex-col">
                 <div className="sarthak-bg p-3">
@@ -72,7 +72,7 @@ export default function About() {
                   Saarthak Dutta
                 </h2>
                 <h3 className="pt-1 text-center text-[14px]">
-                  CTO, CO-FOUNDER
+                  CTO <br /> CO-FOUNDER
                 </h3>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function About() {
                   Alok Singh
                 </h2>
                 <h3 className="pt-1 text-center text-[14px]">
-                  COO, CO-FOUNDER
+                  COO <br /> CO-FOUNDER
                 </h3>
               </div>
               <div className="flex justify-center items-center align-center flex-col">

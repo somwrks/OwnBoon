@@ -194,7 +194,7 @@ export default function Benefits() {
               <h3 className="text-[#AA77FF] md:text-left  text-[20px] benefit-txt">
                 Focus Better
               </h3>
-              <p className="break-normal w-[50%] md:text-left ">
+              <p className="break-normal md:w-[80%] w-full md:text-left ">
                 {" "}
                 Find your perfect study partner and stay motivated with our
                 Focus Planet and Lofi Sessions.
@@ -332,7 +332,7 @@ export default function Benefits() {
               <h3 className="text-[#00AEFF] md:text-left  text-[20px] benefit-txt">
                 Personalized Roadmaps
               </h3>
-              <p className="break-normal w-[80%] md:text-left ">
+              <p className="break-normal md:w-[80%] w-full md:text-left ">
                 Explore a roadmap tailored to your personality. Get expert tips
                 on productivity and self-improvement through our exclusive blog
                 content.
