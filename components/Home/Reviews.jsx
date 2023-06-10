@@ -91,7 +91,7 @@ export default function Reviews() {
                 border={"green"}
                 pfp={"user.png"}
                 review={
-                  "OwnBoon's user-friendly app consolidates productivity tools, transforming self-improvement into an enjoyable and effortless journey. A revolutionary approach to acquiring skills and fostering personal development."
+                  "OwnBoon's platform consolidates productivity tools, transforming self-improvement into an enjoyable and effortless journey. A revolutionary approach to foster personal development."
                 }
                 title={"Content Creator"}
                 rating={5}
@@ -170,7 +170,7 @@ export default function Reviews() {
               border={"green"}
               pfp={"user.png"}
               review={
-                "OwnBoon's user-friendly app consolidates productivity tools, transforming self-improvement into an enjoyable and effortless journey. A revolutionary approach to acquiring skills and fostering personal development."
+                "OwnBoon's platform consolidates productivity tools, transforming self-improvement into an enjoyable and effortless journey. A revolutionary approach to foster personal development."
               }
               title={"Content Creator"}
               rating={5}
