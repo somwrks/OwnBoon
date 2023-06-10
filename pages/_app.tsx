@@ -9,7 +9,7 @@ import { ToastContainer } from "react-toastify";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { AppProvider } from "../components/AppProvider";
-
+import Head from "next/head";
 function MyApp({ Component, pageProps }: AppProps) {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
@@ -35,6 +35,23 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router]);
   return (
     <>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="sH-4DEIqj8Wyf0clY3cNFT-lEsKTw4E6cd6peNAAR5c"
+        />
+        <meta charSet="UTF-8" />
+        <meta
+          name="keywords"
+          content="ownboon,ownboon company, ownboon health, ownboon fitness, ownboon books, ownboon tricks, ownboon habits, ownboon help, ownboon vent, ownboon explore, ownboon self improvement, ownboon self development, ownboon productivity, ownboon linkedin, ownboon github"
+        />
+        <meta
+          name="google-site-verification"
+          content="0t6s_w9kPQXYMPIHrGcpSUmYI-iaO06XJBpkMDGHdrc"
+        />
+        <meta name="author" content="OwnBoon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <AppProvider>
         <NextNProgress
           color="#29D"
@@ -42,7 +59,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           stopDelayMs={200}
           height={2}
         />
-        <WaitingLinePopup/>
+        <WaitingLinePopup />
         {isLoading && <Loader />}
         <Component {...pageProps} />
         <ToastContainer

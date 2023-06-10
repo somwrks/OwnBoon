@@ -72,7 +72,7 @@ export default function ParentHabit({ section }) {
         <link rel="icon" href="/logo.png" />
         <meta
           name="description"
-          content="Explore all about Self improvement at single place, From Creative Blogs to Personality Development Roadmaps!"
+          content={`${ list[section].title === "Habits"?  "Explore all about Self improvement at single place, From Creative Blogs to Personality Development Roadmaps!" : list[section].title === "Productivity"? "Boost your productivity with AI-powered tools, task scheduling, and study techniques tailored to your goals.":"Join a supportive community of like-minded individuals, fostering motivation, and discipline for greater progress."}`}
         />
       </Head>
       <section id="Habits">
