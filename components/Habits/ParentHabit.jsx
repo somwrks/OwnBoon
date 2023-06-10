@@ -87,7 +87,7 @@ export default function ParentHabit({ section }) {
         ></div>
         <div className="flex flex-row mt-[-9vh] flex-wrap-reverse min-h-screen items-center align-center   justify-center">
           <div className="flex px-[3vw]  flex-col items-center md:items-start text-center md:text-left w-auto md:w-[50%] text-white ">
-            <h1 className="md:text-[96px] py-2 mt-3 text-6xl font-bold font-fontspring">
+            <h1 className="md:text-[96px] py-2  text-6xl font-bold font-fontspring">
               {list[section].title}
             </h1>
             <p className="text-[20px] py-2 font-poppins">
@@ -106,17 +106,20 @@ export default function ParentHabit({ section }) {
             <StackedImageAnimation />
           </div>
         </div>
-        <div className="flex bg-white flex-col my-[50px]    items-center">
-          <Image src="/pic.png" height={1950} width={1950} />
+        <div className="flex bg-white flex-col my-[100px]    items-center">
+        <div className="heading font-poppins">
+            <h1 className="font-[600] text-[32px] md:text-[3vw]">Coming Soon</h1>
+          </div>
+          <Image src="/pic.png" className="my-10" height={1950} width={1950} />
         </div>
-        <div className="flex mt-[-30px] flex-col min-h-[90vh] pb-10  habit-bg-img justify-center ">
+        <div className="flex md:mt-[-180px] mt-[-100px] flex-col min-h-[90vh] pb-10  habit-bg-img justify-center ">
           <div className="heading font-poppins">
             <h1 className="font-[600] text-[32px] md:text-[3vw]">Features</h1>
           </div>
           <div className="flex flex-wrap w-full justify-center p-5 gap-16 ">
             {list[section].featureheading.map((word, index) => {
               return (
-                <div className="w-full  font-poppins  md:w-3/5 lg:w-2/5 xl:w-2/5 2xl:w-1/5 p-5">
+                <div className="w-full  font-poppins  md:w-3/5 lg:w-2/5 xl:w-1/4 2xl:w-1/5 p-5">
                   <div className="flex bg-white p-[3.5rem] h-[110%]  shadow-md rounded-[2rem] flex-col ">
                     <svg
                       className="w-1/3"

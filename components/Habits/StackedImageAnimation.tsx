@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 
-const images = ["/first.png", "/second.png", "/third.png"];
+const images = ["/exploreimg1.png", "/exploreimg2.png", "/exploreimg3.png"];
 
 export const StackedImageAnimation = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -54,7 +54,7 @@ export const StackedImageAnimation = () => {
           <Box
             key={image}
             backgroundImage={`url(${image})`}
-            backgroundSize="100%"
+            backgroundSize={activeIndex===3?"cover":"100%"}
             backgroundRepeat="no-repeat"
             width="inherit"
             height="inherit"

@@ -240,7 +240,7 @@ ul {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: linear-gradient(90deg, #0059ff 0%, #dcff5f 77%);
+  background: linear-gradient(90deg, #0059ff 0%, #6cff5f 77%);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -250,7 +250,7 @@ ul {
 }
 .activelink {
   border-bottom: solid 2px transparent;
-  border-image: linear-gradient(to right, #0059ff, #e8ffd5) 1; 
+  border-image: linear-gradient(to right, #0059ff, #6cff5f) 1; 
   font-weight: 500;
 }
 svg {
@@ -615,6 +615,7 @@ canvas {
   opacity: 0;
 }
 .about-bg{
+  background-image: url("../public/aboutbg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }

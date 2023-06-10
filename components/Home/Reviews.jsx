@@ -44,7 +44,7 @@ export default function Reviews() {
               <ReviewCard
                 pc={pc}
                 name={"Nisrine Maruan"}
-                pfp="user.jpg"
+                pfp="user.png"
                 border={"green"}
                 review={
                   "The OwnBoon concept is a well-researched concept with innovative features that bring together all possible ways to be motivated and to efficiently increase our productivity. I can't wait to use it!"
@@ -58,7 +58,7 @@ export default function Reviews() {
                 border={"red"}
                 pfp="bernie.jpg"
                 review={
-                  "As someone who values self-improvement and seeks connections with like-minded individuals, this platform aligns perfectly with my goals."
+                  "Being someone who values self-improvement and seeks new connections with like-minded individuals. I think, This Amazing platform aligns perfectly with my goals."
                 }
                 title={"Content Creator"}
                 rating={5}
@@ -89,7 +89,7 @@ export default function Reviews() {
                 pc={pc}
                 name={"James"}
                 border={"green"}
-                pfp={"james.jpg"}
+                pfp={"user.png"}
                 review={
                   "At first, I didn't pay much attention to OwnBoon. But upon reflection, I discovered its incredible utility for fostering personal development and acquiring  skills. It has the power to make self-improvement enjoyable and effortless by consolidating all productivity tools into one user-friendly app."
                 }
@@ -123,7 +123,7 @@ export default function Reviews() {
             <ReviewCard
               pc={pc}
               name={"Nisrine Maruan"}
-              pfp="user.jpg"
+              pfp="user.png"
               border={"green"}
               review={
                 "The OwnBoon concept is a well-researched concept with innovative features that bring together all possible ways to be motivated and to efficiently increase our productivity. I can't wait to use it!"
@@ -137,7 +137,7 @@ export default function Reviews() {
               border={"red"}
               pfp="bernie.jpg"
               review={
-                "As someone who values self-improvement and seeks connections with like-minded individuals, this platform aligns perfectly with my goals."
+                "Being someone who values self-improvement and seeks new connections with like-minded individuals. I think, This Amazing platform aligns perfectly with my goals."
               }
               title={"Content Creator"}
               rating={5}
@@ -168,7 +168,7 @@ export default function Reviews() {
               pc={pc}
               name={"James"}
               border={"green"}
-              pfp={"james.jpg"}
+              pfp={"user.png"}
               review={
                 "At first, I didn't pay much attention to OwnBoon. But upon reflection, I discovered its incredible utility for fostering personal development and acquiring  skills. It has the power to make self-improvement enjoyable and effortless by consolidating all productivity tools into one user-friendly app."
               }
