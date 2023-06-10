@@ -20,11 +20,11 @@ export default function About() {
   return (
     <section id="about">
       <div className="p-5 py-[8vh]   text-[#2E2E2E]   flex-wrap flex flex-row  font-poppins align-center items-center  justify-center  ">
-        <div className="flex flex-col  px-16 heading py-10 text-center md:text-left align-center justify-center ">
+        <div className="flex flex-col  md:px-16 heading py-10 text-center md:text-left align-center justify-center ">
           <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[2.5rem] md:text-[32px]  font-bold">
             About Us
           </h1>
-          <p className="text-[1rem] mt-3 md:text-[1.2rem] break-normal max-w-2xl">
+          <p className="text-[1rem] mt-3 md:text-[1.2rem] break-normal max-w-6xl md:max-w-2xl">
             OwnBoon was born from our team's journey in the self-improvement
             niche. Witnessing the lack of an all-in-one social platform that
             truly supports personal growth and productivity at the same time, we set out to create a
@@ -43,7 +43,7 @@ export default function About() {
           <div className="flex mt-2 flex-row">
             <div className="flex px-3 flex-col">
               <div className="flex  mb-3 justify-center items-center align-center flex-col">
-                <div className="som-bg p-3">
+                <div className="som-bg p-2">
                   <Image
                     alt="Som Srivastava"
                     className="z-100 "
@@ -58,27 +58,8 @@ export default function About() {
                 <h3 className="pt-1 text-center text-[14px]">CEO <br /> FOUNDER</h3>
               </div>
               <div className="flex  justify-center items-center align-center flex-col">
-                <div className="sarthak-bg p-3">
-                  <Image
-                    alt="Saarthak Dutta"
-                    className="z-100 "
-                    src={"/sarthak.webp"}
-                    width={100}
-                    height={100}
-                  />
-                </div>
-
-                <h2 className="mt-3 text-[16px] text-center font-semibold">
-                  Saarthak Dutta
-                </h2>
-                <h3 className="pt-1 text-center text-[14px]">
-                  CTO <br /> CO-FOUNDER
-                </h3>
-              </div>
-            </div>
-            <div className="flex px-3  flex-col">
-              <div className="flex justify-center mb-3 items-center align-center flex-col">
-                <div className="alok-bg p-3">
+                
+                <div className="alok-bg p-2">
                   <Image
                     alt="Alok Singh"
                     className="z-100 "
@@ -95,8 +76,28 @@ export default function About() {
                   COO <br /> CO-FOUNDER
                 </h3>
               </div>
+            </div>
+            <div className="flex px-3  flex-col">
+              <div className="flex justify-center mb-3 items-center align-center flex-col">
+              <div className="sarthak-bg p-2">
+                  <Image
+                    alt="Saarthak Dutta"
+                    className="z-100 "
+                    src={"/sarthak.webp"}
+                    width={100}
+                    height={100}
+                  />
+                </div>
+
+                <h2 className="mt-3 text-[16px] text-center font-semibold">
+                  Saarthak Dutta
+                </h2>
+                <h3 className="mt-1 text-center text-[14px]">
+                  CTO <br /> CO-FOUNDER
+                </h3>
+              </div>
               <div className="flex justify-center items-center align-center flex-col">
-                <div className="ivavi-bg p-3">
+                <div className="ivavi-bg p-2">
                   <Image
                     alt="Devansh Rajwar"
                     className="z-100 "

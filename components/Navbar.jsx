@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import { AppContext } from "../components/AppProvider";
 
 import { useContext, useEffect, useState } from "react";
-import { MenuIcon } from "@chakra-ui/react";
 export default function Navbar() {
   const router = useRouter();
   const { asPath } = router;
