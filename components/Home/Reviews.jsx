@@ -93,7 +93,7 @@ export default function Reviews() {
                 review={
                   "OwnBoon's platform consolidates productivity tools, transforming self-improvement into an enjoyable and effortless journey. A revolutionary approach to foster personal development."
                 }
-                title={"Content Creator"}
+                title={"Photographer"}
                 rating={5}
               />
             </div>
@@ -172,7 +172,7 @@ export default function Reviews() {
               review={
                 "OwnBoon's platform consolidates productivity tools, transforming self-improvement into an enjoyable and effortless journey. A revolutionary approach to foster personal development."
               }
-              title={"Content Creator"}
+              title={"Photographer"}
               rating={5}
             />
           </Carousel>
