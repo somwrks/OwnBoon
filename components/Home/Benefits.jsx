@@ -163,7 +163,7 @@ export default function Benefits() {
             </svg>
 
             <h2 className="text-white text-md text-center font-[450] font-poppins">
-              Focus
+              Focus Better
             </h2>
           </div>
 
@@ -192,9 +192,9 @@ export default function Benefits() {
             </div>
             <div className="flex flex-col  mx-1 ">
               <h3 className="text-[#AA77FF] md:text-left  text-[20px] benefit-txt">
-                Focus
+                Focus Better
               </h3>
-              <p className="break-normal md:text-left ">
+              <p className="break-normal w-[50%] md:text-left ">
                 {" "}
                 Find your perfect study partner and stay motivated with our
                 Focus Planet and Lofi Sessions.
@@ -215,7 +215,7 @@ export default function Benefits() {
               >
                 Diverse Connections
               </h3>
-              <p className={`md:text-right `}>
+              <p className={`md:text-right break-normal `}>
                 Connect and expand with a community of like-minded individuals
                 through tailored group chats, study and gym buddies, and Vent
                 Zone.
@@ -332,7 +332,7 @@ export default function Benefits() {
               <h3 className="text-[#00AEFF] md:text-left  text-[20px] benefit-txt">
                 Personalized Roadmaps
               </h3>
-              <p className="break-normal md:text-left ">
+              <p className="break-normal w-[80%] md:text-left ">
                 Explore a roadmap tailored to your personality. Get expert tips
                 on productivity and self-improvement through our exclusive blog
                 content.

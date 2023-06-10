@@ -10,7 +10,7 @@ export default function Body() {
         </h3>
       </div>
 
-      <div className="my-auto mx-auto px-5  justify-center flex flex-row md:flex-nowrap flex-wrap">
+      <div className="my-auto mx-auto w-[60%]  justify-center flex flex-row md:flex-nowrap flex-wrap">
         <div className="bodyimg1">
           <Image
             width={600}

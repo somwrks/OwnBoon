@@ -20,8 +20,8 @@ export default function Reviews() {
     };
   }, []);
   return (
-    <div className=" font-poppins flex flex-col">
-      <div className="flex mt-10 my-auto mx-auto items-center flex-col text-center ">
+    <div className=" font-poppins  flex flex-col">
+      <div className="flex mt-10 my-auto mx-auto w-[85%] items-center flex-col text-center ">
         <div className="review-heading flex flex-col">
           <h1 className="md:text-[4rem] mb-10 text-[2.5rem]">
             Check out the Hype
