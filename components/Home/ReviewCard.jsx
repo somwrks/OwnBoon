@@ -4,14 +4,15 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import { useEffect } from "react";
 
-export default function ReviewCard({name, title, rating, review, border, pfp}) {
+export default function ReviewCard({name, title, rating, review, border, pfp,pc}) {
     useEffect(() => {
-        
-        VanillaTilt.init(document.querySelectorAll(".review-card"), {
-            max: 15,
-            speed: 300,
-            transition: true,
-          });
+        if (pc===true){
+          VanillaTilt.init(document.querySelectorAll(".review-card"), {
+              max: 15,
+              speed: 400,
+              transition: true,
+            });
+        }
       
     }, [])
   return (

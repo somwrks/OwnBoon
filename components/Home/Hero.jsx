@@ -1,5 +1,23 @@
+import { useEffect, useState } from "react";
+
 export default function Hero() {
-  
+  const [pc, setPc] = useState(true);
+  useEffect(() => {
+   
+    function setInitialPositions() {
+      if (window.innerWidth < 768) {
+        setPc(true);
+      } else {
+        setPc(false);
+      }
+    }
+    setInitialPositions();
+    window.addEventListener("resize", setInitialPositions);
+
+    return () => {
+      window.removeEventListener("resize", setInitialPositions);
+    };
+  }, []);
   return (
     <>
       {/* gradients */}
@@ -18,6 +36,7 @@ export default function Hero() {
           <h1 className="py-[30px]">
             Ignite your{" "}
             <span className="md:tracking-[12px] tracking-[3px]">GROWTH</span>
+            {pc && <><br /></>}
             <svg
               width="39"
               height="38"
@@ -52,6 +71,7 @@ export default function Hero() {
           <h1 className="py-[30px]">
             Unleash your{" "}
             <span className="md:tracking-[12px] tracking-[1px]">POTENTIAL</span>
+            {pc && <><br /></>}
             <svg
               id="hero-arrow"
               className="w-10 md:w-16 lg:w-12"

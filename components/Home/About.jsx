@@ -20,7 +20,7 @@ export default function About() {
   return (
     <section id="about">
       <div className="p-5 py-[10vh] about-bg  bg-white text-[#2E2E2E]   flex-wrap flex flex-row  font-poppins align-center items-center  justify-center  ">
-        <div className="flex flex-col  px-10 heading py-10 text-center md:text-left align-center justify-center ">
+        <div className="flex flex-col  px-16 heading py-10 text-center md:text-left align-center justify-center ">
           <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[2.5rem] md:text-[32px]  font-bold">
             About Us
           </h1>
@@ -36,13 +36,13 @@ export default function About() {
             empower individuals to unlock their full potential.
           </p>
         </div>
-        <div className=" px-10   justify-center flex flex-col py-10 md:flex-nowrap flex-wrap ">
+        <div className=" px-16   justify-center flex flex-col py-10 md:flex-nowrap flex-wrap ">
           <h1 className="text-center md:text-left text-[2.5rem] md:text-[32px] benefit-heading font-bold">
             Our Team
           </h1>
           <div className="flex mt-2 flex-row">
             <div className="flex px-3 flex-col">
-              <div className="flex   justify-center items-center align-center flex-col">
+              <div className="flex  mb-3 justify-center items-center align-center flex-col">
                 <div className="som-bg p-3">
                   <Image
                     alt="Som Srivastava"
@@ -77,7 +77,7 @@ export default function About() {
               </div>
             </div>
             <div className="flex px-3  flex-col">
-              <div className="flex justify-center items-center align-center flex-col">
+              <div className="flex justify-center mb-3 items-center align-center flex-col">
                 <div className="alok-bg p-3">
                   <Image
                     alt="Alok Singh"

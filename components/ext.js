@@ -92,7 +92,7 @@ export const Skateboard = () => {
         <button
           id="ripple"
           onClick={preview}
-          className="items-center text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[50px] w-[350px] h-[50px] hover:cursor-pointer  skatebar bg-white font-semibold absolute "
+          className="items-center text-[4vw] md:text-[1.3rem] xs:text-[1rem]  md:w-[35vw] md:h-[50px] w-[65vw] h-[50px] hover:cursor-pointer  skatebar bg-white font-semibold absolute "
         >
           Join our community now!
         </button>
