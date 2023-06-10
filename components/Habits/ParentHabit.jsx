@@ -4,7 +4,7 @@ import VanillaTilt from "vanilla-tilt";
 import { StackedImageAnimation } from './StackedImageAnimation';
 import { useEffect } from "react";
 import { toast } from "react-toastify";
-
+import Image from "next/image";
 export default function ParentHabit({ section }) {
   const list = {
     habit: {
@@ -96,16 +96,12 @@ export default function ParentHabit({ section }) {
       <StackedImageAnimation/>
           </div>
         </div>
-        <div className="flex bg-white flex-col my-[100px]  py-5  items-center">
-          <div className="habit-heading font-poppins">
-            <h1 className="text-[32px] mt-5 font-[600]">Coming Soon</h1>
-          </div>
-          <div className="flex py-[4vh]">
-          </div>
+        <div className="flex bg-white flex-col my-[50px]    items-center">
+          <Image src="/explorecomingsoon.png" height={1950} width={1950}/>
         </div>
-        <div className="flex flex-col min-h-[90vh] pb-10  habit-bg-img justify-center ">
+        <div className="flex mt-[-30px] flex-col min-h-[90vh] pb-10  habit-bg-img justify-center ">
           <div className="heading font-poppins">
-            <h1 className="font-[600] text-[32px]">Features</h1>
+            <h1 className="font-[600] text-[32px] md:text-[3vw]">Features</h1>
           </div>
           <div className="flex flex-wrap w-full justify-center p-5 gap-16 ">
             {list[section].featureheading.map((word, index) => {
