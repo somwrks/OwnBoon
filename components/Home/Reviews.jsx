@@ -69,7 +69,7 @@ export default function Reviews() {
                 pfp={"ajkurnao.jpg"}
                 border={"red"}
                 review={
-                  "Upon first encountering OwnBoon, I didn't fully grasp its potential. However, upon revisiting the concept, I realized the immense value it holds. It presents a remarkable opportunity for individuals to cultivate various skills and embark on a journey of personal growth."
+                  "Initially overlooked, OwnBoon's potential for personal growth and skill cultivation became evident upon revisiting. A remarkable opportunity for individuals seeking self-improvement and development."
                 }
                 title={"Content Creator"}
                 rating={5}
@@ -81,7 +81,7 @@ export default function Reviews() {
                 border={"blue"}
                 pfp={"vanessa.jpg"}
                 review={
-                  "I have been looking for high quality mental health apps to share with my Mental Health Community. This company has reached out to me to see if I was interested in their app, and so far their idea is very promising. They have clearly done their research, and care for others mental health and wellbeing"
+                  "OwnBoon reached out to share their promising mental health app. Their extensive research and genuine care for well-being impressed me. It's Perfect for my Mental Health Community."
                 }
                 rating={5}
               />
@@ -91,7 +91,7 @@ export default function Reviews() {
                 border={"green"}
                 pfp={"user.png"}
                 review={
-                  "At first, I didn't pay much attention to OwnBoon. But upon reflection, I discovered its incredible utility for fostering personal development and acquiring  skills. It has the power to make self-improvement enjoyable and effortless by consolidating all productivity tools into one user-friendly app."
+                  "OwnBoon's user-friendly app consolidates productivity tools, transforming self-improvement into an enjoyable and effortless journey. A revolutionary approach to acquiring skills and fostering personal development."
                 }
                 title={"Content Creator"}
                 rating={5}
@@ -148,7 +148,7 @@ export default function Reviews() {
               pfp={"ajkurnao.jpg"}
               border={"red"}
               review={
-                "Upon first encountering OwnBoon, I didn't fully grasp its potential. However, upon revisiting the concept, I realized the immense value it holds. It presents a remarkable opportunity for individuals to cultivate various skills and embark on a journey of personal growth."
+                "Initially overlooked, OwnBoon's potential for personal growth and skill cultivation became evident upon revisiting. A remarkable opportunity for individuals seeking self-improvement and development."
               }
               title={"Content Creator"}
               rating={5}
@@ -160,7 +160,7 @@ export default function Reviews() {
               border={"blue"}
               pfp={"vanessa.jpg"}
               review={
-                "I have been looking for high quality mental health apps to share with my Mental Health Community. This company has reached out to me to see if I was interested in their app, and so far their idea is very promising. They have clearly done their research, and care for others mental health and wellbeing"
+                "OwnBoon reached out to share their promising mental health app. Their extensive research and genuine care for well-being impressed me. It's Perfect for my Mental Health Community."
               }
               rating={5}
             />
@@ -170,7 +170,7 @@ export default function Reviews() {
               border={"green"}
               pfp={"user.png"}
               review={
-                "At first, I didn't pay much attention to OwnBoon. But upon reflection, I discovered its incredible utility for fostering personal development and acquiring  skills. It has the power to make self-improvement enjoyable and effortless by consolidating all productivity tools into one user-friendly app."
+                "OwnBoon's user-friendly app consolidates productivity tools, transforming self-improvement into an enjoyable and effortless journey. A revolutionary approach to acquiring skills and fostering personal development."
               }
               title={"Content Creator"}
               rating={5}

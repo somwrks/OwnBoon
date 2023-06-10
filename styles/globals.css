@@ -516,6 +516,7 @@ svg {
 #benefit {
   background: url("../public/benefitbg.webp");
   background-size: cover;
+  background-position-x: left;
   background-position-y: bottom;
   background-repeat: no-repeat;
 }
