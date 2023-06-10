@@ -4,12 +4,13 @@ import { useRouter } from "next/router";
 import { AppContext } from "../components/AppProvider";
 
 import { useContext, useEffect, useState } from "react";
+import { MenuIcon } from "@chakra-ui/react";
 export default function Navbar() {
   const router = useRouter();
   const { asPath } = router;
   const { openPopup } = useContext(AppContext);
   const handleClick = () => {
-    openPopup(true); 
+    openPopup(true);
   };
   const [display, setDisplay] = useState(false);
   const [displaylock, lockDisplay] = useState(false);
@@ -80,17 +81,17 @@ export default function Navbar() {
             aria-expanded="false"
           >
             <svg
-              width="29"
-              height="22"
-              viewBox="0 0 29 22"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
             >
               <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M28.1239 0.821367C30.568 3.19361 28.4028 3.66688 15.1153 3.66688C1.77021 3.66688 -2.27745 2.80251 1.16616 0.68709C2.78704 -0.307886 27.0851 -0.186816 28.1239 0.821367ZM18.9747 10.6024C19.8342 12.7757 18.4001 13.2057 10.3343 13.1947C1.52376 13.1822 -0.574165 12.6158 1.07015 10.6933C2.46347 9.0644 18.3343 8.98369 18.9747 10.6024ZM28.1239 19.1653C30.5665 21.5361 28.4013 22.0108 15.212 21.9998C1.70671 21.9881 -0.695127 21.5632 1.07015 19.4984C2.30395 18.0559 26.6716 17.7558 28.1239 19.1653Z"
-                fill="#2E2E2E"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
               />
             </svg>
           </button>
@@ -109,7 +110,7 @@ export default function Navbar() {
           <div className="flex md:order-2">
             <button
               type="button"
-              className="  text-white   sm:text-[1rem] xs:text[0.5rem] login  w-[111px] h-[38px] text-center  rounded-full"
+              className="  text-white !bg-gradient-to-br !from-[#AA77FF] !via-[#00AEFF] !to-[#00F0B5]  sm:text-[1rem] xs:text[0.5rem] login  w-[111px] h-[38px] text-center  rounded-full"
               onClick={handleClick}
             >
               Login
@@ -124,8 +125,7 @@ export default function Navbar() {
             <ul className="flex flex-col p-4 mt-4 bg-white rounded-lg md:flex-row md:space-x-8 md:mt-0 ">
               <li>
                 <Link
-                  href={`${asPath==="/"? "/#home" : "/"}`}
-                  
+                  href={`${asPath === "/" ? "/#home" : "/"}`}
                   className={`transform-letter  block py-2 pl-3 pr-4 md:p-0 ${
                     asPath == "/" ? " activelink font-bold" : "Link"
                   }`}

@@ -615,7 +615,6 @@ canvas {
   opacity: 0;
 }
 .about-bg{
-  background-image: url("../public/aboutbg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import VanillaTilt from "vanilla-tilt";
-import { StackedImageAnimation } from './StackedImageAnimation';
+import { StackedImageAnimation } from "./StackedImageAnimation";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import Image from "next/image";
@@ -55,14 +55,12 @@ export default function ParentHabit({ section }) {
     icons: ["green", "blue", "purple"],
   };
 
-
   useEffect(() => {
     VanillaTilt.init(document.querySelectorAll(".review-card"), {
       max: 15,
       speed: 300,
       transition: true,
     });
-   
   }, []);
   const preview = () => {
     toast.info("Coming soon");
@@ -78,26 +76,38 @@ export default function ParentHabit({ section }) {
         />
       </Head>
       <section id="Habits">
-        <div className={`${list[section].title ==="Habits"? "bg-habits":list[section].title ==="Productivity"? "bg-productivity": "bg-community"} rounded-br-full  z-no blur-3xl font-poppins	 absolute  md:w-[75%] h-[120%] w-[100%] md:h-[100%]`}></div>
+        <div
+          className={`${
+            list[section].title === "Habits"
+              ? "bg-habits"
+              : list[section].title === "Productivity"
+              ? "bg-productivity"
+              : "bg-community"
+          } rounded-br-full  z-no blur-3xl font-poppins	 absolute  md:w-[75%] h-[120%] w-[100%] md:h-[100%]`}
+        ></div>
         <div className="flex flex-row mt-[-9vh] flex-wrap-reverse min-h-screen items-center align-center   justify-center">
           <div className="flex px-[3vw]  flex-col items-center md:items-start text-center md:text-left w-auto md:w-[50%] text-white ">
             <h1 className="md:text-[96px] py-2 mt-3 text-6xl font-bold font-fontspring">
               {list[section].title}
             </h1>
-            <p className="text-[20px] py-2 font-poppins">{list[section].about}</p>
-            <button className="bg-white w-[191px] h-[45px] mt-5" onClick={preview}>
+            <p className="text-[20px] py-2 font-poppins">
+              {list[section].about}
+            </p>
+            <button
+              className="bg-white w-[191px] h-[45px] mt-5"
+              onClick={preview}
+            >
               <h1 className="py-2 font-poppins text-[16px] font-btn-gradient">
                 Try It Now
               </h1>
             </button>
           </div>
           <div className="flex flex-col justify-center items-center md:flex-row  p-2 ">
-          
-      <StackedImageAnimation/>
+            <StackedImageAnimation />
           </div>
         </div>
         <div className="flex bg-white flex-col my-[50px]    items-center">
-          <Image src="/explorecomingsoon.png" height={1950} width={1950}/>
+          <Image src="/pic.png" height={1950} width={1950} />
         </div>
         <div className="flex mt-[-30px] flex-col min-h-[90vh] pb-10  habit-bg-img justify-center ">
           <div className="heading font-poppins">

@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 export default function Benefits() {
   useEffect(() => {
     function setInitialPositions() {
-      const e = document.getElementById("benefit")
-      e.style.backgroundPosition= `${40}% 0%`;
+      const e = document.getElementById("benefit");
+      e.style.backgroundPosition = `${40}% 0%`;
     }
     setInitialPositions();
     window.addEventListener("resize", setInitialPositions);
@@ -33,10 +33,12 @@ export default function Benefits() {
   }, []);
 
   return (
-    <section id="benefit" className="mb-10 pt-[100px] px-5">
+    <section id="benefit" className="mb-10 pt-[100px] px-[5rem]">
       <div className="heading  justify-center align-center ">
-        <h1 className="md:text-[4rem] text-[2.5rem] benefit-heading ">Benefits</h1>
-        <h3 className="md:text-[1.5rem] text-[15px] py-1 ">
+        <h1 className="md:text-[3.3rem] text-[2.5rem] benefit-heading ">
+          Benefits
+        </h1>
+        <h3 className="md:text-[1.2rem] text-[15px] py-1 ">
           Unlock the full benefits of what we offer and experience positive
           changes in your life.
         </h3>
@@ -81,11 +83,14 @@ export default function Benefits() {
             </div>
           </div>
 
-          <div className="sphere md:mt-0  mt-[50px] md:relative absolute right-16  " id="1" >
-            <div className="spherebg bg-[#00F0B5] blur-[4rem]"></div>
+          <div
+            className="sphere md:mt-0  mt-[50px] md:relative absolute right-16  "
+            id="1"
+          >
+            <div className="spherebg bg-[#00F0B5] blur-[2rem]"></div>
             <svg
-              width="58"
-              height="58"
+              width="48"
+              height="48"
               viewBox="0 0 58 58"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -106,20 +111,17 @@ export default function Benefits() {
                 fill="white"
               />
             </svg>
-            <h2 className="text-white  text-center text-xl font-bold font-poppins">
+            <h2 className="text-white  text-center  text-md font-[450] font-poppins">
               Boosted Productivity
             </h2>
           </div>
 
           {/* first right square */}
-          <div  className="sphere  md:mt-0 mt-[10vh]  md:ml-0 ml-3"
-            id="2"
-           
-          >
-            <div className="spherebg bg-[#AA77FF]  blur-[4rem]"></div>
+          <div className="sphere  md:mt-0 mt-[10vh]  md:ml-0 ml-3" id="2">
+            <div className="spherebg bg-[#AA77FF]  blur-[2rem]"></div>
             <svg
-              width="81"
-              height="81"
+              width="65"
+              height="65"
               viewBox="0 0 81 81"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -160,11 +162,11 @@ export default function Benefits() {
               />
             </svg>
 
-            <h2 className="text-white text-xl text-center font-bold font-poppins">
+            <h2 className="text-white text-md text-center font-[450] font-poppins">
               Focus
             </h2>
           </div>
-    
+
           <div className=" flex flex-row md:mt-0 ml-[-4vw] mt-[-20vh] justify-between ">
             <div className="flex flex-col md:ml-0 ml-[30vw] benefit-dot-right">
               <svg
@@ -200,11 +202,6 @@ export default function Benefits() {
             </div>
           </div>
         </div>
-
-
-
-
-
 
         {/* Second Row */}
 
@@ -247,10 +244,10 @@ export default function Benefits() {
             </div>
           </div>
           <div className="sphere md:mt-0 mt-[50px] md:relative absolute right-16">
-            <div className="spherebg bg-[#E90064] blur-[4rem]"></div>
+            <div className="spherebg bg-[#E90064] blur-[2.5rem]"></div>
             <svg
-              width="58"
-              height="58"
+              width="48"
+              height="48"
               viewBox="0 0 57 58"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -272,17 +269,17 @@ export default function Benefits() {
               />
             </svg>
 
-            <h2 className="text-white text-center text-xl font-bold font-poppins">
+            <h2 className="text-white text-center  text-md font-[450] font-poppins">
               Diverse Connections
             </h2>
           </div>
           {/* second right square */}
 
           <div className="sphere  md:mt-0 mt-[10vh]  md:ml-0 ml-[7vw] ">
-            <div className="spherebg  bg-[#00AEFF] blur-[4rem]"></div>
+            <div className="spherebg  bg-[#00AEFF] blur-[2.5rem]"></div>
             <svg
-              width="58"
-              height="58"
+              width="48"
+              height="48"
               viewBox="0 0 58 58"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -304,7 +301,7 @@ export default function Benefits() {
               />
             </svg>
 
-            <h2 className="text-white text-center text-xl font-bold font-poppins">
+            <h2 className="text-white text-center text-md font-[450] font-poppins">
               Personalized Roadmaps
             </h2>
           </div>
