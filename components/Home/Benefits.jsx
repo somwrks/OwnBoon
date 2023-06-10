@@ -46,16 +46,16 @@ export default function Benefits() {
       <div className="benefit-container  py-[101px]  font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-48">
         {/* first row */}
 
-        <div className="flex md:flex-row flex-col mr-0 md:mr-[3vw]  gap-0 md:gap-[5vw]">
+        <div className="flex md:flex-row flex-col mr-0 md:mr-[9vw]  gap-0 md:gap-[9vw]">
           {/* first left square */}
           <div className="flex flex-row md:mt-0 mt-[10vh]  justify-between ">
-            <div className="flex flex-col mx-1 ">
+            <div className="flex space-x-0 md:space-x-[9vw] flex-col mx-1 ">
               <h3
-                className={`text-[#00F0B5] md:text-right  benefit-txt out text-[20px]`}
+                className={`text-[#00F0B5] md:text-right  benefit-txt  text-[20px]`}
               >
                 Boosted Productivity
               </h3>
-              <p className={`break-normal  md:text-right `}>
+              <p className={` break-normal md:w-[60%] md:text-right `}>
                 Enhanced productivity with AI-powered scheduler and optimized
                 study techniques
               </p>
@@ -117,8 +117,8 @@ export default function Benefits() {
           </div>
 
           {/* first right square */}
-          <div className="sphere  md:mt-0 mt-[10vh]  md:ml-0 ml-3" id="2">
-            <div className="spherebg bg-[#AA77FF]  blur-[2rem]"></div>
+          <div className="sphere  md:mt-0 mt-[10vh]   md:ml-0 ml-3" id="2">
+            <div className="spherebg bg-[#AA77FF] blur-[2rem]"></div>
             <svg
               width="65"
               height="65"
@@ -194,7 +194,7 @@ export default function Benefits() {
               <h3 className="text-[#AA77FF] md:text-left  text-[20px] benefit-txt">
                 Focus Better
               </h3>
-              <p className="break-normal md:w-[80%] w-full md:text-left ">
+              <p className="break-normal md:w-[60%] w-full md:text-left ">
                 {" "}
                 Find your perfect study partner and stay motivated with our
                 Focus Planet and Lofi Sessions.
@@ -205,17 +205,17 @@ export default function Benefits() {
 
         {/* Second Row */}
 
-        <div className=" flex md:flex-row  flex-col md:place-items-baseline gap-0 md:gap-[8vw]">
+        <div className=" flex md:flex-row  flex-col md:place-items-baseline  gap-0 md:gap-[9vw]">
           {/* first left square */}
 
-          <div className="flex flex-row md:mt-0 mt-[10vh] ml-[-4vw] justify-between ">
-            <div className="flex flex-col mx-1 ">
+          <div className="flex flex-row md:mt-0  ml-[-9vw] justify-between ">
+            <div className="flex flex-col mx-1 space-x-0 md:space-x-[11vw]">
               <h3
                 className={`text-[#E90064]  md:text-right   text-[20px] benefit-txt`}
               >
                 Diverse Connections
               </h3>
-              <p className={`md:text-right break-normal `}>
+              <p className={`md:text-right md:w-[60%] w-full break-normal `}>
                 Connect and expand with a community of like-minded individuals
                 through tailored group chats, study and gym buddies, and Vent
                 Zone.
@@ -332,7 +332,7 @@ export default function Benefits() {
               <h3 className="text-[#00AEFF] md:text-left  text-[20px] benefit-txt">
                 Personalized Roadmaps
               </h3>
-              <p className="break-normal md:w-[80%] w-full md:text-left ">
+              <p className="break-normal md:w-[60%] w-full md:text-left ">
                 Explore a roadmap tailored to your personality. Get expert tips
                 on productivity and self-improvement through our exclusive blog
                 content.
