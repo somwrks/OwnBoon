@@ -5,11 +5,13 @@ import Link from "next/link";
 import React, { useContext, useState } from "react";
 import Popup from "reactjs-popup";
 import { AppContext } from "./AppProvider";
+import { ColorRing } from "react-loader-spinner";
 import { toast } from "react-toastify";
 
 export default function WaitingLinePopup() {
   const { isOpen, closePopup } = useContext(AppContext);
   const [email, setEmail] = useState("");
+  const [isloading, setIsloading] = useState(false);
   const handleClosePopup = () => {
     closePopup(false);
   };
@@ -17,16 +19,20 @@ export default function WaitingLinePopup() {
     e.preventDefault();
 
     try {
+      setIsloading(true)
       const response = await fetch(
         `https://node-js-email-server.saard00vfx.repl.co/send-email?email=${email}`
       );
       if (response.ok) {
         handleClosePopup();
+        setIsloading(false)
         toast.success("Thank you!");
       } else {
+        setIsloading(false)
         toast.error("Please try again");
       }
     } catch (error) {
+      setIsloading(false)
       console.log("Error sending email:", error);
       toast.error("Please try again");
     }
@@ -50,7 +56,15 @@ export default function WaitingLinePopup() {
         </p>
 
         <div className=" my-[6vh] px-[3vw] mx-auto">
-          <section className=" text-gray-800 text-center lg:text-left">
+    {isloading ?<ColorRing
+        visible={true}
+        height="80"
+        width="80"
+        ariaLabel="blocks-loading"
+        wrapperStyle={{}}
+        wrapperClass="blocks-wrapper"
+        colors={["lightblue", "cyan", "blue", "white", "darkblue"]}
+      /> : <section className=" text-gray-800 text-center lg:text-left">
             <div className="flex flex-wrap justify-center">
               <div className="grow-0 shrink-0 basis-auto w-full lg:w-10/12 px-3">
                 <div className="grid lg:grid-cols-2 gap-x-6 items-center">
@@ -108,7 +122,8 @@ export default function WaitingLinePopup() {
               className="text-4xl absolute top-[10px] hover:text-[gray] hover:cursor-pointer transition-all right-[20px]"
               onClick={hide}
             />
-          </section>
+          </section>}
+          
         </div>
       </div>
     </Popup>

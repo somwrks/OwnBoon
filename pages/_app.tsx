@@ -59,9 +59,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           stopDelayMs={200}
           height={2}
         />
-        <WaitingLinePopup />
         {isLoading && <Loader />}
         <Component {...pageProps} />
+        <WaitingLinePopup />
         <ToastContainer
           style={{ marginTop: "60px" }}
           position="top-center"
