@@ -105,7 +105,7 @@ text-fill-color: transparent;
 
 }
 .bg-community{
-  background: linear-gradient(90deg, rgba(95,236,59,1) 0%, rgba(224,255,223,1) 70%, rgba(255,255,0,1) 100%);
+  background: linear-gradient(90deg, rgb(121, 59, 236) 0%, rgb(109, 114, 184) 70%, rgba(255,255,0,1) 100%);
 
 }
 .habit-bg-img{
@@ -513,13 +513,6 @@ svg {
   background-size: contain;
 }
 /* Benefits */
-#benefit {
-  background: url("../public/benefitbg.webp");
-  background-size: cover;
-  background-position-x: left;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
-}
 .benefit-container {
   flex-direction: column;
 }

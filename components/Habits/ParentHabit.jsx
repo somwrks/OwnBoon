@@ -70,10 +70,9 @@ export default function ParentHabit({ section }) {
       <Head>
         <title>OwnBoon - Explore {list[section].title}</title>
         <link rel="icon" href="/logo.png" />
-        <meta
-          name="description"
-          content={`${ list[section].title === "Habits"?  "Explore all about Self improvement at single place, From Creative Blogs to Personality Development Roadmaps!" : list[section].title === "Productivity"? "Boost your productivity with AI-powered tools, task scheduling, and study techniques tailored to your goals.":"Join a supportive community of like-minded individuals, fostering motivation, and discipline for greater progress."}`}
-        />
+        <meta name="description" content="Explore a vibrant community, productive workspace, and effective habits at our platform. Connect with like-minded individuals, collaborate on projects, and cultivate positive routines. Join us today for a transformative experience." />
+<meta name="keywords" content="community, workspace, habits, connect, collaboration, productivity, positive routines, transformative experience" />
+
       </Head>
       <section id="Habits">
         <div
@@ -114,12 +113,12 @@ export default function ParentHabit({ section }) {
         </div>
         <div className="flex  flex-col min-h-[90vh] pb-10  habit-bg-img justify-center ">
           <div className="heading font-poppins">
-            <h1 className="font-[600] text-[32px] md:text-[3vw]">Features</h1>
+            <h1 className="font-[600] mt-5 text-[32px] md:text-[3vw]">Features</h1>
           </div>
-          <div className="flex flex-wrap w-full justify-center p-5 gap-16 ">
+          <div className="flex flex-wrap mb-5 w-full justify-center p-5 gap-8 ">
             {list[section].featureheading.map((word, index) => {
               return (
-                <div className="w-full  font-poppins  md:w-3/5 lg:w-2/5 xl:w-1/4 2xl:w-1/5 p-5">
+                <div key={index} className="w-[80%]  font-poppins  md:w-3/5 lg:w-2/5 xl:w-1/4 2xl:w-1/5 p-5">
                   <div className="flex bg-white p-[3.5rem] h-[110%]  shadow-md rounded-[2rem] flex-col ">
                     <svg
                       className="w-1/3"

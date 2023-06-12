@@ -41,12 +41,13 @@ export default function Benefits() {
           changes in your life.
         </h3>
       </div>
-      <div className="benefit-container  py-[101px]  font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-48">
+      <div className="benefit-container md:justify-center md:align-middle py-[101px]  font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-48">
+      <div className="flex flex-col md:items-center md:space-y-10 space-y-20  md:space-x-48 md:justify-center md:align-middle md:w-[100%] xl:w-[70%]">
         {/* first row */}
 
-        <div className="flex md:flex-row flex-col mr-0 md:mr-[3vw]  gap-0 md:gap-[5vw]">
+        <div className="flex md:flex-row flex-col mr-0 md:mr-[4vw]  gap-0 md:gap-[8vw]">
           {/* first left square */}
-          <div className="flex flex-row md:mt-0 mt-[10vh]  justify-between ">
+          <div className="flex flex-row md:mt-0 mt-[10vh] w-full justify-between ">
             <div className="flex flex-col mx-1 ">
               <h3
                 className={`text-[#00F0B5] md:text-right  benefit-txt out text-[20px]`}
@@ -161,11 +162,11 @@ export default function Benefits() {
             </svg>
 
             <h2 className="text-white text-xl text-center font-semibold font-poppins">
-              Focus
+            Focus Better
             </h2>
           </div>
     
-          <div className=" flex flex-row md:mt-0 ml-[-4vw] mt-[-20vh] justify-between ">
+          <div className=" flex flex-row md:mt-0 ml-[-4vw] mt-[-20vh] w-full justify-between ">
             <div className="flex flex-col md:ml-0 ml-[30vw] benefit-dot-right">
               <svg
                 width="41"
@@ -190,7 +191,7 @@ export default function Benefits() {
             </div>
             <div className="flex flex-col  mx-1 ">
               <h3 className="text-[#AA77FF] md:text-left  text-[20px] benefit-txt">
-                Focus
+                Focus Better
               </h3>
               <p className="break-normal md:text-left ">
                 {" "}
@@ -343,6 +344,9 @@ export default function Benefits() {
             </div>
           </div>
         </div>
+
+      </div>
+
       </div>
     </section>
   );

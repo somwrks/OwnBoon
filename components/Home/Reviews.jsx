@@ -100,12 +100,14 @@ export default function Reviews() {
           </>
         ) : (
           <Carousel
-            width={350}
+            width={370}
             showIndicators={false}
+          interval={2000}
             showStatus={false}
             useKeyboardArrows={true}
             swipeable={true}
             showThumbs={false}
+            
             autoPlay={true}
             infiniteLoop={true}
           >

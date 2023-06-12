@@ -28,8 +28,8 @@ export default function Footer() {
     };
   }, []);
   return (
-    <div>
-      <footer className="mt-5 mx-auto md:flex md:justify-between w-full max-w-6xl">
+    <div className="border justify-center items-center border-[#E0E0E0]">
+      <footer className="mt-5 mx-auto md:flex  md:justify-between w-full max-w-6xl">
         <div className=" w-full  p-4 py-6 lg:py-2 ">
           <div className="md:flex md:justify-between ">
             {pc === true ? (
