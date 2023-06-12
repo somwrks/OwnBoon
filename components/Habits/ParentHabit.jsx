@@ -115,10 +115,10 @@ export default function ParentHabit({ section }) {
           <div className="heading font-poppins">
             <h1 className="font-[600] mt-5 text-[32px] md:text-[3vw]">Features</h1>
           </div>
-          <div className="flex flex-wrap mb-5 w-full justify-center p-5 gap-8 ">
+          <div className="flex flex-wrap mb-5 w-full justify-center p-1 gap-8 ">
             {list[section].featureheading.map((word, index) => {
               return (
-                <div key={index} className="w-[98%]  font-poppins  md:w-3/5 lg:w-2/5 xl:w-1/4 2xl:w-1/5 p-5">
+                <div key={index} className="w-full  font-poppins  md:w-3/5 lg:w-2/5 xl:w-1/4 2xl:w-1/5 p-5">
                   <div className="flex bg-white p-[3.5rem] h-[110%]  shadow-md rounded-[2rem] flex-col ">
                     <svg
                       className="w-1/3"
