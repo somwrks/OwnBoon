@@ -105,13 +105,13 @@ export default function ParentHabit({ section }) {
             <StackedImageAnimation />
           </div>
         </div>
-        <div className="flex bg-white flex-col mt-[100px]    items-center">
+        <div className="flex  bg-white flex-col mt-[100px]    items-center">
         <div className="heading font-poppins">
             <h1 className="font-[600] mt-5 text-[32px] md:text-[3vw]">Coming Soon</h1>
           </div>
-          <Image src="/pic.webp" className="my-2" height={1950} width={1950} />
+          <Image src="/pic.webp" className="my-2 w-[100vw]" height={1950} width={1950} />
         </div>
-        <div className="flex  flex-col min-h-[90vh] pb-10  habit-bg-img justify-center ">
+        <div className="flex  flex-col min-h-screen pb-10  habit-bg-img justify-center ">
           <div className="heading font-poppins">
             <h1 className="font-[600] mt-5 text-[32px] md:text-[3vw]">Features</h1>
           </div>

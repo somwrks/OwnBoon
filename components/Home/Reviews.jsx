@@ -29,7 +29,7 @@ export default function Reviews() {
         </div>
         {pc === true ? (
           <>
-            <div className="flex  flex-row justify-center flex-wrap items-center align-center mb-5 ">
+            <div className="flex mx-auto w-[80%] flex-row justify-center flex-wrap items-center align-center mb-5 ">
               <ReviewCard
                 pc={pc}
                 name={"Adam Wong"}

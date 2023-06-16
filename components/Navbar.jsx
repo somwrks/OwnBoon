@@ -43,6 +43,9 @@ export default function Navbar() {
     }
   };
 
+  const [show, setShow] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
   useEffect(() => {
     const sections = document.querySelectorAll("section");
     const navLi = document.querySelectorAll("nav ul li");
@@ -63,12 +66,21 @@ export default function Navbar() {
         }
       });
     };
-  }, []);
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+      setShow(visible);
+      setPrevScrollPos(currentScrollPos);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
 
   return (
     <>
       <nav
-        className={`px-5 sm:px-4 text-[0.9rem] py-2.5 sticky w-full z-100 bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-inter `}
+        className={`${show? "navbarshow":"navbarhide"} px-5 sm:px-4 text-[0.9rem] py-2.5 fixed  w-full z-100 bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-inter `}
       >
         <div className="container bg-white flex flex-wrap items-center justify-between mx-auto">
           <button
@@ -102,7 +114,7 @@ export default function Navbar() {
               className=" mr-1 rounded-full "
               alt="Ownboon Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap ">
+            <span className="self-center text-[20px] font-semibold whitespace-nowrap ">
               Own<span className="text-[#00F0B5]">Boon</span>
             </span>
           </Link>

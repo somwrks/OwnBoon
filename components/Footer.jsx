@@ -29,7 +29,7 @@ export default function Footer() {
   }, []);
   return (
     <div className="border justify-center items-center border-[#E0E0E0]">
-      <footer className="mt-5 mx-auto md:flex  md:justify-between w-full max-w-6xl">
+      <footer className="mt-5 mx-auto md:flex  md:justify-between  md:w-[80%] ">
         <div className=" w-full  p-4 py-6 lg:py-2 ">
           <div className="md:flex md:justify-between ">
             {pc === true ? (
@@ -120,7 +120,7 @@ export default function Footer() {
               </>
             )}
 
-            <div className="grid grid-cols-2 gap-8 font-poppins sm:gap-6 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8 font-poppins sm:gap-6 sm:grid-cols-2">
               <div>
                 <h2 className="mb-6 text-[1rem] font-bold text-gray-900  ">
                   Company

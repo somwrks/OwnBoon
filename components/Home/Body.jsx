@@ -13,7 +13,7 @@ export default function Body() {
       <div className=" justify-center pb-5 md:pb-0 flex flex-row md:flex-nowrap flex-wrap">
         <div className=" bodyimg1">
           <Image
-            className="md:w-[30vw]"
+            className="md:w-[25vw]"
             width={500}
             height={500}
             loading="lazy"
@@ -21,7 +21,7 @@ export default function Body() {
             alt="Gif1"
           />
         </div>
-        <div className="flex flex-col ml-4  text-center md:text-left align-center justify-center pb-5 md:pb-0 md:w-[50%]">
+        <div className="flex flex-col px-8  text-center md:text-left align-center justify-center pb-5 md:pb-0 md:w-[50%]">
           <h4 className="text-[1.2rem] md:text-[1.3vw] font-poppins font-semibold py-3">
             Supportive Community
           </h4>
@@ -35,7 +35,7 @@ export default function Body() {
         </div>
       </div>
       <div className=" justify-center pb-5 md:pb-0 flex flex-wrap md:flex-nowrap">
-        <div className="md:w-[50%] flex flex-col ml-4 text-center md:text-left align-center justify-center pb-5 md:pb-0 order-2 md:order-1">
+        <div className="md:w-[50%] flex flex-col px-8 text-center md:text-left align-center justify-center pb-5 md:pb-0 order-2 md:order-1">
           <h4 className="text-[1.2rem] md:text-[1.3vw] font-poppins font-semibold py-3">
             Find Support and Encouragement
           </h4>
@@ -48,7 +48,7 @@ export default function Body() {
         </div>
         <div className=" bodyimg2 order-1 md:order-2">
           <Image
-           className="md:w-[30vw]"
+           className="md:w-[25vw]"
             width={500}
             height={500}
             loading="lazy"
@@ -61,7 +61,7 @@ export default function Body() {
       <div className="   justify-center pb-5 md:pb-0 flex flex-row md:flex-nowrap flex-wrap">
         <div className=" bodyimg3">
           <Image
-           className="md:w-[30vw]"
+           className="md:w-[25vw]"
             width={500}
             height={500}
             loading="lazy"
@@ -70,7 +70,7 @@ export default function Body() {
           />
         </div>
 
-        <div className="md:w-[50%] flex flex-col ml-2 text-center md:text-left align-center justify-center pb-5 md:pb-0">
+        <div className="md:w-[50%] flex flex-col px-8 text-center md:text-left align-center justify-center pb-5 md:pb-0">
           <h4 className="text-[1.2rem] md:text-[1.3vw] font-poppins font-semibold py-3">
             Grow Your Self-Improvement Journey
           </h4>
@@ -83,7 +83,7 @@ export default function Body() {
           </p>
         </div>
       </div>
-      <div className="     items-center p-5 justify-center pb-5 md:pb-0 flex flex-wrap md:flex-nowrap text-center md:text-left">
+      <div className="  px-8   items-center p-5 justify-center   flex flex-wrap md:flex-nowrap text-center md:text-left">
         <div className="md:w-[50%] order-2 md:order-1">
           <h4 className="text-[1.2rem] md:text-[1.3vw] font-poppins font-semibold py-3">
             Boost Your Productivity
@@ -98,7 +98,7 @@ export default function Body() {
         </div>
         <div className="order-1 md:order-2">
           <Image
-           className="animate-float md:w-[30vw]"
+           className="animate-float md:w-[25vw]"
             width={500}
             height={500}
             loading="lazy"

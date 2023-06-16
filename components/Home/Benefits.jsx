@@ -42,7 +42,7 @@ export default function Benefits() {
         </h3>
       </div>
       <div className="benefit-container md:justify-center md:align-middle py-[101px]  font-poppins flex  md:items-center md:space-y-10 space-y-20  md:space-x-48">
-      <div className="flex flex-col md:items-center md:space-y-10 space-y-20  md:space-x-48 md:justify-center md:align-middle md:w-[100%] lg:w-[100%] xl:w-[90%]">
+      <div className="flex flex-col md:items-center md:space-y-10 space-y-20  md:space-x-48 md:justify-center md:align-middle md:w-[100%] lg:w-[89%] xl:w-[83%]">
         {/* first row */}
 
         <div className="flex md:flex-row flex-col mr-0 md:mr-[4vw]  gap-0 md:gap-[8vw]">
