@@ -68,11 +68,14 @@ export default function Navbar() {
     };
 
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
-      setShow(visible);
-      setPrevScrollPos(currentScrollPos);
-    };
+     
+
+        const currentScrollPos = window.pageYOffset;
+        const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+        setShow(visible);
+        setPrevScrollPos(currentScrollPos);
+      
+    }
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
@@ -80,7 +83,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`${show? "navbarshow":"navbarhide"} px-5 sm:px-4 text-[0.9rem] py-2.5 fixed  w-full z-100 bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-inter `}
+        className={`${show? "navbarhide":"navbarshow"} px-5 sm:px-4 text-[0.9rem] py-2.5 fixed  w-full z-100 bg-white z-20 top-0 left-0 text-[#2E2E2E]  font-inter `}
       >
         <div className="container bg-white flex flex-wrap items-center justify-between mx-auto">
           <button
