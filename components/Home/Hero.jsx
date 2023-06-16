@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="circle green" id="green1"></div>
         <div className="circle green" id="green2"></div>
       </div>
-      <div className="flex  justify-center text-[#2E2E2E] flex-col   my-0 mx-0 items-center align-center ">
+      <div className="flex  justify-center text-[#2E2E2E] flex-col  mx-0 items-center align-center ">
         <div className=" font-fontspring md:text-[3.75rem] lg:text-[4vw] text-3xl  text-center">
           <h1 className="py-[30px]">
             Ignite your{" "}

@@ -338,8 +338,7 @@ export default function Benefits() {
               </h3>
               <p className="break-normal md:text-left ">
                 Explore a roadmap tailored to your personality. Get expert tips
-                on productivity and self-improvement through our exclusive blog
-                content.
+                on productivity and self-improvement.
               </p>
             </div>
           </div>

@@ -27,9 +27,9 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Navbars />
-      <section id="home">
+      <section id="home" >
         <Balls />
-        <div className="flex min-h-screen justify-center flex-col">
+        <div className="flex mt-[100px] min-h-screen justify-center flex-col">
           <Hero />
           <Skateboard />
         </div>
