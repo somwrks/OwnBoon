@@ -21,7 +21,7 @@ export default function Reviews() {
   }, []);
   return (
     <div className=" font-poppins  flex flex-col">
-      <div className="flex mt-10 my-auto mx-auto w-[85%] items-center flex-col text-center ">
+      <div className="flex mt-10  items-center flex-col text-center ">
         <div className="review-heading flex flex-col">
           <h1 className="md:text-[4rem] mb-10 text-[2.5rem]">
             Check out the Hype
@@ -29,7 +29,7 @@ export default function Reviews() {
         </div>
         {pc === true ? (
           <>
-            <div className="flex  flex-row justify-center flex-wrap items-center align-center mb-5 mx-[10vw]">
+            <div className="flex  flex-row justify-center flex-wrap items-center align-center mb-5 ">
               <ReviewCard
                 pc={pc}
                 name={"Adam Wong"}
@@ -69,7 +69,7 @@ export default function Reviews() {
                 pfp={"ajkurnao.jpg"}
                 border={"red"}
                 review={
-                  "Initially overlooked, OwnBoon's potential for personal growth and skill cultivation became evident upon revisiting. A remarkable opportunity for individuals seeking self-improvement and development."
+                  "Initially overlooked, OwnBoon's potential for personal growth and skill cultivation became evident upon revisiting. Remarkable opportunity for individuals seeking self-improvement & development."
                 }
                 title={"Content Creator"}
                 rating={5}
@@ -81,7 +81,7 @@ export default function Reviews() {
                 border={"blue"}
                 pfp={"vanessa.jpg"}
                 review={
-                  "OwnBoon reached out to share their promising mental health app. Their extensive research and genuine care for well-being impressed me. It's Perfect for my Mental Health Community."
+                  "I have been looking for high quality mental health apps to share with my MH Community. They clearly did their research, and care for others mental health and wellbeing."
                 }
                 rating={5}
               />
@@ -150,7 +150,7 @@ export default function Reviews() {
               pfp={"ajkurnao.jpg"}
               border={"red"}
               review={
-                "Initially overlooked, OwnBoon's potential for personal growth and skill cultivation became evident upon revisiting. A remarkable opportunity for individuals seeking self-improvement and development."
+                "Initially overlooked, OwnBoon's potential for personal growth and skill cultivation became evident upon revisiting. Remarkable opportunity for individuals seeking self-improvement & development."
               }
               title={"Content Creator"}
               rating={5}
@@ -162,7 +162,7 @@ export default function Reviews() {
               border={"blue"}
               pfp={"vanessa.jpg"}
               review={
-                "OwnBoon reached out to share their promising mental health app. Their extensive research and genuine care for well-being impressed me. It's Perfect for my Mental Health Community."
+                "I have been looking for high quality mental health apps to share with my MH Community. They clearly did their research, and care for others mental health and wellbeing. "
               }
               rating={5}
             />

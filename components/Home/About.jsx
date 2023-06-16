@@ -20,11 +20,11 @@ export default function About() {
   return (
     <section id="about">
       <div className="p-5 py-[8vh]   text-[#2E2E2E]   flex-wrap flex flex-row  font-poppins align-center items-center  justify-center  ">
-        <div className="flex flex-col  md:px-16 heading py-10 text-center md:text-left align-center justify-center ">
-          <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[2.5rem] md:text-[32px]  font-bold">
+        <div className="flex flex-col  md:w-[60vw] heading py-10 text-center md:text-left align-center justify-center ">
+          <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[2.5rem] md:text-[3vw]  font-bold">
             About Us
           </h1>
-          <p className="text-[1rem] mt-3 md:text-[1.2rem] break-normal max-w-6xl md:max-w-2xl">
+          <p className="text-[1rem] mt-3 md:text-[1.2vw] break-normal ">
             OwnBoon was born from our team's journey in the self-improvement
             niche. Witnessing the lack of an all-in-one social platform that
             truly supports personal growth and productivity at the same time, we set out to create a
@@ -36,8 +36,8 @@ export default function About() {
             empower individuals to unlock their full potential.
           </p>
         </div>
-        <div className=" px-16   justify-center flex flex-col py-10 md:flex-nowrap flex-wrap ">
-          <h1 className="text-center md:text-left text-[2.5rem] md:text-[32px] benefit-heading font-bold">
+        <div className="  justify-center flex flex-col py-10 md:flex-nowrap flex-wrap ">
+          <h1 className="text-center md:text-left text-[2.5rem] md:text-[3vw] benefit-heading font-bold">
             Our Team
           </h1>
           <div className="flex mt-2 flex-row">
