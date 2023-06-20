@@ -83,7 +83,7 @@ export default function About() {
                   <Image
                     alt="Saarthak Dutta"
                     className="z-100 "
-                    src={"/sarthak.webp"}
+                    src={"/sarthak.jpg"}
                     width={100}
                     height={100}
                   />
