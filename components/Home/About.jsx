@@ -20,24 +20,18 @@ export default function About() {
   return (
     <section id="about">
       <div className="p-5 py-[8vh]   text-[#2E2E2E]   flex-wrap flex flex-row  font-poppins align-center items-center  justify-center  ">
-        <div className="flex flex-col  md:w-[60vw] heading py-10 text-center md:text-left align-center justify-center ">
-          <h1 className="md:mt-[-115px] mt-[-10px] text-center md:text-left text-[2.5rem] md:text-[3vw]  font-bold">
+        <div className="flex flex-col  md:w-[60vw] heading py-10 text-center md:text-left align-center justify-center mr-0 md:mr-5">
+          <h1 className="revealtitle md:mt-[-115px] mt-[-10px] text-center md:text-left text-[2.5rem] md:text-[3vw]  font-bold">
             About Us
           </h1>
-          <p className="text-[1rem] mt-3 md:text-[1.2vw] break-normal ">
+          <p className="text-[1rem] text-justify mt-3 md:text-[1.2vw] break-words ">
             OwnBoon was born from our team's journey in the self-improvement
             niche. Witnessing the lack of an all-in-one social platform that
-            truly supports personal growth and productivity at the same time, we set out to create a
-            transformative space. Powered by AI tools and personalized roadmaps,
-            OwnBoon provides a distraction-free environment for work,
-            connection, and learning. Together, We've decided to shape a future where
-            personal development and social connection thrive. Join us on this
-            remarkable journey towards fulfillment and success. Together, we
-            empower individuals to unlock their full potential.
+            truly supports personal growth and productivity at the same time, we set out to create a transformative space. Powered by AI tools and personalized roadmaps, OwnBoon provides a distraction-free environment for work, connection, and learning. Together, We've decided to shape a future where personal development and social connection thrive. Join us on this remarkable journey towards fulfillment and success. Together, We empower individuals to unlock their full potential.
           </p>
         </div>
         <div className="  justify-center flex flex-col py-10 md:flex-nowrap flex-wrap ">
-          <h1 className="text-center md:text-left text-[2.5rem] md:text-[3vw] benefit-heading font-bold">
+          <h1 className="revealtitle text-center md:text-left text-[2.5rem] md:text-[3vw] benefit-heading font-bold">
             Our Team
           </h1>
           <div className="flex mt-2 flex-row">

@@ -9,6 +9,7 @@ import Reviews from "../components/Home/Reviews";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  
   return (
     <>
       <Head>

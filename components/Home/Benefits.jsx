@@ -35,8 +35,8 @@ export default function Benefits() {
   return (
     <section id="benefit" className="mb-10 pt-[100px] px-5">
       <div className="heading  justify-center align-center ">
-        <h1 className="md:text-[4rem] text-[2.5rem] benefit-heading ">Benefits</h1>
-        <h3 className="md:text-[1.5rem] text-[15px] py-1 ">
+        <h1 className="revealtitle md:text-[4rem] text-[2.5rem] benefit-heading ">Benefits</h1>
+        <h3 className="md:text-[1.5rem]  text-[15px] py-1 ">
           Unlock the full benefits of what we offer and experience positive
           changes in your life.
         </h3>
@@ -54,7 +54,7 @@ export default function Benefits() {
               >
                 Boosted Productivity
               </h3>
-              <p className={`break-normal  md:text-right `}>
+              <p className={`break-normal text-justify md:text-right `}>
                 Enhanced productivity with AI-powered scheduler and optimized
                 study techniques
               </p>
@@ -193,7 +193,7 @@ export default function Benefits() {
               <h3 className="text-[#AA77FF] md:text-left  text-[20px] benefit-txt">
                 Focus Better
               </h3>
-              <p className="break-normal md:text-left ">
+              <p className="break-normal text-justify md:text-left ">
                 {" "}
                 Find your perfect study partner and stay motivated with our
                 Focus Planet and Lofi Sessions.
@@ -219,7 +219,7 @@ export default function Benefits() {
               >
                 Diverse Connections
               </h3>
-              <p className={`md:text-right `}>
+              <p className={`md:text-right text-justify`}>
                 Connect and expand with a community of like-minded individuals
                 through tailored group chats, study and gym buddies, and Vent
                 Zone.
@@ -336,7 +336,7 @@ export default function Benefits() {
               <h3 className="text-[#00AEFF] md:text-left  text-[20px] benefit-txt">
                 Personalized Roadmaps
               </h3>
-              <p className="break-normal md:text-left ">
+              <p className="break-normal text-justify md:text-left ">
                 Explore a roadmap tailored to your personality. Get expert tips
                 on productivity and self-improvement.
               </p>

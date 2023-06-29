@@ -23,7 +23,7 @@ export default function Reviews() {
     <div className=" font-poppins  flex flex-col">
       <div className="flex mt-10  items-center flex-col text-center ">
         <div className="review-heading flex flex-col">
-          <h1 className="md:text-[4rem] mb-10 text-[2.5rem]">
+          <h1 className="revealtitle md:text-[4rem] mb-10 text-[2.5rem]">
             Check out the Hype
           </h1>
         </div>

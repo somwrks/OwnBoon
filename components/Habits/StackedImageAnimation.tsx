@@ -62,8 +62,8 @@ export const StackedImageAnimation = () => {
             top={iphone === false ? 40 : 60}
             style={
               activeIndex - i === 0
-                ? { filter: "blur(0px)" }
-                : { filter: "blur(5px)" }
+                ? { opacity: 1 }
+                : { opacity: 0 }
             }
             right={iphone ? 0 - 0.075 * factor * 280 : 0 - 0.075 * factor * 580}
             transform={`scale(${1 - 0.075 * factor})`}

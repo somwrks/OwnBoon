@@ -74,7 +74,7 @@ export default function ParentHabit({ section }) {
 <meta name="keywords" content="community, workspace, habits, connect, collaboration, productivity, positive routines, transformative experience" />
 
       </Head>
-      <section id="Habits">
+      <section id="Habits" className="fade  md:mt-[100px]">
         <div
           className={`${
             list[section].title === "Habits"
@@ -86,10 +86,10 @@ export default function ParentHabit({ section }) {
         ></div>
         <div className="flex flex-row mt-[-9vh] flex-wrap-reverse min-h-screen items-center align-center   justify-center">
           <div className="flex px-[3vw]  flex-col items-center md:items-start text-center md:text-left w-auto md:w-[50%] text-white ">
-            <h1 className="md:text-[96px] py-2  text-6xl font-bold font-fontspring">
+            <h1 className="md:text-[96px] py-2 fade text-6xl font-bold font-fontspring">
               {list[section].title}
             </h1>
-            <p className="text-[20px] py-2 font-poppins">
+            <p className="text-[20px] fade py-2 font-poppins">
               {list[section].about}
             </p>
             <button
@@ -107,13 +107,13 @@ export default function ParentHabit({ section }) {
         </div>
         <div className="flex  bg-white flex-col mt-[100px]    items-center">
         <div className="heading font-poppins">
-            <h1 className="font-[600] mt-5 text-[32px] md:text-[3vw]">Coming Soon</h1>
+            <h1 className="revealtitle font-[600] mt-5 text-[32px] md:text-[3vw]">Coming Soon</h1>
           </div>
           <Image src="/pic.webp" className="my-2 w-[100vw]" height={1950} width={1950} />
         </div>
         <div className="flex  flex-col min-h-screen pb-10  habit-bg-img justify-center ">
           <div className="heading font-poppins">
-            <h1 className="font-[600] mt-5 text-[32px] md:text-[3vw]">Features</h1>
+            <h1 className="revealtitle font-[600] mt-5 text-[32px] md:text-[3vw]">Features</h1>
           </div>
           <div className="flex flex-wrap mb-5 w-full justify-center p-1 gap-8 ">
             {list[section].featureheading.map((word, index) => {

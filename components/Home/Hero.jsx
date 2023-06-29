@@ -33,7 +33,7 @@ export default function Hero() {
       </div>
       <div className="flex  justify-center text-[#2E2E2E] flex-col  mx-0 items-center align-center ">
         <div className=" font-fontspring md:text-[3.75rem] lg:text-[4vw] text-3xl  text-center">
-          <h1 className="py-[30px]">
+          <h1 className="slideup py-[30px]">
             Ignite your{" "}
             <span className="md:tracking-[12px] tracking-[3px]">GROWTH</span>
             {pc && <><br /></>}
@@ -68,7 +68,7 @@ export default function Hero() {
               </defs>
             </svg>
           </h1>
-          <h1 className="py-[30px]">
+          <h1 className="slideup py-[30px]">
             Unleash your{" "}
             <span className="md:tracking-[12px] tracking-[1px]">POTENTIAL</span>
             {pc && <><br /></>}
@@ -484,7 +484,7 @@ export default function Hero() {
           </h1>
         </div>
         <div className="py-[1vh] md:text-[1.5rem] text-[#262626] text-md  justify-center text-center">
-          <h2>revolutionizing your productivity and health</h2>
+          <h2 className="slideup">revolutionizing your productivity and health</h2>
         </div>
       </div>
     </>

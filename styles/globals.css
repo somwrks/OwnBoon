@@ -80,6 +80,9 @@ text-fill-color: transparent;
 .bt {
   animation: bt 1.5s ease-in-out, fade 1.5s ease-in-out;
 }
+.tb {
+  animation: tob 1.5s ease-in-out, fade 1.5s ease-in-out;
+}
 .lr {
   animation: left-to-right 2s ease-in-out;
 }
@@ -120,6 +123,31 @@ text-fill-color: transparent;
   background-image: url("../public/habit-bg-img.webp");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.slideup{
+  animation: fade 5s ease-in-out;
+}
+h1:nth-child(2).slideup{
+  animation: fade 6s ease-in-out;
+  
+}
+h2.slideup{
+  animation: fade 6s ease-in-out;
+  
+}
+.fade{
+  animation: fade 2s ease-in-out;
+
+}
+@keyframes slideup {
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /* Animations */
 @keyframes fade {
@@ -164,6 +192,14 @@ text-fill-color: transparent;
 @keyframes bt {
   0% {
     transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes tob {
+  0% {
+    transform: translateY(-100px);
   }
   100% {
     transform: translateY(0px);
@@ -223,6 +259,7 @@ html {
 }
 
 body {
+  animation: fade 2s ease-in-out;
   @apply text-black;
 }
  
@@ -473,6 +510,13 @@ nav{
   text-align: center;
   font-family: Poppins;
 }
+.revealtitle{
+  opacity: 0;
+}
+.revealtitle.show{
+  animation: tob 1s ease-in-out, fade 1s ease-in-out;
+  opacity: 1;
+}
 .heading h1 {
   font-weight: 600;
   background: linear-gradient(90deg, #00f0b5 0%, rgba(0, 240, 181, 0.1) 100%),
@@ -527,6 +571,31 @@ nav{
 /* Benefits */
 .benefit-container {
   flex-direction: column;
+}
+.headingleft{
+  opacity: 0;
+}
+.headingleft.show{
+  animation: left-to-right 1s ease-in-out, fade 1.5s ease-in-out;
+  opacity: 1;
+}
+.headingright{
+  opacity: 0;
+  
+}
+
+.headingright.show{
+  animation: right-to-left 1s ease-in-out, fade 1.5s ease-in-out;
+  opacity: 1;
+
+}
+.paragraph{
+  opacity: 0;
+}
+.paragraph.show{
+  animation: fade 1.5s ease-in-out;
+  opacity: 1;
+
 }
 .sphere {
   height: 20vh;

@@ -49,6 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="google-site-verification"
           content="0t6s_w9kPQXYMPIHrGcpSUmYI-iaO06XJBpkMDGHdrc"
         />
+         <meta property="og:image" content="../public/linkpreview.png" />
         <meta name="author" content="OwnBoon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>

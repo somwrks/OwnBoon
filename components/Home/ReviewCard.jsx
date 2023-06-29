@@ -84,7 +84,7 @@ export default function ReviewCard({
         </div>
       </div>
       <div className={`${name ==="Vanessa"? "" :""} my-5`}>
-        <p className="text-left font-normal font-poppins md:text-[0.9vw] text-[1rem]">
+        <p className="text-left break-normal font-normal font-poppins md:text-[0.9vw] text-[1rem]">
           {review}
         </p>
       </div>

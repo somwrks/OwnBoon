@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDiscord,
-  faGithub,
+  faTwitter,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
@@ -43,7 +43,7 @@ export default function Footer() {
                     alt="Ownboon Logo"
                   />
                   <span className="self-center  text-2xl font-semibold whitespace-nowrap ">
-                    Own<span className="text-cyan">Boon</span>
+                    Own<span className="text-[#00F0B5]">Boon</span>
                   </span>
                 </Link>
                 <div className="pt-[1vh]  text-[18px]">
@@ -63,8 +63,8 @@ export default function Footer() {
                     <Link href="https://instagram.com/OwnBoon">
                       <FontAwesomeIcon color={"#343434"} icon={faInstagram} />
                     </Link>
-                    <Link href="https://github.com/OwnBoon">
-                      <FontAwesomeIcon color={"#343434"} icon={faGithub} />
+                    <Link href="https://twitter.com/OwnBoonHQ">
+                      <FontAwesomeIcon color={"#343434"} icon={faTwitter} />
                     </Link>
                     <Link href="https://discord.gg/nxeUX3Uufn">
                       <FontAwesomeIcon color={"#343434"} icon={faDiscord} />
@@ -108,8 +108,8 @@ export default function Footer() {
                       </Link>
                     </div>
                     <div className="flex flex-col">
-                      <Link href="https://github.com/OwnBoon">
-                        <FontAwesomeIcon color={"#343434"} icon={faGithub} />
+                      <Link href="https://twitter.com/OwnBoonHQ">
+                        <FontAwesomeIcon color={"#343434"} icon={faTwitter} />
                       </Link>
                       <Link href="https://discord.gg/nxeUX3Uufn">
                         <FontAwesomeIcon color={"#343434"} icon={faDiscord} />
