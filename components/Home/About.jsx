@@ -87,7 +87,7 @@ export default function About() {
                   Saarthak Dutta
                 </h2>
                 <h3 className="mt-1 text-center text-[14px]">
-                  CTO <br /> CO-FOUNDER
+                  CTO
                 </h3>
               </div>
               <div className="flex justify-center items-center align-center flex-col">
