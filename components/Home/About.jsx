@@ -53,28 +53,7 @@ export default function About() {
                 <h3 className="pt-1 text-center text-[14px]">CEO <br /> FOUNDER</h3>
               </div>
               <div className="flex  justify-center items-center align-center flex-col">
-                  <div className="sarthak-bg p-2">
-                  <Image
-                    alt="Saarthak Dutta"
-                    className="z-100 "
-                    src={"/sarthak.webp"}
-                    width={100}
-                    height={100}
-                  />
-                </div>
-
-                <h2 className="mt-3 text-[16px] text-center font-semibold">
-                  Saarthak Dutta
-                </h2>
-                <h3 className="mt-1 text-center text-[14px]">
-                  CTO
-                </h3>
-               
-              </div>
-            </div>
-            <div className="flex px-3  flex-col">
-              <div className="flex justify-center mb-3 items-center align-center flex-col">
-                 <div className="alok-bg p-2">
+                  <div className="alok-bg p-2">
                   <Image
                     alt="Alok Singh"
                     className="z-100 "
@@ -90,6 +69,28 @@ export default function About() {
                 <h3 className="pt-1 text-center text-[14px]">
                   COO <br /> CO-FOUNDER
                 </h3>
+               
+              </div>
+            </div>
+            <div className="flex px-3  flex-col">
+              <div className="flex justify-center mb-3 items-center align-center flex-col">
+                 <div className="sarthak-bg p-2">
+                  <Image
+                    alt="Saarthak Dutta"
+                    className="z-100 "
+                    src={"/sarthak.webp"}
+                    width={100}
+                    height={100}
+                  />
+                </div>
+
+                <h2 className="mt-3 text-[16px] text-center font-semibold">
+                  Saarthak Dutta
+                </h2>
+                <h3 className="mt-1 text-center text-[14px]">
+                  CTO
+                </h3>
+                
             
               </div>
               <div className="flex justify-center items-center align-center flex-col">
