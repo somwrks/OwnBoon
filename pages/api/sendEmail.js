@@ -22,7 +22,7 @@ export default async function handler(req, res) {
         from: "mail@ownboon.com", 
         to: email,
         subject: "Beta Access Sign Up @Ownboon",
-        html: "<h1 style='font-weight: bold; font-size: 24px;'>Thank you for signing up for beta access!</h1> <h2 style='font-weight: normal; font-size: 19px;'>Stay tuned around Late June! 🫡</h2><br/> <h2 style='font-weight: semi-bold; font-size: 19px;'> Join our discord server: <a href='https://discord.gg/nxeUX3Uufn'>https://discord.gg/nxeUX3Uufn</a></h2> <br/><h2 style='font-weight: semi-bold; font-size: 19px;'> Business Queries Only on- <a href='mailto:business@ownboon.com'>business@ownboon.com</a></h2>",
+        html: "<h1 style='font-weight: bold; font-size: 24px;'>Thank you for signing up for beta access!</h1> <h2 style='font-weight: normal; font-size: 19px;'>Stay tuned around Late August! 🫡</h2><br/> <h2 style='font-weight: semi-bold; font-size: 19px;'> Join our discord server: <a href='https://discord.gg/nxeUX3Uufn'>https://discord.gg/nxeUX3Uufn</a></h2> <br/><h2 style='font-weight: semi-bold; font-size: 19px;'> Business Queries Only on- <a href='mailto:business@ownboon.com'>business@ownboon.com</a></h2>",
       };
 
       // Send the email
